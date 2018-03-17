@@ -1,0 +1,66 @@
+<html><head>
+<title>Standard Chartered</title>
+</head>
+
+<body style=3D"background-color: #fff"><table align=3D"center" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" bgcolor=3D"#fff" style=
+=3D"max-width:600px;">
+<tbody><tr>
+<td align=3D"center" valign=3D"top" style=3D"font-family:Calibri,Arial,sans=
+-serif;font-size:14px;line-height:16px;color:#4a4a4a">Open our Newsletter i=
+n <a href=3D"http://mail.htmailers.com/ga/webviews/4-27582375-136-5370-5421=
+-10679-79735c87a7" style=3D"text-decoration:underline;color:#0000ee">New ta=
+b</a><br></td>
+  </tr>
+ </tbody></table>
+<span style=3D"display:none;">Welcome to Standard Chartered</span>
+<table style=3D"border: 1px solid #ccc;" border=3D"0" width=3D"600" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"center" bgcolor=3D"#fff">
+<tbody>
+<tr>
+<td>
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td><a href=3D"http://mail.htmailers.com/ga/click/2-27582375-136-5370-10679=
+-9654-b4d1bf3aea-8c129a4203" target=3D"_blank" rel=3D"noopener"> <img style=
+=3D"display: block;" src=3D"https://d19qgyth69wh8s.cloudfront.net/BMS.png" =
+alt=3D"" width=3D"600" /></a></td>
+</tr>
+<tr>
+<td><a href=3D"http://mail.htmailers.com/ga/click/2-27582375-136-5370-10679=
+-9654-b4d1bf3aea-8c129a4203" target=3D"_blank" rel=3D"noopener"> <img style=
+=3D"display: block;" src=3D"https://d19qgyth69wh8s.cloudfront.net/BMS1.gif"=
+ alt=3D"" width=3D"600" /></a></td>
+</tr>
+<tr>
+<td><a href=3D"http://mail.htmailers.com/ga/click/2-27582375-136-5370-10679=
+-9654-b4d1bf3aea-8c129a4203" target=3D"_blank" rel=3D"noopener"> <img style=
+=3D"display: block;" src=3D"https://d19qgyth69wh8s.cloudfront.net/bms2.png"=
+ alt=3D"" width=3D"600" /></a></td>
+</tr>
+
+
+
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&#160;</p>
+
+
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" bgcolor=3D"#fff" style=3D"max-width:600px;">
+                    <tbody><tr>
+                      <td align=3D"center" valign=3D"top" style=3D"font-fam=
+ily:Calibri,Arial,sans-serif;font-size:14px;line-height:16px;color:#4a4a4a"=
+>
+                       Please click here to <a href=3D"http://mail.htmailer=
+s.com/ga/unsubscribe/2-27582375-136-5370-10679-02928325756fcd7-8c129a4203" =
+style=3D"color: #0000ee; text-decoration:underline" target=3D"_blank">Unsub=
+scribe</a><br><br></td>
+                    </tr>                 =20
+ </tbody></table><img src=3D"http://mail.htmailers.com/ga/open/2-27582375-1=
+36-5370-10679-8c129a4203" height=3D"2" width=3D"3" alt=3D""></body></html>

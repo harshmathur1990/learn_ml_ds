@@ -1,0 +1,76 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp261908ive;
+        Thu, 15 Mar 2018 18:49:05 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELs1kfh/NpVgewzHuLzBGaGonRV/syvCBJu0S2C9XBjxfHVfHEiiaAOV8mqPYo0RJNTyPSfW
+X-Received: by 10.99.110.133 with SMTP id j127mr28756pgc.79.1521164945158;
+        Thu, 15 Mar 2018 18:49:05 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521164945; cv=none;
+        d=google.com; s=arc-20160816;
+        b=R8mt8amODQrD4qPA42HvCipignXndp4AzgG1t31U5QtLcWR2tNKA5eqfsFQHOWCms8
+         6nv9jxUBHpt0a9PsR5npuGyKAXci2UEwaPNF8TXXzATsdlKsgkB5GecqhjM40GnBbZUE
+         Bj4azCUKaKbnL1AyzVwLRljT9gJR2OyYikTWx6Jlh3qUUZMgRJSV0z71+0YlipaywXXj
+         xffT4OmtuzcdykCbJ6dnL+lIKuiNu+es3dLSQUYf/k5FTKsoKtdCfYdARaA1Ki7rdpcN
+         yCl3q3J7IHGPeC4TJYlZAfUFIU0KIeNbW1bpS5p0CEqoGilV+LMeJI4NaIo1epnMGTxf
+         FHeg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:message-id:list-unsubscribe:date:reply-to
+         :sender:to:from:subject:dkim-signature:arc-authentication-results;
+        bh=ccDDnJRdri2e4Na609oJwbbI6RDTLzDEM20Wy/6AIuk=;
+        b=zOxO2l93l8M3RCrLvZ0kl9BBnMiqKu/5pGzuMcP9dJkmtzFfHsifqplyb0kbIdNW0f
+         28Qcp+uMunczoQjM7rI/tg4W6jBmBGn3FU6ZT1DTjeXYcGH+P44u1iE2fFSxO3nqMj07
+         A4crJpfEEmWO1F736JFdkEt/0h37a8+ErzdSaFEXd2Bzy6zIm5sRrUveTe1vTXscvRKY
+         HFCiB//doQjQMVuZ7HA+4R3N1mSGQC7z/6YwcTVBJJRcaPXmBf9/C0UNA7NARGHOG9LR
+         JygfvYAXBzHxdCwbVPTHIULQ6gvDmTSUo1tvpHRaQ6zfB136KruNVOQysYs2Bw7R92th
+         yUaQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@amails.in header.s=gomirchi header.b=QbsoW68u;
+       spf=pass (google.com: domain of return-a40-10696-10702-3d772683=23750246=8@amails.in designates 198.37.103.38 as permitted sender) smtp.mailfrom=return-a40-10696-10702-3d772683=23750246=8@amails.in;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=amails.in
+Return-Path: <return-a40-10696-10702-3d772683=23750246=8@amails.in>
+Received: from smtp1-1.gomirchi.com (smtp1-1.gomirchi.com. [198.37.103.38])
+        by mx.google.com with ESMTPS id v32-v6si5185473plb.631.2018.03.15.18.49.04
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 15 Mar 2018 18:49:05 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return-a40-10696-10702-3d772683=23750246=8@amails.in designates 198.37.103.38 as permitted sender) client-ip=198.37.103.38;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@amails.in header.s=gomirchi header.b=QbsoW68u;
+       spf=pass (google.com: domain of return-a40-10696-10702-3d772683=23750246=8@amails.in designates 198.37.103.38 as permitted sender) smtp.mailfrom=return-a40-10696-10702-3d772683=23750246=8@amails.in;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=amails.in
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=amails.in; s=gomirchi; t=1521164944;
+ bh=jDMcjqT1Hovm7C8zwNI67BSrmek=;
+ h=Subject:From:To:Sender:Reply-To:Date:List-Unsubscribe:
+  X-CampaignID:Message-ID:X-Mailer-Info:Content-Type:
+  Content-Transfer-Encoding;
+ b=QbsoW68uA5NDvk7XxBbryu4/DloianTfhNrMQHYKQfM1J6SUdosQ3UB2xMtYtzEi1
+  boodUXmXGEuMNG8zap7RenZbsJv0JpYiFbnWfsbGfsNg1mvxxG+byHpPtz5CTJmKox
+  J0CeRUYrJhqWDjiqNu1s9WypUUwE+yfqgPAp9QQw=
+Subject: Give yourself a break! Plan a trip to your favourite destination!
+From: =?UTF-8?B?RnVsbGVydG9uIEluZGlh?= <mails@amails.in>
+To: harshmathur.1990@gmail.com
+Sender: mails@amails.in
+Reply-To: mails@amails.in
+Date: 16 Mar 2018 01:49:04 -0000
+List-Unsubscribe: <http://a.amails.in/ga/unsubscribe/2-23750246-40-5602-10702-bc318c3a55e0d82-9817a96e8f?confirmed=1>,
+ <mailto:return-a40-10696-10702-3d772683=23750246=8u@amails.in>
+X-CampaignID: s4:10696-f0905254e1533367
+Message-ID: <mid-051f1f69a39e6ef475e42cf1698d552b-2@amails.in>
+X-Mailer-Info: 8.hRDM.EDM2kjN.gWYyNHatFGdoVncuETO5ADQn1WYpxmLj9Wb.IzM3UDMyQjN.EDM3AjM
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p style=3D"text-align: center;"><a href=3D"http://a.amails.in/ga/click/2-2=
+3750246-40-5602-10702-11538-651d637408-9817a96e8f"><img src=3D"https://s3-u=
+s-west-2.amazonaws.com/mailers2018/Fullerton/Single+Image/Fullerton_mar3.jp=
+eg" /></a></p>
+<p style=3D"text-align: center;"><a href=3D"http://a.amails.in/ga/unsubscri=
+be/2-23750246-40-5602-10702-bc318c3a55e0d82-9817a96e8f">Unsubscribe Here</a=
+></p>
+<img src=3D"http://a.amails.in/ga/open/2-23750246-40-5602-10702-9817a96e8f"=
+ height=3D"2" width=3D"3" alt=3D""></body>
+</html>=

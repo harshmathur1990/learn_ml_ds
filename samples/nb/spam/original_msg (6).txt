@@ -1,0 +1,128 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp463380ive;
+        Thu, 15 Mar 2018 23:47:42 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELutO2mmknK1y6BVqG4luWs6SVNeVszfZfzox0nT20iQz8UMxM/vMLqIxaRTzlPE1ik7cHGn
+X-Received: by 2002:a17:902:57d5:: with SMTP id g21-v6mr839520plj.381.1521182862949;
+        Thu, 15 Mar 2018 23:47:42 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521182862; cv=none;
+        d=google.com; s=arc-20160816;
+        b=wv6YKS4/26ckbwT/6cDa+PwniiE3G8vmSZap6t06Cq6Ag594qEuHItuB007JbEK4ch
+         4mLSSyjPozM30UxpLVONl9lRKvDAh1FOXTlMt6XuhjGH/r1kJz3RQ4y5V8lIgOrLq2/c
+         apGOtPU76z9s5lxxDVqeYnY+1dQgwS4AjBuFGhTLPWemS3doe4g5l9gzcW3TWVBcxiaF
+         MyUh1QMHKaf+zEmfIUhrLxcmG6ASzLrcn1T0Sl1tx4aESGvwXjU7a6MTEpcavcWuUW72
+         taSp+kgKgQc+mUYuvEYkDocD+L0wq+OlJ/qk+Qn+fvcU/UTiRgkhT41CGfeNEv1F36OV
+         AE2A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:mime-version:precedence:list-unsubscribe:feedback-id:list-id
+         :message-id:subject:to:reply-to:from:domainkey-signature
+         :dkim-signature:dkim-signature:arc-authentication-results;
+        bh=eSYBD/6hOu7XOQUDGh2SBy9sqdETt8zfgjJm8Q2p71M=;
+        b=j+Km3djtBmpKIpHYWdAjSwstWRrPszQJz9/g0AYVDET2OrrVyMApW93iyjUM9VycK/
+         gEEIQPpvmYw4ks9wE3VCukc/+5baoAGAreNQ/MT5EN7TFskHpdC0v4hCOgSRPsaTfVPl
+         lJac89EGxC9NtlMZDPedprz2R1Duf7o9xODUAXPi43Q5p4l455mmdLYMKn9pRe3MFM3f
+         I8gN6v0+5EYr4JwQr7wTmUsrnN46oqpyOFe9GJ53zAAcSPcYGpDGe1HtXb3KfDnBHjWe
+         0ytRPmm3B6Q6J9lubTsM24rPNvDUhWKnxy5sXRcRQsjgYDRX/Oq6iCQAbiylDVcz6efm
+         mHZQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@m2i.in header.s=mify header.b=eWkbACIs;
+       dkim=pass header.i=@724mail185.move2inbox.com header.s=mail header.b=jCZbKpPd;
+       spf=pass (google.com: domain of mail-m2ima-11-9705-945-116823234@724mail185.move2inbox.com designates 103.70.132.185 as permitted sender) smtp.mailfrom=mail-m2ima-11-9705-945-116823234@724mail185.move2inbox.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=m2i.in
+Return-Path: <mail-m2ima-11-9705-945-116823234@724mail185.move2inbox.com>
+Received: from 724mail185.move2inbox.com (724mail185.move2inbox.com. [103.70.132.185])
+        by mx.google.com with ESMTPS id f8si4505846pgs.667.2018.03.15.23.47.42
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 15 Mar 2018 23:47:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mail-m2ima-11-9705-945-116823234@724mail185.move2inbox.com designates 103.70.132.185 as permitted sender) client-ip=103.70.132.185;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@m2i.in header.s=mify header.b=eWkbACIs;
+       dkim=pass header.i=@724mail185.move2inbox.com header.s=mail header.b=jCZbKpPd;
+       spf=pass (google.com: domain of mail-m2ima-11-9705-945-116823234@724mail185.move2inbox.com designates 103.70.132.185 as permitted sender) smtp.mailfrom=mail-m2ima-11-9705-945-116823234@724mail185.move2inbox.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=m2i.in
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=mify; d=m2i.in;
+ h=From:Reply-To:To:Subject:Message-Id:List-Id:Feedback-Id:List-Unsubscribe:
+ MIME-Version:Content-Type:Date; i=newsletters@m2i.in;
+ bh=d11CojH3LOOVEJRjDH8E5Wty64U=;
+ b=eWkbACIsIrzU8Aa7w2ActOBKFQi5vAhv0f+TgITpec//iaB0A2/CDanxi2lItkXdW3Cvp0gCpiZK
+   RmfpRdPXWqAgXYdj7XCxaxmalMwAjBbXEu3ge5gxX53TYUUUUiNHqiloaqcsA6yHzfemPteyVQyV
+   iGx3ksSjHk0Y5gaoJAI=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=mail; d=724mail185.move2inbox.com;
+ h=From:Reply-To:To:Subject:Message-Id:List-Id:Feedback-Id:List-Unsubscribe:
+ MIME-Version:Content-Type:Date;
+ bh=d11CojH3LOOVEJRjDH8E5Wty64U=;
+ b=jCZbKpPd1liTwGRi/RU6cIFQt7Z6jN6awdg40/vHSFy1VCt4hxUCcXPCwic12ImWWLumCmAEqhMj
+   EwhzdguaoIgHY4BQHo+TDzAHn9ANsWmqX5hO8x6EdvTYjr8PdPueZwtvinz4/RqEp1/4X+z1LWZo
+   VxKpFu1ER9oTLEayMLQ=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=mify; d=m2i.in;
+ b=JeswfTYonPdZtPCQtVa0bnBBukofODbcnfmqo/FXvliE8t37FSeiCKihYMN7Hd2tboFTlZuSRZ1b
+   V5SLOhjFbrCpJKXFSI2jMplUtgZDVYMDpBMDCNijRs6EwduAA97LzCkKPZZWn4zHiQH45urJL1zM
+   hxLCIW4a+yuvx5B0KQM=;
+Received: by 724mail185.move2inbox.com for <harshmathur.1990@gmail.com>; Fri, 16 Mar 2018 12:09:22 +0530 (envelope-from <mail-m2ima-11-9705-945-116823234@724mail185.move2inbox.com>)
+From: scb<newsletters@m2i.in>
+Reply-To: scb<newsletters@m2i.in>
+To: harshmathur.1990@gmail.com
+Subject: Upto 20% discounts on Uber,Jabong,Croma,Groffers,Snapdeal and more. Apply now
+Message-Id: <1521182362.5434@724mail185.move2inbox.com>
+List-Id: dl981pl2vh769
+Feedback-Id: ov23675orod44:zj81981kxc6f3:13GLBP3LG8UTF:mifysol
+List-Unsubscribe: <mailto:zj81981kxc6f3.dl981pl2vh769.13GLBP3LG8UTF@fbl-unsub.m2ima.com?subject=unsubscribe>, <http://track.724mail185.a2itrack.com/mail/lists/dl981pl2vh769/unsubscribe/13GLBP3LG8UTF/zj81981kxc6f3/unsubscribe-direct?source=email-client-unsubscribe-button>
+Return-Path: <mail-m2ima-11-9705-945-116823234@724mail185.move2inbox.com>
+Precedence: bulk
+X-Campaign-Uid: zj81981kxc6f3
+X-Subscriber-Uid: 13GLBP3LG8UTF
+X-Priority: 1
+X-Report-Abuse: Please report abuse for this campaign here: http://track.724mail185.a2itrack.com/mail/campaigns/zj81981kxc6f3/report-abuse/dl981pl2vh769/13GLBP3LG8UTF
+X-Sender: newsletters@m2i.in
+X-Receiver: harshmathur.1990@gmail.com
+X-Abuse-Reports-To: abuse@m2i.in
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="_----------=_152118236220511328"
+Date: Fri, 16 Mar 2018 12:09:22 +0530
+
+This is a multi-part message in MIME format.
+
+--_----------=_152118236220511328
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset=utf-8
+
+View In New Tab
+To Remove Your Email From Mailing List,Click Here <http://track.724mail185.a2itrack.com/mail/campaigns/zj81981kxc6f3/track-url/13GLBP3LG8UTF-116823234/a27ac981e57fc3804f8a0f08460521ce9cdb5958> 
+--_----------=_152118236220511328
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html>
+<html>
+            <head><meta name="charset" content="utf-8">
+
+            <title></title></head>
+            <body>
+
+            <div style="margin:0 auto;display:table;width:100%;">
+<div style="margin:0 auto;display:table;"><a href="http://track.724mail185.a2itrack.com/mail/campaigns/zj81981kxc6f3/track-url/13GLBP3LG8UTF-116823234/a538a2ddd14639127fec6c1dec96e120e8137873" style="font-family:Arial;font-size:12px;color:#5f5f5f;line-height:25px;">View In New Tab</a></div>
+
+<div style="margin:0 auto;display:table;">
+<div style="margin:0;padding:0px;float:left;"><a href="http://track.724mail185.a2itrack.com/mail/campaigns/zj81981kxc6f3/track-url/13GLBP3LG8UTF-116823234/f49b4dc4c4afe0c8e272eddd696b3791b2f6dc31" target="_blank"><img alt="" border="0" src="http://cdn127.cid247-img.move2inbox.pics/img922/7834/xi00QR.gif" style="display:block;"></a></div>
+</div>
+
+<div style="margin:0 auto;display:table;">
+<div style="margin:0;padding:0px;float:left;"><a href="http://track.724mail185.a2itrack.com/mail/campaigns/zj81981kxc6f3/track-url/13GLBP3LG8UTF-116823234/f49b4dc4c4afe0c8e272eddd696b3791b2f6dc31" target="_blank"><img alt="" border="0" src="http://cdn127.cid247-img.move2inbox.pics/img924/9638/fkjIWp.gif" style="display:block;"></a></div>
+</div>
+
+<div style="margin:0 auto;display:table;">
+<div style="margin:0;padding:0px;float:left;"><a href="http://track.724mail185.a2itrack.com/mail/campaigns/zj81981kxc6f3/track-url/13GLBP3LG8UTF-116823234/f49b4dc4c4afe0c8e272eddd696b3791b2f6dc31" target="_blank"><img alt="" border="0" src="http://cdn127.cid247-img.move2inbox.pics/img924/8303/WddmTu.gif" style="display:block;"></a></div>
+</div>
+
+<div style="margin:0 auto;display:table;">
+<div style="margin:0;padding:0px;float:left;"><a href="http://track.724mail185.a2itrack.com/mail/campaigns/zj81981kxc6f3/track-url/13GLBP3LG8UTF-116823234/f49b4dc4c4afe0c8e272eddd696b3791b2f6dc31" target="_blank"><img alt="" border="0" src="http://cdn127.cid247-img.move2inbox.pics/img922/9191/UM1p14.gif" style="display:block;"></a></div>
+</div>
+</div>
+
+<div style="margin:0 auto;padding:0px;display:table;line-height:45px;font-size:11px;font-family:arial;color:#5f5f5f;"><span style="font-size:12px;"><span style="color:#5f5f5f;">To Remove Email From Mailing List,<a href="http://track.724mail185.a2itrack.com/mail/campaigns/zj81981kxc6f3/track-url/13GLBP3LG8UTF-116823234/a27ac981e57fc3804f8a0f08460521ce9cdb5958">Click Here</a></span></span></div><img width="1" height="1" src="http://track.724mail185.a2itrack.com/mail/campaigns/zj81981kxc6f3/track-opening/13GLBP3LG8UTF-116823234" alt="" class="CToWUd"></body>
+        </html>
+
+--_----------=_152118236220511328--
+

@@ -1,0 +1,108 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp999455ive;
+        Wed, 14 Mar 2018 22:36:36 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELvV6/pEO5S8+foww1QN9UN9Tv3dh6APhcY7t/UvPlau58xDFRdabZ60fZ1J+EOFSh6JjNJJ
+X-Received: by 10.36.213.4 with SMTP id a4mr4825744itg.107.1521092196268;
+        Wed, 14 Mar 2018 22:36:36 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521092196; cv=none;
+        d=google.com; s=arc-20160816;
+        b=u2RzRygTEPje/Dzx4cMm/96OssDfUgSTgRum1imnK0UnNwA/V2Xss4GSc/Ly+bpNNZ
+         lwVFmqyefrGzOVJ1JvgWwhHNZMcNbLuw24gobuWo39nFYfzNInrvhhyGX0QA1BjBwpno
+         S/n++ToPyzh5+4ZdpZ4oyaQBmmR586a6z7ZtzlpRcTv3Ny7sE0BOBZeAdqYQ5WEcSFVv
+         RXNhVw0JZx292ti4OEIGRlgpR875dkevVhBSVMqmPYPhoDRUHAJbhJUCfnGER1V7DC/E
+         St3QZ3HVGhnY+8XMHG+JpdRlOC+P/LF1o69lwVWSTTL6mMcY/JEAiL+Xn32UYln8z5tO
+         1PPQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:message-id:list-unsubscribe:date:to:from
+         :subject:dkim-signature:arc-authentication-results;
+        bh=LzHri5sgaXA2P9Zv2NUkqVjJ8X9Lt5OladnWkrD4pLA=;
+        b=wKWnBqv7wNMhtkKVDXkpo9JJBOg/Vu5W19wFYmVbHGtYLa12sbGNmVh7kUyMIZ4U+Z
+         Z5d3cbvoBBd7ftQd88WACkTYmE7BN48fNn2uy3P1rsCvSkSYv5BCmYuqzKwV1uZFbYbd
+         jnAB6XYcei8jcIFtV+8f55tLPln/F9m3STtwA4aslZ413Tl7sQyCHO0GjP+mW7hJBzX/
+         gc3j31+RnY378nTV+5875rcij4YbkIJ4f12Ay3Y3FHClXSDVnoeqF1OmEScIhay223to
+         ya5lFfiHYitn44hCf+jXmaOyOIpskos6LAWL2EhDVUih8ZIw5G6yKFYIyXHGzxjGH1Xn
+         I7fw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@kitnapadega.com header.s=default5 header.b=PIHXtRGU;
+       spf=pass (google.com: domain of return-a141-10219-10220-c670b98e=29882524=8@kitnapadega.com designates 103.96.100.5 as permitted sender) smtp.mailfrom=return-a141-10219-10220-c670b98e=29882524=8@kitnapadega.com
+Return-Path: <return-a141-10219-10220-c670b98e=29882524=8@kitnapadega.com>
+Received: from smtp1-4.injectin.com (smtp1-4.injectin.com. [103.96.100.5])
+        by mx.google.com with ESMTPS id v89si2789378iov.4.2018.03.14.22.36.36
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 14 Mar 2018 22:36:36 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return-a141-10219-10220-c670b98e=29882524=8@kitnapadega.com designates 103.96.100.5 as permitted sender) client-ip=103.96.100.5;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@kitnapadega.com header.s=default5 header.b=PIHXtRGU;
+       spf=pass (google.com: domain of return-a141-10219-10220-c670b98e=29882524=8@kitnapadega.com designates 103.96.100.5 as permitted sender) smtp.mailfrom=return-a141-10219-10220-c670b98e=29882524=8@kitnapadega.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=kitnapadega.com; s=default5;
+ t=1521088521; bh=gSDp9z8oa8h6sSIelMGI2tiTfUY=;
+ h=Subject:From:To:Date:List-Unsubscribe:X-CampaignID:Message-ID:
+  X-Mailer-Info:Content-Type:Content-Transfer-Encoding;
+ b=PIHXtRGUKhpO8JXCEP7r1sjKSJ1c42UDqq6+XfyXA0+cZwC0sq5iBVWdh6QtV/5kp
+  I3xqm0wOrVRWj0gAgcn2Z5uAw/sYCSt6WfsaJdbZAWp+dorG0ze3I9I40EKMqyLsHv
+  m9Ed9KJzn6eHamXOoZe76fBQnI+TZJdSCuCrSM+Q=
+Subject: Even if you fall sick, your finance needn't!
+From: "Health Insurance Plans" <newsletter@kitnapadega.com>
+To: harshmathur.1990@gmail.com
+Date: 15 Mar 2018 04:35:21 -0000
+List-Unsubscribe: <http://mail.kitnapadega.com/ga/unsubscribe/2-29882524-141-5128-10220-4a64023a4523c23-1404adf7ab?confirmed=1>,
+ <mailto:return-a141-10219-10220-c670b98e=29882524=8u@kitnapadega.com>
+X-CampaignID: s4:10219-8565674d26198938
+Message-ID: <mid-09f15972c99d28040dd5185e0ee8b01c-12@kitnapadega.com>
+X-Mailer-Info: 8.QYxQTM.EDMyETO.gWYyNHatFGdoVncuETO5ADQn1WYpxmLj9Wb.ITO4gjM1IDN.EDMyIDM
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<title>Bankbazaar</title>
+</head>
+<body style=3D"background-color: #fff"><table align=3D"center" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" bgcolor=3D"#fff" style=
+=3D"max-width:600px;">
+<tbody><tr>
+<td align=3D"center" valign=3D"top" style=3D"font-family:Calibri,Arial,sans=
+-serif;font-size:14px;line-height:16px;color:#4a4a4a">Open our Newsletter i=
+n <a href=3D"http://mail.kitnapadega.com/ga/webviews/4-29882524-141-5128-51=
+79-10220-5dc1880507" style=3D"text-decoration:underline;color:#0000ee">New =
+tab</a><br></td>
+  </tr>
+ </tbody></table>
+
+<table style=3D"border: 0px solid #ccc;" border=3D"0" width=3D"600" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"center" bgcolor=3D"#fff">
+<tbody>
+<tr>
+<td>
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td><a href=3D"http://mail.kitnapadega.com/ga/click/2-29882524-141-5128-102=
+20-9112-117b37c517-1404adf7ab" target=3D"_blank" rel=3D"noopener"> <img sty=
+le=3D"display: block;" src=3D"https://d19qgyth69wh8s.cloudfront.net/tme2.pn=
+g" width=3D"600" /></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&#160;</p>
+
+
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" bgcolor=3D"#fff" style=3D"max-width:600px;">
+                    <tbody><tr>
+                      <td align=3D"center" valign=3D"top" style=3D"font-fam=
+ily:Calibri,Arial,sans-serif;font-size:14px;line-height:16px;color:#4a4a4a">
+                       Please click here to <a href=3D"http://mail.kitnapad=
+ega.com/ga/unsubscribe/2-29882524-141-5128-10220-4a64023a4523c23-1404adf7ab=
+" style=3D"color: #0000ee; text-decoration:underline" target=3D"_blank">Uns=
+ubscribe</a><br><br></td>
+                    </tr>=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20
+ </tbody></table><img src=3D"http://mail.kitnapadega.com/ga/open/2-29882524=
+-141-5128-10220-1404adf7ab" height=3D"2" width=3D"3" alt=3D""></body>
+</html>=

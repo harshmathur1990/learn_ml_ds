@@ -1,0 +1,122 @@
+Delivered-To: harshmathur1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp1130218ive;
+        Tue, 13 Mar 2018 21:28:49 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELtwprt7V2HYa3KhmWiaJ5jtRe0+ciafQvNXwxstKu38o6UVNMxtCc2y5kaAqL2koHOkcf5W
+X-Received: by 10.36.4.65 with SMTP id 62mr480055itb.57.1521001729144;
+        Tue, 13 Mar 2018 21:28:49 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521001729; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Svdiqij2Dh8WPBph/j0qLwr/gAVElsuEVgvpNbmDV1TGXFkTAkE57bzx70ujp71UnU
+         xO9uTo4jFDQVMzO9uOF+vEzBLoaQ8SfeWYP5SvBJBAX1oCLm3Hz2JXcqBwJaHLJNb+td
+         wDJ+nEjTsq31/eYwD6ZbhiRgB+jxYe2pB3LtuKq4eCmkAlieGYTaV03mZYaLTwPvnp1Z
+         8MKJUagW9cG0BpxU0JmFPBozlq7Rlf1WlyQnv7Og0SEVPFnaN1ngDboCwDb71MXo3ab/
+         YZ/VrNGYXuQZqY3Xn4S2xwKxSSocfgBEwmzBx0ZHXuSMNF4ajnMmLXAblTD9EjN2evtH
+         CiqA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:message-id:list-unsubscribe:date:to:from
+         :subject:dkim-signature:arc-authentication-results;
+        bh=0oEwejrOzPaWv2R2KqVig9jT2X7yT8LWXOBnC9N+SgA=;
+        b=QZ773n4IA0wWwRJ/8KUo/HQ9VRecvy6dbPKM2KnDrbsDONLxjxtsKQu5eufSNwKOE1
+         czdbL6tsRd+B7GkiIiD6cXlU5z60dmLhYQomXsOmtIxfjksKNl0fbwnj6qxdp0X9FMRS
+         1BE1nIcsuQr2/0pIKxSV56RgVEuR2AygT6NC2nISO1OycsZxZcINQE64zLK8WlX/F235
+         xXl5yfyUpIjo0gEfxv4IUJiAvGf2vMDn4wyzPpOgGcBZT7fzSGHdfZGjJ7hsP0B+1Vww
+         mU/aFh4Uy8doNoxOYW3Q2MmXGKDm/5yQEcj098sUfERDlX5/k50A35bQd4Y/tRSCTfrI
+         SKbA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@offerkacharge.com header.s=default4 header.b=GnftoPgd;
+       spf=pass (google.com: domain of return-a119-12576-12577-9f8416a0=13193086=8@offerkacharge.com designates 103.96.100.93 as permitted sender) smtp.mailfrom=return-a119-12576-12577-9f8416a0=13193086=8@offerkacharge.com
+Return-Path: <return-a119-12576-12577-9f8416a0=13193086=8@offerkacharge.com>
+Received: from smtp2-12.nickscrew.com (smtp2-12.nickscrew.com. [103.96.100.93])
+        by mx.google.com with ESMTPS id c139-v6si262526itc.4.2018.03.13.21.28.49
+        for <harshmathur1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 13 Mar 2018 21:28:49 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return-a119-12576-12577-9f8416a0=13193086=8@offerkacharge.com designates 103.96.100.93 as permitted sender) client-ip=103.96.100.93;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@offerkacharge.com header.s=default4 header.b=GnftoPgd;
+       spf=pass (google.com: domain of return-a119-12576-12577-9f8416a0=13193086=8@offerkacharge.com designates 103.96.100.93 as permitted sender) smtp.mailfrom=return-a119-12576-12577-9f8416a0=13193086=8@offerkacharge.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=offerkacharge.com; s=default4;
+ t=1521001728; bh=nfR9DNpD0/rd2Fuc9URhhiACd3E=;
+ h=Subject:From:To:Date:List-Unsubscribe:X-CampaignID:Message-ID:
+  X-Mailer-Info:Content-Type:Content-Transfer-Encoding;
+ b=GnftoPgdiq3x7uEwKljsS/KQ/s/hcg7QzmEWLXLhIaluM1Msl2kv5x8RrhykN2Z7j
+  P2R3xF7A/Qt7THSGYaOKsT/NeoND1afsrlBwV8Pb9jiXSjiCIisBDs/5KpH/keufwe
+  JpHEoZYn5idVXI3yGQvn6Eav/nxt2Sua9rDcip1M=
+Subject: Say bye to medical store! Get upto 50% off Medlife!
+From: "E-Store" <newsletter@offerkacharge.com>
+To: harshmathur1990@gmail.com
+Date: 14 Mar 2018 04:28:48 -0000
+List-Unsubscribe: <http://m.mlktclick.com/ga/unsubscribe/2-13193086-119-6378-12577-6b9e6da16a14a33-9874e22be7?confirmed=1>,
+ <mailto:return-a119-12576-12577-9f8416a0=13193086=8u@offerkacharge.com>
+X-CampaignID: s4:12576-b9e301b1f00fb5ca
+Message-ID: <mid-73ab7539fb0c5317042a53acc4b2c169-33@offerkacharge.com>
+X-Mailer-Info: 8.QYxETO.EjM1cjN.AahJ3co1WY0hWdyFTO5ADQn1WYpxmLj9Wb.EzMxkzMwgjN.EjM1czN
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html>
+<html>
+<head>
+<meta charset=3D"utf-8">
+<title>OnlineStore</title>
+<style>
+	/* Basic Fluid Image Pattern CSS */
+    @media only screen and (max-width: 600px) {
+        img.pattern {
+            max-width: 100%;
+            height: auto !important;
+	    border:1px solid #ccc;
+        }
+    }
+</style>
+</head>
+
+<body><table style=3D"max-width: 600px;" border=3D"0" width=3D"100%" cellsp=
+acing=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"font-family: Calibri,Arial,sans-serif; font-size: 13px; line-h=
+eight: 16px; padding-bottom: 10px; color: #4a4a4a;" align=3D"center" valign=
+=3D"top"><br> <a style=3D"color: #1762a0; text-decoration: underline;" href=
+=3D"http://m.mlktclick.com/ga/webviews/4-13193086-119-6378-6451-12577-c8979=
+95730" target=3D"_blank" rel=3D"noopener">View in a browser</a> | <a style=
+=3D"color: #1762a0; text-decoration: underline;" href=3D"http://m.mlktclick=
+.com/ga/unsubscribe/2-13193086-119-6378-12577-6b9e6da16a14a33-9874e22be7" t=
+arget=3D"_blank" rel=3D"noopener">Report Spam</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>&#160;</p>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td><a href=3D"http://m.mlktclick.com/ga/click/2-13193086-119-6378-12577-14=
+154-48a33beaef-9874e22be7" target=3D"_blank" rel=3D"noopener"><img class=3D=
+"pattern" style=3D"border: 1px solid #ccc;" src=3D"http://media.adcanopus.c=
+om/brand/files/adcanopus/1085/Medlife10march.jpg" alt=3D"medlife" /></a></t=
+d>
+</tr>
+</tbody>
+</table>
+
+
+<table style=3D"max-width: 600px;" border=3D"0" width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"font-size: 12px; font-family: Calibri,Arial,sans-serif; line-h=
+eight: 16px; color: #4a4a4a; text-align: center;">=20
+<p>If this email is unwelcome, I apologize. Click <a style=3D"color: #1762a=
+0; text-decoration: underline;" href=3D"http://m.mlktclick.com/ga/unsubscri=
+be/2-13193086-119-6378-12577-6b9e6da16a14a33-9874e22be7" target=3D"_blank" =
+rel=3D"noopener">here</a> to remove <a style=3D"color: #1762a0; text-decora=
+tion: underline;" href=3D"mailto:harshmathur1990@gmail.com" target=3D"_blan=
+k" rel=3D"noopener">harshmathur1990@gmail.com</a> from my contact list.</p>=
+=20
+</td>
+</tr>
+</tbody>
+</table><img src=3D"http://m.mlktclick.com/ga/open/2-13193086-119-6378-1257=
+7-9874e22be7" height=3D"2" width=3D"3" alt=3D""></body>
+</html>=

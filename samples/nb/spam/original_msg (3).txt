@@ -1,0 +1,122 @@
+Delivered-To: harshmathur1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp534832ive;
+        Fri, 16 Mar 2018 01:20:09 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELueq/JWQN84XQcv+vz8DJDS73SFWOFw3QJNStsyRLegMbgl8BTKi3XOgOYSax3wdDHEZQJ6
+X-Received: by 10.107.141.84 with SMTP id p81mr762835iod.97.1521188409854;
+        Fri, 16 Mar 2018 01:20:09 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521188409; cv=none;
+        d=google.com; s=arc-20160816;
+        b=SIhEYeOlrH07FHqnZtKvlxr31TQiyoGklKFRO6NV6dBU6nKr69rLV80kKDhhswwioj
+         bdkOEpDC7cwAI6Yx17NMmgzBTqYTDcH+JZGf1OPrqFkwX5n863kllntl43dRxocaVccX
+         0rV5SV4SqIV/PQVThRUk7gKIbWFPDtoG3kWXb4s0qkqfihUwIIWO9zUBqmFHoEeyfYPw
+         1U2Xu+k3P9QHKnvCd6joqQ0/Bnake4hsYjdLyeJT5sSUTgiKYqx25czk65cq5qQHMm1j
+         qLcl5hVrx1KMoHQ8JZ/Am44NEKQBf7nohKX6R5X3WkCMQlNkQgHPAbK2TiMaTWpwfk4Y
+         ZJoQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:message-id:list-unsubscribe:date:to:from
+         :subject:dkim-signature:arc-authentication-results;
+        bh=h/4Tn5SmJeN/UiSVoP+/Tch7KFZWwsX+u85EXcO5S0Q=;
+        b=k/d2uUvX4mfhinWYEFpZp0wIJEob0vIEB2hjpv/+AN3Q6rUGcLn3/8wPXHwW8ZqIPW
+         UYvTSJS/9YVfoJ6YL62GSk/ckAAj9+PXdHbe6J3opGX7j6v+R0kT8DCbk5cOZVEzKyvm
+         JcBm4TigXBiPz2lAWl1D6qZ9jT6XsTS1yHXBt8v4Zm4+kyRx9vUj7FVQ29WPjbyYpte9
+         T08pF1pt0LYK+XzGCSGTLid6ot8QI74cH2MumrM3VdyRLgbIexgrwsOgGP/YJU6mZ9gJ
+         9WTMZNmHIol8EJU9fHFSIBCZlb4X9otCDk5O4BCYeQwR9bZ8J5F2mZ+KNjQ/3EQ56AgC
+         A9vg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@psftmails.com header.s=default3 header.b=AYzp6z9R;
+       spf=pass (google.com: domain of return-a63-28426-28433-40d12a69=10463316=8@psftmails.com designates 103.96.100.37 as permitted sender) smtp.mailfrom=return-a63-28426-28433-40d12a69=10463316=8@psftmails.com
+Return-Path: <return-a63-28426-28433-40d12a69=10463316=8@psftmails.com>
+Received: from smtp2-6.pikup.in (smtp2-6.pikup.in. [103.96.100.37])
+        by mx.google.com with ESMTPS id r65si3925544ith.9.2018.03.16.01.20.09
+        for <harshmathur1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 16 Mar 2018 01:20:09 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return-a63-28426-28433-40d12a69=10463316=8@psftmails.com designates 103.96.100.37 as permitted sender) client-ip=103.96.100.37;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@psftmails.com header.s=default3 header.b=AYzp6z9R;
+       spf=pass (google.com: domain of return-a63-28426-28433-40d12a69=10463316=8@psftmails.com designates 103.96.100.37 as permitted sender) smtp.mailfrom=return-a63-28426-28433-40d12a69=10463316=8@psftmails.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=psftmails.com; s=default3;
+ t=1521188409; bh=RYbkPS01QHorE8ToHy0u0M8eO6Y=;
+ h=Subject:From:To:Date:List-Unsubscribe:X-CampaignID:Message-ID:
+  X-Mailer-Info:Content-Type:Content-Transfer-Encoding;
+ b=AYzp6z9R12FCtWgYy5b1MNh/IQNYAE+99Bw/7Ik3TnWAdPr1OPjlIWWpduatnRrV2
+  O9Zlwp2bhJ7KCkmeHelVyMAZofafjX8L8Ac0M6VWdU7RcgNRmM2ll5y8yxRnu8NeMf
+  5nSDxnByAPI6if3zGF23tx8VZ3OwYHo9F/NAy8S4=
+Subject: We'll take care of medication & treatment costs of your family
+From: "Health Wallet" <info@psftmails.com>
+To: harshmathur1990@gmail.com
+Date: 16 Mar 2018 08:20:09 -0000
+List-Unsubscribe: <http://mail.psftmails.com/ga/unsubscribe/2-10463316-63-14721-28433-67206810fa3ace8-3a0db67d24?confirmed=1>,
+ <mailto:return-a63-28426-28433-40d12a69=10463316=8u@psftmails.com>
+X-CampaignID: s4:28426-31b37a62b6c16346
+Message-ID: <mid-45e6a6b980cb04b98e0bf2e9df46db58-4@psftmails.com>
+X-Mailer-Info: 8.hZzM.IDO0IjN.AahJ3co1WY0hWdyFTO5ADQn1WYpxmLj9Wb.EDM0YzMzEjN.IDO0MzM
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html>
+<html>
+<head>
+<meta charset=3D"utf-8">
+<title>Health Insurance</title>
+<style>
+	/* Basic Fluid Image Pattern CSS */
+    @media only screen and (max-width: 599px) {
+        img.pattern {
+            max-width: 100%;
+            height: auto !important;
+        }
+    }
+</style>
+</head>
+
+<body><table style=3D"max-width:600px;" border=3D"0" width=3D"100%" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"center" bgcolor=3D"#fff">
+<tbody>
+<tr>
+<td style=3D"color: #9b9b9b; font-family: Georgia,'Times New Roman',Times,s=
+erif; font-size: 11px; line-height: 22px; padding: 0 3px 0 0;" align=3D"cen=
+ter" width=3D"40%"><a style=3D"color: #9b9b9b; font-family: Georgia,'Times =
+New Roman',Times,serif; font-size: 11px; padding-right: 3px; text-align: ri=
+ght;" href=3D"http://mail.psftmails.com/ga/webviews/4-10463316-63-14721-148=
+57-28433-9cf4ac2197" target=3D"_blank" rel=3D"noopener">View Web Version</a=
+></td>
+</tr>
+</tbody>
+</table>
+
+<div style=3D"display: none; font-size: 1px; color: #fefefe; line-height: 1=
+px; font-family: Open Sans,Helvetica,Arial,sans-serif; max-height: 0px; max=
+-width: 0px; overflow: hidden;">XYZ</div>
+<table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+  <tbody>
+    <tr>
+      <td>
+      <a href=3D"http://mail.psftmails.com/ga/click/2-10463316-63-14721-284=
+33-26906-856021db37-3a0db67d24" target=3D"_blank"><img class=3D"pattern" sr=
+c=3D"http://media.adcanopus.com/brand/files/adcanopus/1085/bbhibanner2.jpg"=
+ alt=3D"" style=3D"border: 0px solid #ccc;" /></a>
+      </td>
+    </tr>
+=20=20=20
+  </tbody>
+</table>
+
+
+
+<table style=3D"max-width: 600px;" border=3D"0" width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center" bgcolor=3D"#fff">
+<tbody>
+<tr>
+<td style=3D"color: #606060; font-family: Helvetica,Arial,sans-serif; font-=
+size: 11px; line-height: 22px; padding: 0;" align=3D"center">If you don't w=
+ant to receive these emails <a style=3D"color: #15c; text-decoration: none;=
+" href=3D"http://mail.psftmails.com/ga/unsubscribe/2-10463316-63-14721-2843=
+3-67206810fa3ace8-3a0db67d24" target=3D"_blank" rel=3D"noopener">unsubscrib=
+e</a></td>
+</tr>
+</tbody>
+</table>
+<img src=3D"http://mail.psftmails.com/ga/open/2-10463316-63-14721-28433-3a0=
+db67d24" height=3D"2" width=3D"3" alt=3D""></body>
+</html>

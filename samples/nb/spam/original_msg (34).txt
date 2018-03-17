@@ -1,0 +1,168 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp1031798ive;
+        Wed, 14 Mar 2018 23:21:45 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELvnKgJzNodxR8d1OpxvFTQD855bYr/hJpsGAHbwidchTEssqY4VW2avb9nIBvD2hN7KCcHG
+X-Received: by 10.157.38.175 with SMTP id l44mr4942877otb.217.1521094905702;
+        Wed, 14 Mar 2018 23:21:45 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521094905; cv=none;
+        d=google.com; s=arc-20160816;
+        b=lHFciMULJ157abLZfXNihmQnNODVNwZwNUb+xunKNB/0kI1eyCpAVuVbXT6JkIHsRn
+         o6H4eVAUkyIa4A6uc2spMOXyYlyOgKAfxvlpHlJB97m2tnc+py29gnkJEVWRREevDbtN
+         rO5a4V1zQ4g6nVvqqKAmIxX4dKaV3p/YOg507dElpRTlFn+vHzW6kvBAKGcteEGtnkud
+         +XPskVJJ3WeXfwPDGWd0gjC9TS1fZZlR/ggVzGjX9TZYVnNkZLdAWxkYckjOddxBRWel
+         4ejqejhiSsSb242wgvl1Y98d0LZ4NWLFojwnOB9BUV1GimNUfxaoB5z3DPh+NTlF5vgb
+         JoxA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=reply-to:mime-version:subject:to:from:list-unsubscribe:message-id
+         :date:domainkey-signature:dkim-signature:arc-authentication-results;
+        bh=lSEQuHcM/qXNMULLeYi/vNwpb0RqUGxPY1mB2ynRH+U=;
+        b=pA9+1jylnr2QUNwhpCK39ZzUJE0PP3O4BsbS8w4pa0FqY40GuhZ5wlceRBVqVSMoaN
+         NAEBB+ekatlWWIzC58ChM5wT0fTzZZqB19xThunjbzpBdHSD7XUNGkGY537/Io5w7hwm
+         cXyxIjt86Grn3+rRDTYTxbDpOZPSde/zbSjjqb6A1LBWHPiawGl7fwyXxIyh/2nxpUNi
+         CCj3dm1wkmnAAXN7aHiyQLiol4YP5jCmVJdIHP9AJXM2hmxVhU7MKMVKmD4K6gP6hnWE
+         PZJxA9XUjaBI+u4DVfGvu9g+rCFkw/Cu6Gh4/TLUW/yHtKoXwLKvO5Q//JmaNKfDuxpa
+         mZJw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@edm.efinmail.com header.s=20160510173820 header.b=djPXwyae;
+       spf=pass (google.com: domain of bo-b2twge2bf3q13vaudm3cdbyjjapsb5@b.edm.efinmail.com designates 8.30.201.20 as permitted sender) smtp.mailfrom=bo-b2twge2bf3q13vaudm3cdbyjjapsb5@b.edm.efinmail.com
+Return-Path: <bo-b2twge2bf3q13vaudm3cdbyjjapsb5@b.edm.efinmail.com>
+Received: from mta962.chtah.net (mta962.chtah.net. [8.30.201.20])
+        by mx.google.com with ESMTPS id x54si1224861oth.379.2018.03.14.23.21.45
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 14 Mar 2018 23:21:45 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bo-b2twge2bf3q13vaudm3cdbyjjapsb5@b.edm.efinmail.com designates 8.30.201.20 as permitted sender) client-ip=8.30.201.20;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@edm.efinmail.com header.s=20160510173820 header.b=djPXwyae;
+       spf=pass (google.com: domain of bo-b2twge2bf3q13vaudm3cdbyjjapsb5@b.edm.efinmail.com designates 8.30.201.20 as permitted sender) smtp.mailfrom=bo-b2twge2bf3q13vaudm3cdbyjjapsb5@b.edm.efinmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=edm.efinmail.com;
+	s=20160510173820; t=1521094905; x=1536992505;
+	bh=lSEQuHcM/qXNMULLeYi/vNwpb0RqUGxPY1mB2ynRH+U=; h=From:Reply-To;
+	b=djPXwyaexIPqV1pK8hZ9sYNXZWV7WFmynzpQEhUcIDJo/292mKBVDB3IAreIRbRA3
+	 +jkvNunBw/WSXSrVg7L5CUs/j1pvXLeo9jQ+u8Y9eaZu5/HzUTDYAaTNllMbU3U6JK
+	 /rMuMsujP5qtztGaLGVf/LRF5E05/iSFamOjPGH0oJiOdLJSjW5GaIgCEiIvVjeHLX
+	 yoLn5HxAmxMC0SA9ietX23cx4JIdav4hZXDuyWqLLJa/8n2BbyYFtaM5KIXZOd5UFf
+	 P/B4hdh6uI02LgRD+sJrUY+WQZ9gWdMQ1qf5v56amdS0mA79R7D11fTtwLWf0y98Vi
+	 vJqPCOxLO85KQ==
+DomainKey-Signature: a=rsa-sha1; q=dns; c=nofws;
+  s=200505; d=edm.efinmail.com;
+  b=XOAP/wnOu8RkY0MdDb0za2jiBnofoV8j0wvjVammRMY3+ZdPTlZRGP9sBSK2d3RcziwOwURG3WtdEakNzuF23kVQXgmyuec3NVrQNDYOAoTxU35WnKLrjxcf5wf/P7nNL13wcYIIYlE7WIwtW/InR0dq01hG1u+21sgy3B3RvVk=;
+ h=Date:Message-ID:List-Unsubscribe:From:To:Subject:MIME-Version:Reply-To:X-Mailer:X-mid:X-aid:Content-Type;
+Date: Thu, 15 Mar 2018 06:21:45 -0000
+Message-ID: <b2twge2bf3q13vaudm3cdbyjjapsb5.6397873.6182@mta962.edm.efinmail.com>
+List-Unsubscribe: <mailto:rm-0b2twge2bf3q13vaudm3cdbyjjapsb5@edm.efinmail.com>
+From: "Standard Chartered Bank" <info@edm.efinmail.com>
+To: harshmathur.1990@gmail.com
+Subject: =?UTF-8?B?TW92aWUgdm91Y2hlciB3b3J0aCBScyAyNTAgKyA1WCByZXdhcmQ=?=
+ =?UTF-8?B?cyBvbiBzcGVuZHMgKyBjYXNoYmFjayBvZiBScyA2MDAgcC5tLiBvbiBVYmU=?=
+ =?UTF-8?B?ciBzcGVuZHM=?=
+MIME-Version: 1.0
+Reply-To: "info@edm.efinmail.com" <support-b2twge2bf3q13vaudm3cdbyjjapsb5@edm.efinmail.com>
+X-Mailer: CheetahMailer
+X-mid: 2107102113
+X-aid: 2097868848
+Content-Type: multipart/alternative; boundary="=b2twge2bf3q13vaudm3cdbyjjapsb5"
+
+
+--=b2twge2bf3q13vaudm3cdbyjjapsb5
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+mailto:rm-0b2twge2bf3q13vaudm3cdbyjjapsb5@edm.efinmail.com?subject=Unsubscribe&body=You%20will%20be%20unsubscribed%20from%20mailing%20list. 
+
+http://edm.efinmail.com/a/tBaqg4MB9CvAwB9l9OhAAYZ$x3P/link1 
+
+Report Spam : mailto:rm-0b2twge2bf3q13vaudm3cdbyjjapsb5@edm.efinmail.com?subject=Unsubscribe&body=You%20will%20be%20unsubscribed%20from%20mailing%20list.  | Unsubscribe : mailto:rm-0b2twge2bf3q13vaudm3cdbyjjapsb5@edm.efinmail.com?subject=Unsubscribe&body=You%20will%20be%20unsubscribed%20from%20mailing%20list. 
+
+--=b2twge2bf3q13vaudm3cdbyjjapsb5
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" />
+<style type=3D"text/css">
+@media only screen and (max-width: 607px) {
+.width {
+	width: 100% !important;
+	height: auto !important
+}
+.banner {
+	width: 100% !important;
+	height: auto !important
+}
+}
+</style>
+</head>
+<body style=3D"margin:0px auto;"><img src=3D"http://edm.efinmail.com/a/hBaq=
+g4MB9CvAwB9l9OhAAYZ$x3P/spacer.gif" width=3D"1" height=3D"1" style=3D"displ=
+ay:none !important; max-height:1px !important; max-width:1px !important; bo=
+rder:0 !important; background-color:transparent !important; padding:0 !impo=
+rtant; outline:0 !important; min-height:1px !important; min-width:1px !impo=
+rtant; height:1px !important; width:1px !important;" alt=3D"">
+
+  <table align=3D"center" cellpadding=3D"0" cellspacing=3D"0">
+	<tr>
+	<td align=3D"center" >
+	<a href=3D"mailto:rm-0b2twge2bf3q13vaudm3cdbyjjapsb5@edm.efinmail.com?subj=
+ect=3DUnsubscribe&amp;body=3DYou%20will%20be%20unsubscribed%20from%20mailin=
+g%20list."><img src=3D"http://f.edm.efinmail.com/i/5/2097868848/13_finmail-=
+disclaimer.jpg" class=3D"banner"   style=3D"display:block" /></a></td>
+        </tr>
+		</table>
+<table align=3D"center" border=3D"0" class=3D"width" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"607" style=3D"margin:0px auto; ">
+
+
+
+  <tr>
+    <td align=3D"center">
+=09
+	<table align=3D"center" border=3D"0" class=3D"width" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"607" style=3D"margin:0px auto; ">
+
+=09=09
+=09=09
+		<tr>
+          <td align=3D"left">
+		<a href=3D"http://edm.efinmail.com/a/hBaqg4MB9CvAwB9l9OhAAYZ$x3P/link1"><=
+img src=3D"http://f.edm.efinmail.com/i/5/2097868848/13_SCB_PRC.jpeg" class=
+=3D"banner"  style=3D"display:block" /></a></td>
+        </tr>
+
+=09=09
+      </table>
+=09
+
+=09=20=20
+	  <table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" a=
+lign=3D"center">
+ <tbody>
+<tr>
+ <td style=3D"text-align:center; padding:0px 0px;"><span style=3D"font-fami=
+ly:Arial, sans-serif; font-size:12px; color:#666666; line-height:12px;"><a =
+href=3D"mailto:rm-0b2twge2bf3q13vaudm3cdbyjjapsb5@edm.efinmail.com?subject=
+=3DUnsubscribe&amp;body=3DYou%20will%20be%20unsubscribed%20from%20mailing%2=
+0list." style=3D"color:blue; font-size: 12px; font-family: Verdana, Arial, =
+Helvetica, sans-serif; text-decoration: none;" target=3D"_blank">Report Spa=
+m</a></span> | <span style=3D"font-family:Arial, sans-serif; font-size:12px=
+; color:blue; line-height:16px;"><a href=3D"mailto:rm-0b2twge2bf3q13vaudm3c=
+dbyjjapsb5@edm.efinmail.com?subject=3DUnsubscribe&amp;body=3DYou%20will%20b=
+e%20unsubscribed%20from%20mailing%20list." style=3D"text-decoration:none; c=
+olor:blue;" target=3D"_blank">Unsubscribe</a></span></td>
+</tr>
+</tbody>
+</table>
+=20=20
+</td>
+</tr>
+</table>
+
+</body>
+</html>
+
+
+--=b2twge2bf3q13vaudm3cdbyjjapsb5--
+

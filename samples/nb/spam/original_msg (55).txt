@@ -1,0 +1,160 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp1297354ive;
+        Wed, 14 Mar 2018 01:16:45 -0700 (PDT)
+X-Received: by 10.31.234.193 with SMTP id i184mr2602954vkh.104.1521015405740;
+        Wed, 14 Mar 2018 01:16:45 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521015405; cv=none;
+        d=google.com; s=arc-20160816;
+        b=FIm/UTjhI4k339y4GbunsG0plA6v8XZhb2OYcY0W9I1r/adGil2/qTFYxbs+MV37/O
+         KZ98/5wdwzvQG3qCkIgB4BmEAwOIpFYI5rU7avRvLaxuR7E2Izqmw9XmWeiZKI7dRDpX
+         0loS6z4RWd1v/KXxYaTAXOSF0/AY+TEOPAPXpFc4NkUnxQ9qm/wA37SR8GOL4kJInw3l
+         w8MG19GLGloOxViUgBY+ApatQdgNrlFJVzFLQ9E+un0ba/lMHSUUJmMRzpZc65KdstZY
+         bBCK829kghtCF7eJ7r/JjB7QQMQ3Sp0+Bb97vPrVJ3qkEr3WEZs8Kch5xbxnWHKomGuV
+         W4Yg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:message-id:cc:references:precedence:reply-to:date
+         :mime-version:dkim-signature:arc-authentication-results;
+        bh=cjbWsPJoThPSJslEukIQVKewIA767NsvFL8hx6/UZRQ=;
+        b=fsK7J+yHwTOFXwWD2kdO2SKk65m7NHndkzB9heHUSR/Wxm5POWImBeTWmwSzvEiIRR
+         gWimBRK261eCYoxVpUb8s7PeHf5mFQWpHJ5KH5tN2H4wbps5rbR1aTv7EMhQXLEG7S1n
+         N3A62c170PyArKOWQg6WHxaKMOk9y4xWn/ZEQNI+pcd0v+k+lSHuHeCJyOnywrbDIwDK
+         bvd6GA+kJWAJHiaYPegspf2/f86owCpS6zkIePj2eg7Fd3cJTcI2igAyqaJuQQe6D5Vf
+         TsYbjdoh/TLF5O4jhuU7KnWGV/q4idOxv6N9/cfLwE2QTUViMtXrQ+HQ75Vi+kh3k8u9
+         Jh/Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@google.com header.s=20161025 header.b=vJuR+Hlm;
+       spf=pass (google.com: domain of 3bdqowhakekabuganizer-systemgoogle.comharshmathur.bjjagmail.com@chime-notifications.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3bdqoWhAKEKABUGANIZER-SYSTEMGOOGLE.COMHARSHMATHUR.bjjaGMAIL.COM@chime-notifications.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=google.com
+Return-Path: <3bdqoWhAKEKABUGANIZER-SYSTEMGOOGLE.COMHARSHMATHUR.bjjaGMAIL.COM@chime-notifications.bounces.google.com>
+Received: from mail-sor-f69.google.com (mail-sor-f69.google.com. [209.85.220.69])
+        by mx.google.com with SMTPS id z128sor843472vka.220.2018.03.14.01.16.45
+        for <harshmathur.1990@gmail.com>
+        (Google Transport Security);
+        Wed, 14 Mar 2018 01:16:45 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 3bdqowhakekabuganizer-systemgoogle.comharshmathur.bjjagmail.com@chime-notifications.bounces.google.com designates 209.85.220.69 as permitted sender) client-ip=209.85.220.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@google.com header.s=20161025 header.b=vJuR+Hlm;
+       spf=pass (google.com: domain of 3bdqowhakekabuganizer-systemgoogle.comharshmathur.bjjagmail.com@chime-notifications.bounces.google.com designates 209.85.220.69 as permitted sender) smtp.mailfrom=3bdqoWhAKEKABUGANIZER-SYSTEMGOOGLE.COMHARSHMATHUR.bjjaGMAIL.COM@chime-notifications.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=google.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20161025;
+        h=mime-version:date:reply-to:precedence:references:cc:message-id
+         :subject:from:to;
+        bh=cjbWsPJoThPSJslEukIQVKewIA767NsvFL8hx6/UZRQ=;
+        b=vJuR+HlmkaB7/Vhfn+w41qs1NakklQjpbj5oEfFqiitCs/XqdWRrM3W8cFqsHlxN3/
+         0YSrTMeOQglbrPU/wyRHEqKUXpGVGUJENKypInaiBKF+33S+62dCieHR7l2mj2bCtktE
+         XnSAINX5t468uvKDwAoA0hM5FCK7OjZc421SKDnS1bdT361Zi4kSvxL8S+j0YgkGCLYp
+         FyH3JQKB/huK6RaxgJM9eoqRcBsPBKvA092hP6B571hNb8jBvOsTrlZEg/ZI6S1zIT0S
+         roiBJj7VfqCGO7qWk7Y1no1L239BwaiopQ+WDOGJdZ5I7PjSbwIlWfyzgWv9TIqmIpaP
+         L+hw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:date:reply-to:precedence:references
+         :cc:message-id:subject:from:to;
+        bh=cjbWsPJoThPSJslEukIQVKewIA767NsvFL8hx6/UZRQ=;
+        b=ElienJveeELd1lN+gMp6YCe0dZ9FChmZ9wqv9XgP9jfGlNW7dp6BnNzHZ5sa3LbJfQ
+         F6XVxEu470C9TK4ofjYfcImnxhTFryTUXKVhdpFK6l7sgsJ+4gQbmGZqqktz3vY6u+8K
+         cFN0AatysgGfGjGGP8QivaZ6CyokLJCifNvgY1nP0F/xQfyo3VOWn7sMA/P6iruuNp/Y
+         0V6/mSvgxTCrhGEcebP+HjUFntStgLEaQwLmBDS0yGpQff2kS48+RmrQiwfmgbrfyEG4
+         Z4T9Uc0JB5KrcxURRt/DgOoDLJIYPbjq9QrTNjBDfYISqKSeIU+XBJAh0m43juAJ4koq
+         4MtA==
+X-Gm-Message-State: AElRT7E4Q4EZlL6rqwjGHewUhWesqM08KSxwWukLBNJIUKnrqLwuPjYE
+	yMRa8JFJKh/Km7fUTOrctoO/LINsGehuwcY4Eq2h
+X-Google-Smtp-Source: AG47ELsprfzya+yss4jaVpod65CLA94GnaZx7aWGtW32cNAyACDEXdr7cO6lMxc90Jh5F4oHiebKVwAAWFkdgmCycdhv
+MIME-Version: 1.0
+X-Received: by 10.31.157.194 with SMTP id g185mr1663456vke.86.1521015405318;
+ Wed, 14 Mar 2018 01:16:45 -0700 (PDT)
+Date: Wed, 14 Mar 2018 01:16:45 -0700
+Reply-To: buganizer-system+190923+36982982@google.com
+Precedence: bulk
+References: <36982982+harshmathur.1990@buganizerPROD.corp.google.com>
+Cc: harshmathur.1990@gmail.com
+X-Notifications: a121b48c4a000000
+Message-ID: <36982982+184+185+harshmathur.1990@buganizerPROD.corp.google.com>
+Subject: Re: Issue 36982982: Invalid package error when installing WhatsApp
+ with ART runtime enabled
+From: <buganizer-system@google.com>
+To: b-system+1595510251@google.com
+Content-Type: multipart/alternative; boundary="001a1142d414ef1df405675afee9"
+
+--001a1142d414ef1df405675afee9
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+
+Replying to this email means your email address will be shared with the  
+team that works on this product.
+https://issuetracker.google.com/issues/36982982
+
+Changed
+
+
+li...@gmail.com added comment #178:
+please help me ..when i install my whatapps came out error 400,
+pls help me tq
+
+_______________________________
+Reference Info: 36982982 Invalid package error when installing WhatsApp  
+with ART runtime enabled
+component: Android Public Tracker
+status: Duplicate
+reporter: ma...@gammal.org
+assignee: je...@google.com
+cc: je...@google.com, ma...@gammal.org
+type: Bug P3 S3
+hotlist: [AOSP] duplicate
+AOSP ID: 61916
+ReportedBy: Developer
+
+
+Generated by Google IssueTracker notification system
+
+You're receiving this email because you are subscribed to updates on Google  
+IssueTracker issue 36982982 where you have the role: starred.
+
+--001a1142d414ef1df405675afee9
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div itemscope itemtype=3D"http://schema.org/EmailMessage"><div style=3D'ba=
+ckground-color: #fbe983; border: 1px solid #debe07; color: #594c04; font-we=
+ight: bold; padding: 5px 10px'>Replying to this email means your email addr=
+ess will be shared with the team that works on this product.</div><br>
+<a href=3D"https://issuetracker.google.com/issues/36982982">https://issuetr=
+acker.google.com/issues/36982982</a><br>
+<br>
+<strong>Changed</strong><br>
+<br>
+<span itemprop=3D"text"><strong>li...@gmail.com added <a href=3D"https://is=
+suetracker.google.com/issues/36982982#comment178">comment #178</a>:</strong=
+><br>
+please help me ..when i install my whatapps came out error 400,<br>pls help=
+ me tq<br>
+</span><br>
+_______________________________<div itemprop=3D"about" itemscope itemtype=
+=3D"http://schema.org/CreativeWork"><span itemprop=3D"action" itemscope ite=
+mtype=3D"http://schema.org/ViewAction"><meta itemprop=3D"url" content=3D"ht=
+tps://issuetracker.google.com/issues/36982982"/><meta itemprop=3D"name" con=
+tent=3D"Open bug"/></span><br>
+<strong>Reference Info: 36982982 Invalid package error when installing What=
+sApp with ART runtime enabled</strong><br>
+</div><span style=3D"color:#808080">component: &nbsp;</span>Android Public =
+Tracker<br>
+<span style=3D"color:#808080">status: &nbsp;</span>Duplicate<br>
+<span style=3D"color:#808080">reporter: &nbsp;</span>ma...@gammal.org<br>
+<span style=3D"color:#808080">assignee: &nbsp;</span>je...@google.com<br>
+<span style=3D"color:#808080">cc: &nbsp;</span>je...@google.com, ma...@gamm=
+al.org<br>
+<span style=3D"color:#808080">type: &nbsp;</span>Bug P3 S3<br>
+<span style=3D"color:#808080">hotlist: &nbsp;</span><a href=3D"https://issu=
+etracker.google.com/hotlists/468389" target=3D"_blank">[AOSP] duplicate</a>=
+<br>
+<span style=3D"color:#808080">AOSP ID: &nbsp;</span>61916<br>
+<span style=3D"color:#808080">ReportedBy: &nbsp;</span>Developer<br>
+<br>
+<br>
+Generated by Google IssueTracker notification system<br>
+<br>
+<span style=3D"color:#808080">You're receiving this email because you are s=
+ubscribed to updates on Google IssueTracker issue <a href=3D"https://issuet=
+racker.google.com/issues/36982982">36982982</a> where you have the role: st=
+arred.&nbsp;</span>
+--001a1142d414ef1df405675afee9--

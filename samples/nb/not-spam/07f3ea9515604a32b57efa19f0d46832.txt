@@ -1,0 +1,1 @@
+{"has_bought":false,"book_title":"The Book of Dhaka","language":1,"pricing":{"base_currency":1,"final_price":80.0,"base_price":80.0},"book_id":"07f3ea9515604a32b57efa19f0d46832","preview":{},"wishlist":{}}

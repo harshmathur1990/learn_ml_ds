@@ -1,0 +1,75 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp89415ive;
+        Wed, 14 Mar 2018 05:19:43 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELsO2862KxoJF1DX0x5D9Y4fZtNiHLMfoOAurGLXEntFxJgezUBrPAs5cSs2y53uvNg2bzO3
+X-Received: by 10.99.114.77 with SMTP id c13mr3567287pgn.8.1521029983305;
+        Wed, 14 Mar 2018 05:19:43 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521029983; cv=none;
+        d=google.com; s=arc-20160816;
+        b=UcN4+PG27TG+Ot6LUHwINRAZLkhCzc/UvpN2Ul78+OAkeDH/yyTGOOIMoyKmtPeXbN
+         3XKss9s7s47//mNAKzUjx4h6aVQ1bRgAja2yzTxev7W6NCNJetE+DsX13c08EkXYC7AT
+         4sH4EVdFL07VQztjwuweOFApy99yvLIbVLNuQ7/q1nOvepsIydmJ0V1icDeju0QYFPK9
+         pv5qI9DlWby+dJmKPFzSoqLywFSJLVJl45wdMHwHwwdyVGnhvn+EADmU1jQyu7wyz3T/
+         pKE9mpTrmh4nIV4WlU/qALE+DXD1uPVqt7spcHCUb0YtlYQBjazF3H+dh8pPsN8rrLiX
+         LlIw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:message-id:list-unsubscribe:date:reply-to
+         :sender:to:from:subject:dkim-signature:arc-authentication-results;
+        bh=4JAp6yAhj6efcLtef33LjIftObItt7AlrcSZO6GyPOI=;
+        b=ar+2k85qC1hf7UvH+VM2Jbsij1KY9WiAx5545cV1ysxT2Z4mt1WDZet26BdmZfnpb1
+         guQMJVwhxFiN97H1IWI65h5N7qFvRKqbZv5XjN3/u0lc0jjqS/drEzitubSRJ4DHyumI
+         SnZfxVpXm7BIX/+PIJH7RxxECrauMcrDiHwoB9ZnMoyhiiLGKtzFDkp9OBGjKHcI8Ydg
+         7aSoUPg+xn1HYQ5jBFzJV7PfzQBqyo0fVf8FzpPCwRPI+joJ70bxmKBczrGAGvfMHESl
+         8vnSfsKpkqCMLivwgW851Rgp13zEukPiQbHsb+0B/+ld1/WxOF4IRN3YXEQAJPjqYVXj
+         TQdg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@lucifro.com header.s=default header.b=L7UDI+L4;
+       spf=pass (google.com: domain of return-a124-26613-26615-130fc7a2=56312378=8@lucifro.com designates 192.158.237.27 as permitted sender) smtp.mailfrom=return-a124-26613-26615-130fc7a2=56312378=8@lucifro.com
+Return-Path: <return-a124-26613-26615-130fc7a2=56312378=8@lucifro.com>
+Received: from smtp1-5.lucifro.com (smtp1-5.lucifro.com. [192.158.237.27])
+        by mx.google.com with ESMTPS id k8si2002844pfi.3.2018.03.14.05.19.43
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 14 Mar 2018 05:19:43 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return-a124-26613-26615-130fc7a2=56312378=8@lucifro.com designates 192.158.237.27 as permitted sender) client-ip=192.158.237.27;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@lucifro.com header.s=default header.b=L7UDI+L4;
+       spf=pass (google.com: domain of return-a124-26613-26615-130fc7a2=56312378=8@lucifro.com designates 192.158.237.27 as permitted sender) smtp.mailfrom=return-a124-26613-26615-130fc7a2=56312378=8@lucifro.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=lucifro.com; s=default; t=1521029982;
+ bh=iwyd3zYtq7ZOjQFTuYyHefaTW7I=;
+ h=Subject:From:To:Sender:Reply-To:Date:List-Unsubscribe:
+  X-CampaignID:Message-ID:X-Mailer-Info:Content-Type:
+  Content-Transfer-Encoding;
+ b=L7UDI+L4kx4VwOiUP+eys9ocjadhpPfMsdtRvC4FCeXGhN6yJd1bAGbw7O+8J+OVL
+  K0REV0whFiBrBlG9myanHMv/hZwSOcimRpFFZLVhBORbjgETO1KWrTbn6YgB81Vwrw
+  svgEnMd1WMjH/MMY3wnWMGiw/jH9pSHBm65xN1jI=
+Subject: Only Aadhaar & PAN needed to get up to 40%* returns
+From: =?UTF-8?B?SURGQyBCYW5rIC0gU2F2aW5ncyBBY2NvdW50?= <info@lucifro.com>
+To: harshmathur.1990@gmail.com
+Sender: info@lucifro.com
+Reply-To: info@lucifro.com
+Date: 14 Mar 2018 12:19:42 -0000
+List-Unsubscribe: <http://lucifro.com/ga/unsubscribe/2-56312378-124-13889-26615-a496da65b58bf71-df2a9c487b?confirmed=1>,
+ <mailto:return-a124-26613-26615-130fc7a2=56312378=8u@lucifro.com>
+X-CampaignID: s4:26613-ea0dc23972d1ebb0
+Message-ID: <mid-747ee6f1b433491a1b6d171a0dceb660-2@lucifro.com>
+X-Mailer-Info: 8.QYxIDN.IjN2EzM.gWYyNHatFGdoVncuETO5ADQn1WYpxmLj9Wb.UjNzEjMzcDO.IjN2ETN
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p style=3D"text-align: center;"><img class=3D"overflowingVertical" src=3D"=
+https://s3-us-west-2.amazonaws.com/mailers2018/IDFC/March/single+image/IDFC=
++4+min.jpg"  usemap=3D"#dsp" /></p><map name=3D"dsp">=20
+<area coords=3D"0,0,736,54" shape=3D"rect" href=3D"http://lucifro.com/ga/un=
+subscribe/2-56312378-124-13889-26615-a496da65b58bf71-df2a9c487b" />
+<area  coords=3D"67,68,741,1359" shape=3D"rect" href=3D"http://lucifro.com/=
+ga/click/2-56312378-124-13889-26615-22456-edd69c3622-df2a9c487b"/>
+</map>
+<img src=3D"http://lucifro.com/ga/open/2-56312378-124-13889-26615-df2a9c487=
+b" height=3D"2" width=3D"3" alt=3D""></body>
+</html>=

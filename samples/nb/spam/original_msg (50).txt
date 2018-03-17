@@ -1,0 +1,530 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp35476ive;
+        Wed, 14 Mar 2018 04:26:53 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELu1GBj5cl6vw0Q8RORDc9HZgg66ma5T2asl18pZA26YR1sihu8GMXaz2MEWOqT2MMufSwIV
+X-Received: by 10.98.160.142 with SMTP id p14mr3999623pfl.134.1521026812975;
+        Wed, 14 Mar 2018 04:26:52 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521026812; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ZDDzPmgOCZFFMpGN8mKGDDlkAFZ1/v75W1plmtIiwAujEHvYG5rg/UUrf8HtSE4PrE
+         U9hjEOCIOv/oFu9dsyWhgfVa/P6u6VnWiof4d1CL0hLNplOKwx/hI6owJ7opdevM0NKo
+         CtSQtMQ9/z9S01McV8KwZWrNmFcgTz12Vt3AY07VvhkU1EhPgJ5xS45P2HbBswyaPGYs
+         umnT+OvtIcTC/tEKmZ6RLJ/3O1W6sAs/C1duWypYpv7Vuh75zfEtwt6r5muvgVF+A/u7
+         NU2FaekgzGl1UYuVvgL4nAvB9tjrcEHzyZMzDAYPu+xAI7PSg1O1sHYxsJDSMEJRvs+k
+         KoAA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:sender:to:list-unsubscribe:reply-to:message-id:subject
+         :date:from:dkim-signature:dkim-signature:arc-authentication-results;
+        bh=cmG26PnkNkdJm7ykCR2aUHd97QN4Gt5LcH9ecq6lZDA=;
+        b=b2Xek411V1FM1nYn1Ogn2SE6WQDN7UnX4J7ttg4G5BBSDGiCYh9FcqAm8iETCPYedz
+         P99vyitQoV3Cn6UUXg20QlBYcX3BuYOir/gulj5PssVLs2RdvyQUsRlgxamGY+pfr6OT
+         7KTDzjJ0h+C9PX89ARrpfyHvHFRvOElKfgTGqc5iafOhpbQ9olBFbyyocJ8UWv6flNp/
+         GILUll3rmzj9XhwmRxswJBn7rhL0dyU3dlQK97FeyXMUZaeTLoFtHVTClf73T8AaEaoa
+         YA1ymdBX2mxtM6fAuRbrW3mlaXspuAWVFIZqQHRDVpPq1cthIjX/QsZMvLDVX666Ek/W
+         klMw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mail74.bms6.bmsend.com header.s=bmdeda header.b=ccZ+a6rm;
+       dkim=pass header.i=@bmsend.com header.s=bmdeda header.b=ktPhu5nE;
+       spf=pass (google.com: domain of bounce.79efd9.621a7a56.harshmathur.1990=gmail.com@mail74.bms6.bmsend.com designates 207.8.96.76 as permitted sender) smtp.mailfrom=Bounce.79EFD9.621A7A56.harshmathur.1990=gmail.com@mail74.bms6.bmsend.com
+Return-Path: <Bounce.79EFD9.621A7A56.harshmathur.1990=gmail.com@mail74.bms6.bmsend.com>
+Received: from mail74.bms6.bmsend.com (mail74.bms6.bmsend.com. [207.8.96.76])
+        by mx.google.com with ESMTPS id x1-v6si1804778pln.208.2018.03.14.04.26.52
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 14 Mar 2018 04:26:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce.79efd9.621a7a56.harshmathur.1990=gmail.com@mail74.bms6.bmsend.com designates 207.8.96.76 as permitted sender) client-ip=207.8.96.76;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mail74.bms6.bmsend.com header.s=bmdeda header.b=ccZ+a6rm;
+       dkim=pass header.i=@bmsend.com header.s=bmdeda header.b=ktPhu5nE;
+       spf=pass (google.com: domain of bounce.79efd9.621a7a56.harshmathur.1990=gmail.com@mail74.bms6.bmsend.com designates 207.8.96.76 as permitted sender) smtp.mailfrom=Bounce.79EFD9.621A7A56.harshmathur.1990=gmail.com@mail74.bms6.bmsend.com
+DKIM-Signature: v=1; a=rsa-sha256; d=mail74.bms6.bmsend.com; s=bmdeda;
+	c=relaxed/relaxed; i=info=pokerlauncher.com@mail74.bms6.bmsend.com;
+	t=1521026161;
+	h=subject:from:reply-to:to:date:message-id:list-unsubscribe:sender:
+	content-type:mime-version;
+	bh=cmG26PnkNkdJm7ykCR2aUHd97QN4Gt5LcH9ecq6lZDA=;
+	b=ccZ+a6rmuKdtZei+U7Li9oB3FueVhjQ/V3z+KbscotHgzIOpPQiCi/b+3TIbmmCKEnay9cyfhc3
+	UhCA1jnD9vh2w/+GbnKL4RWkXfF/IAuE1/LrIOuS7pcCwPHS6JfKPKZC7lcv9i6xQ16S+GQ/u4m0I
+	ivkVYR2aZvr2uJ37HIU=
+DKIM-Signature: v=1; a=rsa-sha256; d=bmsend.com; s=bmdeda; c=relaxed/relaxed;
+	t=1521026161;
+	h=subject:from:reply-to:to:date:message-id:x-feedback-id:list-unsubscribe:
+	sender:content-type:mime-version;
+	bh=cmG26PnkNkdJm7ykCR2aUHd97QN4Gt5LcH9ecq6lZDA=;
+	b=ktPhu5nEj3njg9611VUUtDn5BVPlhELZaqn0K6oCYR9qqUyOglgmrpH8oRCwiODpD7iIEzGJHZw
+	7j/8DdA9D+y/FJOxtF37bnOAstHcSux41NIANXkNirrznV64imylPWT1HzY4XH+JtYy0VsxlGJU/R
+	hBDLs5DTsUKcReaniFA=
+From: Pokerlauncher <info@pokerlauncher.com>
+Date: Wed, 14 Mar 2018 07:16:01 -0400
+Subject: 2.5+ Cr GTD up for grabs!
+Message-Id: <e1d490a317284047a7fcf4d805bb8811@mail74.bms6.bmsend.com>
+Reply-To: info@pokerlauncher.com
+X-Identify: <7991257_1645902422@benchmarkemail.com>
+X-Feedback-ID: 617245:7991257:us:benchmarkemail
+X-Campaignid: 7991257
+X-RemoveEmail: 
+ =?us-ascii?q?|unsub|g=3D0&c=3D7991257&l=3D1645902422&e=3Dharshmathur=2E1990=40gmail=2Eco?=
+ =?us-ascii?q?m&ver=3D2&SentFromServer=3D207=2E8=2E96=2E76?=
+X-SentFromServer: 207.8.96.76
+List-Unsubscribe: <mailto:unsubscribe@bmesrv.com?subject=unsubscribe>,
+ =?us-ascii?q?=3Chttp=3A=2F=2Fwww=2Ebenchmarkemail=2Ecom=2Fc=2Fu=3F9tSN8Jgb1CZtReuKQZRrEXqahb?=
+ =?us-ascii?q?VYGdVG91JbJHztYDwlH6HW4nCag94KhdoGW0ejAxyc53vh9AZ8wY85WdkyUQ%?=
+ =?us-ascii?q?3D%3D=3E?=
+X-Mailer: BME Mailer - **MIMK6f25191fe3314a6ba93b2b48f**
+X-Report-Abuse: 
+ =?us-ascii?q?http=3A=2F=2Fwww=2Ebenchmarkemail=2Ecom=2FAbuse=3F9tSN8Jgb1CZtReuKQZRrEXqah?=
+ =?us-ascii?q?bVYGdVG91JbJHztYDwlH6HW4nCag94KhdoGW0ejAxyc53vh9AZ8wY85WdkyUQ?=
+ =?us-ascii?q?%3D%3D?=
+X-BM-User: 96B1D
+To: harshmathur.1990@gmail.com
+Sender: Pokerlauncher <info=pokerlauncher.com@mail74.bms6.bmsend.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=-eNgLf1uXZkqF81CnP3+Ktg=="
+
+--=-eNgLf1uXZkqF81CnP3+Ktg==
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+[1]
+
+[2] view this email in your browser
+
+you are receiving this email because of your relationship with 4d. ple=
+ase [3] reconfirmyour interest in receiving emails from us. if you do =
+not wish to receive any more emails, you can [4] unsubscribe here.
+this message was sent to test@benchmarkemail.com by info@pokerlauncher=
+.com
+new delhi india
+
+unsubscribe| manage subscription| forward email| report abuse
+
+
+ References:
+
+1. u=3D7a75ab5
+2. http://pokerlauncher.benchurl.com/c/v?e=3DC7C552&c=3D96B1D&t=3D0&l=3D=
+621A7A56&email=3DcYpWwd6%2BZDQhmIjTJfKXOu%2Bii4GciVanCJ%2FwYbRnGP0%3D
+3. http://pokerlauncher.benchurl.com/c/opt?e=3DC7C552&c=3D96B1D&t=3D0&=
+l=3D621A7A56&email=3DcYpWwd6%2BZDQhmIjTJfKXOu%2Bii4GciVanCJ%2FwYbRnGP0=
+%3D
+4. http://pokerlauncher.benchurl.com/c/u?e=3DC7C552&c=3D96B1D&t=3D0&l=3D=
+621A7A56&email=3DcYpWwd6%2BZDQhmIjTJfKXOu%2Bii4GciVanCJ%2FwYbRnGP0%3D =
+  =20
+   =20
+This message was sent to harshmathur.1990@gmail.com by info@pokerlaunc=
+her.com   =20
+   =20
+You can modify/update your subscription via the link below.   =20
+   =20
+Unsubscribe from all mailings   =20
+http://pokerlauncher.benchurl.com/c/su?e=3DC7C552&c=3D96B1D&l=3D621A7A=
+56&email=3DcYpWwd6%2BZDQhmIjTJfKXOu%2Bii4GciVanCJ%2FwYbRnGP0%3D&relid=3D=
+A0B1A4C   =20
+   =20
+Manage Subscription   =20
+http://pokerlauncher.benchurl.com/c/s?e=3DC7C552&c=3D96B1D&l=3D621A7A5=
+6&email=3DcYpWwd6%2BZDQhmIjTJfKXOu%2Bii4GciVanCJ%2FwYbRnGP0%3D&relid=3D=
+A0B1A4C   =20
+   =20
+Forward Email   =20
+http://pokerlauncher.benchurl.com/c/f?e=3DC7C552&c=3D96B1D&l=3D621A7A5=
+6&email=3DcYpWwd6%2BZDQhmIjTJfKXOu%2Bii4GciVanCJ%2FwYbRnGP0%3D&relid=3D=
+A0B1A4C   =20
+   =20
+Report Abuse   =20
+http://pokerlauncher.benchurl.com/Abuse?e=3DC7C552&c=3D96B1D&l=3D621A7=
+A56&email=3DcYpWwd6%2BZDQhmIjTJfKXOu%2Bii4GciVanCJ%2FwYbRnGP0%3D&relid=
+=3DA0B1A4C   =20
+   =20
+New Delhi India   =20
+   =20
+Email Marketing   =20
+benchmarkemail.com   =20
+ [http://pokerlauncher.benchurl.com]   =20
+   =20
+View this email in your browser:    =20
+   =20
+http://pokerlauncher.benchurl.com/c/v?e=3DC7C552&c=3D96B1D&l=3D621A7A5=
+6&email=3DcYpWwd6%2BZDQhmIjTJfKXOu%2Bii4GciVanCJ%2FwYbRnGP0%3D&relid=3D=
+A0B1A4C   =20
+   =20
+You are receiving this email because of your relationship with 4D. Ple=
+ase reconfirm your interest in receiving emails from us.   If you do n=
+ot wish to receive any more emails, you can unsubscribe here or report=
+ abuse.   =20
+   =20
+http://pokerlauncher.benchurl.com/c/u?e=3DC7C552&c=3D96B1D&l=3D621A7A5=
+6&email=3DcYpWwd6%2BZDQhmIjTJfKXOu%2Bii4GciVanCJ%2FwYbRnGP0%3D&relid=3D=
+A0B1A4C
+
+--=-eNgLf1uXZkqF81CnP3+Ktg==
+Content-Type: text/html; charset=utf-8
+Content-Id: <BJKMMMEUV3U4.L8M9KMGPH3CU2@WIN-JNGF88NFOCH>
+Content-Transfer-Encoding: quoted-printable
+
+
+<!DOCTYPE html>   =20
+<html>   =20
+<head>   =20
+<meta content=3D"width=3Ddevice-width, initial-scale=3D1.0" name=3D"vi=
+ewport">   =20
+<style type=3D"text/css">   =20
+/*** BMEMBF Start ***/   =20
+[name=3DbmeMainBody]{min-height:1000px;}   =20
+@media only screen and (max-width: 480px){table.blk, table.tblText, .b=
+meHolder, .bmeHolder1, table.bmeMainColumn{width:100% !important;} }  =
+     =20
+@media only screen and (max-width: 480px){.bmeImageCard table.bmeCapti=
+onTable td.tblCell{padding:0px 20px 20px 20px !important;} }       =20
+@media only screen and (max-width: 480px){.bmeImageCard table.bmeCapti=
+onTable.bmeCaptionTableMobileTop td.tblCell{padding:20px 20px 0 20px !=
+important;} }       =20
+@media only screen and (max-width: 480px){table.bmeCaptionTable td.tbl=
+Cell{padding:10px !important;} }       =20
+@media only screen and (max-width: 480px){table.tblGtr{ padding-bottom=
+:20px !important;} }       =20
+@media only screen and (max-width: 480px){td.blk_container, .blk_paren=
+t, .bmeLeftColumn, .bmeRightColumn, .bmeColumn1, .bmeColumn2, .bmeColu=
+mn3, .bmeBody{display:table !important;max-width:600px !important;widt=
+h:100% !important;} }       =20
+@media only screen and (max-width: 480px){table.container-table, .bmeh=
+eadertext, .container-table { width: 95% !important; } }       =20
+@media only screen and (max-width: 480px){.mobile-footer, .mobile-foot=
+er a{ font-size: 13px !important; line-height: 18px !important; } .mob=
+ile-footer{ text-align: center !important; } table.share-tbl { padding=
+-bottom: 15px; width: 100% !important; } table.share-tbl td { display:=
+ block !important; text-align: center !important; width: 100% !importa=
+nt; } }       =20
+@media only screen and (max-width: 480px){td.bmeShareTD, td.bmeSocialT=
+D{width: 100% !important; } }       =20
+@media only screen and (max-width: 480px){td.tdBoxedTextBorder{width: =
+auto !important;}}   =20
+@media only screen and (max-width: 480px){table.blk, table[name=3DtblT=
+ext], .bmeHolder, .bmeHolder1, table[name=3DbmeMainColumn]{width:100% =
+!important;} }   =20
+@media only screen and (max-width: 480px){.bmeImageCard table.bmeCapti=
+onTable td[name=3DtblCell]{padding:0px 20px 20px 20px !important;} }  =
+ =20
+@media only screen and (max-width: 480px){.bmeImageCard table.bmeCapti=
+onTable.bmeCaptionTableMobileTop td[name=3DtblCell]{padding:20px 20px =
+0 20px !important;} }   =20
+@media only screen and (max-width: 480px){table.bmeCaptionTable td[nam=
+e=3DtblCell]{padding:10px !important;} }   =20
+@media only screen and (max-width: 480px){table[name=3DtblGtr]{ paddin=
+g-bottom:20px !important;} }   =20
+@media only screen and (max-width: 480px){td.blk_container, .blk_paren=
+t, [name=3DbmeLeftColumn], [name=3DbmeRightColumn], [name=3DbmeColumn1=
+], [name=3DbmeColumn2], [name=3DbmeColumn3], [name=3DbmeBody]{display:=
+table !important;max-width:600px !important;width:100% !important;} } =
+  =20
+@media only screen and (max-width: 480px){table[class=3Dcontainer-tabl=
+e], .bmeheadertext, .container-table { width: 95% !important; } }   =20
+@media only screen and (max-width: 480px){.mobile-footer, .mobile-foot=
+er a{ font-size: 13px !important; line-height: 18px !important; } .mob=
+ile-footer{ text-align: center !important; } table[class=3D"share-tbl"=
+] { padding-bottom: 15px; width: 100% !important; } table[class=3D"sha=
+re-tbl"] td { display: block !important; text-align: center !important=
+; width: 100% !important; } }   =20
+@media only screen and (max-width: 480px){td[name=3DbmeShareTD], td[na=
+me=3DbmeSocialTD]{width: 100% !important; } }   =20
+@media only screen and (max-width: 480px){td[name=3DtdBoxedTextBorder]=
+{width: auto !important;}}   =20
+@media only screen and (max-width: 480px){.bmeImageCard table.bmeImage=
+Table{height: auto !important; width:100% !important; padding:20px !im=
+portant;clear:both; float:left !important; border-collapse: separate;}=
+ }   =20
+@media only screen and (max-width: 480px){.bmeMblInline table.bmeImage=
+Table{height: auto !important; width:100% !important; padding:10px !im=
+portant;clear:both;} }   =20
+@media only screen and (max-width: 480px){.bmeMblInline table.bmeCapti=
+onTable{width:100% !important; clear:both;} }   =20
+@media only screen and (max-width: 480px){table.bmeImageTable{height: =
+auto !important; width:100% !important; padding:10px !important;clear:=
+both; } }   =20
+@media only screen and (max-width: 480px){table.bmeCaptionTable{width:=
+100% !important;  clear:both;} }   =20
+@media only screen and (max-width: 480px){table.bmeImageContainer{widt=
+h:100% !important; clear:both; float:left !important;} }   =20
+@media only screen and (max-width: 480px){table.bmeImageTable td{paddi=
+ng:0px !important; height: auto; } }   =20
+@media only screen and (max-width: 480px){td.bmeImageContainerRow{padd=
+ing:0px !important;}}   =20
+@media only screen and (max-width: 480px){img.mobile-img-large{width:1=
+00% !important; height:auto !important;} }   =20
+@media only screen and (max-width: 480px){img.bmeRSSImage{max-width:32=
+0px; height:auto !important;}}   =20
+@media only screen and (min-width: 640px){img.bmeRSSImage{max-width:60=
+0px !important; height:auto !important;} }   =20
+@media only screen and (max-width: 480px){.trMargin img{height:10px;} =
+}   =20
+@media only screen and (max-width: 480px){div.bmefooter, div.bmeheader=
+{ display:block !important;} }   =20
+@media only screen and (max-width: 480px){.tdPart{ width:100% !importa=
+nt; clear:both; float:left !important; } }   =20
+@media only screen and (max-width: 480px){table.blk_parent1, table.tbl=
+Part {width: 100% !important; } }   =20
+@media only screen and (max-width: 480px){.tblLine{min-width: 100% !im=
+portant;}}    =20
+@media only screen and (max-width: 480px){.bmeMblCenter img { margin: =
+0 auto; } }      =20
+@media only screen and (max-width: 480px){.bmeMblCenter, .bmeMblCenter=
+ div, .bmeMblCenter span  { text-align: center !important; text-align:=
+ -webkit-center !important; } }   =20
+@media only screen and (max-width: 480px){.bmeNoBr br, .bmeImageGutter=
+Row, .bmeMblStackCenter .bmeShareItem .tdMblHide { display: none !impo=
+rtant; } }   =20
+@media only screen and (max-width: 480px){.bmeMblInline table.bmeImage=
+Table, .bmeMblInline table.bmeCaptionTable, td.bmeMblInline { clear: n=
+one !important; width:50% !important; } }   =20
+@media only screen and (max-width: 480px){.bmeMblInlineHide, .bmeShare=
+Item .trMargin { display: none !important; } }   =20
+@media only screen and (max-width: 480px){.bmeMblInline table.bmeImage=
+Table img, .bmeMblShareCenter.tblContainer.mblSocialContain, .bmeMblFo=
+llowCenter.tblContainer.mblSocialContain{width: 100% !important; } }  =
+ =20
+@media only screen and (max-width: 480px){.bmeMblStack> .bmeShareItem{=
+width: 100% !important; clear: both !important;} }   =20
+@media only screen and (max-width: 480px){.bmeShareItem{padding-top: 1=
+0px !important;} }   =20
+@media only screen and (max-width: 480px){.tdPart.bmeMblStackCenter, .=
+bmeMblStackCenter .bmeFollowItemIcon {padding:0px !important; text-ali=
+gn: center !important;} }   =20
+@media only screen and (max-width: 480px){.bmeMblStackCenter> .bmeShar=
+eItem{width: 100% !important;} }   =20
+@media only screen and (max-width: 480px){ td.bmeMblCenter {border: 0 =
+none transparent !important;}}   =20
+@media only screen and (max-width: 480px){.bmeLinkTable.tdPart td{padd=
+ing-left:0px !important; padding-right:0px !important; border:0px none=
+ transparent !important;padding-bottom:15px !important;height: auto !i=
+mportant;}}   =20
+@media only screen and (max-width: 480px){.tdMblHide{width:10px !impor=
+tant;} }   =20
+@media only screen and (max-width: 480px){.bmeShareItemBtn{display:tab=
+le !important;}}   =20
+@media only screen and (max-width: 480px){.bmeMblStack td {text-align:=
+ left !important;}}   =20
+@media only screen and (max-width: 480px){.bmeMblStack .bmeFollowItem{=
+clear:both !important; padding-top: 10px !important;}}   =20
+@media only screen and (max-width: 480px){.bmeMblStackCenter .bmeFollo=
+wItemText{padding-left: 5px !important;}}   =20
+@media only screen and (max-width: 480px){.bmeMblStackCenter .bmeFollo=
+wItem{clear:both !important;align-self:center; float:none !important; =
+padding-top:10px;margin: 0 auto;}}   =20
+@media only screen and (max-width: 480px){   =20
+.tdPart> table{width:100% !important;}   =20
+}   =20
+@media only screen and (max-width: 480px){.tdPart>table.bmeLinkContain=
+er{ width:auto !important; }}   =20
+@media only screen and (max-width: 480px){.tdPart.mblStackCenter>table=
+.bmeLinkContainer{ width:100% !important;}}    =20
+.blk_parent:first-child, .blk_parent{float:left;}   =20
+.blk_parent:last-child{float:right;}   =20
+/*** BMEMBF END ***/   =20
+   =20
+/* Background color settings=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D*=
+/   =20
+	table[name=3D"bmeMainBody"], body{   		background-color: #e6e6e8;   	=
+}   =20
+                /* Preheader settings=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D*/   =20
+	/* Preheader background color */   =20
+     	td[name=3D"bmePreHeader"]{         		background-color:#e6e6e8; 	=
+}   =20
+            /* Header settings=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D*=
+/   =20
+	/* Header background color */   =20
+     	td[name=3D"bmeHeader"]{   		background: #ffffff;  	}   =20
+  /* Content/Body settings=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D*/  =
+ =20
+	/* Content background color */   =20
+      	td[name=3D"bmeBody"], table[name=3D"bmeBody"]{      		backgroun=
+d-color:#ffffff;  	}   =20
+                  /* Body 2 settings - COPY SETTINGS FROM CONTENT/BODY=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D*/   =20
+	/* Body 2 background color */   =20
+	td[name=3D"bmePreFooter"]{      		background-color:#ffffff;  	}   =20
+            /* Footer settings=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D*=
+/   =20
+	/* Footer background color */   =20
+     	td[name=3D"bmeFooter"]{      		background-color:#e6e6e8;  	}   =20
+          /* Default Settings for fonts for blocks=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D*/   =20
+	td[name=3D"tblCell"], .blk{      		font-family: initial;       		font=
+-weight: normal;       		font-size: initial;  	}   =20
+ table[name=3D"blk_blank"] td[name=3D"tblCell"]{font-family: Arial, He=
+lvetica, sans-serif;font-size: 14px;}   =20
+   =20
+</style>   =20
+</head>   =20
+<body marginheight=3D0 marginwidth=3D0 topmargin=3D0 leftmargin=3D0 st=
+yle=3D"height: 100% !important; margin: 0; padding: 0; width: 100% !im=
+portant;min-width: 100%;">   =20
+   =20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ name=3D"bmeMainBody" style=3D"background-color: rgb(230, 230, 232);" =
+bgcolor=3D"#e6e6e8"><tbody><tr><td width=3D"100%" valign=3D"top" align=
+=3D"center">   =20
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" name=3D"bmeMai=
+nColumnParentTable"><tbody><tr><td name=3D"bmeMainColumnParent">    =20
+<table name=3D"bmeMainColumn" class=3D"bmeHolder bmeMainColumn" style=3D=
+"max-width: 600px; overflow: visible;" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" align=3D"center">    <tbody><tr><td width=3D"100%" cl=
+ass=3D"blk_container bmeHolder" name=3D"bmePreHeader" valign=3D"top" a=
+lign=3D"center" style=3D"background-color: rgb(230, 230, 232); color: =
+rgb(102, 102, 102);   " bgcolor=3D"#e6e6e8"></td></tr> <tr><td width=3D=
+"100%" class=3D"bmeHolder" valign=3D"top" align=3D"center" name=3D"bme=
+MainContentParent" style=3D"border-color: rgb(128, 128, 128); border-r=
+adius: 5px; border-collapse: separate; border-spacing: 0px;">    =20
+<table name=3D"bmeMainContent" style=3D"border-radius: 5px; border-col=
+lapse: separate;border-spacing: 0px; overflow: hidden;" width=3D"100%"=
+ cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center"> <t=
+body><tr><td width=3D"100%" class=3D"blk_container bmeHolder" name=3D"=
+bmeHeader" valign=3D"top" align=3D"center" style=3D"background-color: =
+rgb(255, 255, 255);   " bgcolor=3D"#ffffff"><div id=3D"dv_2" class=3D"=
+blk_wrapper" style=3D"">   =20
+<table class=3D"blk" name=3D"blk_image" width=3D"600" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0"><tbody><tr><td>   =20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+><tbody><tr><td class=3D"bmeImage" style=3D"padding: 20px; border-coll=
+apse: collapse;" align=3D"center">   =20
+<a href=3D"http://pokerlauncher.benchurl.com/c/l?u=3D7A75AB5&e=3DC7C55=
+2&c=3D96B1D&t=3D0&l=3D621A7A56&email=3DcYpWwd6%2BZDQhmIjTJfKXOu%2Bii4G=
+ciVanCJ%2FwYbRnGP0%3D&seq=3D1" target=3D_blank><img   =20
+ src=3D"https://images.benchmarkemail.com/client617245/image5434706.gi=
+f" class=3D"mobile-img-large" width=3D"560" style=3D"max-width: 640px;=
+ display: block; width: 560px;" alt=3D"" border=3D"0"></a></td></tr></=
+tbody>   =20
+</table></td></tr></tbody>   =20
+</table></div>
+</td></tr> <tr><td width=3D"100%" class=3D"blk_container bmeHolder bme=
+Body" name=3D"bmeBody" valign=3D"top" align=3D"center" style=3D"backgr=
+ound-color: rgb(255, 255, 255); color: rgb(56, 56, 56);   " bgcolor=3D=
+"#ffffff"><div id=3D"dv_3" class=3D"blk_wrapper" style=3D"">   =20
+<table class=3D"blk" name=3D"blk_text" width=3D"600" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0"><tbody><tr><td>   =20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%"=
+ class=3D"bmeContainerRow"><tbody><tr><td class=3D"tdPart" valign=3D"t=
+op" align=3D"center">   =20
+<table name=3D"tblText" style=3D"float:left;" align=3D"left" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" class=3D"tblText=
+"><tbody><tr><td name=3D"tblCell" style=3D"padding: 20px; font-size: 3=
+0px; font-weight: 400; font-family: Arial, Helvetica, sans-serif; colo=
+r: rgb(56, 56, 56); text-align: left;" align=3D"left" valign=3D"top" c=
+lass=3D"tblCell"></td></tr></tbody>   =20
+</table></td></tr></tbody>   =20
+</table></td></tr></tbody>   =20
+</table></div>
+
+
+</td></tr> <tr><td width=3D"100%" class=3D"blk_container bmeHolder" na=
+me=3D"bmePreFooter" valign=3D"top" align=3D"center" style=3D"backgroun=
+d-color: rgb(255, 255, 255);   " bgcolor=3D"#ffffff"><div id=3D"dv_6" =
+class=3D"blk_wrapper" style=3D"">   =20
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" name=3D"blk_di=
+vider" width=3D"600" class=3D"blk"><tbody><tr><td style=3D"padding-top=
+:10px; padding-bottom:10px;padding-left:20px;padding-right:20px;" clas=
+s=3D"tblCellMain">   =20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ style=3D"border-top: 1px solid rgb(225, 225, 225); min-width: 1px;" c=
+lass=3D"tblLine"><tbody><tr><td><span></span></td></tr></tbody>   =20
+</table></td></tr></tbody>   =20
+</table></div>
+
+</td></tr> </tbody>   =20
+</table> </td></tr>  <tr><td width=3D"100%" class=3D"blk_container bme=
+Holder" name=3D"bmeFooter" valign=3D"top" align=3D"center" style=3D"ba=
+ckground-color: rgb(230, 230, 232); color: rgb(102, 102, 102);   " bgc=
+olor=3D"#e6e6e8"><div id=3D"dv_9" class=3D"blk_wrapper" style=3D"">   =
+=20
+<table width=3D"600" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+class=3D"blk" name=3D"blk_permission" style=3D""><tbody><tr><td name=3D=
+"tblCell" class=3D"tblCell" style=3D"padding:20px;" valign=3D"top" ali=
+gn=3D"left">   =20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%"=
+><tbody><tr><td name=3D"bmePermissionText" style=3D"text-align:left;" =
+align=3D"left"><span style=3D"font-family: Arial, Helvetica, sans-seri=
+f; font-weight: normal; font-size: 11px;line-height: 140%;">   =20
+<a style=3D"color: #16a7e0;" target=3D"_new" href=3D"http://pokerlaunc=
+her.benchurl.com/c/v?e=3DC7C552&c=3D96B1D&t=3D0&l=3D621A7A56&email=3Dc=
+YpWwd6%2BZDQhmIjTJfKXOu%2Bii4GciVanCJ%2FwYbRnGP0%3D">View this email i=
+n your browser</a>
+   =20
+<br>You are receiving this email because of your relationship with 4D.=
+ Please    =20
+<a style=3D"color: #16a7e0;" target=3D"_new" href=3D"http://pokerlaunc=
+her.benchurl.com/c/opt?e=3DC7C552&c=3D96B1D&t=3D0&l=3D621A7A56&email=3D=
+cYpWwd6%2BZDQhmIjTJfKXOu%2Bii4GciVanCJ%2FwYbRnGP0%3D">reconfirm</a> yo=
+ur interest in receiving emails from us.   If you do not wish to recei=
+ve any more emails, you can    =20
+<a style=3D"color: #16a7e0;" target=3D"_new" href=3D"http://pokerlaunc=
+her.benchurl.com/c/u?e=3DC7C552&c=3D96B1D&t=3D0&l=3D621A7A56&email=3Dc=
+YpWwd6%2BZDQhmIjTJfKXOu%2Bii4GciVanCJ%2FwYbRnGP0%3D">unsubscribe here<=
+/a>.
+</span></td></tr></tbody>   =20
+</table></td></tr></tbody>   =20
+</table></div><div id=3D"dv_10" class=3D"blk_wrapper" style=3D"">   =20
+<table width=3D"600" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+class=3D"blk" name=3D"blk_footer" style=3D""><tbody><tr><td name=3D"tb=
+lCell" class=3D"tblCell" style=3D"padding:20px;" valign=3D"top" align=3D=
+"left">   =20
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%"=
+><tbody><tr><td name=3D"bmeBadgeText" style=3D"text-align:left; word-b=
+reak: break-all;" align=3D"left"><span id=3D"spnFooterText" style=3D"f=
+ont-family: Arial, Helvetica, sans-serif; font-weight: normal; font-si=
+ze: 11px; line-height: 140%;">This message was sent to harshmathur.199=
+0@gmail.com by info@pokerlauncher.com   =20
+<br>New Delhi India</span>   =20
+<br>   =20
+<br><span style=3D"font-family: Arial, Helvetica, sans-serif; font-wei=
+ght: normal; font-size: 11px; line-height: 140%;">   =20
+<a href=3Dhttp://pokerlauncher.benchurl.com/c/su?e=3DC7C552&c=3D96B1D&=
+l=3D621A7A56&email=3DcYpWwd6%2BZDQhmIjTJfKXOu%2Bii4GciVanCJ%2FwYbRnGP0=
+%3D&relid=3DA0B1A4C><img   =20
+ src=3D"https://www.benchmarkemail.com/images/verified.png" alt=3D"Uns=
+ubscribe from all mailings" title=3D"Unsubscribe from all mailings" bo=
+rder=3D0 /></a>    =20
+<a class=3Dbmefootertext  href=3D"http://pokerlauncher.benchurl.com/c/=
+su?e=3DC7C552&c=3D96B1D&l=3D621A7A56&email=3DcYpWwd6%2BZDQhmIjTJfKXOu%=
+2Bii4GciVanCJ%2FwYbRnGP0%3D&relid=3DA0B1A4C"  style=3D"color:inherit;t=
+ext-decoration:underline;">Unsubscribe</a>   |    =20
+<a class=3Dbmefootertext  href=3D"http://pokerlauncher.benchurl.com/c/=
+s?e=3DC7C552&c=3D96B1D&l=3D621A7A56&email=3DcYpWwd6%2BZDQhmIjTJfKXOu%2=
+Bii4GciVanCJ%2FwYbRnGP0%3D&relid=3DA0B1A4C"  style=3D"color:inherit;te=
+xt-decoration:underline;">Manage Subscription</a>   |     =20
+<a class=3Dbmefootertext  href=3D"http://pokerlauncher.benchurl.com/c/=
+f?e=3DC7C552&c=3D96B1D&l=3D621A7A56&email=3DcYpWwd6%2BZDQhmIjTJfKXOu%2=
+Bii4GciVanCJ%2FwYbRnGP0%3D&relid=3DA0B1A4C"  style=3D"color:inherit;te=
+xt-decoration:underline;">Forward Email</a>  |     =20
+<a class=3Dbmefootertext  href=3D"http://pokerlauncher.benchurl.com/Ab=
+use?e=3DC7C552&c=3D96B1D&l=3D621A7A56&email=3DcYpWwd6%2BZDQhmIjTJfKXOu=
+%2Bii4GciVanCJ%2FwYbRnGP0%3D&relid=3DA0B1A4C"  style=3D"color:inherit;=
+text-decoration:underline;">Report Abuse</a>   =20
+<br></span></td></tr><tr><td name=3D"bmeBadgeImage" style=3D"text-alig=
+n: left; padding-top: 20px; word-break: break-all;" align=3D"left">   =
+=20
+<a href=3D"http://www.benchmarkemail.com?p=3D500289" target=3D""><img =
+  =20
+ src=3D"https://www.benchmarkemail.com/images/web4/misc/emailfooter/op=
+t9.png"  border=3D0 /></a></td></tr></tbody>   =20
+</table></td></tr></tbody>   =20
+</table></div></td></tr> </tbody>   =20
+</table></td></tr></tbody>   =20
+</table></td></tr></tbody>   =20
+</table>   =20
+</body>   =20
+</html><img   =20
+ src=3D'http://pokerlauncher.benchurl.com/c/o?e=3DC7C552&c=3D96B1D&l=3D=
+621A7A56&email=3DcYpWwd6%2BZDQhmIjTJfKXOu%2Bii4GciVanCJ%2FwYbRnGP0%3D&=
+relid=3DA0B1A4C' alt=3D'' border=3D0 style=3D"display:none;" height=3D=
+1 width=3D1>
+
+
+--=-eNgLf1uXZkqF81CnP3+Ktg==--
+

@@ -1,0 +1,118 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp371387ive;
+        Thu, 15 Mar 2018 21:30:33 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELv6JUFh7ja+OF7A7OC6qBxp5z/cG+NYTly/biip0Z52LgOEDpnmXbjUt761CvNtfbzfL2Wf
+X-Received: by 10.107.29.205 with SMTP id d196mr343137iod.18.1521174633202;
+        Thu, 15 Mar 2018 21:30:33 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521174633; cv=none;
+        d=google.com; s=arc-20160816;
+        b=KXUcwgzSOKfoUf8ns2mHOk4ff3maGb5QOnD+OIjn4+xsZ90sXSGy0XgGiFYcgFkSNS
+         Em2gRLXVdHXBEv6HcuMDvweByoQukNP8FudEpjPQq2bA9kNqzgkh+eX1o9CeBZzGi0en
+         2kQZD0y7CK44zHroukrjapcsdby/SWNFnUWn5HRSPL2rGMLOvtxFmfNEEXKRHULxpWQK
+         UkZL3ZgSOHJJEt6jHwfucUZ+CX7ohSr5sTA7ooIAQr3XJhc6KBy/aIDNX2F8pS5te8N3
+         PuGab8ITATTRIpdCG9mW2o1mMSVYU/uQWZHJ0LxqIHO+kG3H92CGeMcuIhYP99gfFWmQ
+         DGXA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:message-id:list-unsubscribe:date:to:from
+         :subject:dkim-signature:arc-authentication-results;
+        bh=pQ8C6h8n8BLgjzZZY254sh/D26YAqLUp9Zfpo0s66JQ=;
+        b=CfKP/d23x8zBb2SLcjRYnRoFcjt1PWewvKU6Tyt4KVjOaAG2R2pzQhegFGHu+fLPhn
+         x0l/5e6aroGROHq/DisfW9EA1ZZH/rOzNiXeG4aF42BUxvXTiXjwZBCH7JTTrz4ep1mz
+         9Ncd1B7UDgiNzldi6hBefcmHmwbbrRm3AygT3p7NmQgYTiDGcMmEVSHDI4rJz7nPoSpZ
+         8Fz3kageh5ZCfTvN8nqBe7wvrGeB7tMJsREx/pm5YxYBpys0fB8X02fQ0C0GyPJkWnyY
+         bxeIwanTAgGnkUEsc1QWiRlJVGGlp3rql8oPI84uKYFSEDnfbky1HVTQ3q8OFpVRa88Y
+         7ieA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@htmailers.com header.s=default5 header.b=ZnIs6lsn;
+       spf=pass (google.com: domain of return-a136-10397-10398-fad42039=27582375=8@htmailers.com designates 103.96.100.7 as permitted sender) smtp.mailfrom=return-a136-10397-10398-fad42039=27582375=8@htmailers.com
+Return-Path: <return-a136-10397-10398-fad42039=27582375=8@htmailers.com>
+Received: from smtp1-6.injectin.com (smtp1-6.injectin.com. [103.96.100.7])
+        by mx.google.com with ESMTPS id t9si1555876iod.274.2018.03.15.21.30.33
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 15 Mar 2018 21:30:33 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return-a136-10397-10398-fad42039=27582375=8@htmailers.com designates 103.96.100.7 as permitted sender) client-ip=103.96.100.7;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@htmailers.com header.s=default5 header.b=ZnIs6lsn;
+       spf=pass (google.com: domain of return-a136-10397-10398-fad42039=27582375=8@htmailers.com designates 103.96.100.7 as permitted sender) smtp.mailfrom=return-a136-10397-10398-fad42039=27582375=8@htmailers.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=htmailers.com; s=default5;
+ t=1521174632; bh=eLqhhpFL05XoLBhnPuezp12RvG8=;
+ h=Subject:From:To:Date:List-Unsubscribe:X-CampaignID:Message-ID:
+  X-Mailer-Info:Content-Type:Content-Transfer-Encoding;
+ b=ZnIs6lsnti08AeCXOUKdl7/txoqUHuUlTiXOkJtT45QfV5JZ3JE0B46wJP53LGSAt
+  MzGaBOITl3jm8IvFOXQdoFTUIfG1Q6dTx4E0ZZ4E1/mXrE7uKtQe1UxeyXKUygVUd7
+  27jAP1FuNnKv7DV2Gm7yNjWnxzA0vPQ9RkMkj/r4=
+Subject: =?UTF-8?Q?Enjoy=20BookMyshow=20vouchers=20worth=20Rs=20500=2A?=
+ =?UTF-8?Q?=20with=20Manhattan=20Credit=20Card=2A?=
+From: "Standard Chartered Bank" <info@htmailers.com>
+To: harshmathur.1990@gmail.com
+Date: 16 Mar 2018 04:30:32 -0000
+List-Unsubscribe: <http://mail.htmailers.com/ga/unsubscribe/2-27582375-136-5226-10398-02928325756fcd7-066eec8397?confirmed=1>,
+ <mailto:return-a136-10397-10398-fad42039=27582375=8u@htmailers.com>
+X-CampaignID: s4:10397-0ea5dbdf4236dd6e
+Message-ID: <mid-a5cd9c5a80eb81b052b45776b1725df0-4@htmailers.com>
+X-Mailer-Info: 8.QYxMjN.EDMzkzN.gWYyNHatFGdoVncuETO5ADQn1WYpxmLj9Wb.IzN1gjMzcTN.EDMzkDO
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<title>Manhattan Card-Uber</title>
+</head>
+
+<body style=3D"background-color: #fff"><table align=3D"center" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" bgcolor=3D"#fff" style=
+=3D"max-width:600px;">
+<tbody><tr>
+<td align=3D"center" valign=3D"top" style=3D"font-family:Calibri,Arial,sans=
+-serif;font-size:14px;line-height:16px;color:#4a4a4a">Open our Newsletter i=
+n <a href=3D"http://mail.htmailers.com/ga/webviews/4-27582375-136-5226-5277=
+-10398-8ef3f9d247" style=3D"text-decoration:underline;color:#0000ee">New ta=
+b</a><br></td>
+  </tr>
+ </tbody></table>
+
+<table style=3D"border: 0px solid #ccc;" border=3D"0" width=3D"600" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"center" bgcolor=3D"#fff">
+<tbody>
+<tr>
+<td>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td>
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td><a href=3D"http://mail.htmailers.com/ga/click/2-27582375-136-5226-10398=
+-9229-6d775d9297-066eec8397" target=3D"_blank" rel=3D"noopener"> <img style=
+=3D"display: block;" src=3D"https://d19qgyth69wh8s.cloudfront.net/manuber.p=
+ng" alt=3D"" width=3D"600" /></a></td>
+</tr>
+
+
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&#160;</p>
+
+
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" bgcolor=3D"#fff" style=3D"max-width:600px;">
+                    <tbody><tr>
+                      <td align=3D"center" valign=3D"top" style=3D"font-fam=
+ily:Calibri,Arial,sans-serif;font-size:14px;line-height:16px;color:#4a4a4a">
+                       Please click here to <a href=3D"http://mail.htmailer=
+s.com/ga/unsubscribe/2-27582375-136-5226-10398-02928325756fcd7-066eec8397" =
+style=3D"color: #0000ee; text-decoration:underline" target=3D"_blank">Unsub=
+scribe</a><br><br></td>
+                    </tr>=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20
+ </tbody></table><img src=3D"http://mail.htmailers.com/ga/open/2-27582375-1=
+36-5226-10398-066eec8397" height=3D"2" width=3D"3" alt=3D""></body></html>=

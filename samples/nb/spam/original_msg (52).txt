@@ -1,0 +1,90 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp1401980ive;
+        Wed, 14 Mar 2018 03:23:31 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELsVyp1CZBYTzUoo7RA9zVXGw8BohMXZ3FdMw2VJ36vCmHZMVLk21mc56bCdJG8YD19lovDa
+X-Received: by 10.55.80.84 with SMTP id e81mr5975026qkb.62.1521023010980;
+        Wed, 14 Mar 2018 03:23:30 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521023010; cv=none;
+        d=google.com; s=arc-20160816;
+        b=vIvwxLmfg3Y33qNXqZfvSuKDzWhPupSK7Jw3rpAmRABcz7Cjr4ynv/Kw7t5FoXVjSn
+         KjUJEkT+t93KTBL6oAHplxwYV1fYy8WtdOklz7j0RNmukjzbM7bRDVOmDcKtcTfEgcRZ
+         03/0r2Tea/qoy36UB2TM3pHiS/kOiedQW98z4b5PjbQDofWK/OBujrijnpf6+Txnffd5
+         X9IhPdZFK3CHzeAEP3UWg9KqY0OtGqyEbJDTaHb6CkMEcJvpBSAsZxHgNI4r57VA+P9Q
+         K9M83v81i6DBqZQZAAPz6ARE3QjGUaJIGsJ6ruttCpJ28Z9gSnvSTsTrjWA7DknSDV+f
+         bnHA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:mime-version:list-unsubscribe:message-id:subject
+         :reply-to:from:to:date:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=pkp9L4uNz+x1yIq9b/EZxm/KCe0xO/WEsD4Bcn9GBD4=;
+        b=vdVgHecztZyoQXA+G6+Jgds7QxdzSQSCp++Cy5CWpwhi8JoboTnSzF83kd0Q+2OHe1
+         jA1TqWe7LSdo+wQoywNR9LzPZG2TjBw8MHY+1VeoA4K18KfUT1wAiAjxFoyGv16QsFbm
+         1SABDG4HAl1/aT9scRDuw9TyYvYdtTU1noAIxefZgSflqc7ovgw1ZsyHvA0V4hszIffq
+         /g3tNFMo6WAW5umVAkGgWd49dBgnbKh75lK65Y6BOPKHtb5CcL1U9GQHUqjTKU+EGpKN
+         dnkASQ8z15+hum7rtoFa4wpHLybWvT/SIYbiv0qldsEn3/5XgPTVYun9bDhsSBehMe7o
+         7drQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mailtravelstories.com header.s=3ubwjlqkjjrpnzwx2lqinjxkbyppuvhe header.b=Kl1VOebl;
+       dkim=pass header.i=@amazonses.com header.s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug header.b=ZRntZsPI;
+       spf=pass (google.com: domain of 01000162240946bb-4bbbbbc5-58ba-49fe-b6f9-8bd164c74ad7-000000@mailer.mailtravelstories.com designates 54.240.34.250 as permitted sender) smtp.mailfrom=01000162240946bb-4bbbbbc5-58ba-49fe-b6f9-8bd164c74ad7-000000@mailer.mailtravelstories.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=mailtravelstories.com
+Return-Path: <01000162240946bb-4bbbbbc5-58ba-49fe-b6f9-8bd164c74ad7-000000@mailer.mailtravelstories.com>
+Received: from a34-250.smtp-out.amazonses.com (a34-250.smtp-out.amazonses.com. [54.240.34.250])
+        by mx.google.com with ESMTPS id q34si460923qtq.90.2018.03.14.03.23.30
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Wed, 14 Mar 2018 03:23:30 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 01000162240946bb-4bbbbbc5-58ba-49fe-b6f9-8bd164c74ad7-000000@mailer.mailtravelstories.com designates 54.240.34.250 as permitted sender) client-ip=54.240.34.250;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mailtravelstories.com header.s=3ubwjlqkjjrpnzwx2lqinjxkbyppuvhe header.b=Kl1VOebl;
+       dkim=pass header.i=@amazonses.com header.s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug header.b=ZRntZsPI;
+       spf=pass (google.com: domain of 01000162240946bb-4bbbbbc5-58ba-49fe-b6f9-8bd164c74ad7-000000@mailer.mailtravelstories.com designates 54.240.34.250 as permitted sender) smtp.mailfrom=01000162240946bb-4bbbbbc5-58ba-49fe-b6f9-8bd164c74ad7-000000@mailer.mailtravelstories.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=mailtravelstories.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=3ubwjlqkjjrpnzwx2lqinjxkbyppuvhe; d=mailtravelstories.com;
+	t=1521023010;
+	h=Date:To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type;
+	bh=6HGa4frRqccWTEVmREoKOYM4NVioMUGwP5Y2QyFDtI0=;
+	b=Kl1VOeblzT+KwhWX5wRjZtUx1peAnuxoYou2Brmd1QQbN58pKYjFZXwU9X0zvJS2
+	Xvr2/1tGNWZYjpYQGUYws3Pq9MrxNDVpvS8TvulsQt3083RFWBQu03rQ6oqouhIycnz
+	81ZwujyLWmufPEI7dBl+ojynw7zgz16Ro55m/yog=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1521023010;
+	h=Date:To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Feedback-ID;
+	bh=6HGa4frRqccWTEVmREoKOYM4NVioMUGwP5Y2QyFDtI0=;
+	b=ZRntZsPInQmampkRc914mBBRstR6EP6bAPUlROvu/LpJNaz60nWIRvg0FQFHYE8t
+	A1GWpoo1z10tzPR2+86K6rbtBNrsEoSPWXNxsfuFVoPio/RsldPxj+K0rbBfcCDOPdD
+	HVupR4m+8VXCaTsl0EFxLkO7dvecTylUd3jEanSU=
+Date: Wed, 14 Mar 2018 10:23:30 +0000
+To: Harsh Mathur <harshmathur.1990@gmail.com>
+From: Tripoto <info@mailtravelstories.com>
+Reply-To: Tripoto <info@mailtravelstories.com>
+Subject: Harsh Mathur, which travel hacks have really worked for you
+Message-ID: <01000162240946bb-4bbbbbc5-58ba-49fe-b6f9-8bd164c74ad7-000000@email.amazonses.com>
+X-Mailer: Sendy (https://sendy.co)
+List-Unsubscribe: <http://mailer.mailtravelstories.com/unsubscribe/LIXr763MG5XxtMjEGE76364892LcUWyGOxyeUOib3PmH2ppA8/g5zaPW763XGQoCm763vLHZk85A/3ZKi25r1rxF7Rc60lGrzxQ>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+X-SES-Outgoing: 2018.03.14-54.240.34.250
+Feedback-ID: 1.us-east-1.0IGkRV3q3ysSbHu2LkEk2eN5cecqxP/NvghD29TOqvU=:AmazonSES
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>Hey again,</p>
+
+<p>This is Himani&nbsp;from Tripoto.&nbsp;If you remember,&nbsp;I wrote to you last week with information on our exciting&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.tripoto.com/tripoto-credits&amp;source=gmail&amp;ust=1521093248226000&amp;usg=AFQjCNH98JXR_RrJiNwFMtCo0fHonC18vQ" href="https://www.tripoto.com/tripoto-credits" target="_blank">new credit system</a>, according to which&nbsp;you win points every time you write a new story on Tripoto. These credits can then be redeemed for <strong>free stays</strong>, <strong>treks</strong> and <strong>other adventures</strong>.&nbsp;</p>
+
+<p>To get you rolling, I&#39;m here with an idea. Life on the road must have left you brimming with ideas on how to travel cheaper and better. Share&nbsp;<b>your smartest travel hacks</b>&nbsp;that can save time and money and help other travellers on Tripoto do it better. &nbsp;&nbsp;&nbsp; &nbsp;</p>
+
+<p><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.tripoto.com/trips/create/&amp;source=gmail&amp;ust=1521093248226000&amp;usg=AFQjCNEPcLBhmnZ2_ycC_lN9jVaSVChVog" href="https://www.tripoto.com/trips/create/" target="_blank">Write your travel hacks here</a>&nbsp;and we&#39;ll feature the best stories on our Facebook page, and add valuable Tripoto credits to your account!</p>
+
+<p>Happy writing,<br />
+Himani<br />
+Senior Editor&nbsp;<br />
+Tripoto&nbsp; &nbsp; &nbsp; &nbsp;</p>
+</body>
+</html>
+<img src="http://mailer.mailtravelstories.com/t/3ZKi25r1rxF7Rc60lGrzxQ/HC3LBI4ADvOgHDEjkHaCuQ" alt="" style="width:1px;height:1px;"/>

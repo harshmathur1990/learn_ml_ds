@@ -1,0 +1,324 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp420952ive;
+        Thu, 15 Mar 2018 22:47:03 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELs9nPDTROHUzXj9sMtgTuMbNypEMOyEYc0lZPJ5SfBOxu+ain6y1pxU6+adpmOuXi7R+QKy
+X-Received: by 10.200.52.38 with SMTP id u35mr780026qtb.193.1521179223806;
+        Thu, 15 Mar 2018 22:47:03 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521179223; cv=none;
+        d=google.com; s=arc-20160816;
+        b=aUlqU4RKZ4K61V3FouZ1lwtJXhhXEURjmpYCuhBD5r20jiMMhvcVEUSQiSUAdSnU4z
+         hPojLwTrMNVCpbm1aWiU5y8+bSyuDfGtBq9iTSjyUYtRGHHVkl2qSJG/AgiCuqnhAG70
+         4zmkDDdBoeJyY9+gXtQMd3qXX3IMGyD3iN7Mm4IW8fwt94ktzwfSlFpP+NUh8XcDMp8n
+         iEL2aag33wZcqt54+yUf3mYRS37IEbmT7RFqjqh0kilKUjI4QtgSql2v9uuwsNGDu3rt
+         KXdJ4m5hQyaCdN/bSS5nOHApQk66FJ/mHzMeMThXco/qtA8DdPxc9P9Xxy19cnXg9Tyw
+         +zyQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:subject:from:to:message-id:sender:date
+         :content-transfer-encoding:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=FuDTYMSMPzmNqLv07VWefhIbzByV9d5ziqUgqtMWxxI=;
+        b=LYoE468PZiqDemFBS5mVefS1wCPE1BmFhWVLuKYJ8o3l2lJYtivS+YwLvjEpgSKCKe
+         Pkc7D5jUYJXLOSNDt8qJjEO5mymx8SlOLIrupYY4MO0KzP3JQKZudMInkYcGsS7DHKVT
+         1j9beA63LxJhwcVIqYxhVuUEGKq1ThvrozEs2eeBRNNSSS1XCLogQHpbx7/xCGk/23em
+         acdwpxChe5u6CgZI/ZUO8lSRhDx8GuJYGVxoIpmnug76DdzZ2qtAZ7rwg29hSKExqiAu
+         N+dq2jkHWIw/f1+2l8vDCUnPjg3tsBpu66B5qVrmCSiZbnCTgJRDlN9dGIVJjSt2M0Au
+         +DnA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@litmusworld.net header.s=krs header.b=cRVfkfkv;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=rSFjTfzV;
+       spf=pass (google.com: domain of bounce+968b77.227fa9-harshmathur.1990=gmail.com@litmusworld.net designates 146.20.113.214 as permitted sender) smtp.mailfrom=bounce+968b77.227fa9-harshmathur.1990=gmail.com@litmusworld.net
+Return-Path: <bounce+968b77.227fa9-harshmathur.1990=gmail.com@litmusworld.net>
+Received: from mail-m214.mailgun.info (mail-m214.mailgun.info. [146.20.113.214])
+        by mx.google.com with UTF8SMTPS id i17si6626070qtg.44.2018.03.15.22.47.03
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 15 Mar 2018 22:47:03 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce+968b77.227fa9-harshmathur.1990=gmail.com@litmusworld.net designates 146.20.113.214 as permitted sender) client-ip=146.20.113.214;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@litmusworld.net header.s=krs header.b=cRVfkfkv;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=rSFjTfzV;
+       spf=pass (google.com: domain of bounce+968b77.227fa9-harshmathur.1990=gmail.com@litmusworld.net designates 146.20.113.214 as permitted sender) smtp.mailfrom=bounce+968b77.227fa9-harshmathur.1990=gmail.com@litmusworld.net
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=litmusworld.net; q=dns/txt;
+ s=krs; t=1521179223; h=Mime-Version: Content-Type: Subject: From: To:
+ Message-Id: Sender: Date: Content-Transfer-Encoding: X-Feedback-Id;
+ bh=FuDTYMSMPzmNqLv07VWefhIbzByV9d5ziqUgqtMWxxI=; b=cRVfkfkvL/Sv6MQ9bOFn552Oc2TGPeK+UvjB9VlSE28QeH5rc9h9/9g1WUD/Zju67u/OW/Ep
+ nqHQacwM5y8xnJhCZw+l/oE+uh6QDrv2Oe3wWvMOEGQx+zaLQ2F2SeQWir1mHXraHTKyJFJb
+ 5qk4tK4AMKiBucQ3wDQ40XLHSzY=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg;
+ t=1521179223; h=Mime-Version: Content-Type: Subject: From: To:
+ Message-Id: Sender: Date: Content-Transfer-Encoding: X-Feedback-Id;
+ bh=FuDTYMSMPzmNqLv07VWefhIbzByV9d5ziqUgqtMWxxI=; b=rSFjTfzVuDC7E/VhCrP11u+tGpZsgUe9Fg+6Wt1ssCETDNbPddHRK3rYFJKrwB9AlCQFFRf2
+ Tyia5XqZFf9e0bH/ZoxdYU8Jx6qiwyL4wTI61gHF/JEB1l0dCsDqobprOFi/nkpnHaIcwquM
+ XszdcipGiDmbS7JXRL2fT8qbOhY=
+X-Feedback-Id: 571f30a580326706a39acbd8:mailgun
+X-Mailgun-Sid: WyJhOWExNiIsICJoYXJzaG1hdGh1ci4xOTkwQGdtYWlsLmNvbSIsICIyMjdmYTkiXQ==
+X-Mailgun-Sending-Ip: 146.20.113.214
+Content-Transfer-Encoding: quoted-printable
+Received: by luna.mailgun.net with HTTP; Fri, 16 Mar 2018 05:47:03 +0000
+Date: Fri, 16 Mar 2018 05:47:03 +0000
+Sender: feedback@litmusworld.net
+Message-Id: <20180316054703.1.5D729BCD16A839D6@litmusworld.net>
+X-Mailgun-Variables: {"trial_number": "2", "feedback_id":
+ "5aa7e407d8e5bb77ec1df8a0"}
+To: harshmathur.1990@gmail.com
+From: CRY <feedback@litmusworld.net>
+Subject: Harsh, less than 3 weeks to save tax
+Content-Type: text/html; charset="utf-8"
+Mime-Version: 1.0
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"><meta name=3D"viewport" content=3D"width=3Ddevice-=
+width, initial-scale=3D1"><meta http-equiv=3D"X-UA-Compatible" content=3D"I=
+E=3Dedge"><title>Right to Education</title></head><body>                   =
+                           <style type=3D"text/css">         /* CLIENT-SPEC=
+IFIC STYLES */         #outlook a {         padding: 0;         } /* Force =
+Outlook to provide a "view in browser" message */         .ReadMsgBody {   =
+      width: 100%;         }         .ExternalClass {         width: 100%; =
+        } /* Force Hotmail to display emails at full width */         .Exte=
+rnalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .Ext=
+ernalClass td, .ExternalClass div {         line-height: 100%;         } /*=
+ Force Hotmail to display normal line spacing */         body, table, td, a=
+ {         -webkit-text-size-adjust: 100%;         -ms-text-size-adjust: 10=
+0%;         } /* Prevent WebKit and Windows mobile changing default text si=
+zes */         table, td {         mso-table-lspace: 0pt;         mso-table=
+-rspace: 0pt;         } /* Remove spacing between tables in Outlook 2007 an=
+d up */         img {         -ms-interpolation-mode: bicubic;         } /*=
+ Allow smoother rendering of resized image in Internet Explorer */         =
+/* RESET STYLES */         body {         margin: 0;         padding: 0;   =
+      }         img {         border: 0;         height: auto;         line=
+-height: 100%;         outline: none;         text-decoration: none;       =
+  }         table {         border-collapse: collapse !important;         }=
+         body {         height: 100% !important;         margin: 0;        =
+ padding: 0;         width: 100% !important;         }         /* iOS BLUE =
+LINKS */         .date-link {         color: #6c1a2c;         text-decorati=
+on: none;         }         #VWPLINK {         background-color: #ffffff;  =
+       }         footercontent table {         background-color: #ffffff;  =
+       }         img[class=3D"img-max-product"] {         margin: 10px 0;  =
+       }         body, #body_style {         background: #e6e6e6;         }=
+         @media screen and (min-width: 651px) {         .container {       =
+  width: 640px!important;         }         }         /* MOBILE STYLES */  =
+       @media screen and (max-width: 525px) {         /* ALLOWS FOR FLUID T=
+ABLES */         table[class=3D"wrapper"] {         width: 100% !important;=
+         }         /* ADJUSTS LAYOUT OF LOGO IMAGE */         td[class=3D"l=
+ogo"] {         text-align: left;         padding: 20px 0 20px 0 !important=
+;         }         td[class=3D"logo"] img {         margin: 0 auto!importa=
+nt;         }         /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */    =
+     td[class=3D"mobile-hide"] {         display: none;         }         t=
+able[class=3D"mobile-hide"] {         display: none;         }         img[=
+class=3D"mobile-hide"] {         display: none !important;         }       =
+  img[class=3D"img-max"] {         max-width: 100% !important;         widt=
+h: 100% !important;         height: auto !important;         }         img[=
+class=3D"img-max-product"] {         max-width: 100% !important;         wi=
+dth: 100% !important;         height: auto !important;         }         /*=
+ FULL-WIDTH TABLES */         table[class=3D"responsive-table"] {         w=
+idth: 100%!important;         }         table[class=3D"responsive-table-foo=
+ter"] {         width: 90%!important;         }         table[class=3D"resp=
+onsive-table-50"] {         width: 100%!important;         max-width: 100%;=
+         }         /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */   =
+      td[class=3D"padding"] {         padding: 10px 2% 15px 2% !important; =
+        }         td[class=3D"padding-copy"] {         padding: 10px 5% 10p=
+x 5% !important;         text-align: center;         }         td[class=3D"=
+padding-meta"] {         padding: 30px 5% 0px 5% !important;         text-a=
+lign: center;         }         td[class=3D"no-pad"] {         padding: 0 0=
+ 20px 0 !important;         }         td[class=3D"no-padding"] {         pa=
+dding: 0 !important;         }         td[class=3D"section-padding"] {     =
+    padding: 20px 10px 10px 10px !important;         }         td[class=3D"=
+section-padding-bottom-image"] {         padding: 10px 15px 0 15px !importa=
+nt;         }         /* ADJUST BUTTONS ON MOBILE */         td[class=3D"mo=
+bile-wrapper"] {         padding: 10px 5% 15px 5% !important;         }    =
+     table[class=3D"mobile-button-container"] {         margin: 0 auto;    =
+     width: 100% !important;         }         a[class=3D"mobile-button"] {=
+         width: 80% !important;         padding: 15px !important;         b=
+order: 0 !important;         font-size: 16px !important;         }         =
+/* Stacked Bottom Links Navigation Pattern CSS */         td[class=3D"foote=
+r_nav"] td {         display: block;         padding: 0 !important;        =
+ }         td[class=3D"footer_nav"] a {         display: block;         pad=
+ding: 20px 0;         }         }      </style>	      <table width=3D"100%"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#ffffff" align=
+=3D"center">         <tbody>            <tr>               <td width=3D"100=
+%" valign=3D"top">                           <table width=3D"100%" border=
+=3D"0" align=3D"center" cellpadding=3D"15" cellspacing=3D"0" bgcolor=3D"#db=
+dbdb" class=3D"container" style=3D"max-width: 650px; margin: 0 auto;">     =
+                         <tbody>                                 <tr>      =
+                              <td style=3D"text-align: center; vertical-ali=
+gn: top;">                                       <table width=3D"100%" bgco=
+lor=3D"#efefef" border=3D"0" align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"deviceWidth">                                          <tbo=
+dy>                                             <tr>                       =
+                         <td>                                              =
+     <table width=3D"100%" align=3D"center" border=3D"0" bgcolor=3D"#ffffff=
+" cellpadding=3D"0" cellspacing=3D"0">                                     =
+                 <tbody>                                                   =
+      <tr>                                                            <td a=
+lign=3D"center" valign=3D"top">                                            =
+                   <table width=3D"100%" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0">                                                            =
+      <tbody>                                                              =
+       <tr>                                                                =
+        <td align=3D"left" valign=3D"middle" style=3D"padding:40px 20px 10p=
+x 30px;"><font face=3D"Calibri, Arial, Helvetica, sans-serif" style=3D"font=
+-size:28px; color:#333333; font-weight:lighter; text-transform: uppercase;"=
+>Education is a child's way out.</font></td>                               =
+                                      </tr>                                =
+                                     <tr>                                  =
+                                      <td align=3D"left" valign=3D"middle" =
+style=3D"padding:0px 20px 10px 30px;"><font face=3D"Calibri, Arial, Helveti=
+ca, sans-serif" style=3D"font-size:20px; color:#333333; font-weight:lighter=
+;">Yes, I will help a child get better education.</font></td>              =
+                                                       </tr>               =
+                                                      <tr>                 =
+                                                       <td align=3D"left" v=
+align=3D"middle" style=3D"padding:10px 20px 10px 30px;">                   =
+                                                        <table width=3D"200=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">                        =
+                                                      <tbody>              =
+                                                                   <tr>    =
+                                                                           =
+     <td align=3D"center" valign=3D"middle" style=3D"font-family:calibri, A=
+rial, Helvetica, sans-serif; color:#333333; padding:7px; border:2px solid #=
+000000;"><a href=3D"https://app.litmusworld.com/rateus/api/offerinvitations=
+/save_px_invitations?event=3Dclick&campaign=3DRIGHT&feedback_request_token=
+=3D5aa7e407d8e5bb77ec1df8a0&promotions[]=3DI WILL HELP NOW&utm_campaign=3De=
+mail_open_rate&utm_medium=3Demail&img=3D1&utm_term=3Dtrial_2" target=3D"_bl=
+ank" style=3D"color:#333333; text-decoration:none; font-size:24px;" class=
+=3D"">                                                                     =
+                  I <strong>WILL</strong> HELP NOW</a>                     =
+                                                               </td>       =
+                                                                          <=
+/tr>                                                                       =
+       </tbody>                                                            =
+               </table>                                                    =
+                    </td>                                                  =
+                   </tr>                                                   =
+                  <tr>                                                     =
+                   <td align=3D"center" valign=3D"top" style=3D"background-=
+color:#ffffff;"><a class=3D""><img src=3D"https://www.cry.org/wp-content/up=
+loads/2018/02/topbanner-issue-954.jpg" width=3D"100%" alt=3D"Brighten the f=
+utures of the children" border=3D"0"></a></td>                             =
+                                        </tr>                              =
+                                       <tr>                                =
+                                        <td align=3D"left" valign=3D"middle=
+" style=3D"padding:10px 40px 10px 30px;"><font face=3D"Calibri, Arial, Helv=
+etica, sans-serif" style=3D"font-size:15px; color:#000000; font-weight: lig=
+hter;">Dear Harsh,<br><br>Across our network, we believe our most important=
+ task is giving children access to education. As the academic year comes to=
+ a close, children are vulnerable to dropping out and not coming back to sc=
+hool.<br><br>What they need most is academic support and constant encourage=
+ment. They've made it this far. Now is when they most need your help, so th=
+ey can make it all the way. Help us change a child's future.</font></td>   =
+                                                                  </tr>    =
+                                                                 <tr>      =
+                                                                  <td align=
+=3D"left" valign=3D"middle" style=3D"padding:10px 20px 10px 30px;">        =
+                                                                   <table w=
+idth=3D"200" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">             =
+                                                                 <tbody>   =
+                                                                           =
+   <tr>                                                                    =
+                <td align=3D"center" valign=3D"middle" style=3D"font-family=
+:calibri, Arial, Helvetica, sans-serif; color:#333333; padding:7px; border:=
+2px solid #000000;"><a href=3D"https://app.litmusworld.com/rateus/api/offer=
+invitations/save_px_invitations?event=3Dclick&campaign=3DRIGHT&feedback_req=
+uest_token=3D5aa7e407d8e5bb77ec1df8a0&promotions[]=3DDONATE NOW&utm_campaig=
+n=3Demail_open_rate&utm_medium=3Demail&img=3D1&utm_term=3Dtrial_2" target=
+=3D"_blank" style=3D"color:#333333; text-decoration:none; font-size:30px;" =
+class=3D"">                                                                =
+                       DONATE NOW</a>                                      =
+                                              </td>                        =
+                                                         </tr>             =
+                                                                 </tbody>  =
+                                                                         </=
+table>                                                                     =
+   </td>                                                                   =
+  </tr>                                                                    =
+ <tr>                                                                      =
+  <td align=3D"left" valign=3D"middle" style=3D"padding:10px 40px 10px 30px=
+;"><font face=3D"Calibri, Arial, Helvetica, sans-serif" style=3D"font-size:=
+15px; color:#000000; font-weight: lighter;">Yours in faith and hope,<br>The=
+ CRY Team</font></td>                                                      =
+               </tr>                                                       =
+              <tr>                                                         =
+               <td align=3D"left" valign=3D"middle" style=3D"padding:10px 1=
+0px 10px 30px;"><a href=3D"https://www.cry.org/?utm_source=3DEmail&utm_camp=
+aign=3D61371&utm_content=3DLW-EDM-RTE-REGNH-mailer&ma_code=3D8028&mailer_co=
+de=3D1302" target=3D"_blank" class=3D""><img src=3D"https://www.cry.org/wp-=
+content/uploads/2018/02/crylogo-issue-954.jpg" alt=3D"CRY"></a></td>       =
+                                                              </tr>        =
+                                                             <tr>          =
+                                                              <td align=3D"=
+left" valign=3D"middle" style=3D"padding:10px 40px 10px 30px;"><font face=
+=3D"Calibri, Arial, Helvetica, sans-serif" style=3D"font-size:15px; color:#=
+000000; font-weight: lighter;">Donations to CRY are exempt from tax under S=
+ection 80G of the Income Tax Act. </font></td>                             =
+                                        </tr>                              =
+                                    </tbody>                               =
+                                </table>                                   =
+                         </td>                                             =
+            </tr>                                                         <=
+tr>                                                            <td align=3D=
+"center" valign=3D"middle">                                                =
+               <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0" bgcolor=3D"#dbdbdb">                                            =
+                      <tbody>                                              =
+                       <tr>                                                =
+                        <td align=3D"center" bgcolor=3D"#ffffff" valign=3D"=
+middle"></td>                                                              =
+       </tr>                                                               =
+      <tr>                                                                 =
+       <td align=3D"center" valign=3D"top">                                =
+                                           <table width=3D"100%" border=3D"=
+0" cellspacing=3D"0" cellpadding=3D"0">                                    =
+                                          <tbody>                          =
+                                                       <tr>                =
+                                                                    <td ali=
+gn=3D"center" valign=3D"top" height=3D"10">                                =
+                                                       <spacer type=3D"bloc=
+k" height=3D"10">                                                          =
+                          </spacer></td>                                   =
+                                              </tr>                        =
+                                                         <tr>              =
+                                                                      <td a=
+lign=3D"center" style=3D"line-height:12px; padding:10px;" valign=3D"top"><f=
+ont face=3D"Calibri, Arial, Helvetica, sans-serif" style=3D"font-size:10px;=
+ color:#231f20;">                                                          =
+                             Child Rights and You (CRY) is an Indian non-pr=
+ofit that believes in every child=E2=80=99s right to a childhood - to live,=
+ learn, grow and play. For nearly 4 decades, CRY and its 200 partner NGOs h=
+ave worked with parents and communities to ensure lasting change in the liv=
+es of more than 2,000,000 underprivileged children, across 23 states in Ind=
+ia. For more information please visit us at <a href=3D"http://www.cry.org/"=
+ target=3D"_blank" class=3D"">www.cry.org</a>. For instant receipts and to =
+check your donation history, register on <a href=3D"http://apps.cry.org/cha=
+ngemakers" target=3D"_blank" class=3D""> CHANGEMAKERS@CRY</a> today. If you=
+ do not wish to receive further emails, or if you have received this messag=
+e in error, please accept our apologies and simply <a href=3D"https://app.l=
+itmusworld.com/rateus/api/offerinvitations/save_px_invitations?event=3Dclic=
+k&campaign=3DRIGHT&feedback_request_token=3D5aa7e407d8e5bb77ec1df8a0&promot=
+ions[]=3DUNSUB&utm_campaign=3Demail_open_rate&utm_medium=3Demail&img=3D1&ut=
+m_term=3Dtrial_2" class=3D"">Unsubscribe</a>                               =
+                                                         </font>           =
+                                                                         </=
+td>                                                                        =
+         </tr>                                                             =
+                 </tbody>                                                  =
+                         </table>                                          =
+                              </td>                                        =
+                             </tr>                                         =
+                         </tbody>                                          =
+                     </table>                                              =
+              </td>                                                        =
+ </tr>                                                      </tbody>       =
+                                            </table>                       =
+             </td>                                 </tr>                   =
+           </tbody>                           </table>                     =
+   </td>                     </tr>                     </tbody>            =
+      </table>               </td>            </tr>         </tbody>      <=
+/table>      <img style=3D"display:none !important;" width=3D"0" height=3D"=
+0" src=3D"https://app.litmusworld.com/rateus/api/events/store?eid=3Dopen&fi=
+d=3D5aa7e407d8e5bb77ec1df8a0&utm_campaign=3Demail_open_rate&utm_medium=3Dem=
+ail&img=3D1&utm_term=3Dtrial_2"><img style=3D"display:none !important;" wid=
+th=3D"0" height=3D"0" src=3D"https://app.litmusworld.com/rateus/api/offerin=
+vitations/save_px_invitations?event=3Dview&campaign=3DRIGHT&feedback_reques=
+t_token=3D5aa7e407d8e5bb77ec1df8a0&promotions[]=3DI WILL HELP NOW&promotion=
+s[]=3DDONATE NOW&promotions[]=3DUNSUB&utm_campaign=3Demail_open_rate&utm_me=
+dium=3Demail&img=3D1&utm_term=3Dtrial_2"></body></html>

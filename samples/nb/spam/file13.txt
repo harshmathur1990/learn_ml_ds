@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset=3D"utf-8">
+<title>OnlineStore</title>
+<style>
+=09/* Basic Fluid Image Pattern CSS */
+    @media only screen and (max-width: 600px) {
+        img.pattern {
+            max-width: 100%;
+            height: auto !important;
+=09    border:1px solid #ccc;
+        }
+    }
+</style>
+</head>
+
+<body><table style=3D"max-width: 600px;" border=3D"0" width=3D"100%" cellsp=
+acing=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"font-family: Calibri,Arial,sans-serif; font-size: 13px; line-h=
+eight: 16px; padding-bottom: 10px; color: #4a4a4a;" align=3D"center" valign=
+=3D"top"><br> <a style=3D"color: #1762a0; text-decoration: underline;" href=
+=3D"http://m.mlktclick.com/ga/webviews/4-14069578-119-6746-6816-13246-2b2d6=
+9fc5b" target=3D"_blank" rel=3D"noopener">View in a browser</a> | <a style=
+=3D"color: #1762a0; text-decoration: underline;" href=3D"http://m.mlktclick=
+.com/ga/unsubscribe/2-14069578-119-6746-13246-ab098da8027a114-ae8b59ebbb" t=
+arget=3D"_blank" rel=3D"noopener">Report Spam</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>&#160;</p>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td><a href=3D"http://m.mlktclick.com/ga/click/2-14069578-119-6746-13246-15=
+051-27bf1ab8ec-ae8b59ebbb" target=3D"_blank" rel=3D"noopener"><img class=3D=
+"pattern" style=3D"border: 1px solid #ccc;" src=3D"http://media.adcanopus.c=
+om/brand/files/adcanopus/1085/Medlife10march.jpg" alt=3D"medlife" /></a></t=
+d>
+</tr>
+</tbody>
+</table>
+
+
+<table style=3D"max-width: 600px;" border=3D"0" width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"font-size: 12px; font-family: Calibri,Arial,sans-serif; line-h=
+eight: 16px; color: #4a4a4a; text-align: center;">=20
+<p>If this email is unwelcome, I apologize. Click <a style=3D"color: #1762a=
+0; text-decoration: underline;" href=3D"http://m.mlktclick.com/ga/unsubscri=
+be/2-14069578-119-6746-13246-ab098da8027a114-ae8b59ebbb" target=3D"_blank" =
+rel=3D"noopener">here</a> to remove <a style=3D"color: #1762a0; text-decora=
+tion: underline;" href=3D"mailto:harshmathur.1990@gmail.com" target=3D"_bla=
+nk" rel=3D"noopener">harshmathur.1990@gmail.com</a> from my contact list.</=
+p>=20
+</td>
+</tr>
+</tbody>
+</table><img src=3D"http://m.mlktclick.com/ga/open/2-14069578-119-6746-1324=
+6-ae8b59ebbb" height=3D"2" width=3D"3" alt=3D""></body>
+</html>

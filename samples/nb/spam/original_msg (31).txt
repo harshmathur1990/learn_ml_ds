@@ -1,0 +1,180 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp1143059ive;
+        Thu, 15 Mar 2018 01:48:10 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELt3CctxutfCW00sBvFiTMXrObNroKQanuN/XxrtB1csi2wRYaM1Ua7+vL+5pC5HrMXO1RWA
+X-Received: by 10.98.20.22 with SMTP id 22mr6941417pfu.141.1521103690063;
+        Thu, 15 Mar 2018 01:48:10 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521103690; cv=none;
+        d=google.com; s=arc-20160816;
+        b=uR3SDw/04d53PHJsYMo2Nwl1YzoEcuXi/LUz2mWGVHEoudI6YbuM4BBhRbskYgFMtZ
+         dQavQwEyjhsDTtucE3CIhWXanfunbrh/01Ce3WCRJRjw9csp3xOEGsCJhQzUSHfnj+5K
+         730E3aLD2e7GITrHni9V5bkteXuGM/gxEjgXu0TnU0fQ/vD2PkUXS3JEe1xv2hbto6c2
+         /5naeuUbjMQING9aQy6cmR9MgnI0lbXW7s/kkg3NF/VV3IjzQMPlWVPj/LRLPafFotGc
+         cQM5HvgiHOTIHmoMmeiYF48p/dN2Xi4LIjYUY2VvAdkSVfElO1iI+DjiYcE6KKablKVP
+         iGiA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe-post:list-unsubscribe:feedback-id:mime-version
+         :errors-to:subject:message-id:to:from:date:dkim-signature
+         :arc-authentication-results;
+        bh=MQGJEu7A2deUP8pStGcHmScbRPDGlgk5avOcX5CTM2c=;
+        b=AAXo6e6ZZvFXJ4+y0It/jShEB0I0SyuLwoTti/Vh+WBw3IZENPNSBdYglmu50LINge
+         qsZ7J92LIf1AfOyYmI3CDa5iMoiTITCO9PI91M31TpXcjQ7CycpWiSZOxW0D/CunBHjP
+         xQir9SXaGHD3MJHuOUYsEAPpjhfpeYPr4rMkRdXmZjcoTzAaiIK3YXGsGuM0uBWzHphv
+         1/HnV7jLjPmqvdmNLaaAFoqCLjnvSw2vRdxAdApl5v1/AWPgGePScqIRqyfi+7cAbNXu
+         CkehgD6R7lqQH4zob4AA2pGSqciSPSjgVdEbuBn3qEEorNyegt3bvav4ELGYG/rgVJtv
+         Zj+w==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@infusionmail.com header.s=dkim1024 header.b=dkEiq63X;
+       spf=pass (google.com: domain of mailer@infusionmail.com designates 208.76.24.42 as permitted sender) smtp.mailfrom=mailer@infusionmail.com
+Return-Path: <mailer@infusionmail.com>
+Received: from mta-c-24-42.infusionmail.com (mta-c-24-42.infusionmail.com. [208.76.24.42])
+        by mx.google.com with ESMTPS id x4si3503134pfx.350.2018.03.15.01.48.09
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 15 Mar 2018 01:48:10 -0700 (PDT)
+Received-SPF: pass (google.com: domain of mailer@infusionmail.com designates 208.76.24.42 as permitted sender) client-ip=208.76.24.42;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@infusionmail.com header.s=dkim1024 header.b=dkEiq63X;
+       spf=pass (google.com: domain of mailer@infusionmail.com designates 208.76.24.42 as permitted sender) smtp.mailfrom=mailer@infusionmail.com
+Received: from phxcw11 ([10.0.245.33])
+	by cmsmtp with ESMTP
+	id wOYTecGB7FLgYwOYTeNexh; Thu, 15 Mar 2018 04:48:09 -0400
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=infusionmail.com;
+	s=dkim1024; t=1521103689; bh=+iYhU4MWxQ3KZYlxEnfYyhcC/CI=;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:
+	 List-Unsubscribe:List-Unsubscribe-Post;
+	b=dkEiq63XTE3UuK8o8hXUT2IcxJIfPXzQ4V4giI+lUV811D/1G/0oCz+eCKOALXzOs
+	 kMyWRNjjojXtiUI2h5azZSI64Ug4Dcv2QbOwGTI6RYjBDqBENSK87oFnNFpHoiuzQr
+	 Y2t3MTa921WVFPU+Li6vzkZ8q5JrIovRHpG1oWik=
+Return-Path: mailer@infusionmail.com
+Date: Thu, 15 Mar 2018 04:48:08 -0400 (EDT)
+From: Swathi Chatrapathy <tws@indiahikes.com>
+To: harshmathur.1990@gmail.com
+Message-ID: <1670978870.2462721521103688316.JavaMail.tomcat@phxcw11>
+Subject: Can you help me with a video review?
+Errors-To: mailer@infusionmail.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_246192_287510186.1521103688311"
+X-MailSentId: 588617
+X-campaignid: infusion_dh315588617
+Feedback-ID: dh315:dh315_199875:value:infusionsoft
+X-BatchId: 199875
+X-InfApp: dh315
+X-InfContact: 34541
+X-InfSent: 5890219
+X-inf-QETT: 0
+X-inf-package: value
+X-inf-uflags: SO
+X-inf-iflags: SO
+X-inf-BlockName: mn168
+X-inf-SRS: 493.0
+X-infEng: 69
+X-Inf-Src: 5
+List-Unsubscribe: <https://dh315.infusionsoft.com/app/optOut/noConfirm/5890219/289bce9bc96acc08>, <mailto:unsubscribe-dh315-34541-199875-5890219-value@infusionmail.com>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-CMAE-Envelope: MS4wfPv+LowJHK9B7VtufQ1aCUFkvWzH2QWtI9p+rLvKsshveYFR2s2Z1Ys2paMKm1vknd2Sk6aDOgqPyz1+7mLmm0ZpqrPXUFZUtqpjtszmQIn/Pia776Ir
+ 4o4iq46aoG4FiHO9vDGGMmtGDoXw7KT0JiiWLureGReKXOK8uY2/0XBE
+
+------=_Part_246192_287510186.1521103688311
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+This email was sent as HTML-only. To view it, please visit:
+https://dh315.infusionsoft.com/app/hostedEmail/5890219/289bce9bc96acc08
+
+If you no longer wish to receive our emails, click the link below:
+
+https://dh315.infusionsoft.com/app/optOut/8/5daf7da6bdd22775/5890219/289bce=
+9bc96acc08
+
+Indiahikes . Bangalore, Karnataka . India
+
+
+
+Delivered By Infusionsoft
+https://crm.infusionsoft.com/go/infs/footer_dh315/text
+
+
+------=_Part_246192_287510186.1521103688311
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+<html><head></head><body><div id=3D"mainContent" style=3D"text-align: left;=
+"><table cellpadding=3D"10" cellspacing=3D"0" style=3D"background-color: #f=
+fffff; width: 930px; height: 622px;"><tbody><tr><td valign=3D"top"><table a=
+lign=3D"left" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 642px; he=
+ight: 608px;"><tbody><tr><td><table bgcolor=3D"#FFFFFF" cellpadding=3D"20" =
+cellspacing=3D"0" style=3D"width: 608px; background-color: #ffffff; height:=
+ 626px;"><tbody><tr><td style=3D"background-color: #ffffff; text-align: lef=
+t; margin: 0; padding: 20px; border: none; white-space: normal; line-height=
+: normal;" valign=3D"top"><div style=3D"color: #000000; font-size: 12px; fo=
+nt-family: arial; margin: 0; padding: 0; background: none; border: none; wh=
+ite-space: normal; line-height: normal; overflow: visible;"><div style=3D"c=
+olor: #000000; font-size: 12px; font-family: arial; margin: 0; padding: 0; =
+background: none; border: none; white-space: normal; line-height: normal; o=
+verflow: visible;"><div style=3D"overflow: visible;"><div style=3D"overflow=
+: visible;"><p dir=3D"ltr" style=3D"font-size: 12px; font-family: arial; ma=
+rgin: 0; color: null;">Dear Harsh</p>&nbsp;<p dir=3D"ltr" style=3D"font-siz=
+e: 12px; font-family: arial; margin: 0; color: null;">Today I have a specia=
+l request from you.&nbsp;&nbsp;</p><br /> As you may know, Indiahikes is In=
+dia's&nbsp;<strong>most-widely recommended trekking community</strong>. We =
+have&nbsp;<a class=3D"" href=3D"https://dh315.infusionsoft.com/app/linkClic=
+k/33991/753a4300775ed521/5890219/289bce9bc96acc08">over 2000 written review=
+s</a>&nbsp;on our website. <br /> <br /> However, I find that we have very =
+<em>very</em> few video reviews on our website. I'm trying to make a collec=
+tion of them. &nbsp; <br /> <br /> So if you've gone on a trek and truly en=
+joyed the&nbsp;<strong>&quot;Indiahikes experience,&quot;</strong>&nbsp;do =
+you think you can record a small 2-3 minute video for us?&nbsp; <br /> <br =
+/> It's not too hard. All you need is a smart phone and a quiet space. The =
+outdoors work well too. Just start the video by telling us your name and wh=
+ich trek you've done. And tell us why you would recommend Indiahikes. It is=
+ as simple as that.&nbsp; <br /> <br /> As a thank you gesture, I am going =
+to send you <a class=3D"" href=3D"https://dh315.infusionsoft.com/app/linkCl=
+ick/33993/5607b65a41d34555/5890219/289bce9bc96acc08">this wonderful&nbsp;<s=
+trong>&quot;Trekker for Life&quot;</strong>&nbsp;coffee mug</a>&nbsp;if I p=
+ublish your video. We really love this mug. It was specially designed by gr=
+aphic artist&nbsp;<strong>Noorain Ahmed&nbsp;</strong>for Indiahikes.&nbsp;=
+ <br /> <br /> Your video file is likely to be a large file. You may not be=
+ able to mail it directly. So upload it to your Google drive and share it w=
+ith&nbsp;<font color=3D"#0b5394">tws@indiahikes.com</font>. I can download =
+it from there easily. <br /> <br /> Even if you have never shot a video bef=
+ore don't worry. Ask anyone to just hold the phone for you. That's all it t=
+akes. Some of my&nbsp;<a class=3D"" href=3D"https://dh315.infusionsoft.com/=
+app/linkClick/33995/585ad30f3b4dafbf/5890219/289bce9bc96acc08"><em>Trek wit=
+h Swathi</em></a>&nbsp;video shots are taken on mobile phones!&nbsp; <br />=
+ <br /> I hope you enjoy recording! Write to me if you need help. All of us=
+ at Indiahikes are eager to see your video! :)&nbsp; <br /> <br /> It would=
+ be great if you could send your video to me by&nbsp;<strong>Saturday, 17 M=
+arch</strong>. <br /> <br /> Thank you, Harsh!&nbsp;<div><br /> Regards</di=
+v></div><div><div>&nbsp;</div><div><strong>Swathi Chatrapathy&nbsp;</strong=
+></div><div>Chief Editor, <a class=3D"" href=3D"https://dh315.infusionsoft.=
+com/app/linkClick/30761/68d7da91774ef905/5890219/289bce9bc96acc08">Indiahik=
+es</a></div><div>&nbsp;<em style=3D"background-color: initial;"><span style=
+=3D"background-color: initial;" data-mce-mark=3D"1">.&nbsp;</span></em></di=
+v></div></div><div align=3D"center" style=3D"overflow: visible;">&nbsp;</di=
+v></div></div></td></tr></tbody></table></td></tr></tbody></table></td></tr=
+></tbody></table></div><div align=3D"center"><div style=3D"color: #000000; =
+font-size: 12px; font-family: arial; margin: 0; padding: 0; background: non=
+e; border: none; white-space: normal; line-height: normal; overflow: visibl=
+e;"><div style=3D"color: #000000; font-size: 12px; font-family: arial; marg=
+in: 0; padding: 0; background: none; border: none; white-space: normal; lin=
+e-height: normal; overflow: visible;"><div style=3D"overflow: visible;"><fo=
+nt size=3D"1">If you no longer wish to receive our emails, click this link =
+-&nbsp;</font><font size=3D"1"><a class=3D"" href=3D"https://dh315.infusion=
+soft.com/app/linkClick/4469/0675ba4ad1bf8c61/5890219/289bce9bc96acc08" shap=
+e=3D"rect" style=3D"color: #0645ad;">Unsubscribe <br /> <br /> </a></font><=
+/div></div></div></div><div><div align=3D"center" style=3D"color: #000000; =
+font-size: 12px; font-family: arial; margin: 0; padding: 0; background: non=
+e; border: none; white-space: normal; line-height: normal; overflow: visibl=
+e;"><font size=3D"1">Indiahikes . Bangalore, Karnataka . India</font></div>=
+</div><img height=3D"1" width=3D"1" style=3D"display: block;" alt=3D"" src=
+=3D"https://dh315.infusionsoft.com/app/emailOpened/5890219/199875" /><br><b=
+r><div id=3D"branding" style=3D"text-align:right;display:block"><a href=3D"=
+https://crm.infusionsoft.com/go/infs/footer_dh315/html" target=3D"_blank"><=
+img border=3D"0" src=3D"https://infusionmedia.s3.amazonaws.com/app/template=
+/delivered_white.png"></a></div></body></html>
+------=_Part_246192_287510186.1521103688311--
+

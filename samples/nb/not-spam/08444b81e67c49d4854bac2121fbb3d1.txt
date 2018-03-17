@@ -1,0 +1,1 @@
+{"has_bought":false,"book_title":"Sizzling Summer Reads Vol. 2","language":1,"pricing":{"base_currency":1,"final_price":50.0,"base_price":50.0},"book_id":"08444b81e67c49d4854bac2121fbb3d1","preview":{},"wishlist":{}}

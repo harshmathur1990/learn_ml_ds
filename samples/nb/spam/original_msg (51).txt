@@ -1,0 +1,627 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp38337ive;
+        Wed, 14 Mar 2018 04:29:43 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELuwEldP/ptItnYRT6EM7ghCvWTJ3ONuKAVUV6v/aXdEpf0pXX6BkisxOyH450Gskdw9b/nkjxjqEXk=
+X-Received: by 10.107.159.76 with SMTP id i73mr4599967ioe.0.1521026982741;
+        Wed, 14 Mar 2018 04:29:42 -0700 (PDT)
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of bounces+1660705-202b-mathur.harsh.1990=gmail.com@sendemails.swiggy.in designates 167.89.42.62 as permitted sender) smtp.mailfrom=bounces+1660705-202b-mathur.harsh.1990=gmail.com@sendemails.swiggy.in;
+       dkim=fail header.i=@swiggy.in header.s=s1 header.b=Rt8UTnQH;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=ixaZP20b
+Received-SPF: pass (google.com: domain of bounces+1660705-202b-mathur.harsh.1990=gmail.com@sendemails.swiggy.in designates 167.89.42.62 as permitted sender) client-ip=167.89.42.62;
+Received: by 2002:a24:1192:: with POP3 id 140-v6mf1854804itf.1;
+        Wed, 14 Mar 2018 04:29:42 -0700 (PDT)
+X-Gmail-Fetch-Info: mathur.harsh.1990@gmail.com 2 smtp.gmail.com 995 mathur.harsh.1990
+Delivered-To: mathur.harsh.1990@gmail.com
+Received: by 2002:a25:d941:0:0:0:0:0 with SMTP id q62-v6csp1935522ybg;
+        Wed, 14 Mar 2018 04:27:56 -0700 (PDT)
+X-Received: by 10.55.46.130 with SMTP id u124mr6350169qkh.61.1521026876035;
+        Wed, 14 Mar 2018 04:27:56 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521026876; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Uoi9x8nrb6zqD7hHxir4Frrnf/fNgz13IF6R2iD0MZeKNmnM45kcL/enDvF6Ujl+Uo
+         25hrxs7IzYSOFsIO5PqED0Xm+PY1BQTmF5L09SLwfftBrgO3evx66cskCDmlGVzws6/e
+         Q3jbVlZ69qI56EYRYQQkNB+pF11xYAzbuvSmrRb5V1xELPuNkLXiTker1P5YWA3F3Y0G
+         dOPVcULcBjznqT3gqrMrqZwVk89gEPuznbvhVyi5OchD7t3rg1l9VwLskIxbiCuxAB/o
+         aw817zMt+4j9Ud65RlvVNIULbLuBt+rGWsClgWt32cb+eoQ8yJ8cteB6ENgCuoNju07X
+         B75A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:message-id:to:subject:reply-to:mime-version:from
+         :date:dkim-signature:dkim-signature:arc-authentication-results;
+        bh=IGHqdRF9afU0ljGlaKVJZ2yvwsG//+yxDDQQffvAtzI=;
+        b=R0NkxCqL0v6DLi46++Vx1X++HfM9xxF8Rgdaook7t33lZPRoZVHdfIpRjt8EFzP565
+         EheMqzTxwvSIq9yq36sBOS/8S5fOveytZI0ZeZtSI2FVSFGdSP1xp9Hdp0GzSqSCiNfz
+         Znm74sP0m9KeZG4wMVi47jCmW3WADljXkSLK4U3TCPnf43u+eSrKrh0/ZD/A8eXbqIkU
+         Uf9nKZ56V0KQztTRFAQA5PboCe9f/thJ28zVlwvIxn6NeFPAW6pBqWZpW+Na203Sm+7C
+         rG0NwI3GMN6cLyGImhqfZtnx9B2+umQyy5C9pBc7hFL9+ZuOxiALfAekq6jF4Uu6AqQW
+         tgwQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=fail header.i=@swiggy.in header.s=s1 header.b=Rt8UTnQH;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=ixaZP20b;
+       spf=pass (google.com: domain of bounces+1660705-202b-mathur.harsh.1990=gmail.com@sendemails.swiggy.in designates 167.89.42.62 as permitted sender) smtp.mailfrom=bounces+1660705-202b-mathur.harsh.1990=gmail.com@sendemails.swiggy.in;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=swiggy.in
+Return-Path: <bounces+1660705-202b-mathur.harsh.1990=gmail.com@sendemails.swiggy.in>
+Received: from o1.sendemails.swiggy.in (o1.sendemails.swiggy.in. [167.89.42.62])
+        by mx.google.com with ESMTPS id 71si2362655qkp.287.2018.03.14.04.27.55
+        for <mathur.harsh.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 14 Mar 2018 04:27:56 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+1660705-202b-mathur.harsh.1990=gmail.com@sendemails.swiggy.in designates 167.89.42.62 as permitted sender) client-ip=167.89.42.62;
+Authentication-Results: mx.google.com;
+       dkim=fail header.i=@swiggy.in header.s=s1 header.b=Rt8UTnQH;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=ixaZP20b;
+       spf=pass (google.com: domain of bounces+1660705-202b-mathur.harsh.1990=gmail.com@sendemails.swiggy.in designates 167.89.42.62 as permitted sender) smtp.mailfrom=bounces+1660705-202b-mathur.harsh.1990=gmail.com@sendemails.swiggy.in;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=swiggy.in
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=swiggy.in; 
+	h=content-type:from:mime-version:reply-to:subject:to:list-unsubscribe; 
+	s=s1; bh=RuZfQ1AJYb2bVaoMbiw6AzA1jiE=; b=Rt8UTnQHAqTImdhsLHo4N2R
+	p3YbE8MDKCLwtbhlD5Wljdh43alREHKYEQ5M/t27xBLUc6ovIEaKdFUxsPrpQfcE
+	Xr2GJKfBVR0xkJZ0S0CoEFcN2dV7XCHtX02zjkjJZzDW5QuuAPVDW+RCwOVchSm5
+	84jHf2jus5ii6LkDfkyc=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=sendgrid.info; 
+	h=content-type:from:mime-version:reply-to:subject:to:list-unsubscribe:x-feedback-id; 
+	s=smtpapi; bh=RuZfQ1AJYb2bVaoMbiw6AzA1jiE=; b=ixaZP20bvTrEccnGcZ
+	XdEDGYtagOQ1XNZxYhhSBani50nNZbEAH19IFA9t8XCwIBgC7LjN66zLEq7xSFbm
+	NLHVdtcHCe/20MNZwT47/no3OwVbIxcqHpQOU6S2B/yjx4pNelsoQVtbPFApBUbX
+	GQ5wXU5qarHmQr1fPnDGr+XrA=
+Content-Type: multipart/alternative; boundary=b8effdee57cadb7f2e4ffdd47741d60bbece5d62c286de9bee65f9995376
+Date: Wed, 14 Mar 2018 10:37:53 +0000 (UTC)
+From: "Swiggy" <Social@swiggy.in>
+Mime-Version: 1.0
+Reply-To: Social@swiggy.in
+Subject: Say hello to Nomweek!
+To: mathur.harsh.1990@gmail.com
+Message-ID: <9aTnZ6ndQti-T2IlibxOpQ@ismtpd0003p1iad2.sendgrid.net>
+List-Unsubscribe: <mailto:unsubscribe@sendemails.swiggy.in?subject=http://links.swiggy.in/asm/unsubscribe/*q*user_id=1660705*a*data=n7Vt5mcE5Bdae8IXkOYLBOV6ebsS2kS2fWCTBO-Ez40sbJX50k3rji04RILDeAJDUPiDL3JiR7JpbAae1Zrsd2NyyDmvaYcZUJHfmBevA23jucQhQY74JMHp8ivpdPq2z__3yezpDiJOLUPdNeL5fEYyEbDNdNHmj97KrlckZ14xwQNYpktHjClL080DdVoC9YeDlDaOXeIa85tacPKA9HmEHILH3CDv3sb72ZMcIxSWusthcxH3xboQDbi5AzJpo8xcS4ThCzlKUnw79QgKCRADLqmtP1YdR3QV8AA-QpaSizLeHFv5DcgSs7T78vggWs09Xo7IVBYFT_PotLYZsEEgCeHAdL8S3iSYtjUoP5DX2LMw7068DJG1sgfkfRpQWa9wcWtDzQHTkSUd83MCZVC9IZ5rGbIw-SrV7Sl6lfk_LeQqjWLiGpkDLFPdgetUFxPiblAllUdTtIm3QCg88i9je_5GrmHHe_8OKdwfXQXmHGFWeFeU9V5kLiMJcatHC6iVvZF1Mn8yupyEMP_VENXdvVhOO9N0IxKZhfJJQY7oQCJMntwys8yQPME7-TzAMUkCLvY4I-yxPlju4rcd4g==>
+X-SG-EID: xngEpBq7C4PwYlqJmc2e4UoWTeIzw1VUcVbbj0cRVBNvTHRlq4N5IT9nmWU2fHzymcp+NZr+odgNST
+ Qucbao6ZOJTnJzFT5s3AVZC6YzHPXZV1/YdUxXQGsh5h9P+FYsQdKm1hNibjuSQx+1vi1qKRD4wL/Y
+ OW7+4niPJ+/NVbLcJrrWKt4fA07d9RC26fsdM421b6cXQhbhezYdLMUvSvmm7KYoUTp0aMpRIO0elh
+ A=
+X-SG-ID: Z2FxZazunBjVeNuNdzHDqrF8mxuCpi0krmont6YQrP3okyfP/6Sf7zcYrrw61q7ZA6xsHLR0s9p++M
+ JWOBK+l/eqiW7ZRzNDkmRclq22CvxaUl1xU8sH67RsGQ0ebG+vN/5ag4abnQ9BHdE1o1D1UMJJ/Xzt
+ wFkmoBd2tyVfQSsDfgPs0oIFL00RArE8YxDqxAagPQZddwssX4ggszKcCg==
+X-Feedback-ID: 1660705:eslG77+jzkZIXvvcjCjiaxQ5gHg+uMjGFcBcwO391AI=:dwxXODh2oPADhEvxRL75hCLKzfc3SNdU2Q2beBPgo20=:SG
+
+--b8effdee57cadb7f2e4ffdd47741d60bbece5d62c286de9bee65f9995376
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Mime-Version: 1.0
+
+And bid farewell to delivery charges
+
+http://m.onelink.me/cfb4fb4d?utm_source=3DNewsletter&utm_medium=3DEmail&utm=
+_campaign=3DNOMWEEK%20Kolkata%20Mailer_14Mar18
+
+http://m.onelink.me/cfb4fb4d?utm_source=3DNewsletter&utm_medium=3DEmail&utm=
+_campaign=3DNOMWEEK%20Kolkata%20Mailer_14Mar18
+
+Get the=C2=A0app :=C2=A0 https://play.google.com/store/apps/details?id=3Din=
+.swiggy.android&hl=3Den https://itunes.apple.com/in/app/swiggy-food-order-d=
+elivery/id989540920?mt=3D8=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0Get a bite of us here:=C2=
+=A0 https://www.facebook.com/swiggy.in https://twitter.com/swiggy_in https:=
+//www.instagram.com/swiggyindia/ https://www.youtube.com/channel/UCue3MUx8W=
+_ezngF6uEIuDMA/videos
+
+=C2=A9 2018-Swiggy. All rights reserved.
+
+Swiggy, Tower=C2=A0D, 9th Floor, IBC Knowledge Park, Bannerghatta Road, Ban=
+galore - 560029
+
+To unsubscribe please click=C2=A0here http://links.swiggy.in/asm/unsubscrib=
+e/?user_id=3D1660705&data=3Dn7Vt5mcE5Bdae8IXkOYLBOV6ebsS2kS2fWCTBO-Ez40sbJX=
+50k3rji04RILDeAJDUPiDL3JiR7JpbAae1Zrsd2NyyDmvaYcZUJHfmBevA23jucQhQY74JMHp8i=
+vpdPq2z__3yezpDiJOLUPdNeL5fEYyEbDNdNHmj97KrlckZ14xwQNYpktHjClL080DdVoC9YeDl=
+DaOXeIa85tacPKA9HmEHILH3CDv3sb72ZMcIxSWusthcxH3xboQDbi5AzJpo8xcS4ThCzlKUnw7=
+9QgKCRADLqmtP1YdR3QV8AA-QpaSizLeHFv5DcgSs7T78vggWs09Xo7IVBYFT_PotLYZsEEgCeH=
+AdL8S3iSYtjUoP5DX2LMw7068DJG1sgfkfRpQWa9wcWtDzQHTkSUd83MCZVC9IZ5rGbIw-SrV7S=
+l6lfk_LeQqjWLiGpkDLFPdgetUFxPiblAllUdTtIm3QCg88i9je_5GrmHHe_8OKdwfXQXmHGFWe=
+FeU9V5kLiMJcatHC6iVvZF1Mn8yupyEMP_VENXdvVhOO9N0IxKZhfJJQY7oQCJMntwys8yQPME7=
+-TzAMUkCLvY4I-yxPlju4rcd4g=3D=3D=
+
+--b8effdee57cadb7f2e4ffdd47741d60bbece5d62c286de9bee65f9995376
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Mime-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html data-editor-version=3D"2" class=3D"sg-campaigns" xmlns=3D"http://www.=
+w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+" />
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1, minimum-scale=3D1, maximum-scale=3D1" /><!--[if !mso]><!-->
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3DEdge" /><!--<![end=
+if]-->
+    <!--[if (gte mso 9)|(IE)]>
+    <xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <!--[if (gte mso 9)|(IE)]>
+    <style type=3D"text/css">
+      body {width: 600px;margin: 0 auto;}
+      table {border-collapse: collapse;}
+      table, td {mso-table-lspace: 0pt;mso-table-rspace: 0pt;}
+      img {-ms-interpolation-mode: bicubic;}
+    </style>
+    <![endif]-->
+
+    <style type=3D"text/css">
+      body, p, div {
+        font-family: arial;
+        font-size: 14px;
+      }
+      body {
+        color: #9B9B9B;
+      }
+      body a {
+        color: #0070CD;
+        text-decoration: none;
+      }
+      p { margin: 0; padding: 0; }
+      table.wrapper {
+        width:100% !important;
+        table-layout: fixed;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      img.max-width {
+        max-width: 100% !important;
+      }
+      .column.of-2 {
+        width: 50%;
+      }
+      .column.of-3 {
+        width: 33.333%;
+      }
+      .column.of-4 {
+        width: 25%;
+      }
+      @media screen and (max-width:480px) {
+        .preheader .rightColumnContent,
+        .footer .rightColumnContent {
+            text-align: left !important;
+        }
+        .preheader .rightColumnContent div,
+        .preheader .rightColumnContent span,
+        .footer .rightColumnContent div,
+        .footer .rightColumnContent span {
+          text-align: left !important;
+        }
+        .preheader .rightColumnContent,
+        .preheader .leftColumnContent {
+          font-size: 80% !important;
+          padding: 5px 0;
+        }
+        table.wrapper-mobile {
+          width: 100% !important;
+          table-layout: fixed;
+        }
+        img.max-width {
+          height: auto !important;
+          max-width: 480px !important;
+        }
+        a.bulletproof-button {
+          display: block !important;
+          width: auto !important;
+          font-size: 80%;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        .columns {
+          width: 100% !important;
+        }
+        .column {
+          display: block !important;
+          width: 100% !important;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+      }
+    </style>
+    <!--user entered Head Start-->
+=20=20=20=20
+     <!--End Head user entered-->
+  </head>
+  <body>
+    <center class=3D"wrapper" data-link-color=3D"#0070CD" data-body-style=
+=3D"font-size: 14px; font-family: arial; color: #9B9B9B; background-color: =
+#FFFFFF;">
+      <div class=3D"webkit">
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"10=
+0%" class=3D"wrapper" bgcolor=3D"#FFFFFF">
+          <tr>
+            <td valign=3D"top" bgcolor=3D"#FFFFFF" width=3D"100%">
+              <table width=3D"100%" role=3D"content-container" class=3D"out=
+er" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+                <tr>
+                  <td width=3D"100%">
+                    <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0" border=3D"0">
+                      <tr>
+                        <td>
+                          <!--[if mso]>
+                          <center>
+                          <table><tr><td width=3D"600">
+                          <![endif]-->
+                          <table width=3D"100%" cellpadding=3D"0" cellspaci=
+ng=3D"0" border=3D"0" style=3D"width: 100%; max-width:600px;" align=3D"cent=
+er">
+                            <tr>
+                              <td role=3D"modules-container" style=3D"paddi=
+ng: 0px 0px 0px 0px; color: #9B9B9B; text-align: left;" bgcolor=3D"#FFFFFF"=
+ width=3D"100%" align=3D"left">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20
+    <table class=3D"module preheader preheader-hide" role=3D"module" data-t=
+ype=3D"preheader" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%"
+           style=3D"display: none !important; mso-hide: all; visibility: hi=
+dden; opacity: 0; color: transparent; height: 0; width: 0;">
+      <tr>
+        <td role=3D"module-content">
+          <p>And bid farewell to delivery charges</p>
+        </td>
+      </tr>
+    </table>
+=20=20
+    <table class=3D"wrapper" role=3D"module" data-type=3D"image" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"table-layout=
+: fixed;">
+      <tr>
+        <td style=3D"font-size:6px;line-height:10px;padding:0px 0px 0px 0px=
+;" valign=3D"top" align=3D"center">
+          <a href=3D"http://links.swiggy.in/wf/click?upn=3D5wA1Hc7cngoHY7Pz=
+iWb5u1m-2BVaTlZazE8lL5xsNZEYR-2FlmFYYSROE-2FDLViy8KWMeq3l0r0Xf8dByrwzWUFpDu=
+r7y-2Fqs1-2FdBChb6Q54zw6w50-2FYBoPpiuzPOPYlc7uCntaMBCUadehbJ2Kh7UHFLJQlJmxo=
+pKpDPwR-2FZHyYJ7Vno-3D_SkUvzFZCZLVPL2yfv40EWCGoSgrVsg6bBR0ZYQcL-2FtFfLWCpJZ=
+wEP5XxC-2Bl-2BatSbKCBny1R7UX3B2x9sVkhTVvrgImVgHQIiOpPBQ6aeraDDe60Q6qjIrFpeq=
+GAZ0n0y-2BtGyleYFlDtMexTwg4V-2FXFmSKVkRhlkP91Cg7HiRIzZgZrGJs3PAqJRhu5wWZTb1=
+44rrVUdcKJ5kPXu2HUcSCw8T8zmqT8Fm2MnzKKjb-2F4-2BFjwf12rX02K3swlJiPa6P4VjhMyM=
+a5mcE1mSmJnrMcWfUFhi2bR61a2tnpcNKPL8p1ZPLG-2BVKkN5lp2iUY-2BzLDomMKWwBIXikT4=
+VIqvf4xjDayQcbZ6pRVozfR9II6gKg2bCTgwYFet6XsznOvN-2Bk15a9Do14t-2BDtZDuFOaDcD=
+IIFcJZK6qK9PWUDoZCics2oO5j8Wy0afgfiJ4U14jDa2FCiOZE-2BRksKu1rVY8B8og-3D-3D">=
+<img class=3D"max-width" border=3D"0" style=3D"display:block;color:#000000;=
+text-decoration:none;font-family:Helvetica, arial, sans-serif;font-size:16p=
+x;max-width:35% !important;width:35%;height:auto !important;" src=3D"https:=
+//marketing-image-production.s3.amazonaws.com/uploads/bec38aa77405728576dc6=
+d7f1886b6b42af590905fd925b69f60bdacbbf1837805f83991b501e7fe663b7cf281cc0ae9=
+582cdec9bae527acf46f7febb9891ff8.png" alt=3D"" width=3D"210"></a>
+        </td>
+      </tr>
+    </table>
+=20=20
+    <table class=3D"wrapper" role=3D"module" data-type=3D"image" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"table-layout=
+: fixed;">
+      <tr>
+        <td style=3D"font-size:6px;line-height:10px;padding:0px 0px 0px 0px=
+;" valign=3D"top" align=3D"center">
+          <a href=3D"http://links.swiggy.in/wf/click?upn=3D5wA1Hc7cngoHY7Pz=
+iWb5u1m-2BVaTlZazE8lL5xsNZEYR-2FlmFYYSROE-2FDLViy8KWMeq3l0r0Xf8dByrwzWUFpDu=
+r7y-2Fqs1-2FdBChb6Q54zw6w50-2FYBoPpiuzPOPYlc7uCntaMBCUadehbJ2Kh7UHFLJQlJmxo=
+pKpDPwR-2FZHyYJ7Vno-3D_SkUvzFZCZLVPL2yfv40EWCGoSgrVsg6bBR0ZYQcL-2FtFfLWCpJZ=
+wEP5XxC-2Bl-2BatSbKCBny1R7UX3B2x9sVkhTVvrgImVgHQIiOpPBQ6aeraDDe60Q6qjIrFpeq=
+GAZ0n0y-2BtGyleYFlDtMexTwg4V-2FXFmSKVkRhlkP91Cg7HiRIzZgZrGJs3PAqJRhu5wWZTb1=
+44rrVUdcKJ5kPXu2HUcSCw8T8zmqT8Fm2MnzKKjb-2F4-2FuHHvykmJmkXt-2B-2BeqTmt2mGU5=
+W6R7VO3dMY33dGsMS6-2BSPd5u-2FwMndRXpVxlrsSgOe4CkgQBSFbwdXZiipahe6mZ7Q1vyP5s=
+Zf6G-2FXu3F1ES9AY-2Bgjuxao44ZXDjJdU-2FlmK421yT6B-2BrBo3KsgfoUsIh7fYnFf0Gq66=
+BczG7FVMWtEnlYL3Qfjn-2FGA9Eb9haO8ruWljwIB9O1u0YoYA5PdFOoKhgJLQ71P6iarbv8Z8Q=
+-3D-3D"><img class=3D"max-width" border=3D"0" style=3D"display:block;color:=
+#000000;text-decoration:none;font-family:Helvetica, arial, sans-serif;font-=
+size:16px;max-width:100% !important;width:100%;height:auto !important;" src=
+=3D"https://marketing-image-production.s3.amazonaws.com/uploads/b72daf4daed=
+91323213a99490237b6912db4df38e067d2e927f3d2107a6ed3b9e35f5186a16ea84dc71d34=
+e418bc15de4333a67c4978477ba4dcfe4ddfdd006b.jpg" alt=3D"" width=3D"600"></a>
+        </td>
+      </tr>
+    </table>
+=20=20
+    <table class=3D"module" role=3D"module" data-type=3D"text" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"table-layout: =
+fixed;">
+      <tr>
+        <td style=3D"padding:18px 0px 18px 0px;line-height:22px;text-align:=
+inherit;"
+            height=3D"100%"
+            valign=3D"top"
+            bgcolor=3D"">
+            <div><span style=3D"font-family: &quot;Helvetica Neue&quot;, He=
+lvetica, Helvetica, Arial, sans-serif; color: rgb(0, 0, 0); font-style: nor=
+mal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight=
+: 400; font-size: 12px;">&nbsp; &nbsp;Get the&nbsp;app :&nbsp;</span><span =
+class=3D"sg-image" data-imagelibrary=3D"%7B%22width%22%3A%2290%22%2C%22heig=
+ht%22%3A%2233%22%2C%22alignment%22%3A%22%22%2C%22border%22%3A0%2C%22src%22%=
+3A%22https%3A//marketing-image-production.s3.amazonaws.com/uploads/6ed63c6a=
+f2c7f6f7f86016ac67a62a1d64352b11e816cb4a79108489178dd6628d5a03729b16be639c1=
+095795f32d16bac4045ac51b39c9e1963f8167229542f.jpg%22%2C%22link%22%3A%22http=
+s%3A//play.google.com/store/apps/details%3Fid%3Din.swiggy.android%26hl%3Den=
+%22%2C%22alt_text%22%3A%22%22%2C%22classes%22%3A%7B%22sg-image%22%3A1%7D%7D=
+" style=3D"font-family: &quot;Helvetica Neue&quot;, Helvetica, Helvetica, A=
+rial, sans-serif;"><a href=3D"http://links.swiggy.in/wf/click?upn=3D5GTinLS=
+Vs5IxXRJ9OnvajCp-2BSA0y247Ikm1fIiKBOyeXK0kEi0FCZbEtU4e1k2DTN5ld2pLPJIe7JbSk=
+5I2kJCERG-2FlLvE7coOGgyJjl0-2Bs-3D_SkUvzFZCZLVPL2yfv40EWCGoSgrVsg6bBR0ZYQcL=
+-2FtFfLWCpJZwEP5XxC-2Bl-2BatSbKCBny1R7UX3B2x9sVkhTVvrgImVgHQIiOpPBQ6aeraDDe=
+60Q6qjIrFpeqGAZ0n0y-2BtGyleYFlDtMexTwg4V-2FXFmSKVkRhlkP91Cg7HiRIzZgZrGJs3PA=
+qJRhu5wWZTb144rrVUdcKJ5kPXu2HUcSCw8T8zmqT8Fm2MnzKKjb-2F4-2BRh0jUPf2K6UNlzhf=
+0o0JfVmAbpf5NUvjqhakvATrCSYlMmLEd70nMnRmpmrMrYNHkJ5KcojSgT90wvK2c18Td76X4P0=
+Pz1zT-2F4DX2Rqkf3B-2FBxZogBk1Ahl3k2mkxqXBC8bAIp-2BcQ-2BDz-2FNb3ccvtZFuU8TzO=
+qLS1CkkFeNLaGAAvyRtH4cBi5sQQ8nPP81NpnxhHPXfrvNateS6YtWjI0ClLWzX3Um5bYk7ihr9=
+qs8Q-3D-3D" style=3D"font-family: &quot;Helvetica Neue&quot;, Helvetica, He=
+lvetica, Arial, sans-serif; color: rgb(43, 166, 203);"><img height=3D"33" s=
+rc=3D"https://marketing-image-production.s3.amazonaws.com/uploads/6ed63c6af=
+2c7f6f7f86016ac67a62a1d64352b11e816cb4a79108489178dd6628d5a03729b16be639c10=
+95795f32d16bac4045ac51b39c9e1963f8167229542f.jpg" style=3D"font-family: &qu=
+ot;Helvetica Neue&quot;, Helvetica, Helvetica, Arial, sans-serif; max-width=
+: 100%; width: 90px; height: 33px;" width=3D"90"></a></span><span class=3D"=
+sg-image" data-imagelibrary=3D"%7B%22width%22%3A%2290%22%2C%22height%22%3A%=
+2233%22%2C%22alignment%22%3A%22%22%2C%22border%22%3A0%2C%22src%22%3A%22http=
+s%3A//marketing-image-production.s3.amazonaws.com/uploads/62a0b66a42547c6a8=
+3b9accad1e8f6e7aa4a49854ac911efd9444fbc5c398f5f32ff6935deb90f522a124e496a01=
+6ee5bdc036111d41b908c6927f526ed8e7f4.jpg%22%2C%22link%22%3A%22https%3A//itu=
+nes.apple.com/in/app/swiggy-food-order-delivery/id989540920%3Fmt%3D8%22%2C%=
+22alt_text%22%3A%22%22%2C%22classes%22%3A%7B%22sg-image%22%3A1%7D%7D" style=
+=3D"font-family: &quot;Helvetica Neue&quot;, Helvetica, Helvetica, Arial, s=
+ans-serif;"><a href=3D"http://links.swiggy.in/wf/click?upn=3D5GTinLSVs5IxXR=
+J9OnvajElLFvhssnIvTRko1duAn2zEbjaZmNH-2F405QcgfJgS1ZddWXSjHn15mh9952MVMi-2B=
+B-2BInQBfDi1NaX3pGPFi2j1pbpS7-2BiyC2KtRrfLmFoe1_SkUvzFZCZLVPL2yfv40EWCGoSgr=
+Vsg6bBR0ZYQcL-2FtFfLWCpJZwEP5XxC-2Bl-2BatSbKCBny1R7UX3B2x9sVkhTVvrgImVgHQIi=
+OpPBQ6aeraDDe60Q6qjIrFpeqGAZ0n0y-2BtGyleYFlDtMexTwg4V-2FXFmSKVkRhlkP91Cg7Hi=
+RIzZgZrGJs3PAqJRhu5wWZTb144rrVUdcKJ5kPXu2HUcSCw8T8zmqT8Fm2MnzKKjb-2F4-2F0h1=
+7HV0hs9pRlwFWUMyp4PAXpEBnOmS-2FpTQuJdLDdZIF2Xde2p96wXhMnO2QWGWQ4W6NagCSGOvC=
+v5jhFoXHkMp110IwJid-2BHv1NDJZcUvhXfucICtDEwuWo3xygAPPYDdN6F5rzO-2Bpa7nVoKmG=
+6h4DTJDFW5N04ApogsT1UzZkCnz3-2B5Gp-2F4PxpIJ3QLRXRR7KBSoyS6dpNkqmLrq8jZgxC3I=
+H8tOJVtvFs-2Bzne9kw-3D-3D" style=3D"font-family: &quot;Helvetica Neue&quot;=
+, Helvetica, Helvetica, Arial, sans-serif; color: rgb(43, 166, 203);"><img =
+height=3D"33" src=3D"https://marketing-image-production.s3.amazonaws.com/up=
+loads/62a0b66a42547c6a83b9accad1e8f6e7aa4a49854ac911efd9444fbc5c398f5f32ff6=
+935deb90f522a124e496a016ee5bdc036111d41b908c6927f526ed8e7f4.jpg" style=3D"f=
+ont-family: &quot;Helvetica Neue&quot;, Helvetica, Helvetica, Arial, sans-s=
+erif; max-width: 100%; width: 90px; height: 33px;" width=3D"90"></a></span>=
+<span style=3D"font-family: arial, sans-serif; font-style: normal; font-var=
+iant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-s=
+ize: 12px; color: rgb(38, 50, 56);">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Get a bite of us =
+here:</span><span style=3D"color: rgb(0, 0, 0); font-family: &quot;Helvetic=
+a Neue&quot;, Helvetica, Helvetica, Arial, sans-serif; font-size: medium; f=
+ont-style: normal; font-variant-ligatures: normal; font-variant-caps: norma=
+l; font-weight: 400; background-color: rgb(255, 255, 255);">&nbsp;</span><s=
+pan class=3D"sg-image" data-imagelibrary=3D"%7B%22width%22%3A%2230%22%2C%22=
+height%22%3A%2230%22%2C%22alignment%22%3A%22%22%2C%22border%22%3A0%2C%22src=
+%22%3A%22https%3A//marketing-image-production.s3.amazonaws.com/uploads/a96e=
+f6e6b3b660f6dafd5c2c520edf37f3aca831ea515d5a1cef12e7880d39399da44293b58254f=
+9192f671116a843d92afa1444aa16f4500146cc2fec99cf87.jpg%22%2C%22link%22%3A%22=
+https%3A//www.facebook.com/swiggy.in%22%2C%22alt_text%22%3A%22%22%2C%22clas=
+ses%22%3A%7B%22sg-image%22%3A1%7D%7D" style=3D"font-family: &quot;Helvetica=
+ Neue&quot;, Helvetica, Helvetica, Arial, sans-serif;"><a href=3D"http://li=
+nks.swiggy.in/wf/click?upn=3D5GTinLSVs5IxXRJ9OnvajN8Y2x1Yx5YQJq76mwKw3ueZpn=
+mrlR4-2FkUZypTd4Tz6B_SkUvzFZCZLVPL2yfv40EWCGoSgrVsg6bBR0ZYQcL-2FtFfLWCpJZwE=
+P5XxC-2Bl-2BatSbKCBny1R7UX3B2x9sVkhTVvrgImVgHQIiOpPBQ6aeraDDe60Q6qjIrFpeqGA=
+Z0n0y-2BtGyleYFlDtMexTwg4V-2FXFmSKVkRhlkP91Cg7HiRIzZgZrGJs3PAqJRhu5wWZTb144=
+rrVUdcKJ5kPXu2HUcSCw8T8zmqT8Fm2MnzKKjb-2F4-2FV0YtFUJpQ9M47ZBaqQ6Zt7Rnjo-2BT=
+-2Bu-2B6oCX2gy5QqQ-2BDQllcgp43qV6u0sSv44-2BuNqRluLsqgPhAb97lRnu3rk7hw1w8-2F=
+q-2Fzh1yYiJ88lAnO1gKwcL1ieqW-2BQBS1tzcAnaYpGO1fqblMhs7FjrefnfNe9F3iPdSOVSrV=
+DR6DxzffIb0V-2FtnGNzZZHKRN773QnD-2Frd72DbMZWtzZOFqKgkmmg3hmINr5Ijj5WOoiArew=
+-3D-3D" style=3D"font-family: &quot;Helvetica Neue&quot;, Helvetica, Helvet=
+ica, Arial, sans-serif; color: rgb(43, 166, 203);"><img height=3D"30" src=
+=3D"https://marketing-image-production.s3.amazonaws.com/uploads/a96ef6e6b3b=
+660f6dafd5c2c520edf37f3aca831ea515d5a1cef12e7880d39399da44293b58254f9192f67=
+1116a843d92afa1444aa16f4500146cc2fec99cf87.jpg" style=3D"font-family: &quot=
+;Helvetica Neue&quot;, Helvetica, Helvetica, Arial, sans-serif; max-width: =
+100%; width: 30px; height: 30px;" width=3D"30"></a></span><span class=3D"sg=
+-image" data-imagelibrary=3D"%7B%22width%22%3A%2230%22%2C%22height%22%3A%22=
+30%22%2C%22alignment%22%3A%22%22%2C%22border%22%3A0%2C%22src%22%3A%22https%=
+3A//marketing-image-production.s3.amazonaws.com/uploads/3e9f06388c6a63bb93b=
+0c248321c5c4ad5735faa72a53f7c9535a45b9451fe128d8cd66d5e4b7748f0899761e2fbec=
+b161bcdb897173f808823b3317689aa698.jpg%22%2C%22link%22%3A%22https%3A//twitt=
+er.com/swiggy_in%22%2C%22alt_text%22%3A%22%22%2C%22classes%22%3A%7B%22sg-im=
+age%22%3A1%7D%7D" style=3D"font-family: &quot;Helvetica Neue&quot;, Helveti=
+ca, Helvetica, Arial, sans-serif;"><a href=3D"http://links.swiggy.in/wf/cli=
+ck?upn=3D5GTinLSVs5IxXRJ9OnvajBEFs7KaR6hhNfFoOrzA8sZMhWbuDZdY2RvwCNUD-2FElW=
+_SkUvzFZCZLVPL2yfv40EWCGoSgrVsg6bBR0ZYQcL-2FtFfLWCpJZwEP5XxC-2Bl-2BatSbKCBn=
+y1R7UX3B2x9sVkhTVvrgImVgHQIiOpPBQ6aeraDDe60Q6qjIrFpeqGAZ0n0y-2BtGyleYFlDtMe=
+xTwg4V-2FXFmSKVkRhlkP91Cg7HiRIzZgZrGJs3PAqJRhu5wWZTb144rrVUdcKJ5kPXu2HUcSCw=
+8T8zmqT8Fm2MnzKKjb-2F4-2FsN99l3P-2BbKUUDGj9RUGMUjMBNEa5IoFhA3NFksJN-2FyzrWV=
+k85HH56SGh5IEuJAHkdZ53YXDw0UDFnmr53VvwmtoUOPKAEHPvNHlrX4iN58pwbLX3-2B8vcyKN=
+DoxyZfEuBmO8LKZyZQAjBt2eJ6emvvY6di0b9XTaWBeeR6NqPJ-2FpDDVbQP9uTqGr-2FjPVMSY=
+TIWd4iJ-2FU4OuPHSpafbvW3wAuD7blVLadxAn2ixhMIeSg-3D-3D" style=3D"font-family=
+: &quot;Helvetica Neue&quot;, Helvetica, Helvetica, Arial, sans-serif; colo=
+r: rgb(43, 166, 203);"><img height=3D"30" src=3D"https://marketing-image-pr=
+oduction.s3.amazonaws.com/uploads/3e9f06388c6a63bb93b0c248321c5c4ad5735faa7=
+2a53f7c9535a45b9451fe128d8cd66d5e4b7748f0899761e2fbecb161bcdb897173f808823b=
+3317689aa698.jpg" style=3D"font-family: &quot;Helvetica Neue&quot;, Helveti=
+ca, Helvetica, Arial, sans-serif; max-width: 100%; width: 30px; height: 30p=
+x;" width=3D"30"></a></span><span class=3D"sg-image" data-imagelibrary=3D"%=
+7B%22width%22%3A%2230%22%2C%22height%22%3A%2230%22%2C%22alignment%22%3A%22%=
+22%2C%22border%22%3A0%2C%22src%22%3A%22https%3A//marketing-image-production=
+.s3.amazonaws.com/uploads/675f504c5d2e58afc4f65f957a8f9211528774891a7f57e88=
+a065a33cdc81682767e6e92e63097796c42a71f5a4a34c2396d43b9166eb2fa5908bf4fc3e3=
+3336.jpg%22%2C%22link%22%3A%22https%3A//www.instagram.com/swiggyindia/%22%2=
+C%22alt_text%22%3A%22%22%2C%22classes%22%3A%7B%22sg-image%22%3A1%7D%7D" sty=
+le=3D"font-family: &quot;Helvetica Neue&quot;, Helvetica, Helvetica, Arial,=
+ sans-serif;"><a href=3D"http://links.swiggy.in/wf/click?upn=3D5GTinLSVs5Ix=
+XRJ9OnvajGXb5JMBea17Mc0g9UerfAGfmcxn-2F13jMZ0-2B4jyd2S-2FE_SkUvzFZCZLVPL2yf=
+v40EWCGoSgrVsg6bBR0ZYQcL-2FtFfLWCpJZwEP5XxC-2Bl-2BatSbKCBny1R7UX3B2x9sVkhTV=
+vrgImVgHQIiOpPBQ6aeraDDe60Q6qjIrFpeqGAZ0n0y-2BtGyleYFlDtMexTwg4V-2FXFmSKVkR=
+hlkP91Cg7HiRIzZgZrGJs3PAqJRhu5wWZTb144rrVUdcKJ5kPXu2HUcSCw8T8zmqT8Fm2MnzKKj=
+b-2F483ktqxe00ZBIn3qpA8lHbEhZuhfvFWFw7mGQr3eQQOKoTEFHifAlIbSP7H-2FWDt2huJLN=
+ImjutsTTCrztZNQEXBCsACFvZvU2EPmipe-2FTKBsjnFFKfkqP6SmZ-2Fa0-2FVeb8ksWonQF7t=
+nMyKrAkrCetn2GACZFnxJ0-2B-2B3f1qKGuipcaGoEdRTRSpdu2Zv61ONrawZmPb5pdJGockxgR=
+dzKe47HAO9CUQ-2BJluVRJBwoPXpgg-3D-3D" style=3D"font-family: &quot;Helvetica=
+ Neue&quot;, Helvetica, Helvetica, Arial, sans-serif; color: rgb(43, 166, 2=
+03);"><img height=3D"30" src=3D"https://marketing-image-production.s3.amazo=
+naws.com/uploads/675f504c5d2e58afc4f65f957a8f9211528774891a7f57e88a065a33cd=
+c81682767e6e92e63097796c42a71f5a4a34c2396d43b9166eb2fa5908bf4fc3e33336.jpg"=
+ style=3D"font-family: &quot;Helvetica Neue&quot;, Helvetica, Helvetica, Ar=
+ial, sans-serif; max-width: 100%; width: 30px; height: 30px;" width=3D"30">=
+</a></span><span class=3D"sg-image" data-imagelibrary=3D"%7B%22width%22%3A%=
+2230%22%2C%22height%22%3A%2230%22%2C%22alignment%22%3A%22%22%2C%22border%22=
+%3A0%2C%22src%22%3A%22https%3A//marketing-image-production.s3.amazonaws.com=
+/uploads/463908d8ae0aab3b56e69dab3091f588b3b690ea11c3d2147283af36558cbb009c=
+56ffd91f8c4306a806e1d6d5f1026882fbd415f828dc322793c7174711da34.jpg%22%2C%22=
+link%22%3A%22https%3A//www.youtube.com/channel/UCue3MUx8W_ezngF6uEIuDMA/vid=
+eos%22%2C%22alt_text%22%3A%22%22%2C%22classes%22%3A%7B%22sg-image%22%3A1%7D=
+%7D" style=3D"font-family: &quot;Helvetica Neue&quot;, Helvetica, Helvetica=
+, Arial, sans-serif;"><a href=3D"http://links.swiggy.in/wf/click?upn=3D5GTi=
+nLSVs5IxXRJ9OnvajIbDwmGfcqUkBwB3V1oFgNQLVxsfTS-2FwqlRfSlAUfCfMfpFI6vE0XfydL=
+X-2FkgF-2B1xy1kiEbohSId4JI0bElNgos-3D_SkUvzFZCZLVPL2yfv40EWCGoSgrVsg6bBR0ZY=
+QcL-2FtFfLWCpJZwEP5XxC-2Bl-2BatSbKCBny1R7UX3B2x9sVkhTVvrgImVgHQIiOpPBQ6aera=
+DDe60Q6qjIrFpeqGAZ0n0y-2BtGyleYFlDtMexTwg4V-2FXFmSKVkRhlkP91Cg7HiRIzZgZrGJs=
+3PAqJRhu5wWZTb144rrVUdcKJ5kPXu2HUcSCw8T8zmqT8Fm2MnzKKjb-2F4-2FEaMlyXWqVxBc-=
+2FxfNWI-2F052JL2xxe-2FKNTCF06EY8G2MlgA9BY-2Fwg8vOxYdBNMcWxmp4mFXYd1BXWz2EJU=
+ZNZ-2BXFp7UbvT3O0AzoenhQ-2FHSQkhFKZym-2FJeXUKNmTb76eiwOygkbXwXdrdvV0eqg6liO=
+aCOkglABgZDwaoO0y5zVzJV-2B3vGIAVbbwcdZuz0JPCJkQLc-2Bks7bKm1KAcSEAQwk4jRqano=
+zqIAyMW3tqFuPBw-3D-3D" style=3D"font-family: &quot;Helvetica Neue&quot;, He=
+lvetica, Helvetica, Arial, sans-serif; color: rgb(43, 166, 203);"><img heig=
+ht=3D"30" src=3D"https://marketing-image-production.s3.amazonaws.com/upload=
+s/463908d8ae0aab3b56e69dab3091f588b3b690ea11c3d2147283af36558cbb009c56ffd91=
+f8c4306a806e1d6d5f1026882fbd415f828dc322793c7174711da34.jpg" style=3D"font-=
+family: &quot;Helvetica Neue&quot;, Helvetica, Helvetica, Arial, sans-serif=
+; max-width: 100%; width: 30px; height: 30px;" width=3D"30"></a></span></di=
+v>
+        </td>
+      </tr>
+    </table>
+=20=20
+    <table class=3D"module" role=3D"module" data-type=3D"text" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"table-layout: =
+fixed;">
+      <tr>
+        <td style=3D"padding:18px 0px 18px 0px;line-height:22px;text-align:=
+inherit;"
+            height=3D"100%"
+            valign=3D"top"
+            bgcolor=3D"">
+            <div>
+<table cellpadding=3D"0" cellspacing=3D"0" class=3D"column" style=3D"font-f=
+amily: &quot;Helvetica Neue&quot;, Helvetica, Helvetica, Arial, sans-serif;=
+ color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant-l=
+igatures: normal; font-variant-caps: normal; font-weight: 400;" width=3D"10=
+0%">
+	<tbody style=3D"font-family: &quot;Helvetica Neue&quot;, Helvetica, Helvet=
+ica, Arial, sans-serif;">
+		<tr style=3D"font-family: &quot;Helvetica Neue&quot;, Helvetica, Helvetic=
+a, Arial, sans-serif;">
+			<td style=3D"font-family: &quot;Helvetica Neue&quot;, Helvetica, Helveti=
+ca, Arial, sans-serif;">
+			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-fa=
+mily: Arial, Helvetica, sans-serif; font-size: 11px; color: rgb(155, 155, 1=
+55);" width=3D"100%">
+				<tbody style=3D"font-family: &quot;Helvetica Neue&quot;, Helvetica, Hel=
+vetica, Arial, sans-serif;">
+					<tr style=3D"font-family: &quot;Helvetica Neue&quot;, Helvetica, Helve=
+tica, Arial, sans-serif;">
+						<td align=3D"center" style=3D"font-family: &quot;Helvetica Neue&quot;=
+, Helvetica, Helvetica, Arial, sans-serif;">
+						<p style=3D"margin-bottom: 0px; font-family: &quot;Helvetica Neue&quo=
+t;, Helvetica, Helvetica, Arial, sans-serif; color: rgb(88, 88, 88); font-w=
+eight: normal; font-size: 12px; line-height: 1.6; text-align: center;"><spa=
+n style=3D"color:#696969;"><span style=3D"font-size:10px;"><span style=3D"f=
+ont-family: &quot;Helvetica Neue&quot;, Helvetica, Helvetica, Arial, sans-s=
+erif; background-color: rgb(255, 255, 255);"><span style=3D"font-family: &q=
+uot;Helvetica Neue&quot;, Helvetica, Helvetica, Arial, sans-serif;"><span s=
+tyle=3D"font-family: arial, helvetica, sans-serif;"><font style=3D"margin: =
+0px; padding: 0px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Helv=
+etica, Arial, sans-serif;">=C2=A9 2018-Swiggy. All rights reserved.</font><=
+/span></span></span></span></span></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" st=
+yle=3D"padding-top: 10px; padding-bottom: 10px; font-family: Arial, Helveti=
+ca, sans-serif; font-style: normal; font-variant-ligatures: normal; font-va=
+riant-caps: normal; font-weight: 400; font-size: 10px; color: rgb(155, 155,=
+ 155);" width=3D"100%">
+	<tbody style=3D"font-family: &quot;Helvetica Neue&quot;, Helvetica, Helvet=
+ica, Arial, sans-serif;">
+		<tr style=3D"font-family: &quot;Helvetica Neue&quot;, Helvetica, Helvetic=
+a, Arial, sans-serif;">
+			<td align=3D"center" style=3D"font-family: &quot;Helvetica Neue&quot;, H=
+elvetica, Helvetica, Arial, sans-serif;" width=3D"33.3333%">
+			<div style=3D"text-align: center;"><span style=3D"color:#696969;"><span =
+style=3D"font-size:10px;"><span style=3D"font-family: &quot;Helvetica Neue&=
+quot;, Helvetica, Helvetica, Arial, sans-serif; background-color: rgb(255, =
+255, 255);"><span style=3D"font-family: &quot;Helvetica Neue&quot;, Helveti=
+ca, Helvetica, Arial, sans-serif;"><font style=3D"margin: 0px; padding: 0px=
+;">Swiggy, Tower&nbsp;D, 9th Floor, IBC Knowledge Park, Bannerghatta Road, =
+Bangalore - 560029</font></span></span></span></span></div>
+
+			<div style=3D"text-align: center;"><span style=3D"font-family:arial,helv=
+etica,sans-serif;"><span style=3D"color: rgb(0, 0, 0); font-size: 11px; fon=
+t-style: normal; font-variant-ligatures: normal; font-variant-caps: normal;=
+ font-weight: 400; background-color: rgb(255, 255, 255);">To unsubscribe pl=
+ease click&nbsp;</span><a href=3D"http://links.swiggy.in/asm/unsubscribe/?u=
+ser_id=3D1660705&data=3Dn7Vt5mcE5Bdae8IXkOYLBOV6ebsS2kS2fWCTBO-Ez40sbJX50k3=
+rji04RILDeAJDUPiDL3JiR7JpbAae1Zrsd2NyyDmvaYcZUJHfmBevA23jucQhQY74JMHp8ivpdP=
+q2z__3yezpDiJOLUPdNeL5fEYyEbDNdNHmj97KrlckZ14xwQNYpktHjClL080DdVoC9YeDlDaOX=
+eIa85tacPKA9HmEHILH3CDv3sb72ZMcIxSWusthcxH3xboQDbi5AzJpo8xcS4ThCzlKUnw79QgK=
+CRADLqmtP1YdR3QV8AA-QpaSizLeHFv5DcgSs7T78vggWs09Xo7IVBYFT_PotLYZsEEgCeHAdL8=
+S3iSYtjUoP5DX2LMw7068DJG1sgfkfRpQWa9wcWtDzQHTkSUd83MCZVC9IZ5rGbIw-SrV7Sl6lf=
+k_LeQqjWLiGpkDLFPdgetUFxPiblAllUdTtIm3QCg88i9je_5GrmHHe_8OKdwfXQXmHGFWeFeU9=
+V5kLiMJcatHC6iVvZF1Mn8yupyEMP_VENXdvVhOO9N0IxKZhfJJQY7oQCJMntwys8yQPME7-TzA=
+MUkCLvY4I-yxPlju4rcd4g=3D=3D" style=3D"font-family: Arial, sans-serif; colo=
+r: rgb(43, 166, 203); font-size: 11px; font-style: normal; font-variant-lig=
+atures: normal; font-variant-caps: normal; font-weight: 400; text-size-adju=
+st: none; background-color: rgb(255, 255, 255);"><span style=3D"text-size-a=
+djust: none; color: rgb(0, 0, 255); text-decoration-line: underline;">here<=
+/span></a></span></div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+        </td>
+      </tr>
+    </table>
+=20=20
+                              </td>
+                            </tr>
+                          </table>
+                          <!--[if mso]>
+                          </td></tr></table>
+                          </center>
+                          <![endif]-->
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </center>
+=20=20
+<img src=3D"http://links.swiggy.in/wf/open?upn=3DSkUvzFZCZLVPL2yfv40EWCGoSg=
+rVsg6bBR0ZYQcL-2FtFfLWCpJZwEP5XxC-2Bl-2BatSbKCBny1R7UX3B2x9sVkhTVvrgImVgHQI=
+iOpPBQ6aeraDDe60Q6qjIrFpeqGAZ0n0y-2BtGyleYFlDtMexTwg4V-2FXFmSKVkRhlkP91Cg7H=
+iRIzZgZrGJs3PAqJRhu5wWZTb144rrVUdcKJ5kPXu2HUcSCw8T8zmqT8Fm2MnzKKjb-2F4-2FjR=
+nfT6WGaQl-2B-2BVwtqVSXblVTcunWe8qW8MbzZNvxR6n3L2ESpN2-2F8epw5mKwilC2MimNmsh=
+kDANi1Y1shIfj9B4UgklVB-2FmxQQ9cPY-2BAZVi39uJZrWB1AKoX6iHAdzy32dCFdReOn5h3Qi=
+yE3ONMndxsaSWZq30ZyyGjX3isJau3LukC8cuvozR3JpmT0DVHXo0EyeF3KoPFKSkaxEMhE1lMz=
+loeiUrLpoDD0VeXS3w-3D-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" st=
+yle=3D"height:1px !important;width:1px !important;border-width:0 !important=
+;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !importa=
+nt;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !impo=
+rtant;padding-right:0 !important;padding-left:0 !important;"/>
+</body>
+</html>
+
+--b8effdee57cadb7f2e4ffdd47741d60bbece5d62c286de9bee65f9995376--

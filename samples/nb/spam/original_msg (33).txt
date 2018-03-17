@@ -1,0 +1,219 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp1051665ive;
+        Wed, 14 Mar 2018 23:49:39 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELu5ZyxdUJaX6b9s/a/AxG3u2U4GauGjb16DUKjNC0m2rebvlOZGB4ixYaF/g4vLnE/CGgcS
+X-Received: by 10.55.38.209 with SMTP id m78mr11205615qkm.47.1521096579267;
+        Wed, 14 Mar 2018 23:49:39 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521096579; cv=none;
+        d=google.com; s=arc-20160816;
+        b=dWGp6S646DYaeFs6uACZuu2QzCU+W6Lw3B7Pfd3u/Z5YyTGca/6IxZbNyjCd1eYKmm
+         vYiEQ7v9cAXFpfGyskpbEMaAZDyGtXxtfcUF9lC0QJpNBhG9TLr3Hxh4KzMJJepV97Sb
+         uca8rWDLa9D04xG6ZLeM+7GDcQlBI/jwlL9iSLU/aNtzH7D7EnEC7eugTKtAGtMXSOmT
+         BhWiKFUCJgTabqO2W4DOBWFye+KVF2icO9PESqEm3EMdSWFkH5s58L/9wRr5XiRUaudV
+         yYFgiNkv+8yXfNls4XA3jAX3G4LUT9gmqxvFSD19oj2Ss/lmbiEYvVndEiYLNolOgKIk
+         UtLQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:message-id:list-unsubscribe:date:reply-to
+         :sender:to:from:subject:dkim-signature:arc-authentication-results;
+        bh=zo6nWVnFHCcKgxAA2NFCiEuapOW+YrcxN3nRQS4udeA=;
+        b=BYCNmzDhGFOeaMwLus9qU3qc6WPBxdnykM1fryj11cONCAzC9yP8l+O8Esy+PVxTfW
+         +mi1hTgQFweNj9QyO5IqmI3CjzeYL3rYlmBvF4trnRcigJGPXI1nHzZL4W7RJnl0hxNR
+         gUmevbEIgJRKhJ+MIC+WF51A2Aw5Uzcyp8QSPTGccvQkMfWWEHc0s4r6AxuvJNFpBFFt
+         VHS4G4t85acyjMhtevr37oQzYt0r/7wMn+16ik+RkG5kdeP+aJXhDTjuZjZkQKdN9a2q
+         mvAHKrS+rJr2JvNLqXW6sfZSUvYo5KQapOfoqXUo2erEJxlgMOeXWnQyR05YistlDlIH
+         JCZA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mailclues.info header.s=itnet header.b=ZWHb637m;
+       spf=pass (google.com: domain of return-a27-11174-11175-1bf49932=30735482=8@mailclues.info designates 66.70.250.61 as permitted sender) smtp.mailfrom=return-a27-11174-11175-1bf49932=30735482=8@mailclues.info
+Return-Path: <return-a27-11174-11175-1bf49932=30735482=8@mailclues.info>
+Received: from smtp1-6.itnet.info (smtp1-6.itnet.info. [66.70.250.61])
+        by mx.google.com with ESMTPS id u4si4163537qkc.6.2018.03.14.23.49.38
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 14 Mar 2018 23:49:39 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return-a27-11174-11175-1bf49932=30735482=8@mailclues.info designates 66.70.250.61 as permitted sender) client-ip=66.70.250.61;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mailclues.info header.s=itnet header.b=ZWHb637m;
+       spf=pass (google.com: domain of return-a27-11174-11175-1bf49932=30735482=8@mailclues.info designates 66.70.250.61 as permitted sender) smtp.mailfrom=return-a27-11174-11175-1bf49932=30735482=8@mailclues.info
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=mailclues.info; s=itnet; t=1521096578;
+ bh=gHZI2dXHtoyexTEqHU1hwlwzZg8=;
+ h=Subject:From:To:Sender:Reply-To:Date:List-Unsubscribe:
+  X-CampaignID:Message-ID:X-Mailer-Info:Content-Type:
+  Content-Transfer-Encoding;
+ b=ZWHb637mdv/tlL3a71h35g9M2Sh1EhmhAMh0tAzerjSzxcmzR/m5/MeOMXgbGNMkl
+  87RW+R9deFm6X2M5xeEvT3sJNlCTeYZMmNKjWWBjReK+SA01DUgRGSF5RN7sNgOg8i
+  coUCvj2Z2nRp4AH+6RNd9myQ1xKR2PkhdqjsdYy4=
+Subject: Great News! You get Rs. 1200 off.
+From: =?UTF-8?B?TXlsZXMgQ2Fycw==?= <info@mailclues.info>
+To: harshmathur.1990@gmail.com
+Sender: info@mailclues.info
+Reply-To: info@mailclues.info
+Date: 15 Mar 2018 06:49:38 -0000
+List-Unsubscribe: <http://e.mailclues.info/ga/unsubscribe/2-30735482-27-5888-11175-6ce9419be39577a-3e0fdce152?confirmed=1>,
+ <mailto:return-a27-11174-11175-1bf49932=30735482=8u@mailclues.info>
+X-CampaignID: s4:11174-a6d77b8f7aa74748
+Message-ID: <mid-7476ec13bb17b3663841934f3a948ee5-2@mailclues.info>
+X-Mailer-Info: 8.hJzN.ETMxcDN.gWYyNHatFGdoVncuETO5ADQn1WYpxmLj9Wb.MDM3MTN0gjM.ETMxcTN
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div style=3D"text-align: center;">
+<table class=3D"rtable" style=3D"color: #000000; font-family: 'Open Sans', =
+sans-serif; font-size: 12px; width: 600px; margin: auto; background-image: =
+initial; background-position: initial; background-size: initial; background=
+-repeat: initial; background-attachment: initial; background-origin: initia=
+l; background-clip: initial;" border=3D"0" width=3D"600" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top">
+<table class=3D"rtable" style=3D"border-collapse: collapse; background: #19=
+261e; border: 1px solid #dddddd;" border=3D"0" width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"text-align: center;"><a href=3D"http://e.mailclues.info/ga/cli=
+ck/2-30735482-27-5888-11175-9858-93f25a6092-3e0fdce152" target=3D"_blank" r=
+el=3D"noopener"><img style=3D"border-width: 0px; border-style: initial; out=
+line: 0px;" src=3D"https://s3-us-west-2.amazonaws.com/mailers2018/Myles/Mar=
+ch/Myles1_files/externalOffer.jpg"/></a></td>
+</tr>
+<tr>
+<td style=3D"padding: 0px 40px;">
+<p style=3D"font-size: 16px; color: #ffffff; line-height: 26px;">Hello!</p>
+<p style=3D"font-size: 16px; color: #ffffff; line-height: 26px;">Explore th=
+e ultimate experience of self-drive with Myles! All you got to do is to boo=
+k a ride with us and use coupon code&#160;<span style=3D"color: #f35838; fo=
+nt-weight: 600;">M1200APPOC</span>&#160;to get</p>
+<span style=3D"display: block; font-size: 25px; color: #ffffff; line-height=
+: 24px; font-weight: 600; width: 520px; border-radius: 30px; border: 2px da=
+shed #ffffff; padding: 10px 0px; text-align: center; margin: 10px 0px;">Rs.=
+ 1200 OFF on spends of Rs. 6000</span>
+<p style=3D"font-size: 16px; color: #ffffff; line-height: 26px;">Add Myles =
+to your travel diaries and unleash the best of travel moments.</p>
+<p style=3D"font-size: 16px; color: #ffffff; line-height: 26px;">Team Myles=
+</p>
+<a style=3D"width: 120px; text-decoration-line: none; padding: 8px 20px; co=
+lor: #ffffff; font-size: 16px; text-transform: uppercase; text-align: cente=
+r; border-radius: 30px; background: #e04627; margin: 0px auto; display: blo=
+ck;" href=3D"http://e.mailclues.info/ga/click/2-30735482-27-5888-11175-9858=
+-93f25a6092-3e0fdce152" target=3D"_blank" rel=3D"noopener">BOOK NOW</a> <br=
+ /> <br /> <span style=3D"display: block; color: #ffffff; line-height: 26px=
+; text-align: right;">*T&amp;C Apply</span></td>
+</tr>
+<tr>
+<td style=3D"background: #464646; padding: 10px 0px; text-align: center;"><=
+a href=3D"http://e.mailclues.info/ga/click/2-30735482-27-5888-11175-9859-7c=
+3bbff14b-3e0fdce152" target=3D"_blank" rel=3D"noopener"><img style=3D"borde=
+r-width: 0px; border-style: initial; outline: 0px;" src=3D"https://s3-us-we=
+st-2.amazonaws.com/mailers2018/Myles/March/Myles1_files/appStore.jpg"/></a>=
+&#160;<a href=3D"http://e.mailclues.info/ga/click/2-30735482-27-5888-11175-=
+9860-b0b0535205-3e0fdce152" target=3D"_blank" rel=3D"noopener"><img style=
+=3D"border-width: 0px; border-style: initial; outline: 0px;" src=3D"https:/=
+/s3-us-west-2.amazonaws.com/mailers2018/Myles/March/Myles1_files/goolePlay.=
+jpg" /></a></td>
+</tr>
+<tr>
+<td style=3D"background-color: #272727; color: #ffffff; padding: 22px 15px =
+30px;" align=3D"center" valign=3D"top">
+<table class=3D"rtable" style=3D"width: 570px;" border=3D"0" width=3D"100%"=
+ cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center">
+<table border=3D"0" width=3D"140" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle"><a style=3D"text-decoration-line: no=
+ne; color: #000000;" href=3D"http://e.mailclues.info/ga/click/2-30735482-27=
+-5888-11175-9861-2ec8a94726-3e0fdce152" target=3D"_blank" rel=3D"noopener">=
+<img class=3D"rimg" style=3D"border-width: 0px; border-style: initial; disp=
+lay: block; background-color: transparent; margin: 0px; padding: 0px;" src=
+=3D"https://s3-us-west-2.amazonaws.com/mailers2018/Myles/March/Myles1_files=
+/twitter.png"/></a></td>
+<td align=3D"center" valign=3D"middle"><a style=3D"text-decoration-line: no=
+ne; color: #000000;" href=3D"http://e.mailclues.info/ga/click/2-30735482-27=
+-5888-11175-9862-8f32c905fe-3e0fdce152" target=3D"_blank" rel=3D"noopener">=
+<img class=3D"rimg" style=3D"border-width: 0px; border-style: initial; disp=
+lay: block; background-color: transparent; margin: 0px; padding: 0px;" src=
+=3D"https://s3-us-west-2.amazonaws.com/mailers2018/Myles/March/Myles1_files=
+/facebook.png"/></a></td>
+<td align=3D"center" valign=3D"middle"><a style=3D"text-decoration-line: no=
+ne; color: #000000;" href=3D"http://e.mailclues.info/ga/click/2-30735482-27=
+-5888-11175-9863-7cc6dd1925-3e0fdce152" target=3D"_blank" rel=3D"noopener">=
+<img class=3D"rimg" style=3D"border-width: 0px; border-style: initial; disp=
+lay: block; background-color: transparent; margin: 0px; padding: 0px;" src=
+=3D"https://s3-us-west-2.amazonaws.com/mailers2018/Myles/March/Myles1_files=
+/instagram.png"/></a></td>
+<td align=3D"center" valign=3D"middle"><a style=3D"text-decoration-line: no=
+ne; color: #000000;" href=3D"http://e.mailclues.info/ga/click/2-30735482-27=
+-5888-11175-9864-c035b8723a-3e0fdce152" target=3D"_blank" rel=3D"noopener">=
+<img class=3D"rimg" style=3D"border-width: 0px; border-style: initial; disp=
+lay: block; background-color: transparent; margin: 0px; padding: 0px;" src=
+=3D"https://s3-us-west-2.amazonaws.com/mailers2018/Myles/March/Myles1_files=
+/linkedin.png" /></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"padding-top: 15px; padding-bottom: 12px;"><hr style=3D"width: =
+570px; border-width: initial; border-style: none; border-top-color: initial=
+; height: 1px; background-color: #6c6c6c; margin-top: 0px; margin-bottom: 0=
+px;" /></td>
+</tr>
+<tr>
+<td style=3D"text-align: center;">
+<p style=3D"font-size: 14px; line-height: normal;">Age Limit: 21 &amp; Abov=
+e | 38 Car Variants | Unlimited Kilometers</p>
+</td>
+</tr>
+<tr>
+<td>
+<table class=3D"rtable" style=3D"font-size: 14px; width: 570px;" border=3D"=
+0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"left">
+<tbody>
+<tr>
+<td style=3D"padding: 5px 0px;" align=3D"left">Booking Starts &#8377; 38/hr=
+</td>
+<td style=3D"padding: 5px 0px;" align=3D"right">&#160;</td>
+</tr>
+<tr>
+<td align=3D"left"><a style=3D"color: #ffffff; text-decoration-line: none;"=
+ href=3D"http://e.mailclues.info/ga/click/2-30735482-27-5888-11175-9865-816=
+f249e10-3e0fdce152" target=3D"_blank" rel=3D"noopener">www.mylescars.com</a=
+></td>
+<td align=3D"right"><a style=3D"color: #ffffff; text-decoration-line: none;=
+" href=3D"tel:0888 222 2222">0888 222 2222</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"padding-top: 12px;"><hr style=3D"width: 570px; border-width: i=
+nitial; border-style: none; border-top-color: initial; height: 1px; backgro=
+und-color: #6c6c6c; margin-top: 0px; margin-bottom: 0px;" /></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p><a href=3D"http://e.mailclues.info/ga/unsubscribe/2-30735482-27-5888-111=
+75-6ce9419be39577a-3e0fdce152">Unsubscribe here</a></p>
+</div>
+<img src=3D"http://e.mailclues.info/ga/open/2-30735482-27-5888-11175-3e0fdc=
+e152" height=3D"2" width=3D"3" alt=3D""></body>
+</html>=

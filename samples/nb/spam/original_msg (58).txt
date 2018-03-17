@@ -1,0 +1,125 @@
+Delivered-To: harshmathur1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp1243955ive;
+        Wed, 14 Mar 2018 00:09:37 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELvJw3O0SCHW7up/0phNDM7oFeKk8c+FbS+n9xVvNDgA0rz5KICM6/EODYMWk5gabaG8K8uz
+X-Received: by 10.107.93.20 with SMTP id r20mr3586124iob.53.1521011377247;
+        Wed, 14 Mar 2018 00:09:37 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521011377; cv=none;
+        d=google.com; s=arc-20160816;
+        b=maSGWkSmjMqS1JmWf8XoyjjFDgPemzsS+ego/oa8wgW54rfiHWT+d7FbK8G9ffYcTt
+         +aBVhzrkaiVwtW6J59+5pO3mrZAD3TvtWwAdx+JzSoyWoHZNS9CG2iiNcu1KqwL7TIKy
+         BkKDdCCg3oLQLOcZWb7rJGm7rs8/4fLLLOAejqq3ZRn26hbRxpS7M/rk4LK7Vzh8Rkp1
+         qJbMHEHNbjNqHl/jex8klaFxv0+ik61cljhVw3y2P6nih+0fdhAL6RP7nm4VSqe8/2Ce
+         Sg2Z3rZYWS/ATor4a5a6mtZtTjiQ6HHbKrOXbcMjp3uTcu8aSt+Tfnm+3A5X1le6XNYi
+         Mggw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:message-id:list-unsubscribe:date:to:from
+         :subject:dkim-signature:arc-authentication-results;
+        bh=Roi0/mYdvjuXu2NO5bVzjcHDap67iziK41Wwpl4+fgY=;
+        b=Et1zD83+rFLUp9KpcZjLMgnTDnHxbm/QuUR5/j5W8GfufdiyU28sNRg5vnEgQ2F6b/
+         zuXXqBc3MLcm9I382gB5mcPRxttzQBKmvmM4OakUYTCRdm8NEdXPuurc+vjw3ZvhaWRR
+         FEy2oFBCOLeQlSss0HJY7yShj2lQNtH0WVbfvj7t/wE334iYI2pAgUUftLyVYGrTBWfL
+         cwHSnZhh24EpUxnuzh9T2xseKDeT4vDYZxBW82K0lMCMUF+PyrYaadu7HAVu5GcV/sEV
+         Dv7LQki5Sp7lA277UQlOiMXBwwFvX3pTb51DcmN8gphFfV0bh7KBSkkpRWGZjSwnP6S/
+         ND1g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@offerkacharge.com header.s=default4 header.b=Gm3/+HQv;
+       spf=pass (google.com: domain of return-a119-12620-12621-9f8416a0=13193086=8@offerkacharge.com designates 103.96.100.91 as permitted sender) smtp.mailfrom=return-a119-12620-12621-9f8416a0=13193086=8@offerkacharge.com
+Return-Path: <return-a119-12620-12621-9f8416a0=13193086=8@offerkacharge.com>
+Received: from smtp2-10.nickscrew.com (smtp2-10.nickscrew.com. [103.96.100.91])
+        by mx.google.com with ESMTPS id r65si481364ith.9.2018.03.14.00.09.37
+        for <harshmathur1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 14 Mar 2018 00:09:37 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return-a119-12620-12621-9f8416a0=13193086=8@offerkacharge.com designates 103.96.100.91 as permitted sender) client-ip=103.96.100.91;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@offerkacharge.com header.s=default4 header.b=Gm3/+HQv;
+       spf=pass (google.com: domain of return-a119-12620-12621-9f8416a0=13193086=8@offerkacharge.com designates 103.96.100.91 as permitted sender) smtp.mailfrom=return-a119-12620-12621-9f8416a0=13193086=8@offerkacharge.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=offerkacharge.com; s=default4;
+ t=1521011376; bh=QJBJcNkbUooxweRJzgRT4MPmGME=;
+ h=Subject:From:To:Date:List-Unsubscribe:X-CampaignID:Message-ID:
+  X-Mailer-Info:Content-Type:Content-Transfer-Encoding;
+ b=Gm3/+HQv0CV4rB+hr6pe3xDoJ6TOsNFeSapW0X9P3aOqchYBrgBCzKyjw6QWK+XTt
+  X0YPRjaAKgy7HprtcpNvGXl3BsPAAn+pIB3L0eqtoGSNfjgBWt9WUC4JwghU4zvh+E
+  xLAiUKMP0jsptGKLFJkkKnq1kookSqCalwkoKp5Q=
+Subject: Hi harshmathur1990@gmail.com, @ Car Insurance in Minutes!
+From: "Car Insurance" <newsletter@offerkacharge.com>
+To: harshmathur1990@gmail.com
+Date: 14 Mar 2018 07:09:36 -0000
+List-Unsubscribe: <http://m.mlktclick.com/ga/unsubscribe/2-13193086-119-6405-12621-6b9e6da16a14a33-94b3b0206b?confirmed=1>,
+ <mailto:return-a119-12620-12621-9f8416a0=13193086=8u@offerkacharge.com>
+X-CampaignID: s4:12620-6636a384c9871e0f
+Message-ID: <mid-c81fc939bf26e76a09d9b51aa2b51636-33@offerkacharge.com>
+X-Mailer-Info: 8.QYxETO.EjM2IDM.AahJ3co1WY0hWdyFTO5ADQn1WYpxmLj9Wb.EzMxkzMwgjN.EjM2ITM
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html>
+<html>
+<head>
+<meta charset=3D"utf-8">
+<title>BankBazaar</title>
+<style>
+	/* Basic Fluid Image Pattern CSS */
+    @media only screen and (max-width: 600px) {
+        img.pattern {
+            max-width: 100%;
+            height: auto !important;
+	    border:1px solid #ccc;
+        }
+    }
+</style>
+</head>
+
+<body><table style=3D"max-width: 600px;" border=3D"0" width=3D"100%" cellsp=
+acing=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"font-family: Calibri,Arial,sans-serif; font-size: 13px; line-h=
+eight: 16px; padding-bottom: 10px; color: #4a4a4a;" align=3D"center" valign=
+=3D"top"><br> <a style=3D"color: #1762a0; text-decoration: underline;" href=
+=3D"http://m.mlktclick.com/ga/webviews/4-13193086-119-6405-6478-12621-d7c6f=
+75782" target=3D"_blank" rel=3D"noopener">View in a browser</a> | <a style=
+=3D"color: #1762a0; text-decoration: underline;" href=3D"http://m.mlktclick=
+.com/ga/unsubscribe/2-13193086-119-6405-12621-6b9e6da16a14a33-94b3b0206b" t=
+arget=3D"_blank" rel=3D"noopener">Report Spam</a></td>
+</tr>
+</tbody>
+</table>
+
+<table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+  <tbody>
+    <tr>
+      <td>
+      <a href=3D"http://m.mlktclick.com/ga/click/2-13193086-119-6405-12621-=
+14186-289cf4f5c0-94b3b0206b" target=3D"_blank"><img src=3D"http://media.adc=
+anopus.com/brand/files/adcanopus/1085/bb-ci-28thfeb.jpg" alt=3D"BankBazaar"=
+ class=3D"pattern" style=3D"border: 1px solid #ccc;"/></a>
+      </td>
+    </tr>
+=20=20=20
+  </tbody>
+</table>
+
+
+
+
+<table style=3D"max-width: 600px;" border=3D"0" width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"font-size: 12px; font-family: Calibri,Arial,sans-serif; line-h=
+eight: 16px; color: #4a4a4a; text-align: center;">=20
+<p>If this email is unwelcome, I apologize. Click <a style=3D"color: #1762a=
+0; text-decoration: underline;" href=3D"http://m.mlktclick.com/ga/unsubscri=
+be/2-13193086-119-6405-12621-6b9e6da16a14a33-94b3b0206b" target=3D"_blank" =
+rel=3D"noopener">here</a> to remove <a style=3D"color: #1762a0; text-decora=
+tion: underline;" href=3D"mailto:harshmathur1990@gmail.com" target=3D"_blan=
+k" rel=3D"noopener">harshmathur1990@gmail.com</a> from my contact list.</p>=
+=20
+</td>
+</tr>
+</tbody>
+</table><img src=3D"http://m.mlktclick.com/ga/open/2-13193086-119-6405-1262=
+1-94b3b0206b" height=3D"2" width=3D"3" alt=3D""></body>
+</html>

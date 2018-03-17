@@ -1,0 +1,106 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp947125ive;
+        Wed, 14 Mar 2018 21:13:52 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELtphWjlemhK03zJIYeGwZ3uL47qFDBuMUL1s4L6abSvUwnJ8vh85xZqnrhxEk1RCs0Jogug
+X-Received: by 10.107.213.72 with SMTP id x8mr3919847ioc.60.1521087232084;
+        Wed, 14 Mar 2018 21:13:52 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521087232; cv=none;
+        d=google.com; s=arc-20160816;
+        b=opn4gGAgmWxauUrwLLhqL+oq1uGt5ztjDEh6OnqmIRaWpmNoR/wIsI+H7rGKjP8j4K
+         ammNlNnEKAUNajxFHQpFKnT9PPQFI2vwy2gQ3H0TOfRQZ2j3wpbSFFnh5nDnui6nB+1m
+         r0Dfk7iL9VQvDsZXm7uSNgYzqerbufT3dd963I9HWx8CHVgqd/2cVGv8lLBvwaudodQm
+         TbvqAfcWxvDcyfx4SYCX5jfWyYHhfCIAYcUp4wB5H+YSAspSG/3PgZ1EIyFA1PRubrsm
+         Srz+l3hjmWBoEgW0BiZ3qiDDzTvnB6sSA0RnjSyoZVJljRKBPlJfSn2H9a3o9vamkLvY
+         TxFA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:message-id:list-unsubscribe:date:to:from
+         :subject:dkim-signature:arc-authentication-results;
+        bh=+IiP4Z4XPliDBcPXWx2P9DD4dKjIUvdULy2fKfIrvy8=;
+        b=B1YjdE4HDLmoU1Yg1CVIZu/ntiZod09AlmTUeF6xr6FaUCEHpf8v2M652r8Vb4jssO
+         2npsrC9HWF3DdSfv3g8MJ5AVzav/ufpMVWLCzLqpQnUmSiHz8Mj75VObTCOnxYjEVjAt
+         JlcsCDSxOovpdLitAqI8PsBE2KYXIDTabnKz7q43iVOVlxOkwhIT1TunN6Gv8snwDUG5
+         8Dz6SDf4NMw1nIGm0wyYW9LNNCDHPEs67tFZ0kaFjIQ4sQOrM2pdxxRkkAF/jdzhTdSX
+         m3Bq/HwIMkPX/VcjFiv1xM96ZWAGcL9XMzEglGKO92YaI3UbjlCCvnod45zJiDRuyDUj
+         P37w==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@htmailers.com header.s=default5 header.b=Z16Yy3U+;
+       spf=pass (google.com: domain of return-a136-10042-10045-fad42039=27582375=8@htmailers.com designates 103.96.100.7 as permitted sender) smtp.mailfrom=return-a136-10042-10045-fad42039=27582375=8@htmailers.com
+Return-Path: <return-a136-10042-10045-fad42039=27582375=8@htmailers.com>
+Received: from smtp1-6.injectin.com (smtp1-6.injectin.com. [103.96.100.7])
+        by mx.google.com with ESMTPS id 93si2599944ios.333.2018.03.14.21.13.51
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 14 Mar 2018 21:13:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return-a136-10042-10045-fad42039=27582375=8@htmailers.com designates 103.96.100.7 as permitted sender) client-ip=103.96.100.7;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@htmailers.com header.s=default5 header.b=Z16Yy3U+;
+       spf=pass (google.com: domain of return-a136-10042-10045-fad42039=27582375=8@htmailers.com designates 103.96.100.7 as permitted sender) smtp.mailfrom=return-a136-10042-10045-fad42039=27582375=8@htmailers.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=htmailers.com; s=default5;
+ t=1521087231; bh=h6ttoYnTLv09wbxZG5d0/uz0KpI=;
+ h=Subject:From:To:Date:List-Unsubscribe:X-CampaignID:Message-ID:
+  X-Mailer-Info:Content-Type:Content-Transfer-Encoding;
+ b=Z16Yy3U+t7RzxQUkAp/aCa25UEzi3aurMIOlaZrU4MW+y7J8Yy45QM1a1pJYyNJT9
+  H+ua46dkoWURFlaySASdvefB9ZBL3nu9Bbzk1bZ2C5mN670tuPSiHHftHobt2VWld5
+  GYIlWg2KJZsZ9Y+LwvXYS3cV+raISX/SK8lsde4w=
+Subject: End Classroom Hunger, Save Tax!.
+From: "Akshaya Patra" <info@htmailers.com>
+To: harshmathur.1990@gmail.com
+Date: 15 Mar 2018 04:13:51 -0000
+List-Unsubscribe: <http://mail.htmailers.com/ga/unsubscribe/2-27582375-136-5040-10045-02928325756fcd7-71f34835d1?confirmed=1>,
+ <mailto:return-a136-10042-10045-fad42039=27582375=8u@htmailers.com>
+X-CampaignID: s4:10042-5b99669d3e174eeb
+Message-ID: <mid-52e51424e0bc962dfe515d995dc62ba0-4@htmailers.com>
+X-Mailer-Info: 8.QYxMjN.EDMwQjM.gWYyNHatFGdoVncuETO5ADQn1WYpxmLj9Wb.IzN1gjMzcTN.EDMwQTN
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<title>Patra.</title>
+</head>
+
+<body style=3D"background-color: #fff"><table align=3D"center" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" bgcolor=3D"#fff" style=
+=3D"max-width:600px;">
+<tbody><tr>
+<td align=3D"center" valign=3D"top" style=3D"font-family:Calibri,Arial,sans=
+-serif;font-size:14px;line-height:16px;color:#4a4a4a">Open our Newsletter i=
+n <a href=3D"http://mail.htmailers.com/ga/webviews/4-27582375-136-5040-5091=
+-10045-e427da38da" style=3D"text-decoration:underline;color:#0000ee">New ta=
+b</a><br></td>
+  </tr>
+ </tbody></table>
+
+<table style=3D"border: 1px solid #ccc;" border=3D"0" width=3D"600" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"center" bgcolor=3D"#fff">
+<tbody>
+<tr>
+<td>
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td><a href=3D"http://mail.htmailers.com/ga/click/2-27582375-136-5040-10045=
+-8828-169660f29c-71f34835d1" target=3D"_blank" rel=3D"noopener"> <img style=
+=3D"display: block;" src=3D"https://d19qgyth69wh8s.cloudfront.net/asa.png" =
+alt=3D"" width=3D"600" /></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" bgcolor=3D"#fff" style=3D"max-width:600px;">
+                    <tbody><tr>
+                      <td align=3D"center" valign=3D"top" style=3D"font-fam=
+ily:Calibri,Arial,sans-serif;font-size:14px;line-height:16px;color:#4a4a4a">
+                       Please click here to <a href=3D"http://mail.htmailer=
+s.com/ga/unsubscribe/2-27582375-136-5040-10045-02928325756fcd7-71f34835d1" =
+style=3D"color: #0000ee; text-decoration:underline" target=3D"_blank">Unsub=
+scribe</a><br><br></td>
+                    </tr>=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20
+ </tbody></table><img src=3D"http://mail.htmailers.com/ga/open/2-27582375-1=
+36-5040-10045-71f34835d1" height=3D"2" width=3D"3" alt=3D""></body></html>=

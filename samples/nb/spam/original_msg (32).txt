@@ -1,0 +1,164 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp1083964ive;
+        Thu, 15 Mar 2018 00:31:21 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELupxV1qf0Oo/yMBEOMhoZ44YFmTOqVakkaidtgRjslGfI8FW79akvFO1h5vT+feUy+7ffnE
+X-Received: by 10.202.62.85 with SMTP id l82mr4782625oia.58.1521099081347;
+        Thu, 15 Mar 2018 00:31:21 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521099081; cv=none;
+        d=google.com; s=arc-20160816;
+        b=LaXGdQfDeYNXGzyO/0EXx+4Rx7z/BtAK5iEU0J8Ni4WCIHc60kk13POd+MJIy6S2FR
+         1KqWlguFUWPp1X2zKsCsGG0kDQWQUrh6be3+FEUB2GcKh8m4ZpDgXtnrjAK/QBgIg0RL
+         5q/FfvgHA6Dln/cw2KYEkmCANVeweQIOt07c5tKdeIAfSfinEK1z/WfjsopJg2fjjEPn
+         eEeoF1NeWz2FZmaWtA7qFlZw8LOV4c5W6w75yn+w4ed5UV3WFh+iL1EIiMgYl4qyXnkF
+         RLvw+DWPEnPvZmORzoYSfK221bMRgmbJh/BV8kE1NZnnztU4xvm/dEQlpn23YSmOhl6T
+         BxdQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=reply-to:mime-version:subject:to:from:list-unsubscribe:message-id
+         :date:domainkey-signature:dkim-signature:arc-authentication-results;
+        bh=bYDCFMyjbkNJowYhmDI/HAKCsAIIwCTOTbVopFzurWA=;
+        b=UqdcswfERmhohGZuV0cafBtcsE/6+pJCuAAhom4rl0HUvdAxNPe8t3a/0dL3CCZ87Y
+         po59rTN71YyoqSbskVGL7t4xqZPB767Oys8bzYgbeonSHEYNDcvFSkGx+m86awYrRspR
+         MIarw56G1g0CZU/zuwUbKPDlGyGcBN4IKyy7w3lJqDFErIH2b+rRA0mAu/1qZ7ydjqB1
+         jQQRlqtg+0a1hAN3xlz7Dq+DSLYyrVVTEsDSrPgaEPvI5VmT9ICGQF2JNS42C0AAmbm9
+         C2JPaWHkAEH7emyYxDl88X0NRTUES0GxcA8FlZ4xPth/BHDF7J0dI9B2ZnLeeJ88Jvwa
+         5bQQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@edm.efinmail.com header.s=20160510173820 header.b=0GZQC0Z0;
+       spf=pass (google.com: domain of bo-b2twczcbf3q13vaudm3ptbyjjapsrt@b.edm.efinmail.com designates 8.30.201.19 as permitted sender) smtp.mailfrom=bo-b2twczcbf3q13vaudm3ptbyjjapsrt@b.edm.efinmail.com
+Return-Path: <bo-b2twczcbf3q13vaudm3ptbyjjapsrt@b.edm.efinmail.com>
+Received: from mta961.chtah.net (mta961.chtah.net. [8.30.201.19])
+        by mx.google.com with ESMTPS id b37si336765otj.42.2018.03.15.00.31.20
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 15 Mar 2018 00:31:21 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bo-b2twczcbf3q13vaudm3ptbyjjapsrt@b.edm.efinmail.com designates 8.30.201.19 as permitted sender) client-ip=8.30.201.19;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@edm.efinmail.com header.s=20160510173820 header.b=0GZQC0Z0;
+       spf=pass (google.com: domain of bo-b2twczcbf3q13vaudm3ptbyjjapsrt@b.edm.efinmail.com designates 8.30.201.19 as permitted sender) smtp.mailfrom=bo-b2twczcbf3q13vaudm3ptbyjjapsrt@b.edm.efinmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=edm.efinmail.com;
+	s=20160510173820; t=1521099080; x=1536996680;
+	bh=bYDCFMyjbkNJowYhmDI/HAKCsAIIwCTOTbVopFzurWA=; h=From:Reply-To;
+	b=0GZQC0Z0bR+r0TfAk50Oqs6wroWcDK6Ud7nG9vkObgXal9FnyOKwzIlI9N2/KmOnU
+	 fm7oIXt5aJZydRZqmkj4eWuEzmPbmcGkE+K50lHdprUvmz1EpVUFmOWRFUvdSlnu/T
+	 Y3ugyumpNrw3U1eDhJPTq50Yr+xCPRohHZ9GoUw8JUyJK3w+sJP02zAJiUUPvHzvHh
+	 BTQfsGLUtkp0HJnvJWh05Fkdp/+hMBNZGBEKVDzZtRLd/gy6sF7q6jPy5e/C38sme2
+	 ULqYigpvslMCG4JcNFfEXT6J/8YJXf4PPeJrZLiCdiQ5ge8Q7r1sodtycJgTEqz8mv
+	 1BEGR9U2f3vpQ==
+DomainKey-Signature: a=rsa-sha1; q=dns; c=nofws;
+  s=200505; d=edm.efinmail.com;
+  b=UUAgI55sJeRl1+EK/hD0qLZ2DxiBkmTudqRjtfEd8zUrNT6T5R8NuSc9fUI1ZWX7HW39QCw51vwElYMLjLWpXT5ALHuzpK+GzWngq7CivxUYnpdE12ecq8ECowDWI8HU/cAcJ3ZoAh/xV+axXY9gQ2PHPs9JMeWVYoX6taTHSrM=;
+ h=Date:Message-ID:List-Unsubscribe:From:To:Subject:MIME-Version:Reply-To:X-Mailer:X-mid:X-aid:Content-Type;
+Date: Thu, 15 Mar 2018 07:31:20 -0000
+Message-ID: <b2twczcbf3q13vaudm3ptbyjjapsrt.6397873.9890@mta961.edm.efinmail.com>
+List-Unsubscribe: <mailto:rm-0b2twczcbf3q13vaudm3ptbyjjapsrt@edm.efinmail.com>
+From: "Health Insurance Plans" <info@edm.efinmail.com>
+To: harshmathur.1990@gmail.com
+Subject: =?UTF-8?B?Q2xhaW0gYSB0YXggZGVkdWN0aW9uIG9mIHVwIHRvIFJzLiA1NSw=?=
+ =?UTF-8?B?MDAwKiBhbmQgaW5jcmVhc2UgeW91ciBzYXZpbmdzIQ==?=
+MIME-Version: 1.0
+Reply-To: "info@edm.efinmail.com" <support-b2twczcbf3q13vaudm3ptbyjjapsrt@edm.efinmail.com>
+X-Mailer: CheetahMailer
+X-mid: 2107101837
+X-aid: 2097868848
+Content-Type: multipart/alternative; boundary="=b2twczcbf3q13vaudm3ptbyjjapsrt"
+
+
+--=b2twczcbf3q13vaudm3ptbyjjapsrt
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+save tax http://edm.efinmail.com/a/tBaqhw2B9CvAwB9l9KNAAYZ$xC2/link1 
+
+get quote now http://edm.efinmail.com/a/tBaqhw2B9CvAwB9l9KNAAYZ$xC2/link1 
+
+Report Spam : mailto:rm-0b2twczcbf3q13vaudm3ptbyjjapsrt@edm.efinmail.com?subject=Unsubscribe&body=You%20will%20be%20unsubscribed%20from%20mailing%20list.  | Unsubscribe : mailto:rm-0b2twczcbf3q13vaudm3ptbyjjapsrt@edm.efinmail.com?subject=Unsubscribe&body=You%20will%20be%20unsubscribed%20from%20mailing%20list. 
+
+--=b2twczcbf3q13vaudm3ptbyjjapsrt
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" />
+<style type=3D"text/css">
+@media only screen and (max-width: 667px) {
+.width {
+	width: 100% !important;
+	height: auto !important
+}
+.banner {
+	width: 100% !important;
+	height: auto !important
+}
+}
+</style>
+</head>
+<body style=3D"margin:0px auto;"><img src=3D"http://edm.efinmail.com/a/hBaq=
+hw2B9CvAwB9l9KNAAYZ$xC2/spacer.gif" width=3D"1" height=3D"1" style=3D"displ=
+ay:none !important; max-height:1px !important; max-width:1px !important; bo=
+rder:0 !important; background-color:transparent !important; padding:0 !impo=
+rtant; outline:0 !important; min-height:1px !important; min-width:1px !impo=
+rtant; height:1px !important; width:1px !important;" alt=3D"">
+
+
+<table align=3D"center" border=3D"0" class=3D"width" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"667" style=3D"margin:0px auto;">
+  <tr>
+    <td align=3D"center">
+=09
+=09
+	<table align=3D"center" border=3D"0" class=3D"width" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"667" style=3D"margin:0px auto; ">
+
+=09
+	 <tr>
+          <td align=3D"left">
+		   <a href=3D"http://edm.efinmail.com/a/hBaqhw2B9CvAwB9l9KNAAYZ$xC2/link1=
+"><img src=3D"http://f.edm.efinmail.com/i/5/2097868848/01_BBHI_0.jpeg" clas=
+s=3D"banner"  alt=3D"save tax" style=3D"display:block" /></a></td>
+        </tr>
+=09=09
+		<tr>
+          <td align=3D"left">
+		   <a href=3D"http://edm.efinmail.com/a/hBaqhw2B9CvAwB9l9KNAAYZ$xC2/link1=
+"><img src=3D"http://f.edm.efinmail.com/i/5/2097868848/01_BBHI_1.jpeg" clas=
+s=3D"banner"  alt=3D"get quote now" style=3D"display:block" /></a></td>
+        </tr>
+=09=09
+=09=09
+=09=09
+=09=09
+      </table>
+=09=20=20
+	  <table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" a=
+lign=3D"center">
+ <tbody>
+<tr>
+ <td style=3D"text-align:center; padding:0px 0px;"><span style=3D"font-fami=
+ly:Arial, sans-serif; font-size:12px; color:#666666; line-height:12px;"><a =
+href=3D"mailto:rm-0b2twczcbf3q13vaudm3ptbyjjapsrt@edm.efinmail.com?subject=
+=3DUnsubscribe&amp;body=3DYou%20will%20be%20unsubscribed%20from%20mailing%2=
+0list." style=3D"color:blue; font-size: 12px; font-family: Verdana, Arial, =
+Helvetica, sans-serif; text-decoration: none;" target=3D"_blank">Report Spa=
+m</a></span> | <span style=3D"font-family:Arial, sans-serif; font-size:12px=
+; color:blue; line-height:16px;"><a href=3D"mailto:rm-0b2twczcbf3q13vaudm3p=
+tbyjjapsrt@edm.efinmail.com?subject=3DUnsubscribe&amp;body=3DYou%20will%20b=
+e%20unsubscribed%20from%20mailing%20list." style=3D"text-decoration:none; c=
+olor:blue;" target=3D"_blank">Unsubscribe</a></span></td>
+</tr>
+</tbody>
+</table>
+=20=20=20
+</td>
+  </tr>
+  </table>
+
+
+</body>
+</html>
+
+
+--=b2twczcbf3q13vaudm3ptbyjjapsrt--
+

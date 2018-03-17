@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset=3D"utf-8">
+<title>Bajaj Finserv-PL</title>
+<style>
+=09/* Basic Fluid Image Pattern CSS */
+    @media only screen and (max-width: 599px) {
+        img.pattern {
+            max-width: 100%;
+            height: auto !important;
+        }
+    }
+</style>
+</head>
+
+<body>
+<div style=3D"display: none; font-size: 1px; color: #fefefe; line-height: 1=
+px; font-family: Open Sans,Helvetica,Arial,sans-serif; max-height: 0px; max=
+-width: 0px; overflow: hidden;">with More Benefits</div>
+<table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+  <tbody>
+    <tr>
+      <td>
+      <a href=3D"http://m.transmlkt.com/ga/click/2-43126827-213-14697-28652=
+-27024-b11ea35000-a6ff866910" target=3D"_blank"><img class=3D"pattern" src=
+=3D"http://media.adcanopus.com/brand/files/adcanopus/1085/bajajinhousefeb.p=
+ng" alt=3D"" style=3D"border: 0px solid #ccc;" width=3D"100%" /></a>
+      </td>
+    </tr>
+  =20
+  </tbody>
+</table>
+
+
+
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" bgcolor=3D"#fff" style=3D"max-width:600px;">
+=20
+                    <tr>
+<td align=3D"center" style=3D"color:#606060;font-family:Helvetica,Arial,san=
+s-serif;font-size:11px;line-height:22px;padding:0">
+            If you don't want to receive these emails <a href=3D"http://m.t=
+ransmlkt.com/ga/unsubscribe/2-43126827-213-14697-28652-360e0baeac154d4-a6ff=
+866910" style=3D"color:#15c;text-decoration:none" target=3D"_blank" >unsubs=
+cribe</a>
+          </td>
+          </tr>
+                  =20
+ </table><img src=3D"http://m.transmlkt.com/ga/open/2-43126827-213-14697-28=
+652-a6ff866910" height=3D"2" width=3D"3" alt=3D""></body>
+</html>

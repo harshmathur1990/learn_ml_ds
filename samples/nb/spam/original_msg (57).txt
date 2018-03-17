@@ -1,0 +1,833 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp1292731ive;
+        Wed, 14 Mar 2018 01:10:55 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELvEkPA6jklJvywS0KmxIfTtYxM6bKw6u4xFuUhvJ3g1UyyajpIneBvHxCHNexPczaj6j9jwWJ9ekl4=
+X-Received: by 10.107.5.79 with SMTP id 76mr3984827iof.153.1521015054673;
+        Wed, 14 Mar 2018 01:10:54 -0700 (PDT)
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: best guess record for domain of footloosenomore@server.footloosenomore.co designates 209.42.194.129 as permitted sender) smtp.mailfrom=footloosenomore@server.footloosenomore.co
+Received-SPF: pass (google.com: best guess record for domain of footloosenomore@server.footloosenomore.co designates 209.42.194.129 as permitted sender) client-ip=209.42.194.129;
+Received: by 2002:a24:1192:: with POP3 id 140-v6mf1280701itf.1;
+        Wed, 14 Mar 2018 01:10:54 -0700 (PDT)
+X-Gmail-Fetch-Info: mathur.harsh.1990@gmail.com 2 smtp.gmail.com 995 mathur.harsh.1990
+Delivered-To: mathur.harsh.1990@gmail.com
+Received: by 2002:a25:d941:0:0:0:0:0 with SMTP id q62-v6csp1731549ybg;
+        Wed, 14 Mar 2018 00:33:22 -0700 (PDT)
+X-Received: by 10.107.213.65 with SMTP id x1mr208570ioc.203.1521012802163;
+        Wed, 14 Mar 2018 00:33:22 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521012802; cv=none;
+        d=google.com; s=arc-20160816;
+        b=UnTSoUDfhv6ycqdA4amyVqKQL2M59TiJlEzNwJyb3ZnCcipxbJ91HziK1bcDtqBBzy
+         ROfjfuPWBNd41+p/bDwouL9gcomwzg1h1LvmHqffsbz4nkZaFrWr5dYJ8ko3+Ok1QGlz
+         oPYW6gC2KKhKvz0l6Ze6cmDJ/oX0Gt4YZqdDqPakUSeHJDOYNWBmFIYsSTaElrVYoU5h
+         rcURDyuVYj6dWTAmq5gTiqGg5J67efzk+UUOsO4PGYWKaf1ZmOzcKwpm8/VIca+7jB/e
+         4+iBCgyHgFw8vD5fh/ngnK070AzodeXJY5a0frYVrgPEClqt5bj05X4rSKN8z3m7w+2A
+         I9QQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:message-id:reply-to:from:mime-version:subject:to
+         :arc-authentication-results;
+        bh=Og5gY23LyxHFBunG6YEuYk4+sMNUSQMSRj7zIzs6Ums=;
+        b=NlDb7V5EzkZeAlbHOU2M1Xn28SzjYZWnIVHj+slB7n/2vlStrDsY8rACsPOf4Fr31G
+         vapdGECyADL5wbqVlevdOgjJWQwzyAIJCIhkb7GNpMoQ4ehxRTXO/t0pLYCmCLkIU3Fc
+         nrVJw9Kfkvjzfdh2qivnjzb5uaBoIPv68g943KsIsdSdz84+h6ZD8O/pLJ6hsg3Ovybq
+         bqHYTW14qzIy26/RbT+Rt+ZDSsM7GEWPt3AK291Ary9hM4eZRrO8jhHT/zfZqUkr0Uko
+         Ma2vYeYT3QYts12pjjNcy9bTXNUl7uXcshdwt50hxHZVfaXGJZsXRtpVQLSyx9bRYzmy
+         Qq3g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: best guess record for domain of footloosenomore@server.footloosenomore.co designates 209.42.194.129 as permitted sender) smtp.mailfrom=footloosenomore@server.footloosenomore.co
+Return-Path: <footloosenomore@server.footloosenomore.co>
+Received: from server.footloosenomore.co (server.footloosenomore.co. [209.42.194.129])
+        by mx.google.com with ESMTPS id 17si1301193ioe.111.2018.03.14.00.33.21
+        for <mathur.harsh.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 14 Mar 2018 00:33:22 -0700 (PDT)
+Received-SPF: pass (google.com: best guess record for domain of footloosenomore@server.footloosenomore.co designates 209.42.194.129 as permitted sender) client-ip=209.42.194.129;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: best guess record for domain of footloosenomore@server.footloosenomore.co designates 209.42.194.129 as permitted sender) smtp.mailfrom=footloosenomore@server.footloosenomore.co
+Received: from footloosenomore by server.footloosenomore.co with local (Exim 4.89_1)
+	(envelope-from <footloosenomore@server.footloosenomore.co>)
+	id 1ew0uW-000475-OF
+	for mathur.harsh.1990@gmail.com; Wed, 14 Mar 2018 13:03:20 +0530
+To: mathur.harsh.1990@gmail.com
+Subject: You have been invited to join the event New Delhi-Delhi Delights
+X-PHP-Script: footloosenomore.com/index.php for 209.42.194.129
+X-PHP-Originating-Script: 1000:CronController.php
+MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: footloosenomore.com <no-reply@footloosenomore.in>
+Reply-To: no-reply@footloosenomore.in
+X-Mailer: PHP/7.1.15
+Message-Id: <E1ew0uW-000475-OF@server.footloosenomore.co>
+Date: Wed, 14 Mar 2018 13:03:20 +0530
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server.footloosenomore.co
+X-AntiAbuse: Original Domain - gmail.com
+X-AntiAbuse: Originator/Caller UID/GID - [1000 997] / [47 12]
+X-AntiAbuse: Sender Address Domain - server.footloosenomore.co
+X-Get-Message-Sender-Via: server.footloosenomore.co: authenticated_id: footloosenomore/only user confirmed/virtual account not confirmed
+X-Authenticated-Sender: server.footloosenomore.co: footloosenomore
+X-Source: /opt/cpanel/ea-php71/root/usr/bin/php-cgi
+X-Source-Args: /opt/cpanel/ea-php71/root/usr/bin/php-cgi 
+X-Source-Dir: footloosenomore.co:/public_html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+       <meta name="description" content="Layout 4" />
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+ 
+     <title>Footloosenomore</title>
+  
+     <style>
+    .read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more1' !important;
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #000;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd !important;
+  border-radius: .25em;
+}
+     
+
+    .tag-main {
+    width: 100px;
+    min-height: auto;
+    font-size: 38px;
+    color: rgb(19, 18, 40);
+    font-weight: 600;
+    text-align: center;
+    background: rgb(222, 176, 57) none repeat scroll 0% 0%;
+    top: 170px;
+    position: ;
+    left: 184px;
+}
+.tag-part {
+    width: 99%;
+    height: auto;
+    font-size: 38px;
+    color: #131228;
+    font-weight: 600;
+    text-align: center;
+}
+.tag-part-2 {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    color: #131228;
+    text-align: center;
+    line-height: 22px;
+    position: relative;
+    top: -10px;
+}
+      .sure_btn{
+      color:#fff;padding:5px;
+     border:2px solid #fff;
+     border-radius:5px;
+     
+     font-size:17px;
+     } 
+       .sure_btn:hover{
+       background:#131228;
+      color:#fff; 
+      
+      }
+     .contact_btn{
+     background:#d6175e;
+     color:#fff;padding:5px;
+     border:0;
+     border-radius:5px;
+     font-size:17px;
+     }
+          .click_log{
+      color:#2e2e2e;
+      padding:10px 8px;
+       border:1px solid #555555;
+       border-radius:5px;
+      
+     }
+      
+     .click_log:hover{
+     background:#131228;
+     color:#fff !important;
+     }
+     .logo_size{
+      margin:0; padding:12px;color:#d6175e;font-size:24px;background:#d6175e;color:#fff;
+     }
+     .contact_us{
+     border-radius:5px;border-collapse: collapse;font-family:Roboto;font-size:15px;
+     }
+     
+ 
+     
+     
+     
+     
+       @media only screen and (max-width: 400px)  {
+       
+            td[class=contact_us] { width:100% !important; background:#fff; margin:2% 0;text-align: center !important;float:left; padding:8px; display: block !impoprtant; height: auto;}
+          td[class=contact_left] {   text-align: center !important; float:left; padding:5px; display: block !impoprtant; height: auto;}
+          
+          
+       } 
+         
+     @media only screen and (max-width: 600px)  {
+       
+      td[class=grid_block_test] { width: 99% !important; text-align: center !important;margin:0 auto; padding: 15px 0 !important;} 
+      
+     
+      
+       table[class=table600con_test] { width: 100% !important; }
+       table[class=table600con_matchcard] { width: 90% !important; margin:0 auto; }
+      
+       body_part,.body_main{
+      margin:7% 0 !important;}
+      
+      table[class=table600con] img { max-width: 100% !important; width: 100% !important; margin: auto !important; height: auto !important; }
+       
+        td[class=contact_foot] {width:94%;text-align: center !important; padding:5px; float:left;display: block !impoprtant; height: auto;}
+        
+        
+       table[class=table_test] { width: 100% !important; }
+       
+      div[class=wrapper_225] { width:225px !important; background: #ffffff;margin:0 !important; }
+      div[class=wrapper_100] { width:100% !important; background: #ffffff; }
+      div[class=wrapper_99] { width:99% !important; background: #ffffff; }
+        
+      div[class=wrapper] { width: 90% !important; background: #ffffff; }
+      div[class=wrapperout], td[class=grid_block] table { width: 100% !important; }
+      table[class=table600none] { height: 0 !important; width: 0 !important; display: none !important; }
+      table[class=table600full] { width: 100% !important; }
+      table[class=table600con], table[class=table600] { width: 90% !important; }
+      td[class=fw_full], td[class=fw_half], td[class=grid_block] { width: 100% !important; display: block !important; text-align: center !important;}
+
+      td[class=spacer], table[class=line] { height: 0 !important; width: 0 !important; display: none !important; }
+       
+       .logo_size { font-size:25px !important; }
+      td[class=grid_block] { width: 100% !important; text-align: center !important; padding: 15px 0 !important;}
+      td[class=grid_block_nopad] { width: 100% !important; padding: 0 !important; display: block !important; text-align: center !important;}
+      td[class=grid_block] table { margin: auto !important; }
+
+      tr[class=scaleimage] img { width: auto !important}
+
+      td[class=boxpadding] { width: 7% !important; }
+      td[class=boxcontent] { width: 86% !important; }
+
+      div[class=divider] { width: 70%; height: 1px; border-bottom: 1px solid #aaaaaa; margin: 25px auto 0;}
+           
+           td[class=grid_block] table[class=button_second], td[class=button] { margin-top: 10px !important; }
+           
+           table[class=buttonwrap], table[class=buttonwrap] tbody, table[class=buttonwrap] tr, td[class=button] { width: 100% !important; display: block; height: auto; }
+           
+           td[class=button] { padding: 5px 0; }
+           
+    }
+
+    a { text-decoration: none; color: #d6175e; }
+    .ReadMsgBody { width: 100%; }
+    .ExternalClass { width: 100%; }
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+    #outlook a { padding: 0; }
+    span.yshortcuts { color:#000; background-color:none; border:none;}
+    span.yshortcuts:hover,
+    span.yshortcuts:active,
+    span.yshortcuts:focus {color:#000; background-color:none; border:none;}
+         body[class=body] { min-width: 0 !important; }
+    
+     </style>
+  </head>
+
+  <body class="body" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;margin: 0;padding: 0;font-family: 'Open Sans', sans-serif;background:#E3E3E3;font-size: 11pt;color: #777777; mso-line-height-rule: exactly;line-height: 1.5em;width: 100%; min-width: 600px;">
+     <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#E3E3E3" align="center" style="padding: 0;margin: 0;border-collapse: collapse;" class="bg">
+      <tbody>
+        <tr>
+          <td style="border-collapse: collapse;" width="100%" align="center">
+            <table border="0" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff" style="padding: 0;margin: 0;border-collapse: collapse; margin: auto;" class="table600full">
+            
+              
+              <!-- START - HEADER -->
+              <tr>
+                 <td width="100%" align="center" class="full_width" style="background: #ffffff; border-collapse: collapse; border-top: 3px solid #d6175e;">
+                  <div class="wrapper" style="width: 600px;margin: auto;">
+                    <table border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="600" class="table600con" style="border-collapse: collapse;">
+                      <tr class="scaleimage">
+                        <td width="180" class="spacer" style="border-collapse: collapse;"></td>
+                        <!-- logo -->
+                          <td width="250" class="grid_block" style="padding:20px 0;border-collapse: collapse;" align="left" valign="top">
+                             <img src="http://footloosenomore.com/images/logo_1.png" alt="" width="150px;" style="background: #d6175e;padding: 5px;margin-left:13%;max-width:60%;">
+                       <!--      <h5 class="logo_size" style=" margin:0; padding:12px;color:#d6175e;font-size:24px;background:#d6175e;color:#fff;">Footloose No More</h5> -->
+                          </td>
+                       
+                         
+                          <td width="180" class="spacer" style="border-collapse: collapse;"></td>
+                      </tr>
+                  </table>
+                  </div>
+                </td>
+              </tr>
+              <!-- END - HEADER -->
+              
+              
+              <!----------------- Main body secton --------------------------------->
+
+            <tr>
+                 <td>
+                      <table border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="600" class="table_test" style="border-collapse: collapse;margin:0 0 3% 0;">
+                       
+                         <td width="20" class="spacer" style="border-collapse: collapse;"></td>
+                           <td width="560" class="grid_block_test" align="center" style="border:1px solid #cccccc;border-collapse: collapse;">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;margin:3% 0;">
+                                    <tr>
+                                        <td width="20" class="x_boxpadding" style="border-collapse: collapse;">&nbsp;</td>
+                                        <td width="560" class="x_boxcontent" align="center" style="border-collapse: collapse;font-family: roboto;background:#f1f1f1;padding:10px 15px">
+                                        <div mc:edit="block_4">
+                                               <h2 style="color: #2e2e2e;text-align:left; font-weight: normal; font-size: 15px; padding: 0; margin:1% 0">
+                                               Dear Harsh Mathur,<br>
+                                              You are invited to (Delhi Delights) on (18-03-2018) in (New Delhi) Do check out the details below. <br>
+                                               </h2>  
+                                              <!--  -->
+                                                <table width="100%" border="0" cellpadding="0" cellspacinxg="0" width="100%" style="border-collapse: collapse;">
+                                                    <tr>
+                                                         <td width="600" class="x_boxpadding" style="color: #2e2e2e;text-align:left; font-weight: normal; font-size:15px; padding: 0;margin:0">
+                                                                See you there.
+                                                          </td>
+                                                    </tr>
+                                                    <tr>
+                                                         <td width="600" class="x_boxpadding" style="color: #2e2e2e;text-align:left; font-weight: normal; font-size:15px; padding: 0;margin:0">
+                                                                Cheers
+                                                          </td>
+                                                    </tr>
+                                                </table>
+                                                 
+                                                 <!--  -->                                                                  
+                                            </div>
+                                        </td>
+                                      <td width="20" class="x_boxpadding" style="border-collapse: collapse;">&nbsp;</td>
+                                    </tr>
+                                </table>
+                                    
+                      <!------------------------ card section ------------------------>
+                           <table border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width=" " class="table600con" style="border-collapse: collapse;">
+                            <tr>
+                                <td width="20" class="spacer" style="border-collapse: collapse;"></td>
+                                    <table border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="560" class="table600con_matchcard" style="border-collapse: collapse;  ">
+                                            <tr>
+                                               <td width="45" class="spacer" style="border-collapse: collapse;"></td>
+                                             
+                                                <!---------------------------------- card 1----------- -->
+                                                <td width="460" class="fw_full" align="center"   style=" border-collapse: collapse;">
+                                                    <table border="0" bgcolor="" cellpadding="0" cellspacing="0" width="100%" class="fw_full" style="margin:0 0 0 0;border-collapse: collapse;background-size:100% auto !important;">
+                                                      
+                                                    <div style="background:url('http://footloosenomore.com/img/event/344/1519801219_Delhi_event.png') no-repeat scroll center top / 100% auto; min-height:260px; background-repeat:no-repeat; max-height:260px; width:100%; " >
+                                                     
+                                                       <div style="width:68px;text-align:center;position:absolute; background:#dfaf37;font-size:28px; color:#2e2e2e;margin:0 0 0 14px;padding:5px;font-weight:bold;">
+                                                       
+                                                       Mar <br>
+                                                       
+                                                       <span style="font-weight:normal !important;font-size:18px !important;text-align:center !important">18 <br>
+                                                        2018 
+                                                        </span>
+                                                       </div>
+                                                        <tr>
+                                                            <td style="position:relative;"> 
+                                                           
+                                                            </td>  
+                                                        </tr>
+                                                      
+                                                    </div>    
+                                                <!-- card mumbai -->
+                                                <tr>
+                                                    <td width="100%" class="fw_full" align="center"   style=" border-collapse: collapse;">
+                                                         <table class="fw_full" border="0" bgcolor="#131228;" cellpadding="0" cellspacing="0" width="100%"  style="border-collapse: collapse;">
+                                                                <tr>
+                                                                    <td width="100%" style=" text-align:left;font-size:18px;padding:15px 15px 5px 15px;color:#fff;font-weight:bold;background:#131228;border-collapse: collapse;">
+                                                                      Delhi Delights
+                                                                    </td>                                              
+                                                                </tr>
+                                                                <tr>
+                                                                    <td width="100%" style=" text-align:left;font-size:18px;padding:0px 15px 15px 15px;color:#fff; background:#131228;border-collapse: collapse;">
+                                                                      ( New Delhi ) 
+                                                                    </td>                                              
+                                                                </tr>
+                                                                
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <!-- end card  mumbai -->
+                                                
+                                                <!-- tilt date -->
+                                                    <tr>
+                                                         <td width="100%" class="fw_full" align="center"   style=" border-collapse: collapse;">
+                                                             <table class="fw_full" border="0" bgcolor="#E9E9E7" cellpadding="0" cellspacing="0" width="100%"  style="border-collapse: collapse;">
+                                                                <tr>
+                                                                    <td width="20" valign="top" style=";font-size:18px;padding:18px 0px 15px 15px;color:#2e2e2e;font-weight:bold;border-collapse: collapse;">
+                                                                    <img src="http://footloosenomore.com/Mail%20template/img/map.png" width="25px"  alt="" style=" 
+                                                                     display: block;outline: none;object-fit:cover;text-decoration: none;-ms-interpolation-mode: bicubic;">
+                                                                    </td>  
+                                                                    
+                                                                    <td width="20" class="spacer1" style="border-collapse: collapse;"></td>
+                                                                    
+                                                                    <td width="500" style="padding:15px 15px 15px 0px;text-align:left;margin:0; font-size:14px; color:#2e2e2e; font-weight:600;border-collapse: collapse;">
+                                                                     
+                                                                      The Pint Room, D-12, 2nd Floor, D Block Market, Above Bank Of India, Vasant Vihar, New Delhi, Delhi 110057
+
+                                                                    </td> 
+                                                                </tr>
+                                                            
+                                                            </table>
+                                                           </td>
+                                                    </tr> 
+                                                <!-- end tilt date -->
+                                                
+                                                <!-- time  section -->
+                                                <tr>
+                                                     <td width="100%" class="fw_full" align="center"   style=" border-collapse: collapse;">
+                                                         <table class="fw_full" border="0" bgcolor="#E9E9E7" cellpadding="0" cellspacing="0" width="100%"  style="border-collapse: collapse;">
+                                                                <tr>
+                                                                    <td width="20" valign="top" style=";font-size:18px;padding:0px 0px 15px 15px;color:#2e2e2e;font-weight:bold;border-collapse: collapse;">
+                                                                    <img src="http://footloosenomore.com/Mail%20template/img/clock.png" width="20px"  alt="" style=" 
+                                                                     display: block;outline: none;object-fit:cover;text-decoration: none;-ms-interpolation-mode: bicubic;">
+                                                                    </td>  
+                                                                    
+                                                                    <td width="20" class="spacer1" style="border-collapse: collapse;"></td>
+                                                                    
+                                                                     <td width="500" style="padding:0px 15px 15px 0px;text-align:left;margin:0; font-size:14px; color:#2e2e2e; font-weight:600;border-collapse: collapse;">
+                                                                      
+                                                                            6:00 PM To 8:00 PM
+
+                                                                      </td> 
+                                                                </tr>
+                                                            
+                                                        </table>
+                                                     </td>
+                                                </tr>
+                                                <!-- end time section -->
+                                                
+                                                
+                                                <!-- rs section -->
+                                                    <tr>
+                                                        <td width="100%" class="fw_full" align="center"   style=" border-collapse: collapse;">
+                                                           <table class="fw_full" border="0" bgcolor="#E9E9E7" cellpadding="0" cellspacing="0" width="100%"  style="border-collapse: collapse;">
+                                                                <tr>
+                                                                    <td width="20" valign="top" style=";font-size:18px;padding:2px 0px 15px 18px;color:#2e2e2e;font-weight:bold;border-collapse: collapse;">
+                                                                    <img src="http://footloosenomore.com/Mail%20template/img/rs.png" width="14px"  alt="" style=" 
+                                                                     display: block;outline: none;object-fit:cover;text-decoration: none;-ms-interpolation-mode: bicubic;">
+                                                                    </td>  
+                                                                    
+                                                                    <td width="20" class="spacer1" style="border-collapse: collapse;"></td>
+                                                                    
+                                                                     <td width="500" style="padding:0px 15px 15px 0px;text-align:left;margin:0; font-size:14px; color:#2e2e2e; font-weight:600;border-collapse: collapse;">
+                                                                           1500/- + ST : 28  = Rs.1920 
+                                                                      </td> 
+                                                                </tr>
+                                                                
+                                                            
+                                                            </table>
+                                                        </td>
+                                                    </tr> 
+                                                <!-- end rs section -->
+                                                
+                                                <!-- map----------------->
+                                                <tr>
+                                                    <td width="100%" class="fw_full" align="center"   style=" border-collapse: collapse;">
+                                                         <table class="fw_full" border="0" bgcolor="#E9E9E7" cellpadding="0" cellspacing="0" width="100%"  style="border-collapse: collapse;">
+                                                            <tr>
+                                                                 <td width="20" valign="top" style=";font-size:18px;padding:0px 0px 15px 15px;color:#2e2e2e;font-weight:bold;border-collapse: collapse;">
+                                                                    <img src="http://footloosenomore.com/Mail%20template/img/locate.png" width="20px"  alt="" style=" 
+                                                                     display: block;outline: none;object-fit:cover;text-decoration: none;-ms-interpolation-mode: bicubic;">
+                                                                    </td>  
+                                                                    
+                                                                    <td width="20" class="spacer1" style="border-collapse: collapse;"></td>
+                                                                    
+                                                                     <td width="500" style="padding:0px 15px 15px 0px;text-align:left;margin:0; font-size:14px; color:#2e2e2e; font-weight:600;border-collapse: collapse;">
+                                                                      <a href="http://maps.google.com/?q=  The Pint Room, D-12, 2nd Floor, D Block Market, Above Bank Of India, Vasant Vihar, New Delhi, Delhi 110057" style="text-decoration:none;color:#2e2e2e;" >Map</a>
+                                                                    </td> 
+                                                            </tr>
+                                                            
+                                                        </table>
+                                                    </td>
+                                                </tr> 
+                                                <!-- end map section -->
+                                                    
+                                                    </table>
+                                                </td>
+                                                <td width="45" class="spacer" style="border-collapse: collapse;"></td>
+                                            </tr>
+                                    </table>
+                                    
+                                <table border="0" bgcolor="#fbc857" cellpadding="0" cellspacing="0" width=" " class="table600con_test" style="border-collapse: collapse;margin:2% 0;">
+                                          <tbody>
+                                          <tr>
+                                              <td width="20" class="spacer" style="border-collapse: collapse;"></td>
+                                              <td width="560" class="fw_full" align="center" style="border-collapse: collapse;">
+                                                    <table class="x_buttonwrap" border="0" bgcolor="#FBC857" cellpadding="0" cellspacing="0" width=" " style="border-collapse: collapse;borde:1px solid red;">
+                                                        <tbody>
+                                                            <tr>
+                                                                 <td class="x_button" width="150" height="60" align="center" valign="middle" style="  min-height:30px;paddinborder-radius:5px !important;background:#fbc857;border:0px;padding:0px;display:table-cell;border-collapse: collapse; cursor:pointer;">
+                                                                        
+                                                                          <a class="sure_btn" href="http://footloosenomore.com/user/page-redirect?param=Harsh%4098280%7C%7Cmathur.harsh.1990%40gmail.com%7C%7C%2Fevent%2Fdetails%3Fid%3D344" style="color:#fff;padding:5px;border:2px solid #fff;border-radius:5px;font-size:17px;padding: 5px 41px;cursor: unset;color: #ffffff;text-decoration: none;outline: none;">RSVP</a>                 
+                                                                 </td>
+                                                                 <td width="25" class="spacer" style="border-collapse: collapse;"></td>
+                                                                 
+                                                                   <td class="x_button" width="150" height="60" align="center" valign="middle" style=" min-height:30px;paddinborder-radius:5px !important;background:#fbc857;border:0px;padding:0px;display:table-cell;border-collapse: collapse; cursor:pointer;">
+                                                                        
+                                                                          <a class="sure_btn" href="http://footloosenomore.com/user/page-redirect?param=Harsh%4098280%7C%7Cmathur.harsh.1990%40gmail.com%7C%7C%2Fevent%2Fdetails%3Fid%3D344" style="color:#fff;padding:5px;border:2px solid #fff;border-radius:5px;font-size:17px;padding: 5px 41px;cursor: unset;color: #ffffff;text-decoration: none;outline: none;">Reserve</a>               
+                                                                 </td>
+                                                                 <td width="25" class="spacer" style="border-collapse: collapse;"></td>
+                                                                   <td class="x_button" width="150" height="60" align="center" valign="middle" style=" min-height:30px;paddinborder-radius:5px !important;background:#fbc857;border:0px;padding:0px;display:table-cell;border-collapse: collapse; cursor:pointer;">
+                                                                        
+                                                                          <a class="sure_btn" href="http://footloosenomore.com/user/page-redirect?param=Harsh%4098280%7C%7Cmathur.harsh.1990%40gmail.com%7C%7C%2Fevent%2Fdetails%3Fid%3D344" style="color:#fff;padding:5px;border:2px solid #fff;border-radius:5px;font-size:17px;padding: 5px 5px;cursor: unset;color: #ffffff;text-decoration: none;outline: none;">Invite A Member</a>       
+                                                                 </td>
+  
+                                                            </tr>
+                                                         </tbody>
+                                                     </table>
+                                              </td>
+                                              <td width="20" class="spacer" style="border-collapse: collapse;"></td>
+                                          </tr>
+                                      </tbody>
+                                </table>
+                            <table border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width=" " class="table600con" style="border-collapse: collapse;">
+                                <tr>
+                                    <td width="20" class="spacer" style="border-collapse: collapse;"></td>
+                                        <table border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="560" class="table600con_matchcard" style="border-collapse: collapse;border:1px solid #cccccc;  ">
+                                            <tr>
+                                               <td width="10" class="spacer" style="border-collapse: collapse;"></td>
+                                             
+                                                <td width="520" class="fw_full" align="center"   style=" border-collapse: collapse;">
+                                                    <table border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="100%" class="fw_full " style="margin:1% 0;border-collapse: collapse; border: 3px solid #f1f1f1; border-radius: 3px;">
+                                                 
+                                                        <tr>
+                                                            <td width="100%" class="fw_full" align="center"   style=" border-collapse: collapse;">
+                                                                <table class="fw_full" border="0"   cellpadding="0" cellspacing="0" width="100%"  style="border-collapse: collapse; ">
+                                                                <tr> 
+                                                                     <td width="500" style="padding: 31px 15px 15px;  text-align:center;margin:0; font-size:25px; color:#d6175e; font-weight:600;border-collapse: collapse;">
+                                                                         DETAILS 
+
+                                                                    </td> 
+                                                                </tr>
+                                                                
+                                                                <tr> 
+                                                                     <td width="500" style="padding:15px 35px;text-align:left;margin:0; font-size:14px; color:#2e2e2e; font-weight:600;border-collapse: collapse;">
+                                                                     So we are back with a Sunday evening meet up. <br />
+<br />
+LOTS of new members have joined up since the last event so expect to see a lot of old AND new faces this time. <br />
+<br />
+As always it&#39;s gonna be fun as we meet at our pub partner in dehi,THE PINT ROOM, vasant vihar on a sunday evening (that time of the day when no one really does anything) 5:00 pm TO 8 p.m. Normally this 8 PM deadline keeps getting extended as a LOT of members connect with each other and chat away till much later. Members also form groups with people they vibe with and go out for dinner and drinks later on in the evening. <br />
+<br />
+Do check out all the GREAT DEALS and other details below.<br />
+<br />
+See you soon.<br />
+ 
+                                                                    </td> 
+                                                                </tr>
+                                                            
+                                                              </table>
+                                                           </td>
+                                                        </tr> 
+                                                    </table>
+                                                          
+                                                         
+                                                         <!-- test -->
+                                                    <table border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="100%" class="fw_full " style="margin:6% 0;border-collapse: collapse; border: 3px solid #f1f1f1; border-radius: 3px;">
+                                                 
+                                                        <tr>
+                                                            <td width="100%" class="fw_full" align="center"   style=" border-collapse: collapse;">
+                                                                <table class="fw_full" border="0"   cellpadding="0" cellspacing="0" width="100%"  style="border-collapse: collapse; ">
+                                                                <tr> 
+                                                                     <td width="500" style="padding: 31px 15px 15px;  text-align:center;margin:0; font-size:25px; color:#d6175e; font-weight:600;border-collapse: collapse;">
+                                                                        OFFER
+                                                                    </td> 
+                                                                </tr>
+                                                                
+                                                                <tr> 
+                                                                     <td width="500" style="padding:15px 35px;text-align:left;margin:0; font-size:14px; color:#2e2e2e; font-weight:600;border-collapse: collapse;">
+                                                                         When paid on site -<br />
+<br />
+Cost is Rs. 1500/- + 28% GST = 1920/-<br />
+<br />
+Cost when paid at venue  - Add extra Rs. 150/- = Rs.1650 + GST <br />
+<br />
+FLAT 30% DISCOUNT FOR PREMIUM PLUS MEMBERS [Paid up..not upgraded]<br />
+
+                                                                    </td> 
+                                                                </tr>
+                                                            
+                                                              </table>
+                                                           </td>
+                                                        </tr> 
+                                                    </table>
+                                                    <table border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="100%" class="fw_full " style="margin:6% 0; border-collapse: collapse; border: 3px solid #f1f1f1; border-radius: 3px;">                                    
+                                                        <tr>
+                                                            <td width="100%" class="fw_full" align="center"   style=" border-collapse: collapse;">
+                                                                <table class="fw_full" border="0"   cellpadding="0" cellspacing="0" width="100%"  style="border-collapse: collapse; ">
+                                                                <tr> 
+                                                                     <td width="500" style="padding: 31px 15px 15px;  text-align:center;margin:0; font-size:25px; color:#d6175e; font-weight:600;border-collapse: collapse;">
+                                                                     NOTE
+                                                                    </td> 
+                                                                </tr>
+                                                                <tr> 
+                                                                     <td width="500" style="padding:15px 35px;text-align:left;margin:0; font-size:14px; color:#2e2e2e; font-weight:600;border-collapse: collapse;">
+                                                                     PREMIUM PLUS (PAID MEMBERS) GET A FLAT 30% DISCOUNT<br />
+<br />
+Members getting along 3 eligible decent friends or family members get FREE ENTRY.<br />
+<br />
+Members getting along 2 eligible decent friends get a FLAT 50% discount for themselves only.<br />
+<br />
+DISCOUNTS ARE ONLY APPLICABLE TO MEMBERS AND NOT THEIR GUESTS.<br />
+<br />
+PREMIUM PLUS MEMBERS, PLEASE PAY ONLINE ONLY FOR YOURSELF. <br />
+<br />
+<br />
+But remember that your friends are your responsibiity & if they misbehave, you get deleted from the site..so choose wisely.<br />
+<br />
+You get 3 coupons. 2 for drinks and 1 for a starter. Keep then safely as we will not be abe to replace them if you lose them.<br />
+
+                                                                    </td> 
+                                                                </tr>
+                                                            
+                                                              </table>
+                                                           </td>
+                                                        </tr> 
+                                                    </table>  
+                                                    <table border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="100%" class="fw_full " style="margin:6% 0; border-collapse: collapse; border: 3px solid #f1f1f1; border-radius: 3px;">                                   
+                                                        <tr>
+                                                            <td width="100%" class="fw_full" align="center"   style=" border-collapse: collapse;">
+                                                                <table class="fw_full" border="0"   cellpadding="0" cellspacing="0" width="100%"  style="border-collapse: collapse; ">
+                                                                <tr> 
+                                                                     <td width="500" style="padding: 31px 15px 15px;  text-align:center;margin:0; font-size:25px; color:#d6175e; font-weight:600;border-collapse: collapse;">
+                                                                     MENU
+
+                                                                    </td> 
+                                                                </tr>
+                                                                <tr> 
+                                                                     <td width="500" style="padding:15px 35px;text-align:left;margin:0; font-size:14px; color:#2e2e2e; font-weight:600;border-collapse: collapse;">
+                                                                     Alcoholic drinks -<br />
+<br />
+Any 2 beers from Mahou/Kingfisher 330 ml<br />
+<br />
+sangria 2 glasses<br />
+<br />
+domestic beer cocktails - 2<br />
+<br />
+Non alcoholic beverages -<br />
+<br />
+2 drinks - cocktails<br />
+<br />
+tea<br />
+<br />
+coffee<br />
+<br />
+iced tea<br />
+<br />
+soft drinks<br />
+<br />
+juice<br />
+<br />
+Food<br />
+<br />
+1 Mini starter chicken/ veg pakoda&#39;s<br />
+ 
+                                                                    </td> 
+                                                                </tr>
+                                                              </table>
+                                                           </td>
+                                                        </tr> 
+                                                    </table>    
+                                                </td>
+                                            <td width="10" class="spacer" style="border-collapse: collapse;"></td>
+                                            </tr>
+                                        </table>
+                                        <td width="20" class="spacer" style="border-collapse: collapse;"></td>
+                                </tr>
+                            </table>
+                                <td width="20" class="spacer" style="border-collapse: collapse;"></td>
+                            </tr>
+                        </table>                   
+                          </td>
+                       <td width="20" class="spacer" style="border-collapse: collapse;"></td>
+                    </table>
+                </td>
+            </tr>
+              <tr class="scaleimage">
+                          <td width="100%" align="center" class="full_width" style="border-collapse: collapse; font-size:11pt;">         
+                  <div class="wrapperout" style="width: 600px;margin: auto;">
+                    <table border="0" bgcolor="#EEEEEE" cellpadding="0" cellspacing="0" width="600" class="table600full" style="border-collapse: collapse;">
+                      <tr>
+                        <td width="20" class="spacer" style="border-collapse: collapse;"></td>
+                          <td width="370" class="grid_block" style="padding-top: 15px;padding-bottom: 15px;color: #2e2e2e;border-collapse: collapse;font-size: 12px;" align="left" valign="middle" mc:edit="footerdrop">
+                            <multiline label="Footer Drop Us">
+                        If you have any questions, you can always get in touch with us.
+                            </multiline>
+                          </td>
+                          <td width="20" class="spacer" style="border-collapse: collapse;"></td>
+                          <td width="170" class="grid_block" style="padding-top: 15px;padding-bottom: 15px;border-collapse: collapse;" align="right" valign="middle">
+                                                <table>
+                                                  <tr>
+                                                    <td width="0" class="x_boxpadding" style="border-collapse: collapse;"></td>
+                                                    <td width="170" class="x_boxcontent" align="center" style="border-collapse: collapse;font-family: 'Open Sans', sans-serif;;">
+                                                      <!-- START - BUTTON -->
+                                                      <table class="x_buttonwrap" border="0" cellpadding="0" cellspacing="0" width="170" style="border-collapse: collapse;">
+                                                        <tbody><tr>
+                                                          <tr>
+                                                            <td class="x_button" height="34" bgcolor="#D6175E" align="center" valign="middle" style="border-radius:5px !important;background:#D6175E;border-collapse: collapse;">
+                                                            <multiline label="Button">
+                                                            <a href="http://footloosenomore.comindex/contactus" style="color: #ffffff;text-decoration: none;outline: none;">CONTACT US</a></multiline>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                        </table>
+                                                      <!-- END - BUTTON -->
+                                                    </td>
+                                                    <td width="0" class="x_boxpadding" style="border-collapse: collapse;"></td>
+                                                  </tr>
+                                                </table>
+                          </td>
+                          <td width="20" class="spacer" style="border-collapse: collapse;"></td>
+                      </tr>
+                  </table>
+                  
+      <!----------------------Private details--------------------------  -->
+                   <table border="0" bgcolor="#fff" cellpadding="0" cellspacing="0" width="600" class="table600full" style="border-collapse: collapse;">
+                      <tr>
+                        <td width="20" class="spacer" style="border-collapse: collapse;"></td>
+                          <td width="520" class="grid_block" style="padding-top: 15px;padding-bottom: 15px;color: #2e2e2e;border-collapse: collapse;font-size: 10px;" align="center" valign="middle" mc:edit="footerdrop">
+                            <multiline label="Footer Drop Us">
+                          Be safe. Do not share any personal details or perform any actions that can endanger you. Use your own discretion.
+                            </multiline>
+                          </td>
+                          
+                           
+                          <td width="20" class="spacer" style="border-collapse: collapse;"></td>
+                      </tr>
+                  </table>
+                  <!-- ------------------------end private details------------------- -->
+                  
+                  </div>
+                </td>
+              </tr>
+             
+              <tr>
+                  <td width="100%" align="center" class="full_width" style="border-collapse: collapse; font-size:9pt;">
+                  <div class="wrapperout" style="width: 600px;margin: auto;">
+                    <table border="0" bgcolor="#131228" cellpadding="0" cellspacing="0" width="600" class="table600full" style="border-collapse: collapse;">
+                      <tr class="scaleimage">
+                        <td width="20" class="spacer" style="border-collapse: collapse;"></td>
+                          <td width="50" class="grid_block" style="padding-top: 40px;color: #767676;border-collapse: collapse;font-family: 'Open Sans', sans-serif;;" align="left" valign="middle" mc:edit="footer_address">
+                            <multiline label="Footer Address">
+                            <img src="http://footloosenomore.com/Mail%20template/img/f.jpg" alt="" style="display: inline;vertical-align: middle;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;border: none;">
+                         
+                            </multiline>
+                          </td>
+                          <td width="20" class="spacer" style="border-collapse: collapse;"></td>
+                      
+                     <td width="490" class="grid_block" style=" border-collapse: collapse;padding-top: 40px;" align="right" valign="middle">
+                            <multiline label="Social Link">
+                        <div mc:edit="social_link">
+                              <a href="http://footloosenomore.comindex/privacy" style="color: #757575;text-decoration: none;outline: none;font-size:10px;">Privacy</a>|
+                             <a href="http://footloosenomore.comindex/terms" style="color: #757575;text-decoration: none;outline: none;font-size:10px;">Terms of service</a>|
+                            <a href="http://footloosenomore.comindex/refund" style="color: #757575;text-decoration: none;outline: none;font-size:10px;"> Refund Policy</a>|
+                            <a href="http://footloosenomore.com/member/memberlevel" style="color: #757575;text-decoration: none;outline: none;font-size:10px;">Subscription Plans</a>|
+                            <a href="http://footloosenomore.com/index/contactus" style="color: #757575;text-decoration: none;outline: none;font-size:10px;">Contact Us</a> 
+                       </div>
+                            </multiline>
+                          </td> 
+                          <td width="20" class="spacer" style="border-collapse: collapse;"></td>
+                      </tr>
+                    </table>
+                      
+                     <table border="0" bgcolor="#131228" cellpadding="0" cellspacing="0" width="600" class="table600full" style="border-collapse: collapse;">  
+                    <tr class="scaleimage">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background:#131228;" >
+                            <tr>
+                                <td width="20" class="spacer" style="border-collapse: collapse;padding-bottom: 40px;"></td>
+                                
+                                <td class="contact_foot" width="220" style="border-collapse: collapse; font-family: 'Open Sans', sans-serif;padding-bottom: 40px;" align="left" valign="top">
+                                <a href="http://footloosenomore.com" style="color: #757575;text-decoration: none;outline: none;font-size:10px;">&copy; 2016 Footloose No More Entertainment Pvt. Ltd.</a> 
+                                     
+                                </td>
+                                
+                                 <td width="5" class="spacer" style="border-collapse: collapse;padding-bottom: 40px;"></td>
+                                  
+                                 <td class="contact_foot" width="150" style="border-collapse: collapse; font-size:9px;color:#757575;padding-bottom: 40px;" align="left" valign="top">
+                                     
+                                     Payment Gateway varified by
+                                       <img src="http://footloosenomore.com/Mail%20template/img/paymentgetway.png" alt="" style="display: inline;vertical-align: middle;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width:30px;border: none;">  
+                                     
+                                </td>
+                                <td width="5" class="spacer" style="border-collapse: collapse;padding-bottom: 40px;"></td>
+                                 
+                                <td class="contact_foot" width="130" style="text-align:center;border-collapse: collapse;font-size:9px;color:#757575;padding-bottom: 40px;" align="left" valign="top">
+                                  Payment option
+                                     <img src="http://footloosenomore.com/Mail%20template/img/pay2.jpg" alt="" style="display: inline;vertical-align: middle;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width:60px;border: none;">
+                                      <td width="10" class="spacer" style="border-collapse: collapse;"></td>
+                                </td>
+                                 
+                            </tr>
+                        </table>
+                    </tr>
+                    </table>  
+                      
+                 
+                  </div>
+                </td>
+              </tr>
+              <!-- END - FOOTER -->
+
+              <!-- START - FOOTER LINK -->
+              <tr bgcolor="#E3E3E3">
+                <td width="100%" align="center" class="full_width" style="border-collapse: collapse;">
+                  <div class="wrapperout" style="width: 600px;margin: auto;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="600" class="table600con" style="border-collapse: collapse;">
+                      <tr>
+                           <td width="600" class="fw_full" style="padding-top: 10px;padding-bottom: 15px;color: #2d2d2d;border-collapse: collapse;font-size:8pt" align="center">
+                             
+                            <div mc:edit="footer_text" style="color:#2d2d2d;" >
+                             You are getting these emails because you are a member on <a href="http://footloosenomore.com">www.footloosenomore.com.</a>
+                             <p style="margin:0;padding:0;" >If you wish to change the frequency of receiving these mails,<a href="http://footloosenomore.com">please click here.
+                             </p>
+                             </a> 
+                            </div>
+                           </td>
+                      </tr>
+                  </table>
+                  </div>
+                </td>
+              </tr>
+              
+              <!-- END - FOOTER LINK -->
+          </table>
+          </td>
+        </tr>
+      </tbody>
+     </table>
+  </body>
+</html>

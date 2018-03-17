@@ -1,0 +1,374 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp615497ive;
+        Fri, 16 Mar 2018 02:57:39 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELvkrkBcI2Im73C4kSG3AlSvcEwLKPNWK4oL5xKGplNig2OHvnkN63tXcCqBK/IcAuvyzLYQ
+X-Received: by 10.99.173.71 with SMTP id y7mr977901pgo.432.1521194259858;
+        Fri, 16 Mar 2018 02:57:39 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521194259; cv=none;
+        d=google.com; s=arc-20160816;
+        b=QmAUo+/hrt89W9gBizJHYxiSnXIml1YRgvjqx3HnP96zEgSV5YU8ZEKixLnXIHbJuH
+         OI5a9XitrSvSKspOL3hYgwODlJEaolLjzu6At8Avs/wQHOGad4tsTALLesUSBFe/V/7N
+         R7BJDL5q+MXp7KXa+zYA+uBkV8nY4T8/ejCv4yuOxc8aC5eDfTFPx+8lD7sGfiHt008h
+         xVuuUvi4VOg0iEhqIjhCVBimT/EExl+A/lSmi93X2ec2YXNFLLRPxuEpjWaKfbcK8k8C
+         aGewKTMRVylMDpaHFnRWJbXebs4BxyBX0gXaXr/y9Pq0/pvuMjCkQ+meBwq0g70hx5VR
+         mFWA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:feedback-id:list-unsubscribe:message-id:subject
+         :reply-to:from:to:date:domainkey-signature:dkim-signature
+         :dkim-signature:arc-authentication-results;
+        bh=Bv/NctNHEVxT1U4Jp3FQBp9G2NsXKUGdJpo2pZTy16k=;
+        b=Y1qY060TAECEHz04oTCZmVXTmUnhuS5LT/zi4TfjHb3MnP+6ij42iMPcrt+hQyR2of
+         oHrptNB927xqEF0/eobhf5Y5aONbNkYqUSsMMuzgCI9928041lw1haoOaj2MU18ja4xH
+         0O3cAzAAA2Quifo7FKjV1AhVmlsrzCTibeB2eD879KnpBOFYe49Kr00tPnJxQOjBER6u
+         ZYNl1Lg03pafykjRkNB8nKN5AMHP35oXVR9BzhBQQmhOqLVUB9WuRoox/PvWhtdlcNMX
+         nQgLnfEKOaON5KP48Bw7IRHIzXIa+vUltq/OczGNrbJZnAz83ZlaN4/tfZh5LpKjcfeY
+         iFrA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@ripestory.com header.s=ncemm0516 header.b=kPnm3xvs;
+       dkim=pass header.i=@emails.ripestory.com header.s=ncemm0516 header.b=ehKtXDdJ;
+       spf=pass (google.com: domain of campaign-ripestory-50772-271-1407061-harshmathur.1990=gmail.com@emails.ripestory.com designates 202.162.244.69 as permitted sender) smtp.mailfrom=campaign-ripestory-50772-271-1407061-harshmathur.1990=gmail.com@emails.ripestory.com
+Return-Path: <campaign-ripestory-50772-271-1407061-harshmathur.1990=gmail.com@emails.ripestory.com>
+Received: from mmail14.iaires.com (mmail14.iaires.com. [202.162.244.69])
+        by mx.google.com with ESMTP id u21si5349536pfl.176.2018.03.16.02.57.39
+        for <harshmathur.1990@gmail.com>;
+        Fri, 16 Mar 2018 02:57:39 -0700 (PDT)
+Received-SPF: pass (google.com: domain of campaign-ripestory-50772-271-1407061-harshmathur.1990=gmail.com@emails.ripestory.com designates 202.162.244.69 as permitted sender) client-ip=202.162.244.69;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@ripestory.com header.s=ncemm0516 header.b=kPnm3xvs;
+       dkim=pass header.i=@emails.ripestory.com header.s=ncemm0516 header.b=ehKtXDdJ;
+       spf=pass (google.com: domain of campaign-ripestory-50772-271-1407061-harshmathur.1990=gmail.com@emails.ripestory.com designates 202.162.244.69 as permitted sender) smtp.mailfrom=campaign-ripestory-50772-271-1407061-harshmathur.1990=gmail.com@emails.ripestory.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=ncemm0516; d=ripestory.com;
+ h=Date:To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type;
+ bh=gTdTV/UT2m3OVdetp7mX7Yz7/0E=;
+ b=kPnm3xvsljf4S8O7IUkQLK4ysNNsIEi75fDBO3R7B/DpA3Lz0TunVCudSbrnRukt3qkYixYNjUiF
+   FgXx/57nZHO9pDipdAtNYK/3pROeVCYlGU27OM0s3PN6N4c+YbVnFOXX4N1SrMyk3LYJk/L8DTqE
+   HMC3kz8158qBpWw4I8M=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=ncemm0516; d=emails.ripestory.com;
+ h=Date:To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type;
+ bh=gTdTV/UT2m3OVdetp7mX7Yz7/0E=;
+ b=ehKtXDdJdhkDyKWySaF3pqdYuufY+JtpcrV7HsyebJp4UKumCHNHaSZUpEzziieXo+5effpvlltW
+   eAI/uwOgfrqidqeI1AMImnP3G12xmJCplgU/CGrH3/oD5qdu4OtvW1WdlpYxfRDD2DMLPWs/WOYw
+   hX7cNP2skZMJepvVoqo=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=ncemm0516; d=ripestory.com;
+ b=Fi9NjB7HxKLnG0MaQU4++lZ9DxKNLzjPiejUCj0Sk1WF1Gwv2ZTkeDrGx9v7Gp8cP7PfpeD6GMl5
+   QjGfJOhuYMvoEHZyy2VgVihlUf9WjCLlAdD8VqptGfbSXYU8kpRU+dEl00t6R3OhKWL81eJ2Y5sw
+   FPYk6BKxH3JoLU52VO0=;
+Date: Fri, 16 Mar 2018 15:11:40 +0530
+To: harshmathur.1990@gmail.com
+From: Fenesta Windows <info@ripestory.com>
+Reply-To: Fenesta Windows <info@ripestory.com>
+Subject: Summer is here! Insulate your home with Fenesta Windows.
+Message-ID: <7054477761407061@emails.ripestory.com>
+List-Unsubscribe: <mailto:ripestory-50772-271-1407061-23ba1094ff927b8914ab2eb7eee68924@usub.ripestory.com?subject=Unsubscribe>, <http://panela.ripestory.com/ripestory/?p=smunsub&mid=271&uid=23ba1094ff927b8914ab2eb7eee68924>
+Feedback-ID: 271:50772:20180316151227:nczc
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_851531f41360650122eac73e3a43eae4"
+
+
+
+
+--b1_851531f41360650122eac73e3a43eae4
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+Summer
+
+  
+ This summer
+
+  
+ insulate your home with
+
+  
+ Fenesta Windows
+
+  
+
+ UPVC as the primary
+
+ raw material: 
+
+ A poor conductor of heat neither retains it nor transfers it in.
+
+  
+
+ Air Tight Sealing: 
+
+ Use of fusion welded joints, multi-chambered profiles, multiple point
+locks and silicone sealant together form an air-tight sealing, not
+letting the cold air out or hot air in.
+
+  
+
+ Double Insulation: 
+
+ Each window uses double or triple insulated glass, which is often
+used in modern buildings with high green rating - as the means to save
+power.
+
+  
+
+ Insulation against Noise, Dust, Rain, Pollution and Rising Energy
+Costs
+
+  
+
+  
+ Click Here to book your free consultation today with Fenesta Experts
+  
+
+  
+
+ FENESTA EDGE
+
+ Two Million+ Installations | World Class Infrastructure | All India
+Presence | Service
+
+ on Call | India’s No.1 Windows Brand | Part of 6050cr DCM Shriram
+Group
+
+ <http://panela.ripestory.com/jtrack?g=1&id=U1UGBgVQB0oMWEJDCV5SRQwTFhYJDg4JcwZYV1kNSgFYCA==&client=50772>
+
+--Click Here to unsubscribe from this newsletter.
+
+
+--b1_851531f41360650122eac73e3a43eae4
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Summer</title>
+</head>
+<body>
+<a href='http://panela.ripestory.com/jtrack?g=1&id=cU9RBQYAUVFaBRlSCQBTCFNVU09AAw1QXFMaF15FXEIXWhEcSAcJWkU=U1UGBgVQB0oMWEJDCV5SRQwTFhYJDg4JcwZYV1kNSgFYCA==&client=50772'  target="_blank" style="text-decoration:none; display:block" >
+<table width="750" border="0" align="center" cellpadding="0" cellspacing="0" style="border:1px solid #ddd; ">
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="99%">
+<img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/fenestaimg/logo.jpg" width="272" height="89" style="border:0; display:block;">
+</td>
+<td width="1%">
+<img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/fenestaimg/right_logo.jpg" width="285" height="64" >
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/fenestaimg/banner.jpg" width="750" height="352" style="border:0; display:block;">
+</td>
+</tr>
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="53%">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td> </td>
+<td style="color:#d52027; font-size:40px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; ">This summer</td>
+</tr>
+<tr>
+<td> </td>
+<td style="color:#d52027; font-size:25px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;">insulate your home with</td>
+</tr>
+<tr>
+<td width="3%"> </td>
+<td width="97%" style="color:#173d6c; font-size:45px; font-family:Arial, Helvetica, sans-serif; font-weight:bold;">Fenesta Windows</td>
+</tr>
+</table>
+</td>
+<td width="47%" align="right">
+<img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/fenestaimg/nodust.jpg" width="350" height="296" style="border:0; display:block;">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/fenestaimg/say.jpg" width="750" height="154" style="border:0; display:block;">
+</td>
+</tr>
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="background:#ededed;">
+<tr>
+<td width="3%">
+<img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/fenestaimg/left.jpg" width="30" height="301" style="border:0; display:block;">
+</td>
+<td width="96%">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="30%" height="301" valign="top" style="background:#7abfe9;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center"> </td>
+</tr>
+<tr>
+<td align="center">
+<img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/fenestaimg/1.jpg" width="91" height="90">
+</td>
+</tr>
+<tr>
+<td align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; padding:10px 0; color:#0d2e57; font-weight:bold;">
+UPVC as the primary
+<br>
+raw material: 
+</td>
+</tr>
+<tr>
+<td align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; padding:5px 0; color:#0d2e57;">A poor conductor of heat neither retains it nor transfers it in.</td>
+</tr>
+</table>
+</td>
+<td width="5%">
+<img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/fenestaimg/border1.jpg" width="45" height="301" style="border:0; display:block;">
+</td>
+<td width="30%" style="background:#7abfe9;" valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center"> </td>
+</tr>
+<tr>
+<td align="center">
+<img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/fenestaimg/2.jpg" width="91" height="90">
+</td>
+</tr>
+<tr>
+<td align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; padding:10px 0; color:#0d2e57; font-weight:bold;">Air Tight Sealing: </td>
+</tr>
+<tr>
+<td align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; padding:5px 0; color:#0d2e57;">Use of fusion welded joints, multi-chambered profiles, multiple point locks and silicone sealant together form an air-tight sealing, not letting the cold air out or hot air in.</td>
+</tr>
+</table>
+</td>
+<td width="5%">
+<img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/fenestaimg/border2.jpg" width="37" height="301" style="border:0; display:block;">
+</td>
+<td width="30%" style="background:#7abfe9;" valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center"> </td>
+</tr>
+<tr>
+<td align="center">
+<img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/fenestaimg/3.jpg" width="91" height="90">
+</td>
+</tr>
+<tr>
+<td align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; padding:10px 0; color:#0d2e57; font-weight:bold;">Double Insulation: </td>
+</tr>
+<tr>
+<td align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; padding:5px 0; color:#0d2e57;">Each window uses double or triple insulated glass, which is often used in modern buildings with high green rating - as the means to save power.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td width="1%">
+<img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/fenestaimg/right.jpg" width="28" height="301" style="border:0; display:block;">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/fenestaimg/fenesta-work.jpg" width="750" height="85">
+</td>
+</tr>
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center" style="border-right:1px dotted #000;">
+<img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/fenestaimg/1.jpg" width="81" height="77">
+</td>
+<td align="center" style="border-right:1px dotted #000;">
+<img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/fenestaimg/2.jpg" width="81" height="77">
+</td>
+<td align="center" style="border-right:1px dotted #000;">
+<img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/fenestaimg/3.jpg" width="81" height="77">
+</td>
+<td align="center" style="border-right:1px dotted #000;">
+<img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/fenestaimg/4.jpg" width="81" height="77">
+</td>
+<td align="center">
+<img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/fenestaimg/5.jpg" width="81" height="77">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#0d7bc0; text-align:center;"> </td>
+</tr>
+<tr>
+<td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#0d7bc0; text-align:center;">Insulation against Noise, Dust, Rain, Pollution and Rising Energy Costs</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td> </td>
+<td style="background:#000; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#fff; padding:5px 0;" align="center">Click Here to book your free consultation today with Fenesta Experts</td>
+<td> </td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td> </td>
+</tr>
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="74%" style="padding:10px;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold; text-transform:uppercase;color:#000;">FENESTA EDGE</td>
+</tr>
+<tr>
+<td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#000;">
+Two Million+ Installations | World Class Infrastructure | All India Presence | Service
+<br />
+on Call | India’s No.1 Windows Brand | Part of 6050cr DCM Shriram Group
+</td>
+</tr>
+</table>
+</td>
+<td style="float:right; text-align:right;">
+<img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/fenestaimg/dcm-logo.jpg" width="136" style="border:0;" height="57" />
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</a>
+<br/><div><p>--<br><a href='http://panela.ripestory.com/jtrack?g=1&id=cU9RBQYAUVFaBhlSCQBTCFNVU09AAw1QXFMaF15FXEIXWhEcSAcJWkU=U1UGBgVQB0oMWEJDCV5SRQwTFhYJDg4JcwZYV1kNSgFYCA==&client=50772'  >Click Here</a> to unsubscribe from this newsletter.<br><br></div><img border="0" src="http://panela.ripestory.com/jtrack?g=1&m=271&eu=CQNRBAIAVlRUBg==&u=23ba1094ff927b8914ab2eb7eee68924&client=50772&c=0000" ></body>
+</html>
+
+
+
+--b1_851531f41360650122eac73e3a43eae4--
+

@@ -1,0 +1,249 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp98384ive;
+        Wed, 14 Mar 2018 05:28:30 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELthp0lP14NA4xUCthwPRUYaE7iOE2eWLbhru42ruIN6fEQjEGUd7/nbJeZXrt2DhQhfjA4o
+X-Received: by 10.200.24.1 with SMTP id q1mr6863848qtj.309.1521030510037;
+        Wed, 14 Mar 2018 05:28:30 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521030510; cv=none;
+        d=google.com; s=arc-20160816;
+        b=VPX9aCES6US64ZhEbcHkPJM3YNikuElB5acfSOTnP4HcCAs81wjXdQDT3E4QBKVSH9
+         T82mvmbafcBbitMvfR6WwRDvSxaWG3ujH2R3iu0453KW7Kc+tzEYZ56aMzBAM/omvAgz
+         AsgLB9fKWq19Te23/EKe6u730He+G86lAzB5S5q0WRq4qJ7rylvQgkVySZe5x5yCwAf7
+         XB/wHvEpoGiYMJVmxdJ8WtO2wZCcjVSoGXO9fqV7w6TThLSlvuDfhQQGyPADazYRke9r
+         syW8qJWk3dKbaV2jmpXll4ZKj4O/Xb5OGQJ3M8y4ZWE2DOEWd3hstJgbFAnVqyxx5nCP
+         dF9w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:content-transfer-encoding:mime-version:list-unsubscribe
+         :message-id:subject:reply-to:from:to:date:dkim-signature
+         :dkim-signature:arc-authentication-results;
+        bh=7nSTAfSjIOeyojTlwF31yjT2L5a6BD+sH2PR2uU8T3A=;
+        b=wgDp/C3GdSx2lJqmpLDRW4ga3B/NrBOeF7IqLxISy5Ei/9ParokEe7T87ubamAHSkT
+         +gYW+Sd7QTriTwZ78GtTkHV7Z8N9LdWoyGAPXSTCX62qNDx+zJFBwZoWR0hPNi3jlk8N
+         xO7Ygu8G93wqITC8r+E5Ho03motpl6E6avi8K974iMVUV63W7zO/mjz+008ZWXzS1bNy
+         ItWxT2HPRVy69I+S5vXCLgmxrFRVHR42Yew2vqv+BiHWoAF1DKRNwHPdYXUAwpKgTe2d
+         XPYH25lrSRbKRYhZoPo2oMSCfeOrazrH6CSXvKH2d8bAGY9Sw1U6KZmy9pCmIYSUb+Rg
+         r5YA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mailtravelstories.com header.s=3ubwjlqkjjrpnzwx2lqinjxkbyppuvhe header.b=HQ1dPAys;
+       dkim=pass header.i=@amazonses.com header.s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug header.b=Ks0e9EVK;
+       spf=pass (google.com: domain of 01000162247bb429-1e3c0a2a-ee72-4929-9d08-6a5f3a7fb88c-000000@mailer.mailtravelstories.com designates 54.240.34.250 as permitted sender) smtp.mailfrom=01000162247bb429-1e3c0a2a-ee72-4929-9d08-6a5f3a7fb88c-000000@mailer.mailtravelstories.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=mailtravelstories.com
+Return-Path: <01000162247bb429-1e3c0a2a-ee72-4929-9d08-6a5f3a7fb88c-000000@mailer.mailtravelstories.com>
+Received: from a34-250.smtp-out.amazonses.com (a34-250.smtp-out.amazonses.com. [54.240.34.250])
+        by mx.google.com with ESMTPS id t23si2742014qtc.383.2018.03.14.05.28.29
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Wed, 14 Mar 2018 05:28:29 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 01000162247bb429-1e3c0a2a-ee72-4929-9d08-6a5f3a7fb88c-000000@mailer.mailtravelstories.com designates 54.240.34.250 as permitted sender) client-ip=54.240.34.250;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mailtravelstories.com header.s=3ubwjlqkjjrpnzwx2lqinjxkbyppuvhe header.b=HQ1dPAys;
+       dkim=pass header.i=@amazonses.com header.s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug header.b=Ks0e9EVK;
+       spf=pass (google.com: domain of 01000162247bb429-1e3c0a2a-ee72-4929-9d08-6a5f3a7fb88c-000000@mailer.mailtravelstories.com designates 54.240.34.250 as permitted sender) smtp.mailfrom=01000162247bb429-1e3c0a2a-ee72-4929-9d08-6a5f3a7fb88c-000000@mailer.mailtravelstories.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=mailtravelstories.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=3ubwjlqkjjrpnzwx2lqinjxkbyppuvhe; d=mailtravelstories.com;
+	t=1521030509;
+	h=Date:To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Content-Transfer-Encoding;
+	bh=Ni9DER05DuzBcu24ylT7JAngcPMfI4Y+5odi69ptDng=;
+	b=HQ1dPAysD9BNZHHaQZM03jLaln/AJqhWWNVt6cNeYVRnB230RBcaNZqeN41CHUTw
+	sqFxcz+CGG5wyelYerJ1JhjZtgdNP7tO7JM8a8zfOrkIOnKwn6oTBH+uRm8XqLaNe+V
+	DqkMnDsoAEOkjoXI7C4XeoRbJrjuWTprlMgwcu5U=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1521030509;
+	h=Date:To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Content-Transfer-Encoding:Feedback-ID;
+	bh=Ni9DER05DuzBcu24ylT7JAngcPMfI4Y+5odi69ptDng=;
+	b=Ks0e9EVKwIrtPi3MRySP7Cy9q1ceZELeyncwXT5I1+ipC0/GexI3cLsfvM+Cz3ut
+	OxzuMR5uBq4ISpG8D1BfQWWR2ExEuQuoXgRVSGPzgi2y49urKwlWYjB63PJRe2YS5C+
+	lZMt7sZjiNZyZmhGic3CYd5gdhyvgFIsGo89FIo8=
+Date: Wed, 14 Mar 2018 12:28:29 +0000
+To: Harsh Mathur <harshmathur.1990@gmail.com>
+From: Tripoto <info@mailtravelstories.com>
+Reply-To: Tripoto <info@mailtravelstories.com>
+Subject: Exploring Singapore, the hottest shopping destination in Southeast Asia
+Message-ID: <01000162247bb429-1e3c0a2a-ee72-4929-9d08-6a5f3a7fb88c-000000@email.amazonses.com>
+X-Mailer: Sendy (https://sendy.co)
+List-Unsubscribe: <http://mailer.mailtravelstories.com/unsubscribe/LIXr763MG5XxtMjEGE76364892LcUWyGOxyeUOib3PmH2ppA8/gv1NXmdL3MQ3kmHUIbqMRQ/vqTAeEP7632jHZgs763VqK1O4g>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_e27f5100ac367e2dd0f9558cc16e8163"
+Content-Transfer-Encoding: 8bit
+X-SES-Outgoing: 2018.03.14-54.240.34.250
+Feedback-ID: 1.us-east-1.0IGkRV3q3ysSbHu2LkEk2eN5cecqxP/NvghD29TOqvU=:AmazonSES
+
+This is a multi-part message in MIME format.
+
+--b1_e27f5100ac367e2dd0f9558cc16e8163
+Content-Type: text/plain; charset=us-ascii
+
+Daily dose of inspiration hand-picked for you:
+
+Singapore is known for being a melting pot of cultures, for being a country that celebrates food, for being an island nation that has become the hotspot for trendy bars and swanky hotels. However, Singapore is also the Mecca for shopaholics. The city offers an array of options for the seasoned shopper, and a delectable range of choices even for offbeat shoppers! So here's a comprehensive list of what and where to shop while in Singapore.
+
+
+Read Full at: https://www.tripoto.com/trip/exploring-singapore-the-hottest-shopping-destination-in-south-east-asia-5a9fd7260acd6?utm_source=mailer
+
+
+--b1_e27f5100ac367e2dd0f9558cc16e8163
+Content-Type: text/html; charset=us-ascii
+
+<html hola_ext_inject="disabled" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+	<style type="text/css">a, a:link, a:visited, a:hover, a:active{
+            text-decoration: none;
+            color: #2f9bdb;
+        }
+        @media screen and (max-width: 640px) {
+        	.font-size-22-sm {
+        		font-size: 22px !important;
+        	}
+        	.mobile-table-cell {
+        		width: auto !important;
+        	}
+        	.display-block-sm {
+        		display: block !important;
+        	}
+        	.text-center-sm {
+        		text-align: center !important;
+        	}
+        	.mobile-full-width {
+        		width: 560px !important;
+				height: auto !important;
+        	}
+        	.margin-none-sm {
+        		margin: 0 !important;
+        	}
+        	.padding-none-sm {
+        		padding: 0 !important;
+        	}
+        	.padding-top-none-sm {
+        		padding-top: 0 !important;
+        	}
+        	.padding-left-none-sm {
+        		padding-left: 0 !important;
+        	}
+        	.padding-right-none-sm {
+        		padding-right: 0 !important;
+        	}
+        	.padding-left-40-sm {
+        		padding-left: 40px !important;
+        	}
+        	.padding-right-40-sm {
+        		padding-right: 40px !important;
+        	}
+        	.background-white-sm {
+        		background: #fff !important;
+        	}
+        	.border-none-sm {
+        		border: 0 !important;
+        	}
+        	.hidden-sm {
+        		display: none !important;
+        	}
+        	.display-block-sm {
+        		display: block !important;
+        	}
+        }
+	</style>
+</head>
+<body class="background-white-sm" style="background-color: #f3f5f9; margin: 0;"><!-- Mail Header goes here -->
+<table border="0" cellpadding="0" cellspacing="0" class="wrapper border-none-sm margin-none-sm" style="font-family:Helvetica !important; font-weight: 300; width:640px; text-align:left; border: 1px solid #f3f6f9;background: #fff;margin:0px auto 0px auto;">
+	<tbody>
+		<tr>
+			<td style="padding: 40px;"><a href="https://www.tripoto.com" style="text-decoration: none;display: inline-block;" target="_blank"><img alt="" height="30" src="https://i.imgur.com/6jSV7jh.jpg" width="107" /> </a>
+			<div style="display: inline-block;margin-left: 15px;">
+			<div style="width: 2px;height: 24.3px;opacity: 0.45;border-right: solid 1px #979797;">&nbsp;</div>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!-- Table with 1 package details -->
+
+<table border="0" cellpadding="0" cellspacing="0" class="wrapper border-none-sm margin-none-sm" style="font-family:Helvetica !important; font-weight: 300; width:640px; text-align:left; border: 1px solid #f3f6f9;background: #fff;margin:0px auto 40px auto;">
+	<tbody>
+		<tr>
+			<td>
+			<div style="text-align:center; font-size:18px; color: rgb(69, 69, 69);"><a href="https://www.tripoto.com/trip/exploring-singapore-the-hottest-shopping-destination-in-south-east-asia-5a9fd7260acd6?utm_source=mailer"><img alt="" src="http://mailer.mailtravelstories.com/uploads/1521012255.png" style="width: 640px; height: 270px;" /></a></div>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding: 20px 40px;">
+			<div style="font-size:22px; color: rgb(69, 69, 69);line-height: 1.5;">Exploring Singapore, The Hottest Shopping Destination In Southeast Asia</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding: 0px 40px;">
+			<div style="font-size: 16px;line-height: 1.43;letter-spacing: 0.3px;text-align: left;color: #000000;letter-spacing: normal;">
+			<p>Singapore is known for being a melting pot of cultures, for being a country that celebrates food, for being an island nation that has become the hotspot for trendy bars and swanky hotels. However, Singapore is also the Mecca for shopaholics. The city offers an array of options for the seasoned shopper, and a delectable range of choices even for offbeat shoppers! So here&#39;s a comprehensive list of what and where to shop while in Singapore.</p>
+
+			<p><span style="font-size:16px;"><a href="https://www.tripoto.com/trip/exploring-singapore-the-hottest-shopping-destination-in-south-east-asia-5a9fd7260acd6?utm_source=mailer" style="text-decoration: none;color: #2f9bdb;">Find out more</a></span></p>
+
+			<p>&nbsp;</p>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div style="padding:0px 40px;">
+<div style="border-bottom: solid 1px #979797; opacity: 0.2;text-align: center; margin: 0 auto">&nbsp;</div>
+</div>
+
+<table border="0" cellpadding="0" cellspacing="0" class="wrapper border-none-sm margin-none-sm" style="font-family:Helvetica !important; font-weight: 300; width:640px; text-align:left; border: 1px solid #f3f6f9;background: #fff;margin:0px auto 40px auto;">
+	<tbody>
+		<tr>
+		</tr>
+		<tr>
+			<td style="padding: 20px 40px;">
+			<div class="mobile-table-cell display-block-sm" style="width: 170px;display: inline-block;">
+			<div class="text-center-sm"><a href="https://www.tripoto.com" style="text-decoration: none;display: inline-block;" target="_blank"><img alt="Tripoto's Logo" height="20" src="http://mailer.mailtravelstories.com/uploads/1513589643.png" width="68px" /> </a></div>
+
+			<div class="text-center-sm" style="opacity: 0.5;font-family:Helvetica !important;font-size: 10px;letter-spacing: -0px;text-align: left;color: #506066;padding-top: 8px;">The Global Community of Travellers</div>
+			</div>
+
+			<div class="display-block-sm" style="display: none;">
+			<div style="border-bottom: solid 1px #979797; opacity: 0.2;text-align: center; margin: 0 auto; padding-top: 30px;">&nbsp;</div>
+			</div>
+
+			<div class="hidden-sm" style="display: inline-block;font-family:Helvetica !important;font-size: 12px;letter-spacing: -0px;text-align: left;color: #506066;padding-top: 13px;vertical-align: middle;float: right;"><span><a href="https://www.tripoto.com/tour-packages" style="color: #506066; margin-left: 10px;text-decoration: none;">Book Holidays</a></span> <span><a href="https://www.tripoto.com/hotels" style="color: #506066; margin-left: 10px;text-decoration: none;">Book Hotels</a></span> <span><a href="https://www.tripoto.com/community" style="color: #506066; margin-left: 10px;text-decoration: none;">Community</a></span> <span><a href="https://www.tripoto.com/trips/create" style="color: #506066; margin-left: 10px;text-decoration: none;">Publish Trip</a></span></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div class="hidden-sm" style="padding:0px 40px;">
+			<div style="border-bottom: solid 1px #979797; opacity: 0.2;text-align: center; margin: 0 auto">&nbsp;</div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="padding-top-none-sm" style="padding: 40px;text-align: center;">
+			<div class="display-block-sm" style="text-align: center;padding-bottom: 30px;">
+			<div style="padding-bottom: 22px;"><a href="https://www.tripoto.com/trips/latest.rss"><img alt="Tripoto RSS feed" src="http://mailer.mailtravelstories.com/uploads/1513600561.png" style="margin: 0 5px;" /></a></div>
+
+			<div style="text-align: center; font-family:Helvetica !important;font-size: 12px;letter-spacing: -0px;color: #506066;">Sent with <img alt="Tripoto Logo" src="http://mailer.mailtravelstories.com/uploads/1513595551.png" /> from Tripoto</div>
+
+			<div style="text-align: center; text-decoration: underline;opacity: 0.5;font-family:Helvetica !important;font-size: 12px;letter-spacing: -0px;color: #506066; padding-top: 10px;"><a href="http://mailer.mailtravelstories.com/unsubscribe/LIXr763MG5XxtMjEGE76364892LcUWyGOxyeUOib3PmH2ppA8/gv1NXmdL3MQ3kmHUIbqMRQ/vqTAeEP7632jHZgs763VqK1O4g" >Unsubscribe</a></div>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><map name="Map"><area coords="326,233,473,276" href="https://in.explara.com/e/incredible-india-2-0" shape="rect" target="_blank" /> <area coords="627,13,787,93" href="http://www.iamai.in/" shape="rect" style="outline: none; list-style: none;" target="_blank" /> <area coords="356,1397,385,1426" href="https://www.facebook.com/InternetAndMobileAssociationIndia/" shape="rect" style="outline: none;list-style: none;" target="_blank" /> <area coords="393,1397,421,1424" href="https://twitter.com/IAMAIForum" shape="rect" style="outline: none;list-style: none;" target="_blank" /> <area coords="428,1397,458,1426" href="https://www.linkedin.com/company/internet-and-mobile-association-of-india/" shape="rect" style="outline: none;list-style: none;" target="_blank" /> <area coords="3,2,800,1439" href="http://www.iamai.in/events/incredibleindia/" shape="rect" style="outline: none;list-style: none;" target="_blank" /></map></p>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="800">
+	<tbody>
+		<tr>
+			<td><img alt="" src="http://mymanhattancom.com/iamai/2018/feb/speaker_mailer/incredible_india_speaker_mailer_g.jpg" title="" usemap="#Map" /></td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
+<img src="http://mailer.mailtravelstories.com/t/vqTAeEP7632jHZgs763VqK1O4g/bVkObiIxDnaou8eQolCLEg" alt="" style="width:1px;height:1px;"/>
+
+
+
+--b1_e27f5100ac367e2dd0f9558cc16e8163--

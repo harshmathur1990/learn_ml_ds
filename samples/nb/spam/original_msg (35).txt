@@ -1,0 +1,115 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp1026999ive;
+        Wed, 14 Mar 2018 23:14:48 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELu69sgY8vcCp92bd9Dz3AU4x25KK6q8ITcLDkMVWQTrg9+f9QwVCagGqbYQKME7qaeLrk9n
+X-Received: by 10.55.118.198 with SMTP id r189mr10978216qkc.72.1521094488102;
+        Wed, 14 Mar 2018 23:14:48 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521094488; cv=none;
+        d=google.com; s=arc-20160816;
+        b=K9WmsLUzxQtXw3GYv/HoQgRMe3V6m4Y3DF4UIfVfUpSG0UlPG50nCmutY1+mPSgpMp
+         U385ClwVzfagKm1yAmOpu8UJAJL74dA9L+d5BMyBYHwEm6sz1l4odsGhUkY0A56Q+Ru9
+         MzDFD6BHhNCHNyYW7MZ0VkU1pzOJi+17B84JjfnL+XoGYomjdw4fAd9363PLlNbywsGE
+         bAIQP9nxBmNo1miREi396t6s7Nei/v8sx03/OxnBgvNMeZvECFvOJB4pAM1PYv4usUyk
+         TEdU727vEvEUR2ROROLlvpA2Rm51DHYufs3x0M+EpncZuZv6pVtUdUjrzFir2BapdpYD
+         7OOQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:message-id:list-unsubscribe:date:reply-to
+         :sender:to:from:subject:dkim-signature:arc-authentication-results;
+        bh=25duHwmXTSIwYRZVoVkVA5ioSlQ+pgn95rZ4jWdj7KQ=;
+        b=CpUsnvgkysAw5IWcx4Q7GBOpYIdTiVo7QMpslhxCLX2AxihrXWz6toswGZAb3DiOTa
+         c/GNA/lu7aVjpbD29Fy57IBTSI4NAzpwcSzAcBVKciAuvkfLgaYZCQqna6rl3GfDnRJ3
+         MlH2YBsOZyRv8RrUSx6+Lya3QrVEkGd2CV6OustchEKFQpti38JMe7W3t0SGN6bVZu4O
+         tJ3cxceBPPmfr+WMmftHsFOVWf9EPRAP3exDsK9n+c6ndY7ep4pOeI0tjsPg8CZu70kJ
+         Re/PnH3jF/58z9p1awipZqG68jj4jswLFOtgk7R0w9twPOKB6QI+ulG1/Vt9/Xq5rTiv
+         1Frg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mailclues.info header.s=itnet header.b=j070ChIL;
+       spf=pass (google.com: domain of return-a31-11140-11141-26ff38a4=33446149=8@mailclues.info designates 66.70.250.59 as permitted sender) smtp.mailfrom=return-a31-11140-11141-26ff38a4=33446149=8@mailclues.info
+Return-Path: <return-a31-11140-11141-26ff38a4=33446149=8@mailclues.info>
+Received: from smtp1-4.itnet.info (smtp1-4.itnet.info. [66.70.250.59])
+        by mx.google.com with ESMTPS id d78si4192212qka.317.2018.03.14.23.14.47
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 14 Mar 2018 23:14:48 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return-a31-11140-11141-26ff38a4=33446149=8@mailclues.info designates 66.70.250.59 as permitted sender) client-ip=66.70.250.59;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mailclues.info header.s=itnet header.b=j070ChIL;
+       spf=pass (google.com: domain of return-a31-11140-11141-26ff38a4=33446149=8@mailclues.info designates 66.70.250.59 as permitted sender) smtp.mailfrom=return-a31-11140-11141-26ff38a4=33446149=8@mailclues.info
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=mailclues.info; s=itnet; t=1521094487;
+ bh=ewIl+Ke7JYC6rbYAQ0Ys1i3t0g8=;
+ h=Subject:From:To:Sender:Reply-To:Date:List-Unsubscribe:
+  X-CampaignID:Message-ID:X-Mailer-Info:Content-Type:
+  Content-Transfer-Encoding;
+ b=j070ChILEyNfdJRtg5PflvctdMnQy5VMZ4slUs1fxfC7mVFvyOuspl4vJ5PBo4h/I
+  fzNYX/aNZdpGgn5xUcsaU2p5nr8zlLqNsFwdFtYXLQIRWloQS0p0qjQwazVMKQ/ST6
+  +xZvS62HDuTgxXm5LD6pazCZV3lj9HqvcUsCBzZs=
+Subject: Save Big With Tax Benefits on Your Health Insurance
+From: =?UTF-8?B?SGVhbHRoIFBsYW4=?= <info@mailclues.info>
+To: harshmathur.1990@gmail.com
+Sender: info@mailclues.info
+Reply-To: info@mailclues.info
+Date: 15 Mar 2018 06:14:47 -0000
+List-Unsubscribe: <http://e.mailclues.info/ga/unsubscribe/2-33446149-31-5870-11141-f3aaa0666f6ae17-d45832777c?confirmed=1>,
+ <mailto:return-a31-11140-11141-26ff38a4=33446149=8u@mailclues.info>
+X-CampaignID: s4:11140-4d483330443a3dc9
+Message-ID: <mid-9e64e4c7014b25febc87a0947d3b2122-2@mailclues.info>
+X-Mailer-Info: 8.hNTM.ETMxQDM.gWYyNHatFGdoVncuETO5ADQn1WYpxmLj9Wb.MzM0QjNxQTO.ETMxQTM
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<table width=3D"600" align=3D"center">
+<tbody>
+<tr>
+<td>
+<div style=3D"text-align: center;"><span style=3D"font-size: 12pt;"><a styl=
+e=3D"text-decoration: none; color: black;" href=3D"http://e.mailclues.info/=
+ga/click/2-33446149-31-5870-11141-9831-66b44518c0-d45832777c"><strong>Twice=
+ The Power with One Health Policy</strong></a></span></div>
+<div style=3D"text-align: center;"><span style=3D"font-size: 10.0pt;"><a st=
+yle=3D"text-decoration: none; color: black;" href=3D"http://e.mailclues.inf=
+o/ga/click/2-33446149-31-5870-11141-9831-66b44518c0-d45832777c">Stay Protec=
+ted and Save Tax too! Save upto 25,000 deduction under Section 80D with</a>=
+ your insurance</span></div>
+<div style=3D"text-align: center;"><a style=3D"text-decoration: none;" href=
+=3D"http://e.mailclues.info/ga/click/2-33446149-31-5870-11141-9831-66b44518=
+c0-d45832777c"><strong><span style=3D"color: black;"><span style=3D"font-fa=
+mily: arial,sans-serif;">Get a 4 lakh cover starting from Rs 12/day*</span>=
+</span></strong></a></div>
+<div style=3D"text-align: center;">&#160;</div>
+<div style=3D"text-align: center;"><a style=3D"text-decoration: none;" href=
+=3D"http://e.mailclues.info/ga/click/2-33446149-31-5870-11141-9831-66b44518=
+c0-d45832777c"><strong><span style=3D"color: black;"><span style=3D"font-fa=
+mily: arial,sans-serif;">Get Free Quotes Now&#65279;</span></span></strong>=
+</a></div>
+<div style=3D"text-align: center;" align=3D"center">&#160;</div>
+<div><span style=3D"font-size: 8.0pt;"><a style=3D"text-decoration: none; c=
+olor: black;" href=3D"http://e.mailclues.info/ga/click/2-33446149-31-5870-1=
+1141-9831-66b44518c0-d45832777c">Insurance is subject matter of solicitatio=
+n. For more details on risk factors, terms and conditions,</a> please read =
+the sales brochure carefully.</span></div>
+<div><span style=3D"font-size: 8.0pt;">For More Information on tax benefits=
+ please contact your Tax Advisor</span></div>
+<div><span style=3D"font-size: 8.0pt;">The Above mentioned premium is for a=
+ 25year old person living in Mumbai</span></div>
+<div><u><span style=3D"font-size: 8.0pt;">Read our Terms and Conditions of =
+use.</span></u> <br /> <span style=3D"font-size: 8.0pt;">Copyright reserved=
+ &#169; 2017 A&amp;A Dukaan Insurance Web Aggregator Private Ltd. All right=
+s reserved. <br /> Registered Office - Hameedia'sCenter, 14/43 Haddows Road=
+, Nungambakkam, Chennai - 600006, Ph # 044-3313 0000. <br /> IRDAI Web Aggr=
+egator Licence No. 16. Licence Code No. IRDAI/WBA/31/2016. Valid till 13.06=
+.2019 <br /> To unsubscribe or change your email preferences, <u><a href=3D=
+"http://e.mailclues.info/ga/unsubscribe/2-33446149-31-5870-11141-f3aaa0666f=
+6ae17-d45832777c">Click Here</a></u></span></div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&#160;</p>
+<img src=3D"http://e.mailclues.info/ga/open/2-33446149-31-5870-11141-d45832=
+777c" height=3D"2" width=3D"3" alt=3D""></body>
+</html>=

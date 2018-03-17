@@ -1,0 +1,488 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp432392ive;
+        Thu, 15 Mar 2018 23:04:33 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELs51xlOpEWoFCV6uaNy1LZ5YNk/tWSxUhsXUMrGECCSJgp5wcPzQwweGPTQzWOTLp76Cc5m
+X-Received: by 10.176.72.72 with SMTP id c8mr358146uad.150.1521180273616;
+        Thu, 15 Mar 2018 23:04:33 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521180273; cv=none;
+        d=google.com; s=arc-20160816;
+        b=k7ZfOyv+3WbPm1eMpU4H0sbt7CVtpDH1zekXwkKhJ+2q3lQozVAoGH4iPmYoFNKSQ8
+         B82JjIVQ/ZX+Sa+SfzQQor21ckxyOYU+qB5Fz39aV9JZcvQcmaAkW3cv+g6glKKrpyuB
+         CcAEdhtSHJXp8pp4BvUR3MjDqlAaFbrtWlU/nWjNwAm+9knrRL/LA6iZCt6a2ZVc8s+1
+         EhhjLChbUnGf8ystmCqyS6BwqcrHu0iVR2EWmz1JKZWj4pEM+CZwwmR4Q0pDnzBk1D+B
+         iAGauBCiUOLJ4e9o8pZvyt4OFS4fEj/hqGMOM8yApOraZWDS5+mlW4zgf/Bk8167sDJd
+         AhWQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=reply-to:mime-version:subject:to:from:list-unsubscribe:message-id
+         :date:dkim-signature:arc-authentication-results;
+        bh=BB6dJkNw/En+kzmH0K2LTiDfZRr+Yc/k5ZN7SuhMoOE=;
+        b=Rx5CNqWZnIfrLNgJsSWN8rYtdsglXLhiyGB/U/b8ZEyDhBoj6uxFPYTDmMsp/Zncn6
+         IyJ2Frc1/TRJuSXxs+nJ8+ObE9Dke9Tl1sBXgEVWke0eIhItbZZYv8iVPZIFm4SJXK/A
+         TRPK7LQL9GGd7eBdHA0TIOFNQKrCDWY0WX+W9lzESL94odaSQVXwQhiviY9qHVc3TrVc
+         kvnGhn+EwZBHEmd+btCkADdzyZUUBt9lpPP/QoW8Lv8dMubUjKONXPpHUETGL3u7+gH7
+         1ut38BxuuyuimcYqM6ImTVsj0B5xtI/dHfqv6Bgh4xC4URO48y0cwHy8++iYvmdwoBAI
+         9miw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@crm.hs18.in header.s=20170109144102 header.b=WBM/nQjq;
+       spf=pass (google.com: domain of bo-b2tu0scbf7mwmqaudm40abys9ht91v@b.crm.hs18.in designates 63.236.31.147 as permitted sender) smtp.mailfrom=bo-b2tu0scbf7mwmqaudm40abys9ht91v@b.crm.hs18.in
+Return-Path: <bo-b2tu0scbf7mwmqaudm40abys9ht91v@b.crm.hs18.in>
+Received: from mta861.chtah.net (mta861.chtah.net. [63.236.31.147])
+        by mx.google.com with ESMTPS id q4si2151580uag.77.2018.03.15.23.04.33
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 15 Mar 2018 23:04:33 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bo-b2tu0scbf7mwmqaudm40abys9ht91v@b.crm.hs18.in designates 63.236.31.147 as permitted sender) client-ip=63.236.31.147;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@crm.hs18.in header.s=20170109144102 header.b=WBM/nQjq;
+       spf=pass (google.com: domain of bo-b2tu0scbf7mwmqaudm40abys9ht91v@b.crm.hs18.in designates 63.236.31.147 as permitted sender) smtp.mailfrom=bo-b2tu0scbf7mwmqaudm40abys9ht91v@b.crm.hs18.in
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=crm.hs18.in;
+	s=20170109144102; t=1521180273; x=1537077873;
+	bh=BB6dJkNw/En+kzmH0K2LTiDfZRr+Yc/k5ZN7SuhMoOE=; h=From:Reply-To;
+	b=WBM/nQjqCZCyEE49mzLKPIq9xxRKVolUnqwxvy/FbkfLv+Tb2GJ0Z3+YJbYOK1IGo
+	 CshkOSkpCBDqpPLxCKLSB3NC+vgT0ntTPQ6YUffhuNNmncRE2W9sEw2OlTFrQDxCwI
+	 aG+KE3OK5ZEc3Z6HgfisMzAgJv1fn9vM314F7+GHbqhEMbGdxNkVNzz7TajHZ8++eZ
+	 0ChdrIZAYpTRhio+X6Z/qkHxcL5huLUBXevDRS+JtydQicR9QPJjcxhGww9fKQpln4
+	 YJ4hAtHltKQ4fP8TSHdHEKv/agD2+OmdgDZq7RI29AkYbEkHcwxyq2GTiA92ukADHC
+	 ghEOBKXfMO32w==
+Date: Fri, 16 Mar 2018 06:04:33 -0000
+Message-ID: <b2tu0scbf7mwmqaudm40abys9ht91v.656160.7014@mta861.crm.hs18.in>
+List-Unsubscribe: <mailto:rm-0b2tu0scbf7mwmqaudm40abys9ht91v@crm.hs18.in>
+From: "HomeShop18" <notifications@crm.hs18.in>
+To: harshmathur.1990@gmail.com
+Subject: 3 Printed Kurtas & 1 Leggings Combo @Rs.699, ONLY FOR TODAY!
+MIME-Version: 1.0
+Reply-To: "noreply@crm.hs18.in" <support-b2tu0scbf7mwmqaudm40abys9ht91v@crm.hs18.in>
+X-Mailer: CheetahMailer
+X-mid: 2107104546
+X-aid: 2101995085
+Content-type: multipart/alternative; boundary="=b2tu0scbf7mwmqaudm40abys9ht91v"
+
+
+--=b2tu0scbf7mwmqaudm40abys9ht91v
+Content-Type: text/plain; charset="utf-8"
+Content-transfer-encoding: 8bit
+
+Today's Specail Offer!
+
+View in browser : http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link1?t_sparams=31ITK1cqRitRkyrlQAoSNdmRBNMiwmZivS99l-4$eRmELr7TjyOMwS4FOgiluqfga2jKgdTeznHRqH$FMjrLTNUuUJ-5rFZoMX99idpmPDfW7An1o$IcR  |Unsubscribe : mailto:rm-2b2tu0scbf7mwmqaudm40abys9ht91v@crm.hs18.in?subject=Unsubscribe&body=You%20will%20be%20unsubscribed%20from%20mailing%20list. 
+
+HomeShop18.com http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link21 
+
+Shop from App and Get Rs.100 Off http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link18 
+
+Digital : http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link20 
+
+ Clothing : http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link9 
+
+ Footwear : http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link11 
+
+ Jewellery : http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link7 
+
+ Health & Beauty : http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link8 
+
+ Home & Kitchen : http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link13 
+
+ Live TV : http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link27 
+
+Kitchen and Dining http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link4 
+
+Pack of 3 Printed Crepe Kurtas and 1 Leggings http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link17 
+
+20 Pc Living Room Decor Set http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link6 
+
+Home Improvement http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link16 
+
+Super Value Deals 
+
+Dinner Sets http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link10 
+
+Cookware and Serveware Sets http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link3 
+
+Kitchen Appliances http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link15 
+
+Juicers, Mixers and Grinders http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link14 
+
+Bedsheet Combos http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link2 
+
+Home Furnishings http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link12 
+
+Rajasthani Bedsheets http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link5 
+
+Upgrade for Better Performance http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link19 
+
+Connect with us
+
+Facebook http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link25 
+
+Instagram http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link26 
+
+Twitter http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link24 
+
+YouTube http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link27 
+
+Download our App
+
+Android App http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link23 
+
+ios App http://crm.hs18.in/a/tBaq09WB9SeZNB9l90iAACgMgks/link22 
+
+*HomeShop18 TV channel is available on Following DTH channels
+Videocon-114, Dish TV-151, 
+TataSky-182, Airtel-122, DD Free Dish-45And on all leading cable operators
+
+Track your order on SMS
+
+Free Shipping*
+
+24X7 Customer Supoort
+
+Cash on Delivery
+
+You are receiving this exclusive email from Homeshop18 as you are a subscriber. Should you wish to unsubscribe, please click here : mailto:rm-2b2tu0scbf7mwmqaudm40abys9ht91v@crm.hs18.in?subject=Unsubscribe&body=You%20will%20be%20unsubscribed%20from%20mailing%20list. 
+
+--=b2tu0scbf7mwmqaudm40abys9ht91v
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1" />
+<title>Today's Specail Offer!</title>
+</head>
+
+<body><img src=3D"http://crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/spacer.g=
+if" width=3D"1" height=3D"1" style=3D"display:none !important; max-height:1=
+px !important; max-width:1px !important; border:0 !important; background-co=
+lor:transparent !important; padding:0 !important; outline:0 !important; min=
+-height:1px !important; min-width:1px !important; height:1px !important; wi=
+dth:1px !important;" alt=3D"">
+<table align=3D"center" width=3D"600" cellspacing=3D"0" cellpadding=3D"0">
+  <tbody>
+    <tr>
+      <td width=3D"300" align=3D"left" style=3D"font:normal 12px Arial, Rob=
+oto, sans-serif; color:#999999; text-align:left;">&nbsp; </td>
+      <td width=3D"300" align=3D"right" style=3D"font:normal 12px Arial, Ro=
+boto, sans-serif; color:#999999; text-align:right;"><a href=3D"http://crm.h=
+s18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link1?t_sparams=3D31ITK1cqRitRkyrlQAoS=
+NdmRBNMiwmZivS99l-4$eRmELr7TjyOMwS4FOgiluqfga2jKgdTeznHRqH$FMjrLTNUuUJ-5rFZ=
+oMX99idpmPDfW7An1o$IcR">View in browser</a> &nbsp;|&nbsp;<a href=3D"mailto:=
+rm-2b2tu0scbf7mwmqaudm40abys9ht91v@crm.hs18.in?subject=3DUnsubscribe&amp;bo=
+dy=3DYou%20will%20be%20unsubscribed%20from%20mailing%20list.">Unsubscribe</=
+a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" style=3D"font-family:'Lucida Sans Unicode', sans-serif;">
+  	<tr>
+    	<td>
+			<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" st=
+yle=3D"padding-bottom:6px;">
+			  	<tr>
+					<td width=3D"400" align=3D"left" style=3D"padding:2px;"><a href=3D"htt=
+p://crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link21" target=3D"_blank"><im=
+g src=3D"http://f.crm.hs18.in/i/33/2101995085/16_03_2018_HS18.jpg" alt=3D"H=
+omeShop18.com" title=3D"HomeShop18.com" style=3D"border:0; display:block;" =
+/></a></td>
+					<td width=3D"200" align=3D"right" style=3D"padding:10px 0 0 0;"><a hre=
+f=3D"http://crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link18" target=3D"_bl=
+ank"><img src=3D"http://f.crm.hs18.in/i/33/2101995085/16_03_2018_sfa.jpg" a=
+lt=3D"Shop from App and Get Rs.100 Off" title=3D"Shop from App and Get Rs.1=
+00 Off" style=3D"border:0; display:block;" /></a></td>
+			  	</tr>
+			</table>		</td>
+  	</tr>
+=09
+  	<tr>
+    	<td>
+			<table bgcolor=3D"#eeeeee" width=3D"600" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"font-family:'Lucida Sans Unicode', sans-serif; f=
+ont-size:13px; color:#000000;">
+			  	<tr>
+					<td width=3D"55" align=3D"center" valign=3D"middle" style=3D"padding:3=
+px 0;"><a href=3D"http://crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link20" =
+target=3D"_blank" style=3D"text-decoration:none; color:#000000;">Digital</a=
+></td>
+=09=09=09=09=09
+					<td width=3D"55" align=3D"center" valign=3D"middle" style=3D"padding:3=
+px 0;"><a href=3D"http://crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link9" t=
+arget=3D"_blank" style=3D"text-decoration:none; color:#000000;">Clothing</a=
+></td>
+=09=09=09=09=09
+					<td width=3D"65" align=3D"center" valign=3D"middle" style=3D"padding:3=
+px 0;"><a href=3D"http://crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link11" =
+target=3D"_blank" style=3D"text-decoration:none; color:#000000;">Footwear</=
+a></td>
+=09=09=09=09=09
+					<td width=3D"60" align=3D"center" valign=3D"middle" style=3D"padding:3=
+px 0;"><a href=3D"http://crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link7" t=
+arget=3D"_blank" style=3D"text-decoration:none; color:#000000;">Jewellery</=
+a></td>
+=09=09=09=09=09
+					<td width=3D"95" align=3D"center" valign=3D"middle" style=3D"padding:3=
+px 0;"><a href=3D"http://crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link8" t=
+arget=3D"_blank" style=3D"text-decoration:none; color:#000000;">Health &#38=
+; Beauty</a></td>
+=09=09=09=09=09
+					<td width=3D"100" align=3D"center" valign=3D"middle" style=3D"padding:=
+3px 0;"><a href=3D"http://crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link13"=
+ target=3D"_blank" style=3D"text-decoration:none; color:#000000;">Home &#38=
+; Kitchen</a></td>
+=09=09=09=09=09
+					<td bgcolor=3D"#fd0f1c" width=3D"60" align=3D"center" valign=3D"middle=
+" style=3D"padding:3px 0;"><a href=3D"http://crm.hs18.in/a/hBaq09WB9SeZNB9l=
+90iAACgMgks/link27" target=3D"_blank" style=3D"text-decoration:none; color:=
+#FFF;"><strong>Live TV</strong></a></td>
+			  	</tr>
+			</table>		</td>
+  	</tr>
+=09
+=09
+	<tr>
+    	<td align=3D"center" valign=3D"middle" width=3D"600" style=3D"padding:=
+1px 0 1px 0;"><a href=3D"http://crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/l=
+ink4" target=3D"_blank"><img src=3D"http://f.crm.hs18.in/i/33/2101995085/16=
+_03_2018_strip_kitchenandining.jpg" alt=3D"Kitchen and Dining" title=3D"Kit=
+chen and Dining" style=3D"border:0; display:block;" /></a></td>
+  	</tr>
+
+=09
+	<tr>
+		<td>
+			<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" st=
+yle=3D"padding:5px 0;">
+				<tr>
+					<td width=3D"300"><a href=3D"http://crm.hs18.in/a/hBaq09WB9SeZNB9l90iA=
+ACgMgks/link17" target=3D"_blank"><img src=3D"http://f.crm.hs18.in/i/33/210=
+1995085/16_03_2018_webtso.jpg" alt=3D"Pack of 3 Printed Crepe Kurtas and 1 =
+Leggings" title=3D"Pack of 3 Printed Crepe Kurtas and 1 Leggings" style=3D"=
+border:0; display:block;" /></a></td>
+						<td width=3D"300"><a href=3D"http://crm.hs18.in/a/hBaq09WB9SeZNB9l90i=
+AACgMgks/link6" target=3D"_blank"><img src=3D"http://f.crm.hs18.in/i/33/210=
+1995085/16_03_2018_tvtso.jpg" alt=3D"20 Pc Living Room Decor Set" title=3D"=
+20 Pc Living Room Decor Set" style=3D"border:0; display:block;" /></a></td>=
+=09=09=09=09=09
+			  	</tr>
+			</table>		</td>
+	</tr>=09
+=09
+=09
+	<tr>
+    	<td align=3D"center" valign=3D"middle" width=3D"600" style=3D"padding:=
+1px 0 1px 0;"><a href=3D"http://crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/l=
+ink16" target=3D"_blank"><img src=3D"http://f.crm.hs18.in/i/33/2101995085/1=
+6_03_2018_strip_homeimprovement.jpg" alt=3D"Home Improvement" title=3D"Home=
+ Improvement" style=3D"border:0; display:block;" /></a></td>
+  	</tr>
+=09
+=09
+
+=09
+	<tr>
+		<td>
+			<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" bg=
+color=3D"#f8f8f8">
+			  	<tr>
+    					<td colspan=3D"2" align=3D"center" valign=3D"middle" width=3D"600"=
+ style=3D"padding:0px 0 0px 0;"><img src=3D"http://f.crm.hs18.in/i/33/21019=
+95085/16_03_2018_supervaluedeals.jpg" alt=3D"Super Value Deals" title=3D"Su=
+per Value Deals" style=3D"border:0; display:block;" /></td>
+			  	</tr>
+=09=09=09=09
+=09=09=09=09
+				<tr>
+					<td width=3D"300" align=3D"left" valign=3D"top"><a href=3D"http://crm.=
+hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link10" target=3D"_blank"><img src=3D=
+"http://f.crm.hs18.in/i/33/2101995085/16_03_2018_dinner.jpg" alt=3D"Dinner =
+Sets" title=3D"Dinner Sets" style=3D"border:0; display:block;" /></a></td>
+			  	    <td width=3D"300" align=3D"left" valign=3D"top"><a href=3D"http:/=
+/crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link3" target=3D"_blank"><img sr=
+c=3D"http://f.crm.hs18.in/i/33/2101995085/16_03_2018_cookware.jpg" alt=3D"C=
+ookware and Serveware Sets" title=3D"Cookware and Serveware Sets" style=3D"=
+border:0; display:block;" /></a></td>
+			  	</tr>
+=09=09=09=09
+=09=09=09=09
+				<tr>
+					<td width=3D"300" align=3D"left" valign=3D"top"><a href=3D"http://crm.=
+hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link15" target=3D"_blank"><img src=3D=
+"http://f.crm.hs18.in/i/33/2101995085/16_03_2018_kitchen.jpg" alt=3D"Kitche=
+n Appliances" title=3D"Kitchen Appliances" style=3D"border:0; display:block=
+;" /></a></td>
+			  	    <td width=3D"300" align=3D"left" valign=3D"top"><a href=3D"http:/=
+/crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link14" target=3D"_blank"><img s=
+rc=3D"http://f.crm.hs18.in/i/33/2101995085/16_03_2018_juicer.jpg" alt=3D"Ju=
+icers, Mixers and Grinders" title=3D"Juicers, Mixers and Grinders" style=3D=
+"border:0; display:block;" /></a></td>
+			  	</tr>
+=09=09=09=09
+=09=09=09=09
+				<tr>
+					<td width=3D"300" align=3D"left" valign=3D"top"><a href=3D"http://crm.=
+hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link2" target=3D"_blank"><img src=3D"=
+http://f.crm.hs18.in/i/33/2101995085/16_03_2018_bedsheet.jpg" alt=3D"Bedshe=
+et Combos" title=3D"Bedsheet Combos" style=3D"border:0; display:block;" /><=
+/a></td>
+			  	    <td width=3D"300" align=3D"left" valign=3D"top"><a href=3D"http:/=
+/crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link12" target=3D"_blank"><img s=
+rc=3D"http://f.crm.hs18.in/i/33/2101995085/16_03_2018_homefurnishing.jpg" a=
+lt=3D"Home Furnishings" title=3D"Home Furnishings" style=3D"border:0; displ=
+ay:block;" /></a></td>
+			  	</tr>
+			</table>		</td>
+	</tr>
+=09
+=09
+	<tr>
+    	<td align=3D"center" valign=3D"middle" width=3D"600" style=3D"padding:=
+5px 0 0 0;"><a href=3D"http://crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/lin=
+k5" target=3D"_blank"><img src=3D"http://f.crm.hs18.in/i/33/2101995085/16_0=
+3_2018_strip_rajbedsheet.jpg" alt=3D"Rajasthani Bedsheets" title=3D"Rajasth=
+ani Bedsheets" style=3D"border:0; display:block;" /></a></td>
+  	</tr>
+=09
+	<tr>
+    	<td align=3D"center" valign=3D"middle" width=3D"600" style=3D"padding:=
+1px 0 0 0;"><a href=3D"http://crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/lin=
+k19" target=3D"_blank"><img src=3D"http://f.crm.hs18.in/i/33/2101995085/16_=
+03_2018_strip_appupgrade.jpg" alt=3D"Upgrade for Better Performance" title=
+=3D"Upgrade for Better Performance" style=3D"border:0; display:block;" /></=
+a></td>
+  	</tr>=09
+=09
+=09
+=09
+	<tr>
+    	<td>
+			<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" bg=
+color=3D"#f7f6f6">
+			  	<tr>
+					<td>
+						<table width=3D"290" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+ align=3D"left" bgcolor=3D"#f7f6f6" style=3D"margin:5px 0 0 0;">
+                  			<tr>
+                        		<td colspan=3D"6" width=3D"125" height=3D"30" val=
+ign=3D"middle" align=3D"center" style=3D"font-family:'Lucida Sans Unicode',=
+ sans-serif; font-size:15px; color:#444444; padding:5px 5px 10px 5px; font-=
+weight:normal;">Connect with us</td>
+								<td width=3D"30" valign=3D"middle" align=3D"center"><a href=3D"http=
+://crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link25" target=3D"_blank"><img=
+ src=3D"http://f.crm.hs18.in/i/33/2101995085/16_03_2018_facebook.png" alt=
+=3D"Facebook" title=3D"Facebook" style=3D"border:0; display:block;" /></a><=
+/td>
+                         		<td width=3D"30" valign=3D"middle" align=3D"cent=
+er"><a href=3D"http://crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link26" tar=
+get=3D"_blank"><img src=3D"http://f.crm.hs18.in/i/33/2101995085/16_03_2018_=
+instagram.png" alt=3D"Instagram" title=3D"Instagram" style=3D"border:0; dis=
+play:block;" /></a></td>
+                           		<td width=3D"30" valign=3D"middle" align=3D"ce=
+nter"><a href=3D"http://crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link24" t=
+arget=3D"_blank"><img src=3D"http://f.crm.hs18.in/i/33/2101995085/16_03_201=
+8_twitter.png" alt=3D"Twitter" title=3D"Twitter" style=3D"border:0; display=
+:block;" /></a></td>
+								<td width=3D"60" valign=3D"middle" align=3D"left"><a href=3D"http:/=
+/crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link27" target=3D"_blank"><img s=
+rc=3D"http://f.crm.hs18.in/i/33/2101995085/16_03_2018_youtube.png" alt=3D"Y=
+ouTube" title=3D"YouTube" style=3D"border:0; display:block;" /></a></td>
+                      		</tr>
+          				</table>					</td>
+=09=09=09=09=09
+=09=09=09=09=09
+					<td>
+						<table width=3D"290" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+ align=3D"left" bgcolor=3D"#f7f6f6" style=3D"margin:5px 0 0 0;">
+                  			<tr>
+                        		<td colspan=3D"6" width=3D"160" height=3D"30" val=
+ign=3D"middle" style=3D"font-family:'Lucida Sans Unicode', sans-serif; font=
+-size:15px; color:#444444; padding:5px 0 5px 40px; font-weight:normal;">Dow=
+nload our App</td>
+								<td width=3D"40" valign=3D"middle" align=3D"center"><a href=3D"http=
+://crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link23" target=3D"_blank"><img=
+ src=3D"http://f.crm.hs18.in/i/33/2101995085/16_03_2018_andoid_icon.png" al=
+t=3D"Android App" title=3D"Android App" style=3D"border:0; display:block;" =
+/></a></td>
+                         		<td width=3D"60" valign=3D"middle" align=3D"left=
+"><a href=3D"http://crm.hs18.in/a/hBaq09WB9SeZNB9l90iAACgMgks/link22" targe=
+t=3D"_blank"><img src=3D"http://f.crm.hs18.in/i/33/2101995085/16_03_2018_io=
+sicon.png" alt=3D"ios App" title=3D"ios App" style=3D"border:0; display:blo=
+ck;" /></a></td>
+                      		</tr>
+          				</table>					</td>
+			  	</tr>
+			</table>		</td>
+  	</tr>
+=09
+	<tr>
+    	<td bgcolor=3D"#f7f6f6" width=3D"600" align=3D"center" style=3D"font-f=
+amily:'Lucida Sans Unicode', sans-serif; font-size:12px; color:#333333; pad=
+ding:10px 0;"><strong>*HomeShop18 TV channel is available on Following DTH =
+channels<br />
+		</strong><font color=3D"#47046d"><b>Videocon</b></font>-114, <font color=
+=3D"#d35533"><b>Dish TV</b></font>-151,=20
+<font color=3D"#007ad2"><b>Tata</b></font> <font color=3D"#d5281a">Sky</fon=
+t>-182, <font color=3D"#e20003"><b>Airtel</b></font>-122, <b>DD <font color=
+=3D"#e20003">Free Dish</font></b>-45<br />And on all leading cable operator=
+s</td>
+  	</tr>
+=09
+	<tr>
+    	<td bgcolor=3D"#f7f6f6" style=3D"padding:10px 0;">
+			<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" st=
+yle=3D"font-family:'Lucida Sans Unicode', sans-serif;">
+			  	<tr>
+					<td width=3D"30" align=3D"center" valign=3D"middle"><img src=3D"http:/=
+/f.crm.hs18.in/i/33/2101995085/16_03_2018_smsicon.png" style=3D"border:0; d=
+isplay:block;" /></td>
+					<td width=3D"140" align=3D"left" valign=3D"middle" style=3D"font-size:=
+11px; color:#555555;">Track your order on SMS</td>
+=09=09=09=09=09
+					<td width=3D"35" align=3D"center" valign=3D"middle"><img src=3D"http:/=
+/f.crm.hs18.in/i/33/2101995085/16_03_2018_freeshippingicon.png" style=3D"bo=
+rder:0; display:block;" /></td>
+					<td width=3D"85" align=3D"left" valign=3D"middle" style=3D"font-size:1=
+1px; color:#555555;">Free Shipping*</td>
+=09=09=09=09=09
+					<td width=3D"35" align=3D"center" valign=3D"middle"><img src=3D"http:/=
+/f.crm.hs18.in/i/33/2101995085/16_03_2018_customersupporticon.png" style=3D=
+"border:0; display:block;" /></td>
+					<td width=3D"135" align=3D"left" valign=3D"middle" style=3D"font-size:=
+11px; color:#555555;">24X7 Customer Supoort</td>
+=09=09=09=09=09
+					<td width=3D"40" align=3D"center" valign=3D"middle"><img src=3D"http:/=
+/f.alerts.hs18.in/i/34/2101995086/05_03_2018_codicon.png" style=3D"border:0=
+; display:block;" /></td>
+					<td width=3D"100" align=3D"left" valign=3D"middle" style=3D"font-size:=
+11px; color:#555555;">Cash on Delivery</td>
+			  	</tr>
+			</table>		</td>
+  	</tr>
+=09
+	<tr>
+		<td align=3D"center" bgcolor=3D"#ffffff" style=3D"font-family:'Lucida San=
+s Unicode', sans-serif; font-size:13px; color:#888888; padding:5px 0;" widt=
+h=3D"600">You are receiving this exclusive email from Homeshop18 as you are=
+ a subscriber. Should you wish to unsubscribe, please <a href=3D"mailto:rm-=
+2b2tu0scbf7mwmqaudm40abys9ht91v@crm.hs18.in?subject=3DUnsubscribe&amp;body=
+=3DYou%20will%20be%20unsubscribed%20from%20mailing%20list.">click here</a><=
+/td>
+	</tr>
+</table>
+</body>
+</html>
+
+
+--=b2tu0scbf7mwmqaudm40abys9ht91v--
+

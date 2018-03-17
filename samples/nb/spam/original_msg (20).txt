@@ -1,0 +1,150 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp1720725ive;
+        Thu, 15 Mar 2018 11:10:04 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELujYq7odWMHOQKCZx8eED4bGmih3fbzVdnZnKrjJKPZnZTFwBAInFt60RhjB0gxthTTdP7m
+X-Received: by 10.98.49.135 with SMTP id x129mr8438800pfx.75.1521137404199;
+        Thu, 15 Mar 2018 11:10:04 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521137404; cv=none;
+        d=google.com; s=arc-20160816;
+        b=YUXWWNSl1T/rMbfq1C+gMgiCaS4sBUXb8qHmv16c6jvGgd45UlVeVbFAHOixkG/seO
+         9t80laPbUzeAG4DYKyspI0K27E80PFrI5llREnqiqPZCJA8eS2sEVqC7VwCi9qG0ZUn3
+         y6RcD0Rixycnlu667JDmUBVxHwhi/uCvCYpI0Rwvd5/GQJJZuLi8c/RFDc2Khp4ZrFbu
+         HK4z9jcPl2PSd+gxPgTxVM8Q+HXR5Tb7uo84XZSxWImD3uLNeWVd4X3QYjhJQUYtxdVf
+         3RsqQBJJ31+X3kiQ30nS510C5I8k5Rxyot2nWx8I8mTaY28aBRQbieu3sUElWHIZ61hF
+         tiKA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:message-id:list-unsubscribe:date:reply-to
+         :to:from:subject:arc-authentication-results;
+        bh=GU/MV6eG5WGifK2j2M0YbkV+ypxHlFZCzYizx4sNFHE=;
+        b=N/H1sA1G9AVkBYe2tRqq2xe5Bd9WXVYGK8lma+YCJFEGydswVPF5skFBOoPDSMD+oW
+         c7j8ZNYB/AJJ3BC7RMCw1bAbpF1ezbP348VRGyA8LB5X2kC8sITJYhM3A/CrVJHdQ5VC
+         VZ2NrDxDEed0VOz41Ag6MXTSnqn/8+5i278fhSdvJJDylwKhpvaeswHwPcQXQnTLqeh2
+         P5MPEOyM7/EnxUZSZu3rEhV7JdpLVNBW+SN4fQJlNSgaKxhMAdt2gs7naw/dglqlyA1I
+         xjg4vXsQJI6yK+mUOoeAHOY5c9ts4UjEnKBV9tJwleMGnn+3FEbvRbRwMJT6W95UH8Vw
+         OWkw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of return-a51-11846-11847-7ded648e=35579189=8@jabang.info designates 192.158.237.123 as permitted sender) smtp.mailfrom=return-a51-11846-11847-7ded648e=35579189=8@jabang.info
+Return-Path: <return-a51-11846-11847-7ded648e=35579189=8@jabang.info>
+Received: from smtp1-3.softpector.com (smtp1-3.softpector.com. [192.158.237.123])
+        by mx.google.com with ESMTPS id a74si1027361pfl.141.2018.03.15.11.10.04
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 15 Mar 2018 11:10:04 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return-a51-11846-11847-7ded648e=35579189=8@jabang.info designates 192.158.237.123 as permitted sender) client-ip=192.158.237.123;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of return-a51-11846-11847-7ded648e=35579189=8@jabang.info designates 192.158.237.123 as permitted sender) smtp.mailfrom=return-a51-11846-11847-7ded648e=35579189=8@jabang.info
+Subject: 1 Year Online MBA, Course Fee Rs.7500. Apply Now
+From: =?UTF-8?B?TklCTSBHbG9iYWw=?= <info@jmails.info>
+To: harshmathur.1990@gmail.com
+Reply-To: info@jmails.info
+Date: 15 Mar 2018 18:10:02 -0000
+List-Unsubscribe: <http://a.jabang.info/ga/unsubscribe/2-35579189-51-6265-11847-f5ee6fc4cb7edfa-b3ada82c71?confirmed=1>,
+ <mailto:return-a51-11846-11847-7ded648e=35579189=8u@jabang.info>
+X-CampaignID: s4:11846-f505a31d8c54a2c8
+Message-ID: <mid-055d4092f60ce7951f454ac21cbc9c00-2@jabang.info>
+X-Mailer-Info: 8.hVTM.ETM4QjN.gWYyNHatFGdoVncuETO5ADQn1WYpxmLj9Wb.MTN1cTOxgTO.ETM4QzN
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><body>
+<div align=3D"center">
+<table style=3D"color: #222222; font-family: arial, sans-serif; font-size: =
+12.8px; font-style: normal; font-variant-ligatures: normal; font-variant-ca=
+ps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-inde=
+nt: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing=
+: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-deco=
+ration-style: initial; text-decoration-color: initial; text-align: center;"=
+ border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"c=
+enter">
+<tbody>
+<tr>
+<td style=3D"font-family: Arial, Helvetica, sans-serif; margin: 0px; paddin=
+g: 10px; font-size: 14px; line-height: 22px;"><a style=3D"text-decoration: =
+none;" href=3D"http://a.jabang.info/ga/click/2-35579189-51-6265-11847-12774=
+-444dfd0151-b3ada82c71"><strong style=3D"color: #3592c5; font-size: 18px;">=
+National Institute of Business Management (NIBM&#160;Global)</strong></a>&#=
+160;<br />is a premier&#160;<span style=3D"color: #fd8365;"><strong>Online =
+MBA training institute</strong></span>&#160;in India&#160;<br />rendering&#=
+160;<span style=3D"color: #0a8283;">Business Administration Courses in Corr=
+espondence and Online modes.</span></td>
+</tr>
+<tr>
+<td style=3D"font-family: Arial, Helvetica, sans-serif; margin: 0px; paddin=
+g: 10px; font-size: 14px; line-height: 22px;"><a style=3D"text-decoration: =
+none;" href=3D"http://a.jabang.info/ga/click/2-35579189-51-6265-11847-12774=
+-444dfd0151-b3ada82c71"><strong style=3D"color: #3592c5; font-size: 18px;">=
+NIBM&#65279;</strong></a><br />has 25 years of excellence in&#160;<span sty=
+le=3D"color: #fd8365;"><strong>Management Education</strong></span>&#160;an=
+d is an&#160;<br /><span style=3D"color: #fd8365;"><strong>ISO 9001 2015 ce=
+rtified institution.</strong></span>&#160;<br />It offers 1 Year Online MBA=
+ and Two Year Online MBA. Following are the benefits.</td>
+</tr>
+</tbody>
+</table>
+<br />
+<table style=3D"color: #222222; font-family: arial, sans-serif; font-size: =
+12.8px; font-style: normal; font-variant-ligatures: normal; font-variant-ca=
+ps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-inde=
+nt: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing=
+: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-deco=
+ration-style: initial; text-decoration-color: initial; text-align: center;"=
+ border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"c=
+enter">
+<tbody>
+<tr>
+<td style=3D"font-family: Arial, Helvetica, sans-serif; margin: 0px; paddin=
+g: 10px 10px 0px; font-size: 14px; line-height: 22px;"><a style=3D"text-dec=
+oration: none;" href=3D"http://a.jabang.info/ga/click/2-35579189-51-6265-11=
+847-12774-444dfd0151-b3ada82c71"><strong style=3D"color: #097d7d; font-size=
+: 18px;">Key Features</strong></a><br /><br /></td>
+</tr>
+<tr>
+<td style=3D"font-family: Arial, Helvetica, sans-serif; margin: 0px; paddin=
+g: 0px; font-size: 14px; line-height: 22px; text-align: left;">
+<table border=3D"0" width=3D"250" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center">
+<tbody>
+<tr>
+<td style=3D"font-family: arial, sans-serif; margin: 0px;">
+<ul type=3D"disc">
+<li style=3D"margin-left: 15px;">24 Subjects Free MBA Videos</li>
+<li style=3D"margin-left: 15px;">Free Printed Study Materials</li>
+<li style=3D"margin-left: 15px;">Online Examination</li>
+<li style=3D"margin-left: 15px;">Free Mobile Apps</li>
+<li style=3D"margin-left: 15px;">Free MBA Webinars</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr align=3D"center">
+<td style=3D"font-family: Arial, Helvetica, sans-serif; margin: 0px; paddin=
+g: 10px; font-size: 14px; line-height: 22px;">
+<table border=3D"0" width=3D"150" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"font-family: Arial, Helvetica, sans-serif; margin: 0px; paddin=
+g: 4px; font-size: 16px; line-height: 22px; background: #574182; color: #ff=
+ffff;"><a style=3D"text-decoration: none; color: white;" href=3D"http://a.j=
+abang.info/ga/click/2-35579189-51-6265-11847-12774-444dfd0151-b3ada82c71" t=
+arget=3D"_blank" rel=3D"noopener" data-saferedirecturl=3D"https://www.googl=
+e.com/url?hl=3Den&amp;q=3Dhttp://newsletter.monsterindia.com/track/redirect=
+.html?hash%3Dbbdd83547d17b8c4cd6de770dc8500dcac44555c203025c7%26uid%3D__USE=
+RID__%26mid%3D__MAILERID__%26nid%3DCOMMENTID&amp;source=3Dgmail&amp;ust=3D1=
+512713500373000&amp;usg=3DAFQjCNF8dx1KHZMOzutywx-shyTIubEceg">&#160;&#160;&=
+#160;&#160;&#160; APPLY NOW&#65279;</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<a href=3D"http://a.jabang.info/ga/unsubscribe/2-35579189-51-6265-11847-f5e=
+e6fc4cb7edfa-b3ada82c71">Unsubscribe Here</a>
+<p>&#160;</p>
+</div>
+<img src=3D"http://a.jabang.info/ga/open/2-35579189-51-6265-11847-b3ada82c7=
+1" height=3D"2" width=3D"3" alt=3D""></body></html>=

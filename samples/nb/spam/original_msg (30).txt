@@ -1,0 +1,166 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp1189365ive;
+        Thu, 15 Mar 2018 02:43:45 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELtapcjHy8cs5XaUI8l5kpDQ7NPA+TIyUTva4Ci8BH/54OkU08O/rPE7Uu1dqqXxg+JJXmB/
+X-Received: by 10.157.32.5 with SMTP id n5mr4765658ota.228.1521107025237;
+        Thu, 15 Mar 2018 02:43:45 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521107025; cv=none;
+        d=google.com; s=arc-20160816;
+        b=lRvnLuvWskAwxCZk468gXjgnmm0/W+6DKjwQP56wmb3vqLx1DC9hiidPT1BHlOI3zE
+         4oIKAwQnCrMG/XQBgio6ZWyHKPL12f4dJ16xxc73O6/urchPGN9tnkY8hPXrZqJnmOsL
+         TMjx6CrS972sVD/WL0VmjmOXsrdfapILuj9I9Z2qcZKCZuXh69n2tQuOya5ImnQWbDNj
+         XDNpBIgMh/GleUdbBefxThCWsVEnaOiu0WjMYBHxg9+PrQzf88S1QbA6abfHe9SmJURB
+         6NTziOZA+xqwBiA9wWtSslMlJdgStBjRrs3arwuRm4c5Va+RpJdmD8zE3aoEY0Ec8vqX
+         Kbpg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=reply-to:mime-version:subject:to:from:list-unsubscribe:message-id
+         :date:domainkey-signature:dkim-signature:arc-authentication-results;
+        bh=Ol1suN9lLScyVby0rFZPk+yr7WQoztxoV5UpPnVrpEI=;
+        b=Sl5NbdGcDVnviwRYMS3KLgErsB1QjD/a3qIObwLTiPNxxg5MNrmcEXzIBzGOxymOrG
+         TduL9rAU1WYe9yHB4uCNPd4Kt4o6V/wUsSFXoxhnPeu0E6M+YftnNmY/aOyxYEuCcObN
+         KqlxwzWP+fj99768bMZT/Tx31dmQ9dRo7TRVIqGldsqq7RsefNnt5vBWA5ndR6hv5wJO
+         B9cLYw/drgkESHSLuXnkLILQ1wabHW9OL/l6VoOJSeajZYNzwJxsNECHvDwI+Oe1PaYX
+         ZOhnkBcrGC3LtFjbgQMZTmrMqE8UQIUkWQwK+kiXiTq92tm4TJWaUh3D1DcVa6ljFbVb
+         pc+Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@edm.efinmail.com header.s=20160510173820 header.b=k/Z/1JGJ;
+       spf=pass (google.com: domain of bo-b2twm71bf3q13vaudm25rbyjjaps9p@b.edm.efinmail.com designates 8.30.201.22 as permitted sender) smtp.mailfrom=bo-b2twm71bf3q13vaudm25rbyjjaps9p@b.edm.efinmail.com
+Return-Path: <bo-b2twm71bf3q13vaudm25rbyjjaps9p@b.edm.efinmail.com>
+Received: from mta964.chtah.net (mta964.chtah.net. [8.30.201.22])
+        by mx.google.com with ESMTPS id i82si79910oif.386.2018.03.15.02.43.44
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 15 Mar 2018 02:43:45 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bo-b2twm71bf3q13vaudm25rbyjjaps9p@b.edm.efinmail.com designates 8.30.201.22 as permitted sender) client-ip=8.30.201.22;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@edm.efinmail.com header.s=20160510173820 header.b=k/Z/1JGJ;
+       spf=pass (google.com: domain of bo-b2twm71bf3q13vaudm25rbyjjaps9p@b.edm.efinmail.com designates 8.30.201.22 as permitted sender) smtp.mailfrom=bo-b2twm71bf3q13vaudm25rbyjjaps9p@b.edm.efinmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=edm.efinmail.com;
+	s=20160510173820; t=1521107024; x=1537004624;
+	bh=Ol1suN9lLScyVby0rFZPk+yr7WQoztxoV5UpPnVrpEI=; h=From:Reply-To;
+	b=k/Z/1JGJxXwHEF2GhyCnIAB0nnlMLuVgFseQx5PVTan/Sf2UNzEf20t9R/3dU4fKu
+	 5R2p0CuYEkkPEkwvBvkKg6fQGk+BL6p4TRSc4rAjSKXirXldEct4KAUBV5bL0AtNIe
+	 WDuiP1kav10KDaRLPJmFiuLlTLd8+9kBFCS4YczEPK7aCSVhfgX008ZK27kyfTVRQM
+	 1OELrnv6NwhtnCWKJTLFJJaRWxgjp3av02e/EyJ5HJV98i0W4AIBMU0BpUhjQPFti0
+	 itxeZh81x0nqIjn+bdJ4BbZ4mvCTccxyglOzl9dy3F+LYdYCrrlyze97qjQolHe+S/
+	 ZUEs/1QJZenKA==
+DomainKey-Signature: a=rsa-sha1; q=dns; c=nofws;
+  s=200505; d=edm.efinmail.com;
+  b=aS6yp3u7TlPD7dZzY9H7t+zU/w/E9sANLG0quWYHUx3arLg8w8Kcv4MYEvAxhVdVw6z95mHPbIjMX0d3wMfuEixAwapyVtKgYWB7KbEM5YFLhmX/TcoEu5m8amgKDg9nFCyMdWkJ4aheY2sgP/S7/4WRGXhQSsKuYcyABEK0I1w=;
+ h=Date:Message-ID:List-Unsubscribe:From:To:Subject:MIME-Version:Reply-To:X-Mailer:X-mid:X-aid:Content-Type;
+Date: Thu, 15 Mar 2018 09:43:44 -0000
+Message-ID: <b2twm71bf3q13vaudm25rbyjjaps9p.6397873.6144@mta964.edm.efinmail.com>
+List-Unsubscribe: <mailto:rm-0b2twm71bf3q13vaudm25rbyjjaps9p@edm.efinmail.com>
+From: "IndianOil Citi Card" <info@edm.efinmail.com>
+To: harshmathur.1990@gmail.com
+Subject: =?UTF-8?B?U21hcnQgU2F2aW5ncyB3aXRoIEluZGlhbk9pbCBDaXRpIENhcmQ=?=
+MIME-Version: 1.0
+Reply-To: "info@edm.efinmail.com" <support-b2twm71bf3q13vaudm25rbyjjaps9p@edm.efinmail.com>
+X-Mailer: CheetahMailer
+X-mid: 2107102351
+X-aid: 2097868848
+Content-Type: multipart/alternative; boundary="=b2twm71bf3q13vaudm25rbyjjaps9p"
+
+
+--=b2twm71bf3q13vaudm25rbyjjaps9p
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+mailto:rm-0b2twm71bf3q13vaudm25rbyjjaps9p@edm.efinmail.com?subject=Unsubscribe&body=You%20will%20be%20unsubscribed%20from%20mailing%20list. 
+
+http://edm.efinmail.com/a/tBaqj0jB9CvAwB9l9SPAAYZ$x-V/link1 
+
+Report Spam : mailto:rm-0b2twm71bf3q13vaudm25rbyjjaps9p@edm.efinmail.com?subject=Unsubscribe&body=You%20will%20be%20unsubscribed%20from%20mailing%20list.  | Unsubscribe : mailto:rm-0b2twm71bf3q13vaudm25rbyjjaps9p@edm.efinmail.com?subject=Unsubscribe&body=You%20will%20be%20unsubscribed%20from%20mailing%20list. 
+
+--=b2twm71bf3q13vaudm25rbyjjaps9p
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" />
+<style type=3D"text/css">
+@media only screen and (max-width: 619px) {
+.width {
+	width: 100% !important;
+	height: auto !important
+}
+.banner {
+	width: 100% !important;
+	height: auto !important
+}
+}
+</style>
+</head>
+<body style=3D"margin:0px auto;"><img src=3D"http://edm.efinmail.com/a/hBaq=
+j0jB9CvAwB9l9SPAAYZ$x-V/spacer.gif" width=3D"1" height=3D"1" style=3D"displ=
+ay:none !important; max-height:1px !important; max-width:1px !important; bo=
+rder:0 !important; background-color:transparent !important; padding:0 !impo=
+rtant; outline:0 !important; min-height:1px !important; min-width:1px !impo=
+rtant; height:1px !important; width:1px !important;" alt=3D"">
+=09
+	<table align=3D"center" cellpadding=3D"0" cellspacing=3D"0">
+	<tr>
+	<td align=3D"center" >
+	<a href=3D"mailto:rm-0b2twm71bf3q13vaudm25rbyjjaps9p@edm.efinmail.com?subj=
+ect=3DUnsubscribe&amp;body=3DYou%20will%20be%20unsubscribed%20from%20mailin=
+g%20list."><img src=3D"http://f.edm.efinmail.com/i/5/2097868848/01_03_Discl=
+aimer_Finmail.jpg" class=3D"banner"   style=3D"display:block" /></a>
+	</td>
+	</tr>
+	</table>
+=09
+<table align=3D"center" border=3D"0" class=3D"width" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"619" style=3D"margin:0px auto; ">
+
+
+
+  <tr>
+    <td align=3D"center">
+=09
+	<table align=3D"center" border=3D"0" class=3D"width" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"619" style=3D"margin:0px auto; ">
+
+=09=09
+=09=09
+		<tr>
+          <td align=3D"left">
+		<a href=3D"http://edm.efinmail.com/a/hBaqj0jB9CvAwB9l9SPAAYZ$x-V/link1"><=
+img src=3D"http://f.edm.efinmail.com/i/5/2097868848/01_03_Citibank_IOC.jpg"=
+ class=3D"banner"  style=3D"display:block" /></a></td>
+        </tr>
+
+=09=09
+      </table>
+=09=20=20
+	  <table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" a=
+lign=3D"center">
+ <tbody>
+<tr>
+ <td style=3D"text-align:center; padding:0px 0px;"><span style=3D"font-fami=
+ly:Arial, sans-serif; font-size:12px; color:#666666; line-height:12px;"><a =
+href=3D"mailto:rm-0b2twm71bf3q13vaudm25rbyjjaps9p@edm.efinmail.com?subject=
+=3DUnsubscribe&amp;body=3DYou%20will%20be%20unsubscribed%20from%20mailing%2=
+0list." style=3D"color:blue; font-size: 12px; font-family: Verdana, Arial, =
+Helvetica, sans-serif; text-decoration: none;" target=3D"_blank">Report Spa=
+m</a></span> | <span style=3D"font-family:Arial, sans-serif; font-size:12px=
+; color:blue; line-height:16px;"><a href=3D"mailto:rm-0b2twm71bf3q13vaudm25=
+rbyjjaps9p@edm.efinmail.com?subject=3DUnsubscribe&amp;body=3DYou%20will%20b=
+e%20unsubscribed%20from%20mailing%20list." style=3D"text-decoration:none; c=
+olor:blue;" target=3D"_blank">Unsubscribe</a></span></td>
+</tr>
+</tbody>
+</table>
+=20=20
+</td>
+</tr>
+</table>
+
+</body>
+</html>
+
+
+--=b2twm71bf3q13vaudm25rbyjjaps9p--
+

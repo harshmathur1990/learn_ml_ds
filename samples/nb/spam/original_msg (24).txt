@@ -1,0 +1,137 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp1306739ive;
+        Thu, 15 Mar 2018 04:49:38 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELtVv7blZOCoCMjisJmcPqDTQlJyDqx+dc/hAIdFQUYgpOnLl3iuNl40h+7RvlVyWeNCczgZ
+X-Received: by 10.200.46.51 with SMTP id r48mr12867610qta.8.1521114578504;
+        Thu, 15 Mar 2018 04:49:38 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521114578; cv=none;
+        d=google.com; s=arc-20160816;
+        b=u5Ghd0fgb0DaxjbaVi29dDEBwfX8BRJiQhqISsYBUXouO0dG2d/SiO+Yw0M3BUA5MO
+         wqiKjWp50BMvupkXtir+6JHzrRjBFC0toiBLkHLCzrOLxFhpamKFLGkHoTfi+4tzTPQf
+         BJLACQq5aYNAdTcAG0orvXTW/QfDv+L6ZElbrcneOhR3bWD+M2KuDebJTkGmFP+hwRAa
+         XwYkvguJwk2oE4sK437fhNudPOUwxkBgPc/BuNLm52HuDgCRmqQ9c93jxm6+90evnbxU
+         Kam/LTNVJX2+7NJoRXaBg1T7SH2pv/PZbtWYOwGe0Yq+wfP+fKy6NRydq2HU3QyG8J6y
+         MyhA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:mime-version:feedback-id:list-unsubscribe:message-id:subject
+         :reply-to:from:to:domainkey-signature:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=UwVxXiapgojz1AghJbFAqKAS14BXecel6dfqpgFWAM4=;
+        b=x7vW+u7sN6nBbWBFlUBV6fecWvlRXpTQ0Xeadb+s3y8eyYDt0JuYV6ynH02rVTbEd+
+         LH99eYVojLgKtmd8Z1i6W52RcaLHZdvW+KR6wwAYv2n8JsImmhM+0HyyFiQDZMMw5/Cx
+         X9zMtUogl49xQf5lIJLuTM77yx/XxuAqgkeE3IX8vOsC5mFQJ7K+7fUPIBOizrvzGO+q
+         sByD9fVIObJaHj3WYFn/CPUousgOLRn4bgQNgTr+xmooKII5C4UFRgEXZl3MtI1Fkb9N
+         vsN/8klml12UFqa+1aUKZrFEWQr/vklwTqI7dsx7wutqJfjAOW96FPe1uvPzHZJSZuE8
+         9fPQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@cultural-heritage-india.com header.s=emm header.b=a8toAzD+;
+       dkim=pass header.i=@cultural-heritage-india.com header.s=emm header.b=dDZrJVpx;
+       spf=pass (google.com: domain of campaign-culturalheritageindia-22138-934-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com designates 103.52.181.128 as permitted sender) smtp.mailfrom=campaign-culturalheritageindia-22138-934-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com
+Return-Path: <campaign-culturalheritageindia-22138-934-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com>
+Received: from trans128.mailxy.com (trans128.mailxy.com. [103.52.181.128])
+        by mx.google.com with ESMTPS id a27si5162018qtd.453.2018.03.15.04.49.38
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 15 Mar 2018 04:49:38 -0700 (PDT)
+Received-SPF: pass (google.com: domain of campaign-culturalheritageindia-22138-934-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com designates 103.52.181.128 as permitted sender) client-ip=103.52.181.128;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cultural-heritage-india.com header.s=emm header.b=a8toAzD+;
+       dkim=pass header.i=@cultural-heritage-india.com header.s=emm header.b=dDZrJVpx;
+       spf=pass (google.com: domain of campaign-culturalheritageindia-22138-934-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com designates 103.52.181.128 as permitted sender) smtp.mailfrom=campaign-culturalheritageindia-22138-934-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=emm; d=cultural-heritage-india.com;
+ h=To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Date;
+ bh=E1Z2Vsrr2bHbFJ+WUbZl+0rhUw8=;
+ b=a8toAzD+4Faf55E9OdIJVwIdEa4/YchMZ1v03965wf7qBKCcfSkOyOFNrfKJRlEHqAY2o9Jc3/xE
+   iA+6x/dZd3mWYDxGnxGpIDMVZ/TEF2XjweJqRzfQo377WqDHWTqm3VHxQljL6ksekaaTLeO9K0eG
+   yzDEt3EP3NSpH23Tc/Y=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=emm; d=cultural-heritage-india.com;
+ h=To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Date; i=@email.cultural-heritage-india.com;
+ bh=E1Z2Vsrr2bHbFJ+WUbZl+0rhUw8=;
+ b=dDZrJVpxM9f1X/D4quZ0+AjYKSN+eHElwonjqQ5hWz2BAX+jM7iMkC9lCrzJTrONKbvM6a1EvbcD
+   rfeoYRY5eV65ZB+AXRLZxgTm7PEdf9m46k6EYR71VHuCZswpxGDzH6U8K28ksJiw4e3axltNSL+0
+   bpciubysKSpOzH637Ec=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=emm; d=cultural-heritage-india.com;
+ b=pQEk/XVHrKLWqeyYkGJmaWXqtoxuDRvFB+26hE/1xOu/C+w0H+y0dhOEvUSelk6DZynB6sm4sb66
+   54eAGLNU0xxuIlq0jC67i7bQh33FCcJQPjGBf9iimyF+BXX7rlt+13krFW14vzp//EgxqQMXmeU/
+   BXtNgzaD8tWrGfnXfKE=;
+Received: by trans128.mailxy.com id hl9etk25ockd for <harshmathur.1990@gmail.com>; Thu, 15 Mar 2018 17:15:50 +0530 (envelope-from <campaign-culturalheritageindia-22138-934-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com>)
+Received: from localhost.localdomain (rg2.netcore.co.in [202.162.247.48])
+	by emm20-2nd.iaires.com (Postfix) with ESMTP id C3E922711CB
+	for <harshmathur.1990@gmail.com>; Thu, 15 Mar 2018 17:15:41 +0530 (IST)
+To: harshmathur.1990@gmail.com
+From: ICICI Lombard <info@cultural-heritage-india.com>
+Reply-To: ICICI Lombard <info@cultural-heritage-india.com>
+Subject: Kyunki Yehi Sach Hai!
+Message-ID: <77374128455819491@email.cultural-heritage-india.com>
+List-Unsubscribe: <mailto:culturalheritageindia-22138-934-5819491-756584b990def989c205470fcbec18c3@usub.cultural-heritage-india.com?subject=Unsubscribe>, <http://lk.trk.cultural-heritage-india.com/culturalheritageindia/?p=smunsub&mid=934&uid=756584b990def989c205470fcbec18c3>
+Feedback-ID: 934:22138:20180315171053:nczc
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_ec53e8bcd0b6539a377a0bdb35490f18"
+Date: Thu, 15 Mar 2018 17:19:46 +0530
+
+
+
+
+--b1_ec53e8bcd0b6539a377a0bdb35490f18
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+ICICI Lombard 
+
+ <http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=YEtRCFIFU1YJBERTBgEGBQEKAU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138>
+
+ <http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=YEtRCFIFU1YJBERTBgEGBQEKAU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138>
+
+ <http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=YEtRCFIFU1YJBERTBgEGBQEKAU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138>
+
+ Connect with us on 
+
+ Download Insure App 
+
+ customersupport@icicilombard.com
+<http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=YEtRCFIFU1YJBERTBgEGBQEKAU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138>
+ www.icicilombard.com
+<http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=YEtRCFIFU1YJBERTBgEGBQEKAU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138>
+ Toll free 1800 2666
+<http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=YEtRCFIFU1YJBERTBgEGBQEKAU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138>
+
+--Click Here to unsubscribe from this newsletter.
+
+
+--b1_ec53e8bcd0b6539a377a0bdb35490f18
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<!-- START Adsplay International CODE --><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head> <img src='http://43.252.89.54/~adsadmin/trackmaileropen.php?aid=7494&pgmid=161994&crid=1368' width='1' height='1'> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <img src='http://43.252.89.54/~adsadmin/trackmaileropen.php?aid=7494&pgmid=161994&crid=1368' width='1' height='1'> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta name="viewport" content="width=device-width,
+initial-scale=1.0"> <title>ICICI Lombard</title> <style type="text/css"> /* Client-specific Styles */ div, p, a, li, td { -webkit-text-size-adjust: none; } #outlook a { padding: 0; } /* Force Outlook to provide a "view in browser" menu link. */ html { width: 100%; } body { width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; } /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */ .ExternalClass { width: 100%; } /* Force Hotmail to display emails at full width */
+ .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; } /* Force Hotmail to display normal line spacing. */ #backgroundTable { margin: 0; padding: 0; width: 100% !important; line-height: 100% !important; } img { outline: none; text-decoration: none; border: none; -ms-interpolation-mode: bicubic; } a img { border: none; } .image_fix { display: block; } p { margin: 0px 0px !important; } table td { border-collapse: collapse; } table { border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+/*STYLES*/ table[class=full] { width: 100%; clear: both; } td[class=disclaimer] p { padding-bottom: 5px; } /*IPAD STYLES*/ @media only screen and (max-width: 800px) { a[href^="tel"], a[href^="sms"] { text-decoration: none; color: #33b9ff; /* or whatever your want */ pointer-events: none; cursor: default; } .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] { text-decoration: default; color: #33b9ff !important; pointer-events: auto; cursor: default; } td[class=devicewidthtext] { padding: 0 20px!important; } td[class=sospadd] { padding-top: 0px!important; } table[class=devicewidth] {
+width: 100%!important; text-align: center!important; } table[class=devicewidthone2] { width: 400px!important; text-align: center!important; } table[class=devicewidthinner] { width: 400px!important; } img[class=banner] { width: 100%!important; height: auto!important; } img[class=col2img] { width: 440px!important; height: auto!important; } td[class=PadT20] { padding-top: 20px !important; } td[class=paddi] { padding-left: 4px !important } .fullwidth { width: 100% !important; } .halfwidth { width: 50% !important; } .devicewidthleft { width: 100% !important; } .devicewidthright { width: 100%
+!important; } } /*IPHONE STYLES*/ @media only screen and (max-width: 480px) { .devicewidthone { width: 100%!important; } a[href^="tel"], a[href^="sms"] { text-decoration: none; color: #000000; /* or whatever your want */ pointer-events: none; cursor: default; } .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] { text-decoration: default; color: #33b9ff !important; pointer-events: auto; cursor: default; } table[class=devicewidth] { width: 100%!important; text-align: center!important; } table[class=devicewidthone2] { width: 100%!important; text-align: center!important; }
+td[class=devicewidth2] { width: 100%!important; text-align: center!important; padding: 0px !important; border-left: none!important; border-right: none!important; } td[class=devicewidthtext] { padding: 0 20px!important; } td[class=sospadd] { padding-top: 0px!important; } table[class=devicewidthinner] { width: 100%!important; } img[class=banner] { width: 100%!important; height: auto!important; } img[class=col2img] { width: 100%!important; height: auto!important; } td[class=PadT20] { padding-top: 20px !important; } td[class=paddi] { padding-left: 5px !important } .fullwidth { width: 100%
+!important; } .halfwidth { width: 50% !important; } .devicewidthleft { width: 100% !important; } .devicewidthright { width: 100% !important; } } /*Line image in small device*/ @media only screen and (max-width: 360px) { .liner { width: 50px !important; } } </style> </head> <body> <table width="800" align="center" bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" class="devicewidth"> <tbody> <tr> <td align="center" width="100%" style="border-left:1px solid #cccccc; border-right:1px solid #cccccc;border-bottom:1px solid #cccccc;" class="devicewidth2"> <table cellpadding="0"
+cellspacing="0" border="0" st-sortable="devicewidth"> <tbody> <tr> <td width="100%" bgcolor="#d5641e"> <table width="800" border="0" cellspacing="0" cellpadding="0" class="devicewidth"> <tbody> <tr> <td align="left" valign="top" bgcolor="#cccccc" style="max-width:800px; display:block;"> <table width="800" border="0" cellspacing="0" cellpadding="0" class="devicewidth"> <tbody> <tr> <td align="left" valign="middle" height="1" width="10"></td> <td align="center" valign="middle" height="1" width="514"></td> <td align="left" valign="middle" height="1" width="10"></td> </tr> </tbody> </table> </td>
+</tr> </tbody> </table> </td> </tr> <tr> <td height="25"> <span style="line-height:0px;"> <a href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1YJBERTBgEGBQEKAU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  target="_blank"> <img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/icicicarins/171186.jpg" alt="ICICI Lombard" width="800" height="75" border="0" class="banner" style="display:block; border:none; outline:none; text-decoration:none; width:100% !important; min-width:100%;" /> </a> </span> </td> </tr> <tr> <td height="25"> <span style="line-height:0px;"> <a
+href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1YJBERTBgEGBQEKAU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  target="_blank"> <img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/icicicarins/171180.jpg" alt="ICICI Lombard" width="800" height="462" border="0" class="banner" style="display:block; border:none; outline:none; text-decoration:none; width:100% !important; min-width:100%;" /> </a> </span> </td> </tr> <tr> <td height="25"> <span style="line-height:0px;"> <img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/icicicarins/171183.jpg" alt="Buy Complete Health Insurance"
+width="800" height="102" border="0"
+class="banner" style="display:block; border:none; outline:none; text-decoration:none; width:100% !important; min-width:100%;" /> </span> </td> </tr> <tr> <td height="25"> <span style="line-height:0px;"> <a href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1YJBERTBgEGBQEKAU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  target="_blank"> <img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/icicicarins/171184.jpg" alt="Buy Complete Health Insurance" width="800" height="275" border="0" class="banner" style="display:block; border:none; outline:none; text-decoration:none; width:100%
+!important; min-width:100%;" /> </a> </span> </td>
+</tr> <tr> <td bgcolor="#ffffff" align="center" style="padding-left:10px; padding-right:10px; padding-bottom:10px; padding-top:10px;"> <!--[if (gte mso 9)|(IE)]> <table width="568" align="center" cellpadding="0" cellspacing="0" border="0"> <tr> <td> <![endif]--> <!--[if (gte mso 9)|(IE)]> </td> </tr> </table> <![endif]--> </td> </tr> <tr> <td bgcolor="#cdcdcd" align="center" style="padding-left:10px; padding-right:10px; padding-bottom:10px; padding-top:10px;"> <!--[if (gte mso 9)|(IE)]> <table width="568" align="center" cellpadding="0" cellspacing="0" border="0"> <tr> <td> <![endif]--> <table
+width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#cdcdcd" align="center" style="max-width: 768px; " class="container"> <tbody> <tr> <td style="text-align: center; vertical-align: top; font-size: 0;"> <!--[if (gte mso 9)|(IE)]> <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0"> <tr> <td> <![endif]--> <div class="fullwidth" style="width: 378px; display: inline-block; vertical-align: top;"> <table width="100%" cellspacing="0" cellpadding="0" border="0"> <tbody> <tr> <td align="center" style="padding:4px"> <table width="100%" cellspacing="0"
+cellpadding="0" border="0" bgcolor="#cdcdcd" style="width:100%; min-width:100%; "> <tbody> <tr> <td valign="top" height="18" align="center" style=" padding:3px; padding-top:20px; "> <font style="font-family:Roboto, Arial, Helvetica, sans-serif; font-size:15px; color:#000000; line-height:17px; "><span style="font-family:Arial; padding-right:6px;"></span> Connect with us on <span style="font-family:Arial; padding-left:6px;"></span></font> </td> </tr> <tr> <td valign="top" align="center" style="padding:2px"> <img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/icicicarins/171187.jpg" alt=""
+width="290" height="62" usemap="#Map4"> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table> </div> <!--[if (gte mso 9)|(IE)]> </td> <td> <![endif]--> <div class="fullwidth" style="width:378px; display: inline-block; vertical-align: top;"> <table width="100%" cellspacing="0" cellpadding="0" border="0"> <tbody> <tr> <td align="center" style="padding:4px"> <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#cdcdcd" style="width:100%; min-width:100%; "> <tbody> <tr> <td valign="top" height="18" align="center" style=" padding:3px; padding-top:20px; "> <font
+style="font-family:Roboto, Arial, Helvetica, sans-serif; font-size:15px; color:#000000; line-height:17px; "><span style="font-family:Arial; padding-right:6px;"></span> Download Insure App <span style="font-family:Arial; padding-left:6px;"></span></font> </td> </tr> <tr> <td valign="top" align="center" style="padding:2px"> <img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/icicicarins/171185.jpg" alt="" width="290" height="62" usemap="#Map3"> </td> </tr> </tbody> </table> </td> </tr> </tbody> </table> </div> <!--[if (gte mso 9)|(IE)]> </td> </tr> </table> <![endif]--> </td> </tr> </tbody>
+</table> <!--[if (gte mso 9)|(IE)]> </td> </tr> </table> <![endif]--> </td> </tr> <tr> <td valign="top" align="center" bgcolor="#959595" style="padding-left:15px;padding-right:15px; padding-top:6px; padding-bottom:6px;"> <font style="font-family: Roboto, Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff;"><a target="_blank" style="color:#FFFFFF; text-decoration:none" href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1YJBERTBgEGBQEKAU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138' >customersupport@icicilombard.com</a> <a target="_blank" style="color:#FFFFFF; text-decoration:none"
+href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1YJBERTBgEGBQEKAU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138' >www.icicilombard.com</a> Toll free <a style="text-decoration:none; color:#ffffff; " href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1YJBERTBgEGBQEKAU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138' >1800 2666</a></font> </td> </tr> </tbody> </table> </td> </tr> <tr> <td height="10"></td> </tr> <tr> <td width="100%" valign="top" align="left" style="font-family: Zurich BT, Arial; font-size:9px; color:#666666; line-height:12px;" class="disclaimer"> <img
+src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/icicicarins/171182.jpg"> </td> </tr> <tr> <td
+height="10"></td> </tr> </tbody> </table> <map name="Map3" id="Map3"> <area shape="rect" coords="21,11,140,51" href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1YJBERTBgEGBQEKAU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  target="_blank" alt="" /> <area shape="rect" coords="150,11,267,49" href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1YJBERTBgEGBQEKAU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  target="_blank" alt="" /> </map> <map name="Map4" id="Map4"> <area shape="rect" coords="18,11,56,51" href="hhttp://track.cultural-heritage-india.com/af_ck?offer_id=255&aff_id=2"
+target="_blank" alt="" /> <area shape="rect" coords="60,12,97,50"
+href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1YJBERTBgEGBQEKAU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  target="_blank" alt="" /> <area shape="rect" coords="104,12,142,50" href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1YJBERTBgEGBQEKAU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  target="_blank" alt="" /> <area shape="rect" coords="147,13,184,50" href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1YJBERTBgEGBQEKAU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  target="_blank" alt="" /> <area shape="rect" coords="191,13,229,50"
+href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1YJBERTBgEGBQEKAU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  target="_blank" alt="" /> <area shape="rect" coords="232,13,272,50"
+href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1YJBERTBgEGBQEKAU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  target="_blank" alt="" /> </map> <br/><div><p>--<br><a href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1YJBURTBgEGBQEKAU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  >Click Here</a> to unsubscribe from this newsletter.<br><br></div><img border="0" src="http://lk.trk.cultural-heritage-india.com/ptrack?g=1&m=934&eu=BAdRDVoEWFYBAA==&u=756584b990def989c205470fcbec18c3&client=22138&c=0000" ></body> </html> <!-- END Adsplay International CODE -->
+
+
+
+--b1_ec53e8bcd0b6539a377a0bdb35490f18--
+

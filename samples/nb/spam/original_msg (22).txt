@@ -1,0 +1,618 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp1527293ive;
+        Thu, 15 Mar 2018 08:12:01 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELtqQw/HRMcnyEK4O9QqxJpktgKNIpGVyKfUayyBJ4IHkSFvZIQGEewruYkRZ9YqH03A1QvR
+X-Received: by 10.28.224.65 with SMTP id x62mr5373434wmg.6.1521126721737;
+        Thu, 15 Mar 2018 08:12:01 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521126721; cv=none;
+        d=google.com; s=arc-20160816;
+        b=fC78F7r+TzIyHoN89c9SG2eVEfBDVCc+5F5wAuhYOpSF1Hq05h7xZzSXY4dg7W9OST
+         gPuU/NgTE2BQKDfWO0+gPKRPJ9RNwKSPtJbd5fapjMYXf0kL8aOVUAnqH7hx1RVDj5eg
+         6zEw4pozjZhDyTR1m4MOc4Oo2UHDjs/RS7RSOwMbxDk9wDiPT0eHJVk3zQaVNXTMsh9K
+         Lpd5CNh+IcHknZLMUr1YCVHOv4H5EXFIvzD0qEn9Ldx3AljomjktH1sS6KoDd7tolQbM
+         CqTYGnk7+yLKDlK5jIX7aGk6FojphQLf2Us53B7gh9fn5PhPej5TYZ9G/YZC4JPSvsmX
+         X8qg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:subject:date:message-id:to:from:feedback-id:reply-to
+         :list-unsubscribe:dkim-signature:arc-authentication-results;
+        bh=wV0HS9WuhYPVID7HhyNUcirC4Tlb5M1tb8pIGqAw7Ds=;
+        b=wUhwIsbqks2w0U7T3XEPbaJiQt3ZWlZ5hM/oayesgFLeNt4MmkYgpDnx2uCEul2/kY
+         z3euEBLzYvWtmt3Wp1fIUjAPjZkBA29h0IQx/Q9+MLNuMqnqbbCmfhwfx9MYml12Tz8N
+         6K2QO1ZLl1JcvLtj8jqkZkmlHke05x94ELfDs3wzCxtzVaGnlsXWXuYeuFelp2UAXNKp
+         qX6fi50VyQ4v0GrrKgdwVsj/qzO+rudnjyC7ecVg3LUr1CPLCN8dK25N5YAkk4bf/Tge
+         enDDKAo0ZzUMk0Bk0YxZvi3ydnlzl8WJ/GwHCWR+DtZz5UBy3rpxzBIebk07hvxrKDCy
+         NoGw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@anpdm.com header.s=newsletter header.b=gEqzYNkj;
+       spf=pass (google.com: domain of 3fd.c.1103994070.j3917931-20904855@sqore.anpdm.com designates 91.227.208.160 as permitted sender) smtp.mailfrom=3fd.c.1103994070.J3917931-20904855@sqore.anpdm.com
+Return-Path: <3fd.c.1103994070.J3917931-20904855@sqore.anpdm.com>
+Received: from rs-160.mta.anpdm.com (rs-160.mta.anpdm.com. [91.227.208.160])
+        by mx.google.com with ESMTPS id u25si3705220wra.440.2018.03.15.08.12.01
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Thu, 15 Mar 2018 08:12:01 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 3fd.c.1103994070.j3917931-20904855@sqore.anpdm.com designates 91.227.208.160 as permitted sender) client-ip=91.227.208.160;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@anpdm.com header.s=newsletter header.b=gEqzYNkj;
+       spf=pass (google.com: domain of 3fd.c.1103994070.j3917931-20904855@sqore.anpdm.com designates 91.227.208.160 as permitted sender) smtp.mailfrom=3fd.c.1103994070.J3917931-20904855@sqore.anpdm.com
+DKIM-Signature: v=1; a=rsa-sha256; d=anpdm.com;i=@anpdm.com;s=newsletter;
+	c=relaxed/relaxed; q=dns/txt; t=1521126722;
+	h=list-unsubscribe:reply-to:feedback-id:from:to:message-id:date:subject:mime-version:content-type;
+	bh=wV0HS9WuhYPVID7HhyNUcirC4Tlb5M1tb8pIGqAw7Ds=;
+	b=gEqzYNkj3I0d4W1wOxApCEjla8gOn2Y40sMynMS1Ya27xgWjJ/X3zku6gsSqQltmW7X3HOZmm3tzjjU6vAVxX7fbpnbj1/kVyN8ghvRYhRgTZZSCznN0EJqxvAouU/dU0F5xkMgjgniFeXay0fcSD6Wwx7vHXH+uIk8xrkBh18s=
+X-CSA-Complaints: whitelist-complaints@eco.de
+List-Unsubscribe: <http://www.anpdm.com/oa-auto/20904855/42445C44754446504B794640504371>,<mailto:delist@apsis.com?subject=UnReg:20904855::42445C44754446504B794640504371::2>
+X-Destination-ID: noreply@sqoremail.com
+Reply-To: noreply@sqoremail.com
+X-MailingID: 2::1::20904855::1103994070
+Feedback-ID: 20904855:45405B457149465D4B71:2-1:apsis
+From: "Student Competitions" <noreply@sqoremail.com>
+To: "Harsh Mathur" <harshmathur.1990@gmail.com>
+Message-ID: <6783358774F240EC97856A27B0CBF798@sqoremail.com>
+Date: Thu, 15 Mar 2018 16:11:54 +0100
+Subject: Win your dream job with Schneider Electric!
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----BCA33A6C43704D73AD26CC708EC895F0"
+
+------BCA33A6C43704D73AD26CC708EC895F0
+Content-type: text/plain; charset=utf-8
+
+333 competitions live - win cash, scholarships and more.
+
+Link: http://www.studentcompetitions.com
+
+Link: http://bit.ly/2zxHois
+
+Have you been putting your ambitions aside, because time is a luxury you can't afford?
+
+If you're working in the UK, here's great news: 
+University of Hertfordshire has designed their 
+Part-Time Executive MBA with professionals like you in mind.
+
+The university is situated in Hatfield, just 20 minutes away from the centre of London. The ideal weekend commute and structured schedule will give you the space you need to focus in your life and career!
+
+Learn more about the Executive MBA program and stand to win a 25% scholarship (worth up to 
+£4,500) to the program.
+
+Deadline: January 01, 2018.
+
+Learn More Link: http://bit.ly/2zxHois
+
+At Studentcompetitions.com, you compete for cash prizes, scholarships, internships, traineeships, jobs and much more. Universities and employers partner with Studentcompetitions.com to find skilled candidates like you.
+
+Studentcompetitions.com (a part of Sqore)
+
+Brannkyrkagatan 14a
+
+118 20 Stockholm, Sweden
+
+Unsubscribe Link: http://www.anpdm.com/oa/20904855/42445C44754446504B794640504371
+
+(please don't go)  |  
+
+View web version Link: http://www.anpdm.com/newsletterweb/45415B427540465F4072434659/42445C44754446504B794640504371
+
+Forgot your password? Click here to get a new one. Link: https://login.sqore.com/password_reset/new
+
+Have a question? Email us on info@studentcompetitions.com Link: mailto:info@studentcompetitions.com
+------BCA33A6C43704D73AD26CC708EC895F0
+Content-type: text/html; charset=utf-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<!--[if gte mso 9]><xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="https://cdn-production.sqore.com/mail/fonts/sqoresans.css">
+<style type="text/css">
+.FullW {
+	width: 100%!important;
+}/* Removing padding in webversion */
+form td {
+	padding: 0;
+}/* Fix for unwanted underline in hotmail, yahoo and gmail */
+.ii a, .ReadMsgBody .ExternalClass a:link, .yshortcuts {
+	text-decoration: none!important;
+	color: transparent!important;
+}/* Fix for unwanted th styling in yahoo */
+table th {
+	margin: inherit;
+	padding: inherit;
+	font-weight: normal;
+}
+table tr th {
+	vertical-align: top;
+}/* Fix for unwanted styling of links in ios */
+a[x-apple-data-detectors] {
+	color: inherit!important;
+	text-decoration: none!important;
+	font-size: inherit!important;
+	font-family: inherit!important;
+	font-weight: inherit!important;
+	line-height: inherit!important;
+}
+table, td {
+	border-collapse: collapse;
+	mso-table-lspace: 0;
+	mso-table-rspace: 0;
+}/* Fix for Outlook.com */
+.ExternalClass * {
+	line-height: normal;
+}
+body, table, div, p, a, li, td, th {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body {
+	width: 100%;
+	padding: 0!important;
+	margin: 0 auto!important;
+}
+</style>
+<style type="text/css">
+#html-content .preheader {
+	display: block!important;
+	font-size: 12px!important;
+	line-height: 12px!important;
+	max-height: none!important;
+	max-width: none!important;
+	opacity: 1!important;
+	overflow: visible!important;
+	color: #0D0D0D!important;
+}
+table, .text {
+	font: 16px/1.5 Arial, Verdana, sans-serif;
+	color: #0D0D0D;
+}
+a {
+	text-decoration: underline;
+	color: #0D0D0D;
+}
+.headline {
+	font-size: 21px;
+	line-height: 1.2;
+	font-weight: bold;
+	padding: 0 0 35px;
+	border-width: 0;
+}
+.headline2 {
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: bold;
+	padding: 0 0 20px;
+	border-width: 0;
+}
+.headline3 {
+	font-size: 21px;
+	line-height: 1.2;
+	font-weight: bold;
+	color: #0D0D0D;
+	padding: 0 0 30px;
+	border-width: 0;
+	
+}
+.headline4 {
+	font-size: 21px;
+	line-height: 1.2;
+	font-weight: bold;
+	color: #0D0D0D;
+	
+}
+.bodytext2 {
+	font-size: 14px;
+	line-height: 1.2;
+	font-weight: normal;
+	padding: 0 0 5px;
+	border-width: 0;
+}
+.bodytext3 {
+	padding: 0 0 25px;
+	border-width: 0;
+}
+.bodytext4 {
+	font-weight: bold;
+}
+.listtext {
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: bold;
+}
+.listlink {
+	font-size: 14px;
+	line-height: 1.2;
+	font-weight: normal;
+	color: #333f48;
+	text-decoration: underline;
+}
+.footertext {
+	font-size: 14px;
+	line-height: 1.2;
+	color: #666666;
+}
+.footertext2 {
+	font-size: 13px;
+	line-height: 1.2;
+	color: #666f76;
+}
+.one_col {
+	width: 600px;
+}
+.two_col {
+	width: 256px;
+}
+.three_col {
+	width: 170px;
+}
+.webv {
+	padding: 15px 0;
+	border-width: 0;
+}
+.p_a {
+	padding: 20px;
+	border-width: 0;
+}
+.p_t {
+	padding: 20px 0 0;
+	border-width: 0;
+}
+.p_lr {
+	padding: 0 30px;
+	border-width: 0;
+}
+.p_lrb {
+	padding: 0 30px 35px;
+	border-width: 0;
+}
+.p_b {
+	padding: 0 0 35px;
+	border-width: 0;
+}
+.p_img {
+	padding: 0 0 25px;
+	border-width: 0;
+}
+.p_headerlogo {
+	padding: 30px 0 20px 30px;
+	border-width: 0;
+}
+.p_lrblist {
+	padding: 0 30px 15px;
+	border-width: 0;
+}
+.buttonround {
+	border-radius: 3px;
+}
+.link {
+	font-size: 14px;
+}
+.lh_f {
+	line-height: normal;
+	font-size: 1px;
+}
+</style>
+<style type="text/css">
+@media screen and (max-width: 600px) {
+.one_col, .two_col, .three_col {
+	width: 100%!important;
+}
+.rsd, td.rsd img, th.rsd img, div.rsd img, div.rsd img {
+	width: 100%!important;
+	height: auto!important;
+}
+.rsd47 {
+	width: 47%!important;
+	height: auto!important;
+}
+.nomob {
+	display: none!important;
+}
+.db {
+	display: block!important;
+	width: auto!important;
+}
+.webv {
+	padding: 10px 20px !important;
+}
+.p_n {
+	padding: 0!important;
+}
+.p_a {
+	padding: 20px!important;
+}
+.p_t {
+	padding: 20px 0 0!important;
+}
+.p_lr {
+	padding: 0 20px!important;
+}
+.p_b {
+	padding: 0 0 20px!important;
+}
+.p_lrb {
+	padding: 0 20px 20px!important;
+}
+.p_img {
+	padding: 0 0 15px!important;
+}
+.p_headerlogo {
+	padding: 15px 20px 15px;
+	border-width: 0;
+}
+.p_lrblist {
+	padding: 0 20px 0;
+	border-width: 0;
+}
+.a_l {
+	text-align: left!important;
+}
+.a_c {
+	text-align: center!important;
+}
+.a_r {
+	text-align: right!important;
+}
+.btnlink {
+	border-radius: 5px!important;
+	display: block!important;
+	padding: 10px 20px!important;
+	box-sizing: border-box!important;
+}
+.btn-radius {
+	-webkit-border-radius: 10px!important;
+	-moz-border-radius: 10px!important;
+	border-radius: 10px!important;
+}
+}
+</style>
+<style type="text/css">
+@media screen and (max-width: 600px) {
+ @-ms-viewport {
+width:320px;
+}
+}
+</style>
+<!--[if gte mso 9]>
+<style type="text/css">
+	body, table {
+		mso-line-height-rule:exactly;
+		line-height:130%;
+	}
+	td.rsd, th.rsd, div.rsd {
+		line-height:normal;
+	}
+	table, .text {
+	font-family: 'Trebuchet ms', Arial, sans-serif;
+	color: #333f48;
+}
+</style>
+<![endif]-->
+</head>
+<body style="padding:0; margin:0; -webkit-text-size-adjust:none; width:100%;" bgcolor="#ffffff" class="text"><div style="background-color:#ffffff;">
+<table bgcolor="#ffffff" width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr>
+    <th align="center" style="mso-line-height-rule:exactly;"> 
+  
+      
+      
+      <div style="font-family:Arial, Verdana, sans-serif;display:none;font-size:1px;color: #000000;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden; mso-hide: all;" class="preheader">
+        <span style="">Plus, a trip around the world to some of Schneider Electric’s international offices.</span>
+        <div style="font-size:0; line-height:0;"><table border="0" cellpadding="0" cellspacing="0" align="center"><tr><td height="1" width="1" style="line-height:1px; font-size:1px;"><img src="http://tr.anpdm.com/track?t=v&amp;mid=20904855&amp;uid=1103994070&amp;type=open" width="1" height="1" style="display:block;"></td></tr></table></div>
+      </div>
+      
+       
+
+ 
+      
+      
+      <table border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff" class="one_col">
+        <tr>
+          <th class="p_headerlogo"><div id="align-wrapper" style="text-align:left;"><a class="notEditable" href="http://tr.anpdm.com/track?t=c&amp;mid=20904855&amp;uid=1103994070&amp;&amp;&amp;http%3A%2F%2Fwww.studentcompetitions.com%3Futm_medium%3Demail%26utm_source%3Dapsis-anp-3">
+<img src="http://customers.anpdm.com/sqore/1704_sc_cus/header_logo.png" width="158" align="left" link="http://www.studentcompetitions.com" style="" title="" alt="" border=""></a></div></th>
+        </tr>
+      </table>
+      
+       
+
+ 
+      
+      
+      <table border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" class="one_col">
+        <tr valign="top">
+          <td class="">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr style="line-height:1px;">
+                <td height="1" style="line-height:1px; border-bottom:1px solid #e5e7e8;"><img src="https://static.anpdm.com/shared/images/pixel.gif" alt="" width="1" height="1" style="display:block;"></td>
+              </tr>
+            </table>
+</td>
+        </tr>
+      </table>
+      <table border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff" class="one_col">
+        <tr>
+          <th class="rsd"><div id="align-wrapper" style="text-align:center;"><a class="notEditable" href="http://tr.anpdm.com/track?t=c&amp;mid=20904855&amp;uid=1103994070&amp;&amp;&amp;https%3A%2F%2Fgoo.gl%2FN2Ra4g%3Futm_medium%3Demail%26utm_source%3Dapsis-anp-3">
+<img src="http://img2.anpdm.com/68361/ambassadorprogram.jpg" width="545" height="225" align="center" link="https://goo.gl/N2Ra4g" style="" title="" alt="" border="" data-dynamic-image="false"></a></div></th>
+        </tr>
+      </table>
+      <table border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" class="one_col">
+        <tr valign="top">
+          <td class="p_b">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr style="line-height:1px;">
+                <td height="1" style="line-height:1px; border-top:1px solid #e5e7e8;"><img src="https://static.anpdm.com/shared/images/pixel.gif" alt="" width="1" height="1" style="display:block;"></td>
+              </tr>
+            </table>
+</td>
+        </tr>
+      </table>
+      
+       
+
+  
+      
+      
+      <table border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" class="one_col">
+        <tr valign="top">
+          <th align="left" class="p_lrb"> <div class="headline">
+              <span style="">Hi Harsh,</span>
+            </div>
+            <div class="bodytext">
+              <span style="">Have you heard about Go Green in the City? It's the ultimate global student competition in sustainable cities. This year, 
+<b>the finals will be held in the USA!</b><br>
+<br>
+Schneider Electric, the global leader in energy management and automation, is inviting you to join the competition for a chance to 
+<b>win a job offer with them! Plus, a trip around the world to some of Schneider Electric’s international offices.<br>
+</b><br>
+If you’re a Business or an Engineering student over 18 years old, at least in the second year of your Bachelor’s or are already studying for your Master’s - the opportunity of a lifetime awaits. 
+<br>
+</span>
+            </div>
+          </th>
+        </tr>
+      </table>
+      <table border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" class="one_col">
+        <tr valign="top">
+          <th align="left" class="p_lrb"><table align="left" border="0" cellpadding="0" cellspacing="0" bgcolor="#0D0D0D" class="buttonround rsd">
+              <tr>
+                <th style="padding:10px 20px; line-height:normal; vertical-align:middle;" align="center" valign="middle" class="p_n"><div style="color:#ffffff!important;">
+                    <a href="http://tr.anpdm.com/track?t=c&amp;mid=20904855&amp;uid=1103994070&amp;&amp;&amp;https%3A%2F%2Ftc2018.gogreeninthecity.com%2F%3Futm_medium%3Demail%26utm_source%3Dapsis-anp-3%23sign-up" name="" style="color:rgb(255, 255, 255); line-height:normal; text-decoration:none; font-weight:bold;" class="btnlink" data-original-color="">Sign up now!</a>
+                  </div></th>
+              </tr>
+            </table>
+          </th>
+        </tr>
+      </table>
+      
+       
+
+      
+  
+      
+      
+      <table border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" class="one_col">
+        <tr valign="top">
+          <td class="p_b">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr style="line-height:1px;">
+                <td height="1" style="line-height:1px; border-top:1px solid #cccccc;"><img src="https://static.anpdm.com/shared/images/pixel.gif" alt="" width="1" height="1" style="display:block;"></td>
+              </tr>
+            </table>
+</td>
+        </tr>
+      </table>
+      
+       
+
+  
+      
+      
+      <table border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" class="one_col">
+        <tr valign="top">
+          <th align="center" style="vertical-align:middle" class="p_lrb"> <table border="0" cellpadding="0" cellspacing="0" align="center">
+              <tr valign="top">
+                <th style="padding:5px 0 40px;" align="center"> <div class="footertext2">
+                    <span style="">At Studentcompetitions.com, you compete for cash prizes, scholarships, internships, traineeships, jobs and much more. Universities and employers partner with Studentcompetitions.com to find skilled candidates like you. </span>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th align="center" style="padding:0 0 13px; vertical-align: middle"><img src="http://customers.anpdm.com/sqore/1704_sc_cus/footer_logo.png" width="90" align="center" link="" style="" title="" alt="" border=""></th>
+              </tr>
+              <tr>
+                <th align="center" style="padding:0 0 25px; vertical-align: middle"> <div class="footertext">
+                    <span style="">Studentcompetitions.com (a part of Sqore)<br>
+Brannkyrkagatan 14a <br>
+118 20 Stockholm, Sweden </span>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th align="center" style="vertical-align: middle"> <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                      <th align="center" style="padding:0 0 25px; vertical-align: middle"> <font class="footertext2" style="color:#666f76 !important; font-size: 13px;">
+                        <a href="http://www.anpdm.com/oa/20904855/42445C44754446504B794640504371" name="" style="color:#666f76; text-decoration:underline; font-size: 13px;">Unsubscribe</a>
+                        </font><font class="footertext2">
+                        <span style="font-size: 13px; color:#666f76;">(please don't go)&nbsp;&nbsp;|&nbsp;&nbsp; </span>
+                        </font> <font class="footertext2" style="color:#666f76 !important; text-decoration:underline; font-size: 13px;">
+                        <a href="http://www.anpdm.com/newsletterweb/45415B427540465F4072434659/42445C44754446504B794640504371" name="" style="color:#666f76; text-decoration:underline; font-size: 13px;">View web version </a>
+                        </font> </th>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </table>
+          </th>
+        </tr>
+      </table>
+      
+       
+      
+
+ 
+      
+      
+      <table border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" class="one_col">
+        <tr valign="top">
+          <td class="">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr style="line-height:1px;">
+                <td height="1" style="line-height:1px; border-bottom:1px solid #e5e7e8;"><img src="https://static.anpdm.com/shared/images/pixel.gif" alt="" width="1" height="1" style="display:block;"></td>
+              </tr>
+            </table>
+</td>
+        </tr>
+      </table>
+      <table border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" class="one_col">
+        <tr valign="top">
+          <th><table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#eeeeee">
+              <tr>
+                <th valign="top" align="left" style="padding:35px 30px;"> <div class="bodytext">
+                    <span style="">Forgot your password? <a href="http://tr.anpdm.com/track?t=c&amp;mid=20904855&amp;uid=1103994070&amp;&amp;&amp;https%3A%2F%2Flogin.sqore.com%2Fpassword_reset%2Fnew%3Futm_medium%3Demail%26utm_source%3Dapsis-anp-3">Click here to get a new one.</a><br>
+<br>
+Have a question? Email us on <a href="mailto:info@studentcompetitions.com">info@studentcompetitions.com</a></span>
+                  </div>
+                </th>
+              </tr>
+            </table>
+</th>
+        </tr>
+      </table>
+      <table border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" class="one_col">
+        <tr valign="top">
+          <td class="p_b">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr style="line-height:1px;">
+                <td height="1" style="line-height:1px; border-top:1px solid #e5e7e8;"><img src="https://static.anpdm.com/shared/images/pixel.gif" alt="" width="1" height="1" style="display:block;"></td>
+              </tr>
+            </table>
+</td>
+        </tr>
+      </table>
+      
+       
+
+      
+      
+       
+     
+    
+     
+      
+       
+      
+       
+       </th>
+  </tr>
+</table>
+<div style="clear:both;"></div>
+</div></body>
+</html>
+------BCA33A6C43704D73AD26CC708EC895F0--
+

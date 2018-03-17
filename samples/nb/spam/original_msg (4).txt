@@ -1,0 +1,139 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp536141ive;
+        Fri, 16 Mar 2018 01:21:40 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELtqeY/JLoHEUKLBhEZ2Z2HI9aZYvx5+Ccja0cfp/EAA56LPeV7xKYPfzjAGYnXhvgOqABst
+X-Received: by 10.55.103.15 with SMTP id b15mr1334016qkc.58.1521188500728;
+        Fri, 16 Mar 2018 01:21:40 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521188500; cv=none;
+        d=google.com; s=arc-20160816;
+        b=0tM/jGOHFEA6kJYJAPH0tMcV6bnJNzfq7ksvym7zdFmSzW7oCngBxjz6lZHk0NOm9b
+         TfrFoW1nKP9odCMmJ9vIG7XscHfAihIpHWGH6RL+5l/3cdfanEnR1OsXtraIgz+XcHLZ
+         R/tDurF68jxzjMcXtcFYx9ryt+IQfHB9l7zS3SPcZczzsMdpw99e39+buB+tZCl0MPiB
+         +arFG2cSENLrffjQPFec2QDaijEI378oHSZfCDNyu1564CA+3U2/R5KzVh+olFzCfMBn
+         As/H/7UHu6Y/dl/aZdmB7E4FMWPhQp9pzWThi3a9NlfzP7tC6X5mA1AaPZvErkFPB8VS
+         OsDw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:mime-version:feedback-id:list-unsubscribe:message-id:subject
+         :reply-to:from:to:domainkey-signature:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=ycALnOUJ5WRGdkr3fKMV9bD6/ZDeHbag6LXCvHZLRxc=;
+        b=fsHM++dZPRyH+xbDZHDGcg6rshltGtWEs7R7OK7mJAx9DjBl2CLayLVYIJv5rGkyYh
+         iWeRajx4ORAjnHOqIcHt9tPeJVS4n48xIACFmgxaT61+aBrOmwzCCENgjD/iE5pVfhfh
+         jDTQeenZkRHp07JaY5scQgjmZR505D4vI5H/PUEaCS8I+q027in/920URbcRJQV6mQRD
+         hHjdpswn40XG8tR0LLPBvktEnCFrZOJ1ToDL/ZD/N0a+n72xpTaQyQ//jbn7NrDmXj61
+         8ae/C0BrHEIC8InR7QERiMIeZ601F2lj6m4KV5dFcTHzSFm3saLwU7bEplqDa5Dd9p/j
+         5+ZQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@cultural-heritage-india.com header.s=emm header.b=vQyTIPnr;
+       dkim=pass header.i=@cultural-heritage-india.com header.s=emm header.b=S5BjCgNB;
+       spf=pass (google.com: domain of campaign-culturalheritageindia-22138-905-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com designates 103.52.181.128 as permitted sender) smtp.mailfrom=campaign-culturalheritageindia-22138-905-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com
+Return-Path: <campaign-culturalheritageindia-22138-905-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com>
+Received: from trans128.mailxy.com (trans128.mailxy.com. [103.52.181.128])
+        by mx.google.com with ESMTPS id s2si504066qkc.121.2018.03.16.01.21.40
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 16 Mar 2018 01:21:40 -0700 (PDT)
+Received-SPF: pass (google.com: domain of campaign-culturalheritageindia-22138-905-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com designates 103.52.181.128 as permitted sender) client-ip=103.52.181.128;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cultural-heritage-india.com header.s=emm header.b=vQyTIPnr;
+       dkim=pass header.i=@cultural-heritage-india.com header.s=emm header.b=S5BjCgNB;
+       spf=pass (google.com: domain of campaign-culturalheritageindia-22138-905-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com designates 103.52.181.128 as permitted sender) smtp.mailfrom=campaign-culturalheritageindia-22138-905-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=emm; d=cultural-heritage-india.com;
+ h=To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Date;
+ bh=Lj2nWw3X8mFV1/Th4UR+WbRp6QA=;
+ b=vQyTIPnro/ISKfnF0ujlpO8aOhv+UKHWgIZhtb5adqg4ass/WBXj2R5iGU67Ctj4ZjhSHu8Gi6L0
+   4Qx7ZEgJp18Zi2L/HoTPklw4wQalxTd2c1YbyXnyp/3XHHDePxg0ipZzAJIXrS/oMXnXnhsQRSrF
+   6IW7GPnnxGjgeoLWp78=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=emm; d=cultural-heritage-india.com;
+ h=To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Date; i=@email.cultural-heritage-india.com;
+ bh=Lj2nWw3X8mFV1/Th4UR+WbRp6QA=;
+ b=S5BjCgNB0N4g6yPzEHRbNQlQGVu+1UAeNp9T4yDQdoBlnXSoQ4bleuaHw9s3QVzz1VTaoAgw+9m9
+   ob5Hcsq6tXCS022PtLEFozQbzYoragA2LxWMUO2tm+YatwIvG5/EKGJ0OmlI5hFM/Y71QttrLZwv
+   i9F8jrPSVWx+P45j+e0=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=emm; d=cultural-heritage-india.com;
+ b=bB6e6JIUDYQBx4mK3jTnGvLr3qHiYB/JaAAgeHF4WI7Qe6KMYZ/sa34MSxnmnn7KQmbuAFRJpODx
+   u0KJe+GSTck7hoagOT/jH860/T1U5RLvTm+op2GU+g/TT88TC2IEcyRIuBMaH+7Y5FSlQkz6hH6O
+   enabmtF4TfLJ15vXw44=;
+Received: by trans128.mailxy.com id hldv9q25ock2 for <harshmathur.1990@gmail.com>; Fri, 16 Mar 2018 13:07:29 +0530 (envelope-from <campaign-culturalheritageindia-22138-905-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com>)
+Received: from localhost.localdomain (rg2.netcore.co.in [202.162.247.48])
+	by emm20-2nd.iaires.com (Postfix) with ESMTP id 6CAF217010F
+	for <harshmathur.1990@gmail.com>; Fri, 16 Mar 2018 13:07:21 +0530 (IST)
+To: harshmathur.1990@gmail.com
+From: IFFCO TOKIO <info@cultural-heritage-india.com>
+Reply-To: IFFCO TOKIO <info@cultural-heritage-india.com>
+Subject: A Wise Plan For Any Family Size.
+Message-ID: <24899384465819491@email.cultural-heritage-india.com>
+List-Unsubscribe: <mailto:culturalheritageindia-22138-905-5819491-756584b990def989c205470fcbec18c3@usub.cultural-heritage-india.com?subject=Unsubscribe>, <http://lk.trk.cultural-heritage-india.com/culturalheritageindia/?p=smunsub&mid=905&uid=756584b990def989c205470fcbec18c3>
+Feedback-ID: 905:22138:20180316130700:nczc
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_d51e48e1308fbe1765a6b07a599a4723"
+Date: Fri, 16 Mar 2018 13:51:49 +0530
+
+
+
+
+--b1_d51e48e1308fbe1765a6b07a599a4723
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+Iffco Tokio 
+
+ IFFCO Tokio General Insurance Company Limited. 
+ Corporate
+Address - 
+ IFFCO Tower, Plot No.3, Sector-29, Gurgaon ,Haryana -122001. 
+ Insurance is the subject matter of the solicitation. Purchase of
+IFFCO Tokio General Insurance Company Limited products is purely on
+voluntary basis. For more details on risk factors, terms and
+conditions please read sales brochure carefully before concluding a
+sale. 
+ IRDAI Regn. No.: 106; 
+ CIN: U74899DL2000PLC107621; 
+ UAN: ITGI/17-18/INSADVT/DIGITAL/HEALTH-04 
+ Toll Free Number: 1800 103 5499, Email Id: support@iffcotokio.co.in
+<http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=YEtRCFIFU1AABERTBgEGBQEJAE0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138>
+ 
+ Fax Number - 0124 - 2577923 
+ For more details on terms and conditions please visit at
+www.iffcotokio.co.in <http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=YEtRCFIFU1AABURTBgEGBQEJAE0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138>
+
+ Disclaimer: We take privacy seriously. Filling this form confirms
+that you agree to
+receive a sales or service call from our employees/telecallers based
+on information you have submitted here.
+
+ Privacy Policy: Your personal information (Name, Email, Phone)
+submitted will not be sold, shared or rented to others. We use this
+information to send updates about our company and products and contact
+you if requested or find it necessary. You may opt out of receiving
+our communication by clicking on the unsubscribed link mention in
+mail.
+
+ Copyright � 2017 Iffco Tokio | All Rights Reserved.
+
+--Click Here to unsubscribe from this newsletter.
+
+
+--b1_d51e48e1308fbe1765a6b07a599a4723
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<head>
+<meta content="text/html;charset=UTF-8" http-equiv="Content-Type"><title></title>
+</head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><body> <meta http-equiv="content-type" content="text/html; charset=utf-8"> <title>Iffco Tokio</title> <a href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1AABERTBgEGBQEJAE0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  target="_blank" style="text-decoration:none;color:#333333"> <table width="700" border="0" cellspacing="0" cellpadding="0" align="center"> <tr> <td> <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border:1px solid
+#c7c6c6;border-collapse:collapse;"> <tr> <td> <img
+src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/header.jpg" alt="" style="display:block; border:none;"> </td> </tr> <tr> <td> <img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/banner1.jpg" alt="" style="display:block; border:none;"> </td> </tr> <tr> <td> <img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/banner2.jpg" alt="" style="display:block; border:none;"> </td> </tr> <tr> <td> <img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/the_policy_covers.jpg" alt="" style="display:block; border:none;"> </td> </tr> <tr> <td> <img
+src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/circle.jpg" alt="" style="display:block; border:none;"> </td> </tr> <tr> <td align="center" style="background:#028fca;padding:17px 0 17px 15px;margin-left:5px;"> <img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/know_more.png" alt="" style="display:inline-block; border:none;"> </td> </tr> <tr> <td style="background:#e9e9e9;padding:20px 35px;"> <p style="padding:0;margin:10px 0;font-family:Arial, Helvetica, sans-serif;font-size:13px;line-height:1.7;color:#373737;"> IFFCO Tokio General Insurance Company Limited. <br> <strong>Corporate
+Address -</strong> <br> IFFCO Tower, Plot No.3, Sector-29, Gurgaon ,Haryana -122001. <br> Insurance is the subject matter of the solicitation. Purchase of IFFCO Tokio General Insurance Company Limited products is purely on voluntary basis. For more details on risk factors, terms and conditions please read sales brochure carefully before concluding a sale. <br> IRDAI Regn. No.: 106; <br> <strong>CIN:</strong> U74899DL2000PLC107621; <br> <strong>UAN:</strong> ITGI/17-18/INSADVT/DIGITAL/HEALTH-04 <br> <strong>Toll Free Number:</strong> 1800 103 5499, Email Id: <a
+href="mailto:support@iffcotokio.co.in" target="_blank" style="text-decoration:none;color:#373737;">support@iffcotokio.co.in</a> <br> <strong>Fax Number -</strong> 0124 - 2577923 <br> For more details on terms and conditions please visit at <a href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1AABURTBgEGBQEJAE0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  target="_blank" style="text-decoration:none;color:#373737;">www.iffcotokio.co.in</a> </p> <p style="padding:10px 0;margin:10px 0;font-family:Arial, Helvetica,
+sans-serif;font-size:13px;color:#373737;line-height:1.7;"><strong>Disclaimer:</strong> We take privacy seriously. Filling this form confirms that you agree to
+receive a sales or service call from our employees/telecallers based on information you have submitted here.</p> <p style="padding:0;margin:10px 0;font-family:Arial, Helvetica, sans-serif;font-size:13px;color:#373737;line-height:1.7;"><strong>Privacy Policy:</strong> Your personal information (Name, Email, Phone) submitted will not be sold, shared or rented to others. We use this information to send updates about our company and products and contact you if requested or find it necessary. You may opt out of receiving our communication by clicking on the unsubscribed link mention in mail.</p>
+</td> </tr> <tr> <td> <p style="padding:15px 0;margin:0;font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#373737;line-height:1.7;text-align:center;">Copyright &#2013266089; 2017 Iffco Tokio | All Rights Reserved.</p> </td> </tr> </table> </td> </tr> </table> </a><br/><div><p>--<br><a href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1EOBERTBgEGBQEJAE0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  >Click Here</a> to unsubscribe from this newsletter.<br><br></div><img border="0"
+src="http://lk.trk.cultural-heritage-india.com/ptrack?g=1&m=905&eu=BAdRDVoEWFYBAA==&u=756584b990def989c205470fcbec18c3&client=22138&c=0000" ></body></html>
+
+
+
+--b1_d51e48e1308fbe1765a6b07a599a4723--
+

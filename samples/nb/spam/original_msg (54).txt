@@ -1,0 +1,108 @@
+Delivered-To: harshmathur1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp1325956ive;
+        Wed, 14 Mar 2018 01:54:07 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELuyzmdlrVmYC47eBmIwXDfMIhjtwHnQQv3VDrH/vWSLD8VnMQxpRKWc7S9mmSwUbvBTtLvZ
+X-Received: by 2002:a24:b208:: with SMTP id u8-v6mr1059565ite.127.1521017647518;
+        Wed, 14 Mar 2018 01:54:07 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521017647; cv=none;
+        d=google.com; s=arc-20160816;
+        b=AhaqWbIoNmP37sm3t2YrYCAU3jPY5h//omp8BZf5PGbcgv/uKNXGaxZwqlWOI2utjC
+         xlDn9GTKEuND8DQ9eahPaDdmWpX2xxl6QffKJ3jmVeO3JcC154dIzlu2/aWocwsWaEey
+         ABt5P4TEIelCcLzka4hzSI/ybJXfh1icOVbPok0xZn0XHBMHJlc4TLkHkTN2LMpE8uum
+         Mdu5n3xd29bUHe+O+RObia2T0GvzqQ8Gczykjflefc72zoCEPVU/pQC8wJsv9e3S/kvh
+         GJSZCV4s8D4768vuwS4rAIDkUInqAjU2JLCOMva/sYglBnWuAiUKWEnzUv1ChLtxa9H6
+         FbJA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:message-id:list-unsubscribe:date:to:from
+         :subject:dkim-signature:arc-authentication-results;
+        bh=DLQ4L+jQ1H3dYi6ZeWI4jriff+eH/T2QaUP689jygqs=;
+        b=ShtlfncOLHLOXe/RNKREhAhm3DXfjpGzRgxrh13ZbfWIClRGlKg1eosoPp8tc0KV6h
+         zVQ7FTu/IQi1bFzmp3BpM4/EXnX1c0Be4n6k/vYjtr6tvGt/TJ/yrZDky3dUjd8kyKyj
+         F2qVT4MXcqbItb0sgvasV/9taJx6PYFp2RxpX7j0IfWJZRxs9VNsxAd27K6lxYs4QSxY
+         O+VDAcKdFkmWOdyQSqxFGiMO0inJrVifjVwJevGDOQt0IP7GeyvlhSNaMtfueXVqeZ+Z
+         LOSInP8mmdR57jLQBwHXSuyH69xiFtrHDHNnLXeEjRWikxUK3Fz4vPszQ0AEwnbpBD1e
+         EX0A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@incognitomails.com header.s=default3 header.b=UVqLplSl;
+       spf=pass (google.com: domain of return-a213-27881-27882-7b3285b8=43126827=8@transmlkt.com designates 103.96.100.50 as permitted sender) smtp.mailfrom=return-a213-27881-27882-7b3285b8=43126827=8@transmlkt.com
+Return-Path: <return-a213-27881-27882-7b3285b8=43126827=8@transmlkt.com>
+Received: from smtp2-19.pikup.in (smtp2-19.pikup.in. [103.96.100.50])
+        by mx.google.com with ESMTPS id 127si1381260ioy.8.2018.03.14.01.54.07
+        for <harshmathur1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 14 Mar 2018 01:54:07 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return-a213-27881-27882-7b3285b8=43126827=8@transmlkt.com designates 103.96.100.50 as permitted sender) client-ip=103.96.100.50;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@incognitomails.com header.s=default3 header.b=UVqLplSl;
+       spf=pass (google.com: domain of return-a213-27881-27882-7b3285b8=43126827=8@transmlkt.com designates 103.96.100.50 as permitted sender) smtp.mailfrom=return-a213-27881-27882-7b3285b8=43126827=8@transmlkt.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=incognitomails.com; s=default3;
+ t=1521017647; bh=dvTEuGj2qrK8Xy+oQ9xzP4bsSjU=;
+ h=Subject:From:To:Date:List-Unsubscribe:X-CampaignID:Message-ID:
+  X-Mailer-Info:Content-Type:Content-Transfer-Encoding;
+ b=UVqLplSleiOJYLTtXRH+vxTSTbEC0PJFKPUkRd9rGs2gLCwahRqHfd0RRw9Xf2xiE
+  sUPNU/W3KmODs/J8YOVd09au/EIpqbps2h1aKtQVLWN0VnJf7udGrMaGIaxXi1u1yu
+  5ARf3ZrFRO35OCcElYrlzCa6kZcfZ26pSoc/mfjg=
+Subject: Borrow When You Need And Pre-Pay When You Can!
+From: "Bajaj Finserv" <info@incognitomails.com>
+To: harshmathur1990@gmail.com
+Date: 14 Mar 2018 08:54:07 -0000
+List-Unsubscribe: <http://m.transmlkt.com/ga/unsubscribe/2-43126827-213-14413-27882-360e0baeac154d4-6828f70376?confirmed=1>,
+ <mailto:return-a213-27881-27882-7b3285b8=43126827=8u@transmlkt.com>
+X-CampaignID: s4:27881-3f271a2b48d48395
+Message-ID: <mid-3987ea188b5885dd151e64e7d7bb0968-16@transmlkt.com>
+X-Mailer-Info: 8.QYyEzM.IzN4gTM.AahJ3co1WY0hWdyFTO5ADQn1WYpxmLj9Wb.QzMxIjN4IzN.IzN4gjM
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html>
+<html>
+<head>
+<meta charset=3D"utf-8">
+<title>Bajaj Finserv-PL</title>
+<style>
+	/* Basic Fluid Image Pattern CSS */
+    @media only screen and (max-width: 599px) {
+        img.pattern {
+            max-width: 100%;
+            height: auto !important;
+        }
+    }
+</style>
+</head>
+
+<body>
+<div style=3D"display: none; font-size: 1px; color: #fefefe; line-height: 1=
+px; font-family: Open Sans,Helvetica,Arial,sans-serif; max-height: 0px; max=
+-width: 0px; overflow: hidden;">with More Benefits</div>
+<table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+  <tbody>
+    <tr>
+      <td>
+      <a href=3D"http://m.transmlkt.com/ga/click/2-43126827-213-14413-27882=
+-26361-223b05c33b-6828f70376" target=3D"_blank"><img class=3D"pattern" src=
+=3D"http://media.adcanopus.com/brand/files/adcanopus/1085/bajajinhousefeb.p=
+ng" alt=3D"" style=3D"border: 0px solid #ccc;" width=3D"100%" /></a>
+      </td>
+    </tr>
+=20=20=20
+  </tbody>
+</table>
+
+
+
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" bgcolor=3D"#fff" style=3D"max-width:600px;">
+=20
+                    <tr>
+<td align=3D"center" style=3D"color:#606060;font-family:Helvetica,Arial,san=
+s-serif;font-size:11px;line-height:22px;padding:0">
+            If you don't want to receive these emails <a href=3D"http://m.t=
+ransmlkt.com/ga/unsubscribe/2-43126827-213-14413-27882-360e0baeac154d4-6828=
+f70376" style=3D"color:#15c;text-decoration:none" target=3D"_blank" >unsubs=
+cribe</a>
+          </td>
+          </tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+ </table><img src=3D"http://m.transmlkt.com/ga/open/2-43126827-213-14413-27=
+882-6828f70376" height=3D"2" width=3D"3" alt=3D""></body>
+</html>

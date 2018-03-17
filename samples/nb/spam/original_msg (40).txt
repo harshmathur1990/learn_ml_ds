@@ -1,0 +1,117 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp972455ive;
+        Wed, 14 Mar 2018 21:56:13 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELvcXlIG4TpoxoqEGlfWeqcSyS6VUdEpGQpEPO/fVSbllgfKyFRvTfs4i2mS4vYcvm7spKFr
+X-Received: by 10.107.176.16 with SMTP id z16mr7872791ioe.298.1521089773229;
+        Wed, 14 Mar 2018 21:56:13 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521089773; cv=none;
+        d=google.com; s=arc-20160816;
+        b=M1JAK9dtLlHYysWqAexRCHEYIbNOha8uVGtCpsFcQMvhvDPmfxj0c+ITT4qY/SsTFO
+         QAuTB5zDEFXbzR146dBbPyA00IiY4m9D1yO94S9M6XUe+F7vHWbcM1k/rfqWxms9iUAW
+         se88OoNTOhpyCA2ywJAaFWcNROqm6VWH5Ac/jePqXDlRcIXYlq77rVJ+3AoQf+gecooP
+         CsJcvbx2SEqLlo26Oi/bxUfdARp01k1OZgZH5PjB2wk2rv331mMEgNuTdBFiG7q6sqRL
+         iLxJ7oMcq7yJ+prsDBDBKz5UEt510oBGyxINyCCcGMA9K2X25IPw49ehzakYnvPElkIS
+         cD+A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:message-id:list-unsubscribe:date:to:from
+         :subject:dkim-signature:arc-authentication-results;
+        bh=hzrsbYVxHv6f3oYHltAwpzh6flxL1DzH5vQBTVyZrNw=;
+        b=AnGMjm4G03Z8rUcp+K+Fyx/cUg5MnceKDqBAePCyrB+vpW7LxTXZUasu3JizMf6V4c
+         ge6fVewSDy1eo1mKU4uZukkakfLWoQo3zAUgUkvKsN3bkpZRSRSir/uUzRfaXT9XeOTG
+         gEg8KNV0yt6HK7osMHdFgaC3OVHnjL4EoXx31xbWH3OsILg5Q1IZJDw31btiVpzuVuxj
+         S7MgoBx5m6fAJcPQAHHLEbk3RqJXbLTEljliJi63sxf0LQXsDyhfhhGqLCYwrfqKGR1b
+         MIZGuE3EZNMFjcDcjyVSBGWd4P8VRC+z7zqWiy7MPl822DpencUAoC92GQjjY5UF4Con
+         9Nkw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@htmailers.com header.s=default5 header.b=Gw8AH0IC;
+       spf=pass (google.com: domain of return-a136-10223-10224-fad42039=27582375=8@htmailers.com designates 103.96.100.7 as permitted sender) smtp.mailfrom=return-a136-10223-10224-fad42039=27582375=8@htmailers.com
+Return-Path: <return-a136-10223-10224-fad42039=27582375=8@htmailers.com>
+Received: from smtp1-6.injectin.com (smtp1-6.injectin.com. [103.96.100.7])
+        by mx.google.com with ESMTPS id m132si2660480iom.237.2018.03.14.21.56.13
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 14 Mar 2018 21:56:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return-a136-10223-10224-fad42039=27582375=8@htmailers.com designates 103.96.100.7 as permitted sender) client-ip=103.96.100.7;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@htmailers.com header.s=default5 header.b=Gw8AH0IC;
+       spf=pass (google.com: domain of return-a136-10223-10224-fad42039=27582375=8@htmailers.com designates 103.96.100.7 as permitted sender) smtp.mailfrom=return-a136-10223-10224-fad42039=27582375=8@htmailers.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=htmailers.com; s=default5;
+ t=1521088994; bh=FQ0THl1eRI1I83SA80lNGXbZjxQ=;
+ h=Subject:From:To:Date:List-Unsubscribe:X-CampaignID:Message-ID:
+  X-Mailer-Info:Content-Type:Content-Transfer-Encoding;
+ b=Gw8AH0ICcFZVL1pQOEBBFnEhEEHdqxs0pN4kZqA1yZDMYTaCrdmu2Yimb30VbceuR
+  n9TL1Naov0H5uPdeXtEpJBeC2vipFKlmbv9COFF/3RUHPBEv+qrR8gXEFobdTTaR3z
+  +HTeqXViXgEyYANeMjNJAKTsvZdn9zuLJSXPVv20=
+Subject: Take care of your Family When You are Not There.
+From: "Life Insurance Plans" <info@htmailers.com>
+To: harshmathur.1990@gmail.com
+Date: 15 Mar 2018 04:43:14 -0000
+List-Unsubscribe: <http://mail.htmailers.com/ga/unsubscribe/2-27582375-136-5130-10224-02928325756fcd7-569ec1e88e?confirmed=1>,
+ <mailto:return-a136-10223-10224-fad42039=27582375=8u@htmailers.com>
+X-CampaignID: s4:10223-7753ea4f57244f1c
+Message-ID: <mid-66e3719448bf84713041fe33edd79805-4@htmailers.com>
+X-Mailer-Info: 8.QYxMjN.EDMyIzM.gWYyNHatFGdoVncuETO5ADQn1WYpxmLj9Wb.IzN1gjMzcTN.EDMyIDN
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<title>BB</title>
+</head>
+
+<body style=3D"background-color: #fff"><table align=3D"center" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" bgcolor=3D"#fff" style=
+=3D"max-width:600px;">
+<tbody><tr>
+<td align=3D"center" valign=3D"top" style=3D"font-family:Calibri,Arial,sans=
+-serif;font-size:14px;line-height:16px;color:#4a4a4a">Open our Newsletter i=
+n <a href=3D"http://mail.htmailers.com/ga/webviews/4-27582375-136-5130-5181=
+-10224-9097c491af" style=3D"text-decoration:underline;color:#0000ee">New ta=
+b</a><br></td>
+  </tr>
+ </tbody></table>
+
+<table style=3D"border: 0px solid #ccc;" border=3D"0" width=3D"600" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"center" bgcolor=3D"#fff">
+<tbody>
+<tr>
+<td>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td>
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td><a href=3D"http://mail.htmailers.com/ga/click/2-27582375-136-5130-10224=
+-9114-7d7fc61cf3-569ec1e88e" target=3D"_blank" rel=3D"noopener"> <img style=
+=3D"display: block;" src=3D"https://d19qgyth69wh8s.cloudfront.net/tme3.png"=
+ alt=3D"" width=3D"600" /></a></td>
+</tr>
+
+
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&#160;</p>
+
+
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" bgcolor=3D"#fff" style=3D"max-width:600px;">
+                    <tbody><tr>
+                      <td align=3D"center" valign=3D"top" style=3D"font-fam=
+ily:Calibri,Arial,sans-serif;font-size:14px;line-height:16px;color:#4a4a4a">
+                       Please click here to <a href=3D"http://mail.htmailer=
+s.com/ga/unsubscribe/2-27582375-136-5130-10224-02928325756fcd7-569ec1e88e" =
+style=3D"color: #0000ee; text-decoration:underline" target=3D"_blank">Unsub=
+scribe</a><br><br></td>
+                    </tr>=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20
+ </tbody></table><img src=3D"http://mail.htmailers.com/ga/open/2-27582375-1=
+36-5130-10224-569ec1e88e" height=3D"2" width=3D"3" alt=3D""></body></html>=

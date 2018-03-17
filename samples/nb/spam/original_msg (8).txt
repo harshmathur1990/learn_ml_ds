@@ -1,0 +1,103 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp428641ive;
+        Thu, 15 Mar 2018 22:59:58 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELtKJuJcUsNpwMyi08EoV1KhJedYjdh8xhjHQc84bokg8QKhflJ3A+++WtEUjmGqZ9g+6btz
+X-Received: by 2002:a24:108c:: with SMTP id 134-v6mr850288ity.94.1521179998593;
+        Thu, 15 Mar 2018 22:59:58 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521179998; cv=none;
+        d=google.com; s=arc-20160816;
+        b=hLi2b/PJpO9Mlv2nJSPWkn3oxYssAiCjw6zEYS/0wd+R5/3f7pxuSPInWanTCe7Zue
+         Mow5uvJoPZSxkQATbmbh6YfFs1i8vCNeu5OpGzvOok5ha2hMHAoOQ02MfpGkwc0/SUv2
+         zN53QzTQIAwMngaDS044LrkpwoTNyFP63NhbGkpIRdLZzSbmFhBqm0Mri2gIqI3RwrQn
+         Pz5g7bFbgnHImj64T9aXXQNSxxNQnbkrS/3L3TvzOFREloEB45aYCtwSbQ7KecADG4lp
+         z7a7Jb6OGmefXZBFBQQz1Zfi+3NkKnmRFiNLKKjMwrNDrS4X1Q5cUp7GISvtr8r6qUMp
+         dDyA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:mime-version:feedback-id:list-unsubscribe:message-id:subject
+         :reply-to:from:to:domainkey-signature:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=H3DQ9NPowFowHZv62KxRbGYT7ELlsYroCp09ebSQ1vg=;
+        b=mvFljKQQj0weTGSf+u7ePgLr+bKRPYXIVmp6L/EyCLhURtA6I/2p1xjW5hqpIH+cYo
+         X5HMYwFN1fSkHUuB+StympGtNc9yht0oQgxbvar+aDxFORmiQOs6EANdmjMYV1Nxr671
+         WdrikVvxg0S+5M3f2922yEYGlxDPrflQdoIGBy/W6zzzce0WHg8LziAAyRDbUCr5PdgC
+         k1d+svEpZbCtsDn7GARjQYIfPC4OyruzXrdxApaKKYBkcjQeNbxblmN92famRZqmCPwN
+         dQJ4+hyVfwrbv/DoGNAFUQ4axlEInUwDKqP/yyelYWaEjPRMWdWFrjwNPIeUo5CN0wbj
+         y01g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@cultural-heritage-india.com header.s=emm header.b=lGARSwdF;
+       dkim=pass header.i=@cultural-heritage-india.com header.s=emm header.b=clCDqomz;
+       spf=pass (google.com: domain of campaign-culturalheritageindia-22138-980-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com designates 103.52.181.128 as permitted sender) smtp.mailfrom=campaign-culturalheritageindia-22138-980-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com
+Return-Path: <campaign-culturalheritageindia-22138-980-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com>
+Received: from trans128.mailxy.com (trans128.mailxy.com. [103.52.181.128])
+        by mx.google.com with ESMTPS id w184-v6si3519707itf.128.2018.03.15.22.59.58
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 15 Mar 2018 22:59:58 -0700 (PDT)
+Received-SPF: pass (google.com: domain of campaign-culturalheritageindia-22138-980-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com designates 103.52.181.128 as permitted sender) client-ip=103.52.181.128;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cultural-heritage-india.com header.s=emm header.b=lGARSwdF;
+       dkim=pass header.i=@cultural-heritage-india.com header.s=emm header.b=clCDqomz;
+       spf=pass (google.com: domain of campaign-culturalheritageindia-22138-980-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com designates 103.52.181.128 as permitted sender) smtp.mailfrom=campaign-culturalheritageindia-22138-980-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=emm; d=cultural-heritage-india.com;
+ h=To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Date;
+ bh=r1O4/3D09Mi18JunKa4i420iSKM=;
+ b=lGARSwdFvhTEqYTQ+I9eZZDv06YmYN5b96NRAeg05CX0TACGYQq1MI4bKO0fhig09NgcyboQLXod
+   l/MtJu7LMmbfCGZh5+QQbaoqi8Pyzt/a0zELuOV9LqvhwbBXVgsCjy25V7PmR50ubFHwUaXsZP2w
+   HxknMV399mcxFiYAAVw=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=emm; d=cultural-heritage-india.com;
+ h=To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Date; i=@email.cultural-heritage-india.com;
+ bh=r1O4/3D09Mi18JunKa4i420iSKM=;
+ b=clCDqomzWR2NvQ6zC8+jk41SYK8Y9rIdVCfYXPeVfIUi5txp/lHk0GT/nuelzN8idKYNedW3Gati
+   9d4sa+E1/Mpq8rR0vvTa7G8FeYdUysTtUgIhKZV7Fmh3RbAkGnseuxpsmlYnxam7xO2LjKoakcLz
+   xgyTkO1Q1qOdPPQC9EM=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=emm; d=cultural-heritage-india.com;
+ b=bLy42ZgVwZhd8g+YpJmV0o3HkiXDMVDZnYe/uzS3X81CHCY/i5NHPIbuzzmmW+cdGMkrL8ZgukFU
+   gPSqc5/BLlj+RGDfiM88v8VHc7aU1GqUQQ31SDZFFH3dsAN1nZyRrYCOJWNQAvORfYHEBztgO7FY
+   +Q/WUYDR9lZqngI2E4A=;
+Received: by trans128.mailxy.com id hldemc25ockq for <harshmathur.1990@gmail.com>; Fri, 16 Mar 2018 10:37:44 +0530 (envelope-from <campaign-culturalheritageindia-22138-980-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com>)
+Received: from localhost.localdomain (unknown [202.162.247.97])
+	by app6-2nd.foymail.com (Postfix) with ESMTP id 69DB84481C1
+	for <harshmathur.1990@gmail.com>; Fri, 16 Mar 2018 10:37:35 +0530 (IST)
+To: harshmathur.1990@gmail.com
+From: Volkswagen India <info@cultural-heritage-india.com>
+Reply-To: Volkswagen India <info@cultural-heritage-india.com>
+Subject: =?UTF-8?Q?It=E2=80=99s_time_to_own_a_Sporty_Polo_with_exciting_offers*?=
+Message-ID: <76940365045819491@email.cultural-heritage-india.com>
+List-Unsubscribe: <mailto:culturalheritageindia-22138-980-5819491-756584b990def989c205470fcbec18c3@usub.cultural-heritage-india.com?subject=Unsubscribe>, <http://lk.trk.cultural-heritage-india.com/culturalheritageindia/?p=smunsub&mid=980&uid=756584b990def989c205470fcbec18c3>
+Feedback-ID: 980:22138:20180316102821:nczc
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_9a673a058ac0783af9341f9630dce83c"
+Date: Fri, 16 Mar 2018 11:30:06 +0530
+
+
+
+
+--b1_9a673a058ac0783af9341f9630dce83c
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+Volkswagen 
+
+ <http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=YEtRCFIFU1MLAURTBgEGBQEBBU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138>
+
+--Click Here to unsubscribe from this newsletter.
+
+
+--b1_9a673a058ac0783af9341f9630dce83c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<head>
+<meta content="text/html;charset=UTF-8" http-equiv="Content-Type"><title></title>
+</head>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /> <meta name="apple-mobile-web-app-capable" content="yes" /> <meta name="HandheldFriendly" content="true" /> <meta name="MobileOptimized" content="width" /> <title>Volkswagen</title> <style type="text/css"> body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; padding: 0; *width: 800px; margin: 0
+auto; width: 800px9; } table { border-spacing: 0; } body, #body_style { color: #082b3d; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 1.4; } .img-max { max-width: 100%; width: 100%; } .img-max-02 { width: 100%; max-width: 100%; max-height: 100%; height: 100%; } table.container-table { width: 800px; } table.mdl { width: 80%; } @media screen and (max-width: 600px) { body, table.container-table { width: 100%!important; margin: 0 auto!important; padding: 2px; box-sizing: border-box; } table.container-table table { width: 100%; } table.mdl { width: 100%; }
+table.onesevenfive { width: 175px !important; } } </style> <body> <table width="800" border="0" cellspacing="0" cellpadding="0" align="center" class="container-table"> <tbody> <tr> <td align="left" valign="top"> <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="border:solid 1px #e1e1e1;" class="container-table" bgcolor="#ffffff"> <tr> <td align="left" valign="top"> <a href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1MLAURTBgEGBQEBBU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  target="_blank"> <img
+src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/800600_polo01.jpg" alt="Volkswagen"
+style="display: block; outline:none; border:0" class="img-max"> </a> </td> </tr> </table> </td> </tsr> </tbody> </table> <br/><div><p>--<br><a href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1cJBkRTBgEGBQEBBU0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  >Click Here</a> to unsubscribe from this newsletter.<br><br></div><img border="0" src="http://lk.trk.cultural-heritage-india.com/ptrack?g=1&m=980&eu=BAdRDVoEWFYBAA==&u=756584b990def989c205470fcbec18c3&client=22138&c=0000" ></body></html>
+
+
+
+--b1_9a673a058ac0783af9341f9630dce83c--
+

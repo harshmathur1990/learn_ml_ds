@@ -1,0 +1,110 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp113781ive;
+        Wed, 14 Mar 2018 05:43:35 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELsSSoqX6IFztswLesTTw4Wq2b3t3WWw+Rf+BvDnMhda/Qy9ixc6vz7uTkkjvAIO3/y8Tc4m
+X-Received: by 10.107.142.204 with SMTP id q195mr4494444iod.262.1521031415499;
+        Wed, 14 Mar 2018 05:43:35 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521031415; cv=none;
+        d=google.com; s=arc-20160816;
+        b=TMd7rSiPrGY46ptgCBbqkBQ8SgaPKaVvBw+01jCxYnCMAigWOchfKEC5M69k/W0GUp
+         TVJH1DIu1IUnQtCqrO2pl+jEPwDvg6IwkV3JURap4Cp8e/WRE1LkYGgnlrLPSn7WJKTR
+         sUW02FOIb3Op+nXQfAA2vNmYuO74t0h4cZPJw6zMFYyAa4oDkValL3MNYnKtzdKuOqkc
+         wz460w8GTRJJQPokl/hhs0ih6utceTzEaFFfEmVNop4Tsd7OgktZ7u+CzgLxkkeqGt3B
+         re6EtkFAogc4kWtjXUFXlcyy1/93vUyEwqJXWiy9m8ZRa7tVKIi/506qEV0XSXj863U4
+         eiQA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:message-id:list-unsubscribe:date:to:from
+         :subject:dkim-signature:arc-authentication-results;
+        bh=JNwPGzYOwkcwN7MULRmKcs0+VAVf5FvSleLFb0iuozk=;
+        b=dnRIOt6sq+d0sUEMXy9bdsqbE4/NK+IMCjP6SMW4fx4sqqSnDi6W6SGsKr//H5JNt1
+         h3RwCgJJ9yfZ31oGsurD3HYeD4ClN7wWnFdhQrOiz3xEtO7ru6ue2V+CiCshVfA/1ASX
+         uQh6wns1WkZypRXbmikcAyN0ylnQXzgkuT4jilCqbRTfjHUD0Y9UaKxD/vitmwNTHrWa
+         aukcfaPbvzPooI934ijL96onp7OaoXMjRe+88EaLiMYytdsiSDrGaJmdU3I86Eu5bs74
+         DccD5MS+RaZeBHEgYb3Mt/+dF8k8X/O1Xh7CczeFvDvFzXiiIWVwxLybUc7hhax0/jcn
+         kQ6w==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@pbmailer.com header.s=default5 header.b=YpzU0g+M;
+       spf=pass (google.com: domain of return-a125-10140-10167-7d89fca2=25885428=8@pbmailer.com designates 103.96.100.2 as permitted sender) smtp.mailfrom=return-a125-10140-10167-7d89fca2=25885428=8@pbmailer.com
+Return-Path: <return-a125-10140-10167-7d89fca2=25885428=8@pbmailer.com>
+Received: from smtp1-1.injectin.com (smtp1-1.injectin.com. [103.96.100.2])
+        by mx.google.com with ESMTPS id c137-v6si803855ith.161.2018.03.14.05.43.35
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 14 Mar 2018 05:43:35 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return-a125-10140-10167-7d89fca2=25885428=8@pbmailer.com designates 103.96.100.2 as permitted sender) client-ip=103.96.100.2;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@pbmailer.com header.s=default5 header.b=YpzU0g+M;
+       spf=pass (google.com: domain of return-a125-10140-10167-7d89fca2=25885428=8@pbmailer.com designates 103.96.100.2 as permitted sender) smtp.mailfrom=return-a125-10140-10167-7d89fca2=25885428=8@pbmailer.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=pbmailer.com; s=default5;
+ t=1521031415; bh=Ar2+r/1atezrNP9Uxi8eTPwtV3U=;
+ h=Subject:From:To:Date:List-Unsubscribe:X-CampaignID:Message-ID:
+  X-Mailer-Info:Content-Type:Content-Transfer-Encoding;
+ b=YpzU0g+Mw4yZt0oS74mvuQcExdwfYtz7V6aB4N1sku4Ew/QI8sYchoHI3Sb7s6lnX
+  VF6gc0ZPDDO61EyGo758rfVFUdSgl69QHNLM6fOUUc69pSuXkAxiv92m/tNnN4ih5H
+  PstcX7o9rRDKC2rtLKtYRGbwI1jzn3pcc0TyIUug=
+Subject: Spend more, get more cash back
+From: "PaisaBazaar" <info@pbmailer.com>
+To: harshmathur.1990@gmail.com
+Date: 14 Mar 2018 12:43:35 -0000
+List-Unsubscribe: <http://mails.pbmailer.com/ga/unsubscribe/2-25885428-125-5091-10167-42981bff9ffdb8b-f5c56e9423?confirmed=1>,
+ <mailto:return-a125-10140-10167-7d89fca2=25885428=8u@pbmailer.com>
+X-CampaignID: s4:10140-adfd90b389f33ffc
+Message-ID: <mid-5620727b5b346581c5f7d96b6a73c634-8@pbmailer.com>
+X-Mailer-Info: 8.QYxITN.EDMxQDM.gWYyNHatFGdoVncuETO5ADQn1WYpxmLj9Wb.ITN4gTN0IDO.EDMxYzN
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<title>Paisabazaar</title>
+</head>
+
+<body style=3D"padding:0px; margin:0px;">
+<div style=3D"display: none; font-size: 1px; color: #fefefe; line-height: 1=
+px; font-family: Open Sans, Helvetica, Arial, sans-serif; max-height: 0px; =
+max-width: 0px; opacity: 0; overflow: hidden;">Gear up for extra savings wi=
+th Citi Credit Cards</div>
+
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" bgcolor=3D"#fff" style=3D"max-width:600px;">
+=20
+                    <tbody><tr>
+<td style=3D"font-family: Calibri,Arial,sans-serif; font-size: 14px; line-h=
+eight: 10px; color: #4a4a4a;" align=3D"center" valign=3D"top">
+<a style=3D"text-decoration: none; color: #8a8a8a;" href=3D"http://mails.pb=
+mailer.com/ga/webviews/4-25885428-125-5091-5142-10167-e059cb76c0" target=3D=
+"_blank">Open this message in New Tab</a>=EF=BB=BF<br><br></td>
+</tr>=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+ </tbody></table>
+<div style=3D"max-width: 600px; margin: auto;">
+<table style=3D"margin: auto; background: #fff; text-align: justify; width:=
+ 100%; " border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" bgcolor=3D"#FFFFFF">
+<a href=3D"http://mails.pbmailer.com/ga/click/2-25885428-125-5091-10167-897=
+5-61dacecff6-f5c56e9423" target=3D"_blank"><img src=3D"http://www.asperyou.=
+com/images/pb/img3.png" alt=3D"" style=3D" width:100%; display: block; bord=
+er: 0px; height: auto;" border=3D"0"/></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" bgcolor=3D"#fff" style=3D"max-width:600px;">
+=20
+                    <tbody>
+     <tr style=3D"text-align: center;">
+<td style=3D"padding-top: 4px; margin: 0 auto;"> If you do not want to rece=
+ive this mailer, <a href=3D"http://mails.pbmailer.com/ga/unsubscribe/2-2588=
+5428-125-5091-10167-42981bff9ffdb8b-f5c56e9423" target=3D"_blank "> Optout<=
+/a></td>
+</tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+ </tbody></table>
+<img src=3D"http://mails.pbmailer.com/ga/open/2-25885428-125-5091-10167-f5c=
+56e9423" height=3D"2" width=3D"3" alt=3D""></body>
+</html>=

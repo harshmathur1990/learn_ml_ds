@@ -1,0 +1,118 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp957590ive;
+        Wed, 14 Mar 2018 21:31:15 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELuEa2IC2gLulLcK8xyPxJFoy5AoNBa22GiZUtIOMq/sfYEgqTbPgQswFRl+CPMfW6J5ZhDt
+X-Received: by 10.237.63.113 with SMTP id q46mr10887118qtf.308.1521088275640;
+        Wed, 14 Mar 2018 21:31:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521088275; cv=none;
+        d=google.com; s=arc-20160816;
+        b=XMjPUwqRhoo/2v2ISZW0sji+HjdMKFiLa1A2DEo7aN8fO8GwyRAUK8hYb5uXJh15Zz
+         FGCdh/HIMOIVuenWecLEo6/Uzw4JjaaQ14c/440pWopHCanlNKuHnnBnIUKqysojmNeY
+         SQl69+lADetLga/my9Qqw8nMteGUNLBbxRancewTI67ohCfwyYQ9hGElLKosN972ErWl
+         yWWagdPltIMp8stu3X9bY0Un8cuY3EoTV2QKui+fRGoxFMh/40SXn8QM1j2hWz7MZr6h
+         YiaxRxFiyq09c64tVTrNgtCk8HG6Nd9/bDQoGKiBeVV2S2wrMqkwMsgPw6HDhqj6LOh0
+         2iKA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=date:mime-version:feedback-id:list-unsubscribe:message-id:subject
+         :reply-to:from:to:domainkey-signature:dkim-signature:dkim-signature
+         :arc-authentication-results;
+        bh=nAts7+gRYhntZ61wIssPTJ6Zqi4bGrbEJpZfkyP8q/Y=;
+        b=ZsG9oCUHsJ2FlvAMr1wej0d1pZZqHfcywLMGkdzco2nCrL7m0VT/GO48Kq4w4U6cYQ
+         pVkbVhslIdUpX7HyjdwfQLhXaVOT5TKq3oZoRk1Z5A/wmBmTaKxsu5eyY+EitZn+T83o
+         1Q6tSyyeRmD/5+jX3QBMeCgQ4EJ++BA5tkl7YzlYEXG9RMKz19Admr94tErabHWtBqku
+         MQ6Hcn8H0VAkcKpDdKfcFrpTkYne8UJFoDSsCC2IEX2G8fuGvr+7RIotHggUmtepAHMI
+         zhzlpY+6W1jt3qksvjCf3o+NWK4x3dIjCcLV9o9BJiadvrCIquLykU9RrDOxem3C/SIn
+         EQCw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@cultural-heritage-india.com header.s=emm header.b=K0RD3D5z;
+       dkim=pass header.i=@cultural-heritage-india.com header.s=emm header.b=D+EMAhZi;
+       spf=pass (google.com: domain of campaign-culturalheritageindia-22138-923-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com designates 103.52.181.128 as permitted sender) smtp.mailfrom=campaign-culturalheritageindia-22138-923-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com
+Return-Path: <campaign-culturalheritageindia-22138-923-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com>
+Received: from trans128.mailxy.com (trans128.mailxy.com. [103.52.181.128])
+        by mx.google.com with ESMTPS id x14si1633958qtj.69.2018.03.14.21.31.15
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 14 Mar 2018 21:31:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of campaign-culturalheritageindia-22138-923-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com designates 103.52.181.128 as permitted sender) client-ip=103.52.181.128;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cultural-heritage-india.com header.s=emm header.b=K0RD3D5z;
+       dkim=pass header.i=@cultural-heritage-india.com header.s=emm header.b=D+EMAhZi;
+       spf=pass (google.com: domain of campaign-culturalheritageindia-22138-923-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com designates 103.52.181.128 as permitted sender) smtp.mailfrom=campaign-culturalheritageindia-22138-923-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=emm; d=cultural-heritage-india.com;
+ h=To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Date;
+ bh=HWGqeO8u7558uW2UIfk5b20bYMc=;
+ b=K0RD3D5z8g/hPCzx9mMbdDeJz2IAlAqhnSvL0X0FjIvgmJnUXDssX2JjwiSVdGxtPv6u2kjqvWV0
+   fXz+8VM+z8+Ch4L7qUWe/Yo+TqmfnRz2eU37VTDIiL1+FDxjOhROuHso3poALonxo9OVK025ybuf
+   XJ/Cl56NTz4PhZXPmME=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=emm; d=cultural-heritage-india.com;
+ h=To:From:Reply-To:Subject:Message-ID:List-Unsubscribe:MIME-Version:Content-Type:Date; i=@email.cultural-heritage-india.com;
+ bh=HWGqeO8u7558uW2UIfk5b20bYMc=;
+ b=D+EMAhZisoauhI7tgw/Ej0fEtLEIXXOoNuUHcAccCEbFTOde2qp09H9JsH/vaRR6ix7Jfpx6XTrI
+   gm4UU+WDaVDDvzMSOEeqxzkOsXOK8wjls00kg0S/jE820esh2DeDNWBMTAyxdGuxfyMVOvNr0pwH
+   FgB0qIoiSFhq3ka4AeU=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=emm; d=cultural-heritage-india.com;
+ b=qLgQlFrJB2GsQCqARlCerhtGMMSZSQniU7FRjxqu3yVC7+wVzNeDhBruu7qxVHqgofoysrycehH4
+   7YbEr8mPJ9vZo5a11hCSKmm+EtyopZhNHlpjI8fDpF+MFMfYeum6bBo9I7KEjerDX7N/1v6q/oBm
+   PF1rsDIfBRQ6Uc7j5EI=;
+Received: by trans128.mailxy.com id hl7rhm25ocko for <harshmathur.1990@gmail.com>; Thu, 15 Mar 2018 09:52:31 +0530 (envelope-from <campaign-culturalheritageindia-22138-923-5819491-harshmathur.1990=gmail.com@email.cultural-heritage-india.com>)
+Received: from localhost.localdomain (Dell710-924 [127.0.0.1])
+	by rg1.iaires.com (Postfix) with ESMTP id 40F24B7FCD6E2
+	for <harshmathur.1990@gmail.com>; Thu, 15 Mar 2018 09:52:20 +0530 (IST)
+To: harshmathur.1990@gmail.com
+From: IcyHot-Cold <info@cultural-heritage-india.com>
+Reply-To: IcyHot-Cold <info@cultural-heritage-india.com>
+Subject: She is Hot & Cold
+Message-ID: <63414013225819491@email.cultural-heritage-india.com>
+List-Unsubscribe: <mailto:culturalheritageindia-22138-923-5819491-756584b990def989c205470fcbec18c3@usub.cultural-heritage-india.com?subject=Unsubscribe>, <http://lk.trk.cultural-heritage-india.com/culturalheritageindia/?p=smunsub&mid=923&uid=756584b990def989c205470fcbec18c3>
+Feedback-ID: 923:22138:20180315095034:nczc
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_174b8d1463acb685f74196c41f35ee9c"
+Date: Thu, 15 Mar 2018 10:01:23 +0530
+
+
+
+
+--b1_174b8d1463acb685f74196c41f35ee9c
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+IcyHot 
+
+ <http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=YEtRCFIFU1AJBERTBgEGBQELBk0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138
+target=>
+ <http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=YEtRCFIFU1AJBERTBgEGBQELBk0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138
+>
+
+ <http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=YEtRCFIFU1AJBERTBgEGBQELBk0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138
+>
+
+ <tel:02227881234 >
+ <mailto:zerob@ionexchange.co.in >
+
+ <http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=YEtRCFIFU1AJAkRTBgEGBQELBk0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138 >
+ <http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=YEtRCFIFU1AJA0RTBgEGBQELBk0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138 >
+ <http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=YEtRCFIFU1AJBURTBgEGBQELBk0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138 >
+
+--Click Here to unsubscribe from this newsletter.
+
+
+--b1_174b8d1463acb685f74196c41f35ee9c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<html><head> <title>IcyHot</title> <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"> <table cellpadding="0" cellspacing="0" border="0" width="100%"> <tr> <td> <center> <table id="Table_01" width="800" height="800" border="0" cellpadding="0" cellspacing="0" style="1px solid #39C;"> <tr> <td valign="top" width="800"> <table width="100%" cellpadding="0" cellspacing="0" border="0"> <tr> <td> <a
+href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1AJB0RTBgEGBQELBk0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  _blank ">
+<img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/zeroimages/IcyHot_01.jpg " width="400 " height="85 " style="display:block !important; min-width:400px !important; " border="0 "> </a> </td> <td> <a href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1AJBkRTBgEGBQELBk0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  target="_blank "> <img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/zeroimages/IcyHot_02.jpg " width="400 " height="85 " style="display:block !important; min-width:400px!important; " border="0 "> </a> </td> </tr> </table> </td> </tr> <tr> <td colspan="3 "> <a
+href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1AJBkRTBgEGBQELBk0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  target="_blank "> <img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/zeroimages/IcyHot_03.jpg " width="800 " height="648 " style="display:block !important; min-width:800px !important; " border="0 "> </a> </td> </tr> <tr> <td valign="top " width="800 "> <table width="100% " cellpadding="0 " cellspacing="0 " border="0 "> <tr> <td> <a href="tel:02227881234 " target="_blank "> <img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/zeroimages/IcyHot_04.jpg " width="499 "
+height="25 " style="display:block !important;
+min-width:499px !important; " border="0 "> </a> </td> <td> <a href="mailto:zerob@ionexchange.co.in "> <img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/zeroimages/IcyHot_05.jpg " width="301 " height="25 " style="display:block !important; min-width:301px!important; " border="0 "> </a> </td> </tr> </table> </td> </tr> <tr> <td valign="top " width="800 "> <table width="100% " cellpadding="0 " cellspacing="0 " border="0 "> <tr> <td> <a href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1AJCURTBgEGBQELBk0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  target="_blank "> <img
+src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/zeroimages/IcyHot_06.jpg " width="343 " height="42 " style="display:block !important; min-width:343px !important; " border="0 "> </a> </td> <td> <a href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1AJCERTBgEGBQELBk0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  target="_blank "> <img src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/zeroimages/IcyHot_07.jpg " width="92 " height="42 " style="display:block !important; min-width:92px!important; " border="0 "> </a> </td> <td> <a
+href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1AKAURTBgEGBQELBk0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  target="_blank "> <img
+src="https://s3.ap-south-1.amazonaws.com/kitnaaimg/zeroimages/IcyHot_08.jpg " width="365 " height="42 " style="display:block !important; min-width:365px!important; " border="0 "> </a> </td> </tr> </table> </td> </tr> </table> </center> </td> </tr> </table> <br/><div><p>--<br><a href='http://lk.trk.cultural-heritage-india.com/ptrack?g=1&id=fEtRCFIFU1EABkRTBgEGBQELBk0=BlxQWFZfV05eA0QVXFoATApAE0wJCAFTdlZbVFFVG1JcCQ==&client=22138'  >Click Here</a> to unsubscribe from this newsletter.<br><br></div><img border="0" src="http://lk.trk.cultural-heritage-india.com/ptrack?g=1&m=923&eu=BAdRDVoEWFYBAA==&u=756584b990def989c205470fcbec18c3&client=22138&c=0000"
+></body></html>
+
+
+
+--b1_174b8d1463acb685f74196c41f35ee9c--
+

@@ -1,0 +1,114 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp371870ive;
+        Thu, 15 Mar 2018 21:31:11 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELtCA5wL9JyH5Ef7Crvph9N++H3tDarqljVuWRPQMjqH7/fLyGgsRInMa2X+y4ifUQwtfX2k
+X-Received: by 2002:a24:d803:: with SMTP id b3-v6mr734851itg.7.1521174671760;
+        Thu, 15 Mar 2018 21:31:11 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521174671; cv=none;
+        d=google.com; s=arc-20160816;
+        b=y6jjwR4zrAE79qlwUQgMr2SzZy/wqg/nNzpXFyhopKuFBas54ekgJhz81vQFU13phk
+         EAtnG2WRz4KhRWoWWSYdWG6Wmm6DSw12HjZ7He9K2GQIn/gk4bL9FWH1Iu8QLlhAUtn4
+         Qe52d4e9TTPIpHYRgw1BjS1k5KRK7NrNnHkJQhDRoO3jL0brXfk68QCtixrYxPLLVcGy
+         op8JOVR8VjYUeJyXyFYIbdYTQXE9etYU776IUl65BYqVvK9l0vz9F2Y+xYVNHe5LDPFj
+         1Fc+slvJsqc0Dz1GBLGVpbyLTEAXghSFJQMJ1MLUfph2DkL34gDx9tpuPY2ED8SxZxdc
+         a00g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:message-id:list-unsubscribe:date:to:from
+         :subject:dkim-signature:arc-authentication-results;
+        bh=++I7/zU1xOvtOteecu5PQSIXoq4UMgkVLrokiImGlTg=;
+        b=jPG9Txnvw8a0jCgAursvS6ybB/GXwfwmxImNBiuciyPn3CtjFVSFafbaWVXXG14uDS
+         +EDmB2w3m1rBtfl1x+ixhySvAaKEp15yfiKZBhlKMiGM3a5DKnUiGnY7iT1jc4I9MmP2
+         Jits1N6ukxzHMlwffIg3Fl6Jf6suJqjn24DThUMFriuw9iIz4HI7YOy1gpCPk0/M9jeX
+         fLntuwp2RM3RutrSX6s2vPj+GUrAVIjEKS6o3eAiTemwqdHQ6DdLXGIUDPozJzH8DN0U
+         GGHiDGbET4GXChhWq7lYHrJsYLs2/0cyjIXP8IuL3B8BZ6G5YRu6zt5NAuYKYFzETmMt
+         KmSg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@offerscharge.com header.s=default3 header.b=L/k6tsMt;
+       spf=pass (google.com: domain of return-a331-28297-28298-57e6630c=55674796=8@offerscharge.com designates 103.96.100.32 as permitted sender) smtp.mailfrom=return-a331-28297-28298-57e6630c=55674796=8@offerscharge.com
+Return-Path: <return-a331-28297-28298-57e6630c=55674796=8@offerscharge.com>
+Received: from smtp2-1.pikup.in (smtp2-1.pikup.in. [103.96.100.32])
+        by mx.google.com with ESMTPS id h100si4320901ioi.101.2018.03.15.21.31.11
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 15 Mar 2018 21:31:11 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return-a331-28297-28298-57e6630c=55674796=8@offerscharge.com designates 103.96.100.32 as permitted sender) client-ip=103.96.100.32;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@offerscharge.com header.s=default3 header.b=L/k6tsMt;
+       spf=pass (google.com: domain of return-a331-28297-28298-57e6630c=55674796=8@offerscharge.com designates 103.96.100.32 as permitted sender) smtp.mailfrom=return-a331-28297-28298-57e6630c=55674796=8@offerscharge.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=offerscharge.com; s=default3;
+ t=1521174671; bh=/F/MelVdiRV4MAb77sVXq3Gu50g=;
+ h=Subject:From:To:Date:List-Unsubscribe:X-CampaignID:Message-ID:
+  X-Mailer-Info:Content-Type:Content-Transfer-Encoding;
+ b=L/k6tsMt4rncHvNbkHhbyCbKSPNOVPVmf70mgXNEdyMdbH/vJotfMv/tKmPwCtaRv
+  yrn8C/cw5Ik6p6V7Afoi321tvXVQWOfVNObYjThfYg0yGL9ppUoaWiee8Jo7d4peOU
+  Zz1bjnlug8oZWv6XylwYZELnMwUi9b/+LfqORXJg=
+Subject: A Smart-way to financiaIIy cover your car!
+From: "Car Insurance" <newsletter@offerscharge.com>
+To: harshmathur.1990@gmail.com
+Date: 16 Mar 2018 04:31:11 -0000
+List-Unsubscribe: <http://mail.offerscharge.com/ga/unsubscribe/2-55674796-331-14651-28298-59572fc7892a9ec-5cea8e3ff1?confirmed=1>,
+ <mailto:return-a331-28297-28298-57e6630c=55674796=8u@offerscharge.com>
+X-CampaignID: s4:28297-f5f087a289babb4e
+Message-ID: <mid-f3ca99e95de9682881a854cf4449f94a-36@offerscharge.com>
+X-Mailer-Info: 8.QYzMTM.IDOykzN.gWYyNHatFGdoVncuETO5ADQn1WYpxmLj9Wb.UTN2cDN3kjN.IDOykDO
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<title>BB</title>
+</head>
+
+<body style=3D"background-color: #fff"><table align=3D"center" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"max-width:600p=
+x;">
+  <tr>
+    <td align=3D"center" valign=3D"top" style=3D"font-family:Calibri,Arial,=
+sans-serif;font-size:13px;line-height:16px; padding-bottom:10px; color:#4a4=
+a4a"><br /> View in <a href=3D"http://mail.offerscharge.com/ga/webviews/4-5=
+5674796-331-14651-14787-28298-7093da2b2d" style=3D"color:#1762a0;text-decor=
+ation:underline" target=3D"_blank">new tab</a></td>
+  </tr>
+</table>
+
+<table style=3D"border: 1px solid #ccc;" border=3D"0" width=3D"600" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"center" bgcolor=3D"#fff">
+<tbody>
+<tr>
+<td>
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td><a href=3D"http://mail.offerscharge.com/ga/click/2-55674796-331-14651-2=
+8298-26795-fb556e6082-5cea8e3ff1" target=3D"_blank" rel=3D"noopener"> <img =
+style=3D"display: block;" src=3D"https://d19qgyth69wh8s.cloudfront.net/tme1=
+.png" alt=3D"" width=3D"600" /></a></td>
+</tr>
+
+
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&#160;</p>
+
+
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" style=3D"max-width:600px;">
+  <tr>
+    <td style=3D"font-size:11px; font-family:Calibri,Arial,sans-serif;line-=
+height:16px;color:#4a4a4a; text-align:center;"><p>
+    If this email is unwelcome, I apologize. Click <a href=3D"http://mail.o=
+fferscharge.com/ga/unsubscribe/2-55674796-331-14651-28298-59572fc7892a9ec-5=
+cea8e3ff1" style=3D"color:#1762a0;text-decoration:underline" target=3D"_bla=
+nk">here</a> to remove <a href=3D"mailto:harshmathur.1990@gmail.com" style=
+=3D"color:#1762a0;text-decoration:underline" target=3D"_blank">harshmathur.=
+1990@gmail.com</a> from my contact list.<br /></p>
+</td></tr>
+ </table><img src=3D"http://mail.offerscharge.com/ga/open/2-55674796-331-14=
+651-28298-5cea8e3ff1" height=3D"2" width=3D"3" alt=3D""></body></html>=

@@ -1,0 +1,178 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp400079ive;
+        Thu, 15 Mar 2018 22:14:18 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELtnjkO+wZ7wZtc/S3sPItY92U9A2ca0wfTcsbh7L+acl7CwBH46uaeVuidYczwbg6uP/GwL
+X-Received: by 10.202.75.4 with SMTP id y4mr250442oia.17.1521177258649;
+        Thu, 15 Mar 2018 22:14:18 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521177258; cv=none;
+        d=google.com; s=arc-20160816;
+        b=KjrSol6b1n8r/UqlOI/Lfr6Ksv4HVxKn7CcfZ2Iavgu3uUGeRqC0miwIVuJ2eZ+jXM
+         trYSoguvSlSvoX6CmSV7YfeLv2R8l9qHDaMF0/fMU/Fj42HHeBXxkLCxuJs67Ug2EPsG
+         4JeXIF7gNB8z54CmldB+lq+twZkUS5n8YxP4/OTwOU+8lxgxlIFwb8aDtX/vnfLd2um0
+         wPI2UHqtMiPgaLRj1aSoncNR6ZzJMxemkALYZ84zyAoT2TJZvbv9NgSRfjJwC9ry3/qs
+         ukvsK6IqD6FUigA+Fb0lFfsMjpgDDX+HsMUsbz9EOV3Cxxf2H1ihY1KZpllfsp1UThwT
+         ELEA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=reply-to:mime-version:subject:to:from:list-unsubscribe:message-id
+         :date:domainkey-signature:dkim-signature:arc-authentication-results;
+        bh=x1TggWleugHNQ6HDKs9srghXsjf2mkUIdwYNVWGpKp8=;
+        b=vr/a4MpUkYPLMop+szs4JRDaEfws6flIMqvbwf9sYHvbmP/9kWYACyy/gDfW/V9y1C
+         sbvgFL1hldP4Ew0/pB2r3UoHlkg0o7L7yjHSnCy+mnczlFjqHUq+trRf19qm7lF+EuVV
+         Ty3yow4Ia2RDKf1ByAVncbM7o1TXILt0XGHsAXZVOVr+Ni00LC3zR0px9D/DhaTHXBut
+         40Duy1dttvsmu3z/ioAJ+W6p/oq5PbwgG6cX+7wp6TTfRdGsCVvjrKKZT+TbPjOg9xJ0
+         WMur8X8i7msm7eHrpVv+dlbFMEUSmDFmsCCXbbfMKzdvYfTJtNFrHVNgownWYnPEpMD5
+         8R5Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@edm.efinmail.com header.s=20160510173820 header.b=vMiIbKou;
+       spf=pass (google.com: domain of bo-b2tuv7sbf3q13vaudzrk9byjjaps5y@b.edm.efinmail.com designates 8.30.201.23 as permitted sender) smtp.mailfrom=bo-b2tuv7sbf3q13vaudzrk9byjjaps5y@b.edm.efinmail.com
+Return-Path: <bo-b2tuv7sbf3q13vaudzrk9byjjaps5y@b.edm.efinmail.com>
+Received: from mta965.chtah.net (mta965.chtah.net. [8.30.201.23])
+        by mx.google.com with ESMTPS id v18si1913514ote.237.2018.03.15.22.14.18
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Thu, 15 Mar 2018 22:14:18 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bo-b2tuv7sbf3q13vaudzrk9byjjaps5y@b.edm.efinmail.com designates 8.30.201.23 as permitted sender) client-ip=8.30.201.23;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@edm.efinmail.com header.s=20160510173820 header.b=vMiIbKou;
+       spf=pass (google.com: domain of bo-b2tuv7sbf3q13vaudzrk9byjjaps5y@b.edm.efinmail.com designates 8.30.201.23 as permitted sender) smtp.mailfrom=bo-b2tuv7sbf3q13vaudzrk9byjjaps5y@b.edm.efinmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=edm.efinmail.com;
+	s=20160510173820; t=1521177258; x=1537074858;
+	bh=x1TggWleugHNQ6HDKs9srghXsjf2mkUIdwYNVWGpKp8=; h=From:Reply-To;
+	b=vMiIbKoupcFV+Dyj+gAs7DNiLupJG0wclB8hWOlkkWM2UZQxPCvYw00qjHIQC9uaE
+	 H5cniaCopCsJauh4rKWYOycibnEAaOty5jifaTi7GLTfnDMpfHn2aN2B4bUzkMQoEs
+	 neRkLHDeRnTEQpWBX2ANHfHwB73gfxZzd0BIdM3w5nfOliQsVJoGfs/ecUNi6rEgu0
+	 P61barYFbm0DnNvHF+D7EK1iYiTTgTo2stohza4T9lSksjGxzM/QLZyWVtgoIdCBTF
+	 JNBgG5RRXzR4NU0zIY9zgQpIvZFSzRrChnPygaVCTWsVeVCH5jhBD3kk0rrvT03zKo
+	 BuE+pGtqBVtAw==
+DomainKey-Signature: a=rsa-sha1; q=dns; c=nofws;
+  s=200505; d=edm.efinmail.com;
+  b=O94kpSzzCef8F7/btSPPa8+JgYOAO3UOHBew/hPghGHD1UHJC0j2HvlV6LovlUzrxqNRwWU02Y4pcpLK/mkecycHOLDV79uQJp5De6D6Gu9NMw8ksRRHvPArhPyNTZT1S0y1G1q3T/oc6y0sCgdwLWKBpZujmtgDgltKVPW8e5k=;
+ h=Date:Message-ID:List-Unsubscribe:From:To:Subject:MIME-Version:Reply-To:X-Mailer:X-mid:X-aid:Content-Type;
+Date: Fri, 16 Mar 2018 05:14:18 -0000
+Message-ID: <b2tuv7sbf3q13vaudzrk9byjjaps5y.6397873.3147@mta965.edm.efinmail.com>
+List-Unsubscribe: <mailto:rm-0b2tuv7sbf3q13vaudzrk9byjjaps5y@edm.efinmail.com>
+From: "Medical Policy" <info@edm.efinmail.com>
+To: harshmathur.1990@gmail.com
+Subject: =?UTF-8?B?R2V0IDUgTGFjIE1lZGljYWwgQ292ZXIgYW5kIFNhdmUgVGF4IHU=?=
+ =?UTF-8?B?cHRvIFJzLjI1MDAw?=
+MIME-Version: 1.0
+Reply-To: "info@edm.efinmail.com" <support-b2tuv7sbf3q13vaudzrk9byjjaps5y@edm.efinmail.com>
+X-Mailer: CheetahMailer
+X-mid: 2107114205
+X-aid: 2097868848
+Content-Type: multipart/alternative; boundary="=b2tuv7sbf3q13vaudzrk9byjjaps5y"
+
+
+--=b2tuv7sbf3q13vaudzrk9byjjaps5y
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+http://edm.efinmail.com/a/tBaq1E6B9CvAwB9mALdAAYZ$xDT/link1 
+Secure Your Family Medical Needs With All-In-One Health Plan.
+
+http://edm.efinmail.com/a/tBaq1E6B9CvAwB9mALdAAYZ$xDT/link1 
+
+With upto 100% NCB* + 96% Cashless Claim Settlement Benefits* + TaxSaving upto 25K
+Rs.5 Lac Medical Cover at Rs.15/day*in just few mins and get yourself covered instantly.
+Check Your Premium Now > : http://edm.efinmail.com/a/tBaq1E6B9CvAwB9mALdAAYZ$xDT/link1 
+
+Copyright © 2017 PolicyX.Com,* Tax Saving & Premium & Benefits varies from plan to plan
+
+Report Spam : mailto:rm-0b2tuv7sbf3q13vaudzrk9byjjaps5y@edm.efinmail.com?subject=Unsubscribe&body=You%20will%20be%20unsubscribed%20from%20mailing%20list.  | Unsubscribe : mailto:rm-0b2tuv7sbf3q13vaudzrk9byjjaps5y@edm.efinmail.com?subject=Unsubscribe&body=You%20will%20be%20unsubscribed%20from%20mailing%20list. 
+
+--=b2tuv7sbf3q13vaudzrk9byjjaps5y
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" />
+</head>
+<body style=3D"margin:0px auto;"><img src=3D"http://edm.efinmail.com/a/hBaq=
+1E6B9CvAwB9mALdAAYZ$xDT/spacer.gif" width=3D"1" height=3D"1" style=3D"displ=
+ay:none !important; max-height:1px !important; max-width:1px !important; bo=
+rder:0 !important; background-color:transparent !important; padding:0 !impo=
+rtant; outline:0 !important; min-height:1px !important; min-width:1px !impo=
+rtant; height:1px !important; width:1px !important;" alt=3D"">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"500" style=3D"margin:0px auto;">
+<tr>
+<td align=3D"center">
+          <table style=3D"font-family: &quot;Times New Roman&quot;; letter-=
+spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows=
+: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-sty=
+le: initial; text-decoration-color: initial; min-width: 600px; background-c=
+olor:#D4D4D4; border: 1px solid #000000;" border=3D"0" align=3D"left" width=
+=3D"500" cellspacing=3D"0" cellpadding=3D"0">
+            <tbody>
+              <tr>
+                <td colspan=3D"4"><p style=3D"text-align: left; margin: 0px=
+; padding-left: 20px; width: 137.988px; float: left;"><a href=3D"http://edm=
+.efinmail.com/a/hBaq1E6B9CvAwB9mALdAAYZ$xDT/link1"><img src=3D"http://f.edm=
+.efinmail.com/i/5/2097868848/06_11_policyxcommailer.png"></a></p>
+                  <p style=3D"text-align: left; margin: 0px; color: rgb(27,=
+ 49, 120); font-size: 18px; font-family: &quot;Trebuchet MS&quot;; font-wei=
+ght: bold; padding-top: 10px; width: 350px; float: right;">Secure Your Fami=
+ly Medical Needs With All-In-One Health Plan.</p></td>
+              </tr>
+              <tr>
+                <td colspan=3D"1"><p style=3D"text-align: left;"><a href=3D=
+"http://edm.efinmail.com/a/hBaq1E6B9CvAwB9mALdAAYZ$xDT/link1"><img src=3D"h=
+ttp://f.edm.efinmail.com/i/5/2097868848/06_11_secure-your-family.png" style=
+=3D"width: 220px; margin-bottom: -24px; margin-right: 32px;"></a></p></td>
+                <td colspan=3D"3"><p style=3D"margin-top: 20px;"><span styl=
+e=3D"color: rgb(0, 0, 0); font-size: 15px; font-family: &quot;Trebuchet MS&=
+quot;; line-height: 20px; font-weight: 700; ">With upto 100% NCB* + 96% Cas=
+hless Claim Settlement Benefits* + TaxSaving upto 25K</span></p>
+                  <p style=3D"width: 67px; float: left; margin-top: 5px;"><=
+span><img src=3D"http://f.edm.efinmail.com/i/5/2097868848/06_11_term-life-c=
+over.png"></span></p>
+                  <p style=3D"margin-top: 10px;"><span style=3D"color: rgb(=
+0, 0, 0); font-size: 15px; font-family: &quot;Trebuchet MS&quot;; line-heig=
+ht: 20px; font-weight: 700; ">Rs.5 Lac Medical Cover at Rs.<span style=3D"c=
+olor: rgb(255, 17, 0); font-size: 18px;"><strong>15/day*</strong></span>in =
+just few mins and get yourself covered instantly.</span></p>
+                  <a href=3D"http://edm.efinmail.com/a/hBaq1E6B9CvAwB9mALdA=
+AYZ$xDT/link1" style=3D"color: #FFFFFF; text-decoration: none;">
+                  <p style=3D"background: #1C3A83; color: #FFFFFF; width: 2=
+45px; padding: 7px; font-family: &quot;Trebuchet MS&quot;; border-radius: 1=
+0px; font-size: 18px; text-align: center; margin: 0px 52px 20px 0px;"><stro=
+ng>Check Your Premium Now &gt;</strong></p>
+                  </a></td>
+              </tr>
+              <tr>
+                <th colspan=3D"4"><p style=3D"text-align: center; backgroun=
+d: rgb(28, 58, 131); margin: 0px; color: rgb(255, 255, 255); width: 600px; =
+font-family: &quot;Trebuchet MS&quot;; font-size: 10px;">Copyright &copy; 2=
+017 PolicyX.Com,* Tax Saving &amp; Premium &amp; Benefits varies from plan =
+to plan</p></th>
+              </tr>
+            </tbody>
+          </table>
+=20=20=20=20=20=20=20
+</td></tr></table><table width=3D"100%" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" align=3D"center">
+ <tbody>
+<tr>
+ <td style=3D"text-align:center; padding:0px 0px;"><span style=3D"font-fami=
+ly:Arial, sans-serif; font-size:12px; color:#666666; line-height:12px;"><a =
+href=3D"mailto:rm-0b2tuv7sbf3q13vaudzrk9byjjaps5y@edm.efinmail.com?subject=
+=3DUnsubscribe&amp;body=3DYou%20will%20be%20unsubscribed%20from%20mailing%2=
+0list." style=3D"color:blue; font-size: 12px; font-family: Verdana, Arial, =
+Helvetica, sans-serif; text-decoration: none;" target=3D"_blank">Report Spa=
+m</a></span> | <span style=3D"font-family:Arial, sans-serif; font-size:12px=
+; color:blue; line-height:16px;"><a href=3D"mailto:rm-0b2tuv7sbf3q13vaudzrk=
+9byjjaps5y@edm.efinmail.com?subject=3DUnsubscribe&amp;body=3DYou%20will%20b=
+e%20unsubscribed%20from%20mailing%20list." style=3D"text-decoration:none; c=
+olor:blue;" target=3D"_blank">Unsubscribe</a></span></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>=
+
+
+--=b2tuv7sbf3q13vaudzrk9byjjaps5y--
+

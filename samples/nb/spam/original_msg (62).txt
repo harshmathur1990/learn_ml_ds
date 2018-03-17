@@ -1,0 +1,214 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp1149962ive;
+        Tue, 13 Mar 2018 22:00:14 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELvdLTXnAtB8E38aBYOLV1YvutLNlbTB3A9FJYXfJwUTrXLlHHHyLNEw9YDf+VENHoDmq/gn
+X-Received: by 10.55.215.16 with SMTP id m16mr4685941qki.303.1521003614617;
+        Tue, 13 Mar 2018 22:00:14 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521003614; cv=none;
+        d=google.com; s=arc-20160816;
+        b=C+Pn9y7bJtnMsg6ASFQqkqYGxGbJn8zbzQTbgfeoB386GEr4l7DZgcyyNnUx3UdZPC
+         7KDxh6wJGKQXdPdIw09s7uGPkSTu4+7Ju/xTOJY7pk5f7YLGYET1abFT96N7nk07z8SZ
+         Z1xZO9lt2YtDomKCqjNXuO2fM8OhZi36wl6/Ufn3PFTc5b6AQUR/Su7qaFRbw5OIFtfb
+         NAi/xkEzdqC7wxN2qmEiZgDqFM/cPehDB5ClayPlypqf+74oD6Wrjeb7Etlepc8nAtZY
+         6zxh34PZ0aG4AkXgbjWfdv4W9v7UyKB4yyOaAb6WVL1PJjO8cZ2muukr6bLXAEimdpM3
+         UtSw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:message-id:subject:from:to:date:dkim-signature
+         :arc-authentication-results;
+        bh=NJf2nMHV3VjSa1QRgb33QavfBeIcAnK1qJN4Wrkm3Jk=;
+        b=Cw4VHVgWGS0A3RAaY1LsBYpJarEYB2X+piVBZ9IVOTxZQgGaRM8WTgckT4kTTcQgeJ
+         KWc8NpIDPBVSP4TlMKcJlSnf1C75hzagP6y59/iJCTp9v/W/Y0ZnihDyt3WQSEH88Ct5
+         g0vEPGfSfVajtu0p7rt8V9lhcc1HDxti/lG7uAN/b6hrFPPWILK0mddiSHOGimvWE0W5
+         YN0S8G1RkZ/rq6S1vUCSvebJ1NmDb+1/UcPg/noLEHJ4vE/Q4xOI/dESTfe7nlVNrXE9
+         PW5oGrI34Jph2D1phHqvTbHGyAGnUfFo+Tya8+/daKLX8OjDlYVZG+D/uHCwc2luj8uQ
+         UiZQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@captor.info header.s=default header.b=hkseTKwZ;
+       spf=neutral (google.com: 162.246.58.104 is neither permitted nor denied by domain of priyanka@captor.info) smtp.mailfrom=priyanka@captor.info
+Return-Path: <priyanka@captor.info>
+Received: from server.captor.info (server.captor.info. [162.246.58.104])
+        by mx.google.com with ESMTPS id p7si1605729qkp.316.2018.03.13.22.00.14
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 13 Mar 2018 22:00:14 -0700 (PDT)
+Received-SPF: neutral (google.com: 162.246.58.104 is neither permitted nor denied by domain of priyanka@captor.info) client-ip=162.246.58.104;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@captor.info header.s=default header.b=hkseTKwZ;
+       spf=neutral (google.com: 162.246.58.104 is neither permitted nor denied by domain of priyanka@captor.info) smtp.mailfrom=priyanka@captor.info
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=captor.info
+	; s=default; h=Content-Type:MIME-Version:Message-ID:Subject:From:To:Date:
+	Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=NJf2nMHV3VjSa1QRgb33QavfBeIcAnK1qJN4Wrkm3Jk=; b=hkseTKwZodwFgOhsDdzgvbxn+0
+	9YBlonxOTud4+AeDUrSPDWx4w4Fwj8kGtM6pmWOkq0ffS2E3djNP1HyT0XMUOWLGuwuyIqDydQTdQ
+	xCPUE//K6qRv17+iu03RvNVM1OxB+hfxzRL3S++MNLv0/jydFnJb9JI6nuKVnHAtGMiE=;
+Received: from [::1] (port=34450 helo=captor.info/myphp)
+	by server.captor.info with esmtpa (Exim 4.87)
+	(envelope-from <priyanka@captor.info>)
+	id 1evyWM-00074a-7v
+	for harshmathur.1990@gmail.com; Wed, 14 Mar 2018 10:30:14 +0530
+Date: Wed, 14 Mar 2018 05:00:14 +0000
+To: harshmathur.1990@gmail.com
+From: Priyanka <priyanka@captor.info>
+Subject: AMD India Vacancies
+Message-ID: <b97f12e4639f4d1607f50760c9cccf05@localhost.localdomain>
+X-Priority: 3
+X-Mailer: PHPMailer [version 1.73]
+X-Mailer: phplist v2.10.19
+X-MessageID: 946
+X-ListMember: harshmathur.1990@gmail.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_b97f12e4639f4d1607f50760c9cccf05"
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server.captor.info
+X-AntiAbuse: Original Domain - gmail.com
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - captor.info
+X-Get-Message-Sender-Via: server.captor.info: authenticated_id: priyanka@captor.info
+X-Authenticated-Sender: server.captor.info: priyanka@captor.info
+
+
+--b1_b97f12e4639f4d1607f50760c9cccf05
+Content-Type: text/plain; charset = "UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Administration of supplier accounts and related expenses for a 6
+countries
+Key Responsibilities
+Account Payable Management 
+
+-	Ensure all payment are processed in the system according to the DOA
+of the group and according to processes done by the group
+
+-	Preparation of documentation to ensure Supplier payments are made
+
+-	Assess queries from Suppliers
+
+-	Supplier account reconciliations
+
+-	Administration of supplier documentation 
+
+-	Posting off supplier/expenses accounting entries
+
+-	Follow-up on payment done by the group with Treasury / Financial
+Cash Analyst & Banks
+
+-	Ensure allocation of payment and payment clearance is done in the
+system
+
+Knowledge Skills and Abilities
+-	Degree Educated or equivalent 
+
+-	Accounting Experience is mandatory
+
+-	Demonstrable numeracy Skills
+
+-	Good verbal and written communication skills with the ability to
+articulate complex information
+
+-	Microsoft Office proficient 
+
+-	Self-Starter
+
+Key Relationships
+-	Chief Accountant and Rest of the Accounting Team
+
+
+
+--
+
+
+
+
+
+--b1_b97f12e4639f4d1607f50760c9cccf05
+Content-Type: text/html; charset = "UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<html><head>
+        <meta content="text/html;charset=UTF-8"
+http-equiv="Content-Type">
+       
+<title></title></head><body><p>&nbsp;<h4 style="box-sizing:
+border-box; font-family: 'Helvetica Neue', Helvetica, Arial,
+sans-serif; font-weight: 500; line-height: 1.1; color:
+rgba(0, 0, 0, 0.701961); margin-top: 10px; margin-bottom:
+10px; font-size: 18px;"><span style="color: rgb(51, 51, 51);
+font-size: 14px; line-height: 20px; text-align:
+justify;">Administration of supplier accounts and related
+expenses for a 6 countries</span></h4>
+<h4 style="box-sizing: border-box; font-family: 'Helvetica
+Neue', Helvetica, Arial, sans-serif; font-weight: 500;
+line-height: 1.1; color: rgba(0, 0, 0, 0.701961);
+margin-top: 10px; margin-bottom: 10px; font-size: 18px;">Key
+Responsibilities</h4>
+<p style="box-sizing: border-box; margin: 0px 0px 10px;
+text-align: justify; color: rgb(51, 51, 51); font-family:
+'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:
+14px; line-height: 20px;">Account Payable
+Management&nbsp;<br style="box-sizing: border-box;" />
+<br style="box-sizing: border-box;" />
+-	Ensure all payment are processed in the system according
+to the DOA of the group and according to processes done by
+the group<br style="box-sizing: border-box;" />
+-	Preparation of documentation to ensure Supplier payments
+are made<br style="box-sizing: border-box;" />
+-	Assess queries from Suppliers<br style="box-sizing:
+border-box;" />
+-	Supplier account reconciliations<br style="box-sizing:
+border-box;" />
+-	Administration of supplier documentation&nbsp;<br
+style="box-sizing: border-box;" />
+-	Posting off supplier/expenses accounting entries<br
+style="box-sizing: border-box;" />
+-	Follow-up on payment done by the group with Treasury /
+Financial Cash Analyst &amp; Banks<br style="box-sizing:
+border-box;" />
+-	Ensure allocation of payment and &nbsp;payment clearance
+is done in the system</p>
+<h4 style="box-sizing: border-box; font-family: 'Helvetica
+Neue', Helvetica, Arial, sans-serif; font-weight: 500;
+line-height: 1.1; color: rgba(0, 0, 0, 0.701961);
+margin-top: 10px; margin-bottom: 10px; font-size:
+18px;">Knowledge Skills and Abilities</h4>
+<p style="box-sizing: border-box; margin: 0px 0px 10px;
+text-align: justify; color: rgb(51, 51, 51); font-family:
+'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:
+14px; line-height: 20px;">-	Degree Educated or
+equivalent&nbsp;<br style="box-sizing: border-box;" />
+-	Accounting Experience is mandatory<br style="box-sizing:
+border-box;" />
+-	Demonstrable numeracy Skills<br style="box-sizing:
+border-box;" />
+-	Good verbal and written communication skills with the
+ability to articulate complex information<br
+style="box-sizing: border-box;" />
+-	Microsoft Office proficient&nbsp;<br style="box-sizing:
+border-box;" />
+-	Self-Starter</p>
+<h4 style="box-sizing: border-box; font-family: 'Helvetica
+Neue', Helvetica, Arial, sans-serif; font-weight: 500;
+line-height: 1.1; color: rgba(0, 0, 0, 0.701961);
+margin-top: 10px; margin-bottom: 10px; font-size: 18px;">Key
+Relationships</h4>
+<p style="box-sizing: border-box; margin: 0px 0px 10px;
+text-align: justify; color: rgb(51, 51, 51); font-family:
+'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:
+14px; line-height: 20px;">-	Chief Accountant and Rest of the
+Accounting Team</p></p>
+<p><img
+src="http://captor.info/myphp/lists/ut.php?u=e59984826cd89307a01473cdd241f8f7&m=946"
+width="1" height="1" border="0"></p><br /><br /><div
+class="emailfooter">--<br />
+<br />
+<br />
+</div></body></html>
+
+
+
+--b1_b97f12e4639f4d1607f50760c9cccf05--
+
+

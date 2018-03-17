@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" />
+<style type=3D"text/css">
+@media only screen and (max-width: 601px) {
+.width {
+=09width: 100% !important;
+=09height: auto !important
+}
+.banner {
+=09width: 100% !important;
+=09height: auto !important
+}
+}
+</style>
+</head>
+<body style=3D"margin:0px auto;"><img src=3D"http://edm.efinmail.com/a/hBar=
+MWsB9CvAwB9mCobAAYZ$x8W/spacer.gif" width=3D"1" height=3D"1" style=3D"displ=
+ay:none !important; max-height:1px !important; max-width:1px !important; bo=
+rder:0 !important; background-color:transparent !important; padding:0 !impo=
+rtant; outline:0 !important; min-height:1px !important; min-width:1px !impo=
+rtant; height:1px !important; width:1px !important;" alt=3D"">
+
+<table align=3D"center" border=3D"0" class=3D"width" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"601" style=3D"margin:0px auto;">
+  <tr>
+    <td align=3D"center">
+=09
+=09<table align=3D"center" border=3D"0" class=3D"width" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"601" style=3D"margin:0px auto;">
+
+
+=09=09 <tr>
+          <td align=3D"center">
+=09=09  <a href=3D"http://edm.efinmail.com/a/hBarMWsB9CvAwB9mCobAAYZ$x8W/li=
+nk1"><img src=3D"http://f.edm.efinmail.com/i/5/2097868848/13_12_bbpl13dcbr.=
+jpg" class=3D"banner"  alt=3D"Personal loan" style=3D"display:block" /></a>=
+</td>
+        </tr>
+=09
+=09=09
+      </table>
+=09 =20
+=09  <table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ align=3D"center">
+ <tbody>
+<tr>
+ <td style=3D"text-align:center; padding:0px 0px;"><span style=3D"font-fami=
+ly:Arial, sans-serif; font-size:12px; color:#666666; line-height:12px;"><a =
+href=3D"mailto:rm-0b2t9y32bf3q13vaudzht3byjjapsr7@edm.efinmail.com?subject=
+=3DUnsubscribe&amp;body=3DYou%20will%20be%20unsubscribed%20from%20mailing%2=
+0list." style=3D"color:blue; font-size: 12px; font-family: Verdana, Arial, =
+Helvetica, sans-serif; text-decoration: none;" target=3D"_blank">Report Spa=
+m</a></span> | <span style=3D"font-family:Arial, sans-serif; font-size:12px=
+; color:blue; line-height:16px;"><a href=3D"mailto:rm-0b2t9y32bf3q13vaudzht=
+3byjjapsr7@edm.efinmail.com?subject=3DUnsubscribe&amp;body=3DYou%20will%20b=
+e%20unsubscribed%20from%20mailing%20list." style=3D"text-decoration:none; c=
+olor:blue;" target=3D"_blank">Unsubscribe</a></span></td>
+</tr>
+</tbody>
+</table>
+  =20
+</td>
+  </tr>
+  </table>
+
+
+</body>
+</html>

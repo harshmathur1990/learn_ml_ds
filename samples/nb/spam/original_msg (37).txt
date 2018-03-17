@@ -1,0 +1,169 @@
+Delivered-To: harshmathur.1990@gmail.com
+Received: by 10.79.164.12 with SMTP id n12csp1003292ive;
+        Wed, 14 Mar 2018 22:42:22 -0700 (PDT)
+X-Google-Smtp-Source: AG47ELuQOArk5Ey4W+Sjy7GjBSZp8OjwSRumTvLiOvmooav94BwVIvrWXAXnhw1+rKunP12MsJtG
+X-Received: by 10.200.9.121 with SMTP id z54mr11198705qth.87.1521092542602;
+        Wed, 14 Mar 2018 22:42:22 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1521092542; cv=none;
+        d=google.com; s=arc-20160816;
+        b=HIGE+8kfCwFH0bcK/Uq+MHVUaLlPW2ONG2lLjmIJ8Dk8M3px2Ypv5qPAb0AyZgmplm
+         m8HGRzJz8xMyDLYHtzt37TzHtoLg6rQlWmeNeiR5UxyBvpd88TscJ9LcbxiCJFPjUbaJ
+         y7gp9nvLy2IPzHotuXxqQhFBHNNZQQjo9MqsfmLDnMPe+2kT3zfExB0GQXO9PL6+Nc1R
+         fTMOYSk7tc/6bjLf021/VhzNrQ07UBKbzcIim34lH85f03kqKUKVEUb1iAXDpMX3rCOq
+         6HPn9/zxNmcFvx5nuL2YoKrPxyVaIpOr8rekDpaRqNFALQkHdkqCNx+22qq73F55/O/f
+         4J5A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:message-id:list-unsubscribe
+         :subject:reply-to:from:to:date:domainkey-signature:dkim-signature
+         :arc-authentication-results;
+        bh=9Egqg+Je48Of2+BHYAxR5yt088ZXMFjvT5fq/2Fie8A=;
+        b=xFM6JI78MdjKS2IqJhTTETPca+r+Cq1PsWW/4Ck7PAg3npKUljAUurdLuAPEMRGDSU
+         m/fSbnFHs3dUqP5O9garTnkiDq1RvGsQwjEbXVVVo/JB0C4fOHDYah8xWjL56EJAfkrB
+         PoZRn8IIsJoCeOExzSqr0SmCGRso2vNIBRpIKFp9nkfap4+zNVbO4HAXfZ3G84iT9kQ1
+         23CvL6qA3asBHps02UiTYgPE6EIrzXgKGh55mWfo/HFw4BREpaqNjzeRRoSp5+z6Y7Ut
+         4y3sSvLy3QjkDvO5kEgcaH/77RT0bUe85dP6zepPDiPW8Fu/FxejRSyHQPxysZHKARmH
+         NstA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@teanews.biz header.s=oct header.b=HSOxtzmr;
+       spf=pass (google.com: domain of p_c-597190-267946-2-harshmathur.1990@teanews.biz designates 199.166.36.140 as permitted sender) smtp.mailfrom=p_c-597190-267946-2-harshmathur.1990@teanews.biz;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=teanews.biz
+Return-Path: <p_c-597190-267946-2-harshmathur.1990@teanews.biz>
+Received: from m140.ocmail30.in (m140.ocmail30.in. [199.166.36.140])
+        by mx.google.com with ESMTPS id q8si4458823qtb.362.2018.03.14.22.42.21
+        for <harshmathur.1990@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 14 Mar 2018 22:42:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of p_c-597190-267946-2-harshmathur.1990@teanews.biz designates 199.166.36.140 as permitted sender) client-ip=199.166.36.140;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@teanews.biz header.s=oct header.b=HSOxtzmr;
+       spf=pass (google.com: domain of p_c-597190-267946-2-harshmathur.1990@teanews.biz designates 199.166.36.140 as permitted sender) smtp.mailfrom=p_c-597190-267946-2-harshmathur.1990@teanews.biz;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=teanews.biz
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=oct; d=teanews.biz;
+ h=Date:To:From:Reply-to:Subject:List-Unsubscribe:Message-ID:MIME-Version:Content-Transfer-Encoding:Content-Type; i=newsletter@teanews.biz;
+ bh=qUuLlgJ0odpNvgtp0GWe/k4lYSg=;
+ b=HSOxtzmrW7gT/xAt0dQsZ+CUB8WbVz1136iKfukbOAokOf870AmGeEJLNvVmrs3Hk7l6wtVTCBHK
+   RvbH3MxrfI6yx02re5OJNcwwGt8IM9rMjLzl2sO2+mF3sfcMssotkNrcXghSu9pC4n0eriyATpuZ
+   DoVont/t18aAqsEJZBM=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=oct; d=teanews.biz;
+ b=X9PHwtgzA2j+i9zb6AI8O5mz0U8aXfzhQZGqviItCklpVdER505GL9D28LNNW5/9vxxOHlE6seJ+
+   6XmHXgfnbTcEH+rAeYGI81eCHL+DN+XWpFrNYbGqDkLd4iEDInPFa85Kn3QP7y+wpTVTuD/q+9Q1
+   br0p6K60ZMA2WTM1dcQ=;
+Date: Thu, 15 Mar 2018 04:17:00 +0000
+To: harshmathur.1990@gmail.com
+From: Teafloor <newsletter@teanews.biz>
+Reply-to: newsletter@teanews.biz
+Subject: Indian Organic Tea | You don't want to miss this.
+X-Mailer: teanews.biz
+X-Complaints-To: abuse@teanews.biz
+List-Unsubscribe: <mailto:unsubscribe@teanews.biz?subject=p_c-597190-267946-2-aGFyc2htYXRodXIuMTk5MEBnbWFpbC5jb20=unsub>,<http://gpa8ominternetpvtltd.teanews.biz/tr/ud/2/597190/267946/aGFyc2htYXRodXIuMTk5MEBnbWFpbC5jb20%3D>
+Message-ID: <p_c-597190-267946-2-aGFyc2htYXRodXIuMTk5MEBnbWFpbC5jb20=unsub@teanews.biz>
+X-OCT-CHANNEL: campaign
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+</head>
+<body>
+<table cellpadding=3D"0" cellspacing=3D"0" align=3D"center" border=3D"0" st=
+yle=3D"max-width: 650px; width: 100%; border: 2px solid #ccc;">
+<tbody>
+<tr>
+<td><a href=3D"http://gpa8ominternetpvtltd.teanews.biz/tr/r/2/597190/267946=
+/aGFyc2htYXRodXIuMTk5MEBnbWFpbC5jb20%3D/0/W10%3D"  target=3D"_blank" style=
+=3D"display: grid;"> <img src=3D"https://i.imgur.com/AUiu1bS.jpg"  style=3D=
+"display: block; max-width: 650px; width: 100%;" /> </a></td>
+</tr>
+<tr style=3D"vertical-align: top;">
+<td style=3D"word-break: break-word; border-collapse: collapse !important; =
+vertical-align: top; padding: 20px;">
+<div style=3D"font-size: 14px; line-height: 18px; font-family: Bookman Old =
+Style;" helvetica=3D"" neue=3D"" sans-serif=3D"" color:=3D"black" 000=3D"" =
+text-align:=3D"" left=3D"">
+<p style=3D"font-size: 14px; margin-top: 10px; margin-bottom: 10px; line-he=
+ight: 20px; text-align: left;">We replenished our self to have you a part o=
+f our ever-growing community of Tealover. Founded and inspired by real peop=
+le&#39; taste and requirement. <br /><br />We are focused and working hard =
+to make you experience the authentic and finest collection of organic teas,=
+ <b>Oolong tea</b>, <b>CTC tea</b>, <b>White tea </b>to make your morning r=
+outine a little more vibrant.</p>
+<p style=3D"font-size: 14px; margin-top: 10px; margin-bottom: 10px; line-he=
+ight: 20px; text-align: left;">your friend!</p>
+<p style=3D"font-size: 14px; line-height: 20px; font-weight: 600; margin-to=
+p: 30px; text-align: left;">Team Teafloor</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table align=3D"center">
+<tbody>
+<tr>
+<td style=3D"color: #000; font-size: 14px; font-weight: 600;">STAY CONNECTE=
+D</td>
+<td>|</td>
+<td><a style=3D"color: #000; font-size: 14px; font-weight: 600; line-height=
+: 14px; text-decoration: none;" href=3D"http://gpa8ominternetpvtltd.teanews=
+.biz/tr/r/2/597190/267946/aGFyc2htYXRodXIuMTk5MEBnbWFpbC5jb20%3D/1/W10%3D" =
+ target=3D"_blank"> <img src=3D"https://i.imgur.com/66GrTjh.png"  target=3D=
+"_blank" /> </a></td>
+<td>|</td>
+<td><a style=3D"color: #000; font-size: 14px; font-weight: 600; line-height=
+: 14px; text-decoration: none;" href=3D"http://gpa8ominternetpvtltd.teanews=
+.biz/tr/r/2/597190/267946/aGFyc2htYXRodXIuMTk5MEBnbWFpbC5jb20%3D/2/W10%3D" =
+ target=3D"_blank"> <img src=3D"https://i.imgur.com/cZO37aJ.png"  target=3D=
+"_blank" /> </a></td>
+<td>|</td>
+<td><a style=3D"color: #000; font-size: 14px; font-weight: 600; line-height=
+: 14px; text-decoration: none;" href=3D"http://gpa8ominternetpvtltd.teanews=
+.biz/tr/r/2/597190/267946/aGFyc2htYXRodXIuMTk5MEBnbWFpbC5jb20%3D/3/W10%3D" =
+ target=3D"_blank"> <img src=3D"https://i.imgur.com/s2Idfg2.png"  target=3D=
+"_blank" /> </a></td>
+<td>|</td>
+<td><a style=3D"color: #000; font-size: 14px; font-weight: 600; line-height=
+: 14px; text-decoration: none;" href=3D"http://gpa8ominternetpvtltd.teanews=
+.biz/tr/r/2/597190/267946/aGFyc2htYXRodXIuMTk5MEBnbWFpbC5jb20%3D/4/W10%3D" =
+ target=3D"_blank"> <img src=3D"https://i.imgur.com/ducuzrv.png"  /> </a></=
+td>
+<td>|</td>
+</tr>
+</tbody>
+</table>
+<table align=3D"center">
+<tbody>
+<tr>
+<td><a style=3D"color: #000; font-size: 11px; font-weight: 600; line-height=
+: 14px; text-decoration: none;" href=3D"http://gpa8ominternetpvtltd.teanews=
+.biz/tr/r/2/597190/267946/aGFyc2htYXRodXIuMTk5MEBnbWFpbC5jb20%3D/5/W10%3D" =
+ target=3D"_blank"> ABOUT US </a></td>
+<td>|</td>
+<td><a style=3D"color: #000; font-size: 11px; font-weight: 600; line-height=
+: 14px; text-decoration: none;" href=3D"http://gpa8ominternetpvtltd.teanews=
+.biz/tr/r/2/597190/267946/aGFyc2htYXRodXIuMTk5MEBnbWFpbC5jb20%3D/6/W10%3D" =
+ target=3D"_blank"> CONTACT US </a></td>
+<td>|</td>
+<td><a style=3D"color: #000; font-size: 11px; font-weight: 600; line-height=
+: 14px; text-decoration: none;" href=3D"http://gpa8ominternetpvtltd.teanews=
+.biz/tr/r/2/597190/267946/aGFyc2htYXRodXIuMTk5MEBnbWFpbC5jb20%3D/7/W10%3D" =
+ target=3D"_blank"> BLOG </a></td>
+<td>|</td>
+<td><a style=3D"color: #000; font-size: 11px; font-weight: 600; line-height=
+: 14px; text-decoration: none;" href=3D"http://gpa8ominternetpvtltd.teanews=
+.biz/tr/r/2/597190/267946/aGFyc2htYXRodXIuMTk5MEBnbWFpbC5jb20%3D/8/W10%3D" =
+ target=3D"_blank"> GIFT BOX </a></td>
+</tr>
+</tbody>
+</table>
+<p style=3D"font-size: 12px; font-weight: normal; color: #000000; font-fami=
+ly: arial; line-height: 115%; background-color: #ffffff; text-align: center=
+;">If you do not wish to receive any further communications, please <a href=
+=3D http://gpa8ominternetpvtltd.teanews.biz/tr/u/2/597190/267946/aGFyc2htYX=
+RodXIuMTk5MEBnbWFpbC5jb20%3D>click here</a>.</p>
+<img src=3D'http://gpa8ominternetpvtltd.teanews.biz/tr/w/2/597190/267946/aG=
+Fyc2htYXRodXIuMTk5MEBnbWFpbC5jb20%3D/oct.gif' width=3D'1' height=3D'1' /></=
+body>
+</html>
+
